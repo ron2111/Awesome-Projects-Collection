@@ -1,6 +1,6 @@
 # Contributing
 
-You can add your project of any tech stack but make sure to do valid contributions, else your PR would be labelled as invalid and won't be counted as successful contribution.
+You can add your project of any tech stack **under the respective folder** but make sure to do valid contributions, else your PR would be labelled as invalid and won't be counted as successful contribution.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
