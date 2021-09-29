@@ -5,6 +5,17 @@ I made this project for improving my accuracy while has been using random forest
 by passing different parameters .<br><br>
 code is
 easy to read and even you add more parameters and techniques in it by just having basic knowledge of python.
+<br><br>
+<h3>how to use score checker</h3>
+<ol>
+ <li>save "score checker" in your local directory (where you create your machine learning project)</li>
+ <Li> import "score checker.py" as local library</li>
+ <li>call function "score_model" form library</li>
+ <li> pass 5 arguments i.e
+  <ul>
+   <li>model</li><li>x_train</li><li>x_test</li><li>y_train</li><li>y_test</li></ul>
+ <li> And you get standard Mean Absolute Error as score</li>
+  </ol>
 
 <h3> Modeling Earthquake Damage 🌏🌍🌎</h3><hr>
 Based on aspects of building location and construction, your goal is to predict the level of damage to buildings caused by the<br><br>
