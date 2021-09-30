@@ -36,7 +36,7 @@ After you've added code, just come back to the README and add your name under co
 [Samarthya Singh]( https://github.com/Samarthya2912 / https://www.linkedin.com/in/samarthya-singh-17a261152/ ) <br>
 [Manasvi Goyal]( https://github.com/ManasviGoyal / https://www.linkedin.com/in/manasvi-goyal-2809/ ) <br>
 [Rishit Toteja]( https://github.com/RishitToteja / https://www.linkedin.com/in/rishit-toteja-727ab9118/ ) <br>
-
+[Sattwik Palai]( https://github.com/sattwik21) [Linkein](https://www.linkedin.com/in/sattwik-palai/ ) <br>
 
 - [Anubhav Bagri](https://github.com/anubhavbagri)
 
