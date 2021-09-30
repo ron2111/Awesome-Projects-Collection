@@ -34,7 +34,7 @@ After you've added code, just come back to the README and add your name under co
 ## Contributors
 
 [Akash Srivastava]( https://github.com/Akashsri3bi  /  https://www.linkedin.com/in/akash-srivastava-b087261a7/ )
-[Agnibha Sarkar]( https://github.com/casafurix  /  https://www.linkedin.com/in/agnibha-sarkar-8143161b8/ )
+
 
 
 ## All the best for **Hacktoberfest** :)
