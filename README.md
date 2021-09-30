@@ -52,7 +52,12 @@ After you've added code, just come back to the README and add your name under co
 
 - [Aryan Gupta](https://github.com/aryan31200)
 
+
 - [Kairav Bansal](https://github.com/karry26)
+
+
+- [Prajjwal Datir](https://github.com/PrajjwalDatir)
+  
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
