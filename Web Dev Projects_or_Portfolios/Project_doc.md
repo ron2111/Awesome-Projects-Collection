@@ -8,3 +8,9 @@
 <b>Stock Market Simulator</b> (by http://github.com/Samarthya2912)
 <br>
 - Helps you get hands on experience in predicting and investing in stock markets. (built with ReactJS and NodeJS)
+
+
+<br>
+<b> Trickaza - e-IPL Auction</b> (by https://github.com/nishant-giri)
+<br>
+- Website for e-IPL Auction event. (Built with HTML, CSS and JavaScript)
