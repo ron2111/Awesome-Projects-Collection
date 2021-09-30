@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Github API Calls With Axios</title>
+</head>
+
+<body>
+    <div id="root">
+        <form action="" id="myform">
+            <input id="username" name="username" placeholder="Github username">
+            <button>Submit</button>
+        </form>
+        <img id="mypic" />
+    </div>
+    <script>
+        let myform = document.getElementById("myform");
+        let pic = document.getElementById("mypic");
+        let username = document.getElementById("username");
+
+        myform.onsubmit = function (e) {
+            e.preventDefault();
+            let data = username.value;
+            // console.log(data);
+            /*
+            When data would be fetched over the network successfully, then only call the function
+            i.e. jab tak promise resolve nahi hua, tab tak baaki kaam karte reh sakte ho
+            */
+            axios.get("https://api.github.com/users/" + data).then(function (response) {
+                // console.log(response.data.avatar_url);
+                pic.setAttribute("src", response.data.avatar_url);
+            })
+        }
+    </script>
+</body>
+
+</html>

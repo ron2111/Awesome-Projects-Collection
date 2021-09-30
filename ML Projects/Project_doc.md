@@ -17,6 +17,9 @@ easy to read and even you add more parameters and techniques in it by just havin
  <li> And you get standard Mean Absolute Error as score</li>
   </ol>
 
-<h3> Modeling Earthquake Damage 🌏🌍🌎</h3><hr>
-Based on aspects of building location and construction, your goal is to predict the level of damage to buildings caused by the<br><br>
- 2015 Gorkha earthquake in Nepal.The data was collected through surveys by Kathmandu Living Labs and the Central Bureau of Statistics, which works under the National Planning Commission Secretariat of Nepal. This survey is one of the largest post-disaster datasets ever collected, containing valuable information on earthquake impacts, household conditions, and socio-economic-demographic statistics.
+<h3> Drowsiness Detection System</h3><hr>
+
+In Recent days most of the accidents were recorded due to drunk driving and sleepiness while driving at night and no safety ascepts were there.
+By means of this project if any driver falls asleep or he / She eyes closes or gets drowsy he will be immediately alerted by an buzzer/Alarm System Using Face and Eye tracking
+Hope this project see light .
+
