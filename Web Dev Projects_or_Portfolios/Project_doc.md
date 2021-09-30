@@ -8,8 +8,3 @@
 <b>Stock Market Simulator</b> (by http://github.com/Samarthya2912)
 <br>
 - Helps you get hands on experience in predicting and investing in stock markets. (built with ReactJS and NodeJS)
-
-<br>
-<b>Image Editor </b> (by https://github.com/aditya13902)
-<br>
-- Image Editor (built with HTML, CSS and vanilla JS)
