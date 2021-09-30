@@ -23,3 +23,12 @@ In Recent days most of the accidents were recorded due to drunk driving and slee
 By means of this project if any driver falls asleep or he / She eyes closes or gets drowsy he will be immediately alerted by an buzzer/Alarm System Using Face and Eye tracking
 Hope this project see light .
 
+<h3> K-Means Clustering </h3><hr>
+
+In my project I have performed classification using k-means clustering for the non-linearly separable case and k-means clustering-based segmentation of the image.
+<br>
+<ol>
+  <li>When using only pixel colour values as features</li>
+  <li>When using both pixel colour and location values as features</li>
+</ol>
+
