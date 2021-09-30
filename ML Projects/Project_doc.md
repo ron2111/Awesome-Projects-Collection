@@ -17,7 +17,7 @@ easy to read and even you add more parameters and techniques in it by just havin
  <li> And you get standard Mean Absolute Error as score</li>
   </ol>
 
-<h3> Drowsiness Detection System</h3><hr>
+<b><h3>Drowsiness Detection System</h3></b>
 
 In Recent days most of the accidents were recorded due to drunk driving and sleepiness while driving at night and no safety ascepts were there.
 By means of this project if any driver falls asleep or he / She eyes closes or gets drowsy he will be immediately alerted by an buzzer/Alarm System Using Face and Eye tracking
