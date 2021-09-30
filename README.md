@@ -46,11 +46,11 @@ After you've added code, just come back to the README and add your name under co
 - [Rishit Toteja](https://github.com/RishitToteja) 
 
 - [Anirudh Sharma](https://github.com/AnirudhBot)
-
-- [Prajjwal Datir](https://github.com/prajjwaldatir)
   
 [Ayush Jha]( https://github.com/A-jha383 / https://www.linkedin.com/in/00-ayush-jha/)
 - [Anubhav Bagri](https://github.com/anubhavbagri)
+
+- [Prajjwal Datir](https://github.com/prajjwaldatir)
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
