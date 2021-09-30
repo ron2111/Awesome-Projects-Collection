@@ -47,6 +47,7 @@ After you've added code, just come back to the README and add your name under co
 
 - [Anirudh Sharma](https://github.com/AnirudhBot)
 
+[Ayush Jha]( https://github.com/A-jha383 / https://www.linkedin.com/in/00-ayush-jha/)
 - [Anubhav Bagri](https://github.com/anubhavbagri)
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
