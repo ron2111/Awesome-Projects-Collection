@@ -23,3 +23,5 @@ In Recent days most of the accidents were recorded due to drunk driving and slee
 By means of this project if any driver falls asleep or he / She eyes closes or gets drowsy he will be immediately alerted by an buzzer/Alarm System Using Face and Eye tracking
 Hope this project see light .
 
+<h3> Perceptron</h3><hr>
+This project manages to build a perceptron model for different types of classes having data such as non-linearly separable, linearly separable and real-world data.
