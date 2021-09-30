@@ -13,3 +13,9 @@
 <b>Budget Manager Chrome Extension</b> (by https://github.com/Suvidnya)
 <br>
 - This is a budget manager chrome extension. (built with HTML, CSS, jQuery, JavaScript, JSON)
+
+<br>
+<b><h3>Trickaza - e-IPL Auction</h3></b> (by https://github.com/nishant-giri)
+<br>
+- Website for e-IPL Auction event. (built with HTML, CSS and JavaScript)
+
