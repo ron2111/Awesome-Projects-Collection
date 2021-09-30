@@ -32,11 +32,12 @@ After you've added code, just come back to the README and add your name under co
 
 ## Contributors
 
-- [Akash Srivastava]( https://github.com/Akashsri3bi / https://www.linkedin.com/in/akash-srivastava-b087261a7/ ) <br>
-- [Samarthya Singh]( https://github.com/Samarthya2912 / https://www.linkedin.com/in/samarthya-singh-17a261152/ ) <br>
-- [Manasvi Goyal]( https://github.com/ManasviGoyal / https://www.linkedin.com/in/manasvi-goyal-2809/ ) <br>
 
-- [Anubhav Bagri](https://github.com/anubhavbagri)
-- [Tamal Das](https://github.com/IAmTamal)
+[Akash Srivastava]( https://github.com/Akashsri3bi  /  https://www.linkedin.com/in/akash-srivastava-b087261a7/ ) <br>
+[Samarthya Singh]( https://github.com/Samarthya2912 / https://www.linkedin.com/in/samarthya-singh-17a261152/ ) <br>
+[Manasvi Goyal]( https://github.com/ManasviGoyal / https://www.linkedin.com/in/manasvi-goyal-2809/ ) <br>
+[Rishit Toteja]( https://github.com/RishitToteja / https://www.linkedin.com/in/rishit-toteja-727ab9118/ ) <br>
+[Anubhav Bagri](https://github.com/anubhavbagri) <br>
+[Tamal Das](https://github.com/IAmTamal) <br>
 
 ## All the best for **Hacktoberfest** :)
