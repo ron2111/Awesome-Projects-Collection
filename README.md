@@ -33,6 +33,10 @@ After you've added code, just come back to the README and add your name under co
 
 ## Contributors
 
-Manasvi Goyal https://github.com/ManasviGoyal
+[Akash Srivastava]( https://github.com/Akashsri3bi  /  https://www.linkedin.com/in/akash-srivastava-b087261a7/ )
+[Samarthya Singh]( https://github.com/Samarthya2912 / https://www.linkedin.com/in/samarthya-singh-17a261152/ )
+[Manasvi Goyal](https://github.com/ManasviGoyal)
+
+
 
 ## All the best for **Hacktoberfest** :)
