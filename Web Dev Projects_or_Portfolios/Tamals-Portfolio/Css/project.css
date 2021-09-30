@@ -1,0 +1,83 @@
+#Navbarrr {
+    padding-left: 30px;
+    padding-right: 50px;
+    /* background-color: #96BAFF; */
+}
+
+
+.navbar {
+    font-size: 1em;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.nav-item {
+    padding-right: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+#pro {
+    font-family: 'Ubuntu', sans-serif;
+    /* color: #222222; */
+    color: rgba(0, 0, 0, 0.72);
+    font-size: 2.8rem;
+    margin-left: 25px;
+    position: relative;
+    top: 9px;
+}
+
+#activity {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+    font-size: 5.6rem;
+    position: relative;
+    z-index: -1;
+    bottom: 75px;
+    font-weight: 700 !important;
+    padding-bottom: 0;
+}
+
+
+
+#heading {
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+#pr-head {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    bottom: 50px;
+    padding-bottom: 0;
+}
+
+#project_Cards {
+    margin-left: 190px;
+    margin-bottom: 90px;
+    /* position: relative;
+    bottom: 100px; */
+}
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+#prs {
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    margin-right: 40px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#prs:hover {
+    box-shadow: 7px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}

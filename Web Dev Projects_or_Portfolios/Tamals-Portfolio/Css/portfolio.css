@@ -1,0 +1,245 @@
+#Navbarrr {
+    padding-left: 30px;
+    padding-right: 50px;
+    /* background-color: #96BAFF; */
+}
+
+
+.navbar {
+    font-size: 1em;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+#nb {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-item {
+    padding-right: 15px;
+}
+
+#hi-row {
+    margin-top: 100px;
+}
+
+#hi {
+    position: relative;
+    top: 80px;
+    left: 65px;
+    display: inline-block;
+    font-family: 'Kanit', sans-serif;
+}
+
+#hi-1 {
+    /* line-height: 1.2em; */
+    font-size: 3.4rem;
+}
+
+#td {
+    color: slateblue;
+    font-size: 3.9rem;
+    /* font-family: 'Secular One', sans-serif; */
+    font-family: 'Kanit', sans-serif;
+}
+
+#hi-2 {
+    font-size: 2.2rem;
+    /* text-align: center; */
+}
+
+#hi-3 {
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 1.3rem;
+    width: 70%;
+    /* text-align: center; */
+}
+
+#my-img {
+    position: relative;
+    bottom: 50px;
+    height: 400px;
+    width: 400px;
+}
+
+#social-1 {
+    position: relative;
+    bottom: 90px;
+    left: 75px;
+    /* text-align: center; */
+}
+
+.soc-img {
+    width: 35px;
+    height: 35px;
+}
+
+.sc {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+#what {
+    /* font-family: 'Ubuntu', sans-serif; */
+    color: #222222;
+}
+
+#passion {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+    font-size: 6rem;
+    position: relative;
+    z-index: -1;
+    bottom: 75px;
+    font-weight: 700 !important;
+    padding-bottom: 0;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+#ui-head {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.webhead {
+    margin-left: 50px;
+}
+
+.webicons {
+    margin-left: 50px;
+}
+
+#ui-headimg {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    bottom: 4px;
+    margin-left: 10px;
+}
+
+.ui-logos {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+#ui-subhead {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+
+/* ------------------------------------------------------------------ MEDIA MOBILES ---------------------------------------------------- */
+@media (max-width:425px) {
+
+    #nbtn {
+        position: relative;
+        left: 45px;
+    }
+
+    #nb {
+        font-size: 25px;
+
+    }
+
+
+    #hi-row {
+        position: relative;
+        bottom: 110px;
+        right: 20px;
+    }
+
+    #hi-1 {
+        font-size: 2rem;
+    }
+
+    #hi-2 {
+        font-size: 2.3rem;
+    }
+
+    #hi-3 {
+        font-size: 1.2rem;
+        width: 75%;
+    }
+
+    #my-img {
+        height: 250px;
+        width: 250px;
+        position: relative;
+        left: 80px;
+        top: 80px;
+    }
+
+    #social-1 {
+        position: relative;
+        top: 80px;
+        /* left: 75px; */
+        text-align: center;
+    }
+
+    .soc-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #whatdiv {
+        text-align: center;
+    }
+
+    #whatido {
+        padding-top: 60px;
+    }
+
+    #what {
+        /* font-family: 'Ubuntu', sans-serif; */
+        color: #222222;
+    }
+
+    #passion {
+        font-size: 5rem;
+        position: relative;
+        z-index: -1;
+        bottom: 70px;
+    }
+
+
+    #coding-img {
+        display: none;
+    }
+
+    #ui-img {
+        display: none;
+    }
+
+    .ui-logos {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    #ui-subhead {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #webdiv {
+        text-align: center;
+    }
+}
+
+
+/* ------------------------------------------------------------------ MEDIA TABLET ---------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------ MEDIA OTHERS ---------------------------------------------------- */

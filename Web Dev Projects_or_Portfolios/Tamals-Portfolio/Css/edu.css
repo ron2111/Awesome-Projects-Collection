@@ -1,0 +1,22 @@
+#Navbarrr {
+    padding-left: 30px;
+    padding-right: 50px;
+    /* background-color: #96BAFF; */
+}
+
+
+.navbar {
+    font-size: 1em;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.nav-item {
+    padding-right: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}

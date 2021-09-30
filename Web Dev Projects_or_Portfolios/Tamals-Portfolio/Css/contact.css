@@ -1,0 +1,142 @@
+#Navbarrr {
+    padding-left: 30px;
+    padding-right: 50px;
+    /* background-color: #96BAFF; */
+}
+
+
+.navbar {
+    font-size: 1em;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.nav-item {
+    padding-right: 15px;
+}
+
+#connect {
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+#talk {
+    color: #222222;
+    position: relative;
+    left: 80px;
+    display: inline-block;
+    /* top: 5px; */
+
+}
+
+#connect-txt {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+    font-size: 6rem;
+    position: relative;
+    z-index: -1;
+    bottom: 75px;
+    font-weight: 700 !important;
+}
+
+#connect-pic {
+    position: relative;
+    bottom: 100px;
+}
+
+#my-img {
+    height: 430px;
+    /* width: 690px; */
+}
+
+#contact {
+    position: relative;
+    bottom: 40px;
+}
+
+#talktome {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: slateblue;
+    font-family: 'Secular One', sans-serif;
+}
+
+#connect-txt-2 {
+    font-family: 'Hammersmith One', sans-serif;
+    /* font-weight: 100; */
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#social-1 {
+    position: relative;
+    bottom: 2px;
+    margin-left: 200px;
+    /* left: 105px; */
+    /* text-align: center; */
+    display: inline-block;
+}
+
+.soc-img {
+    width: 35px;
+    height: 35px;
+}
+
+.sc {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+#show {
+    display: block;
+    position: relative;
+    left: 250px;
+    top: 18px;
+    width: 190px;
+    font-weight: 700;
+    color: #222222;
+    background-color: aquamarine;
+}
+
+#show:hover {
+    background-color: #548CA8;
+    color: white;
+}
+
+#myadress {
+    position: relative;
+    bottom: 40px;
+}
+
+
+#loc-img {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    right: 150px;
+    top: 50px;
+}
+
+#visit {
+    display: block;
+    width: 190px;
+    background-color: #548CA8;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    left: 235px;
+    /* height: 190px; */
+}
+
+#visit:hover {
+    background-color: aquamarine;
+    color: black;
+    font-weight: 700;
+}
+
+
+footer {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
