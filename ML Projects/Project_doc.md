@@ -40,3 +40,11 @@ The results of the model were as follows:
 3) Precision Score : 0.87
 4) Recall Score : 0.84
 Application: This project can be used for screening/shortlisting resumes in Univerities / Colleges / Companies / Schools.
+
+<b><h3> Number Generator (Developing a GAN for Generating MNIST Handwritten Digits) </h3></b>
+
+These are the points which the project accomplishes
+
+- How to define and train the standalone discriminator model for learning the difference between real and fake images.
+- How to define the standalone generator model and train the composite generator and discriminator model.
+- How to evaluate the performance of the GAN and use the final standalone generator model to generate new images.
