@@ -1,0 +1,397 @@
+/*-------------------------------------------------------*/
+
+/* Base styles	 */
+
+/*-------------------------------------------------------*/
+html {
+	overflow-y: scroll;
+}
+
+body {
+ 
+	margin: 0px;
+	padding: 0px;
+	 font-family: 'Roboto Condensed', sans-serif;
+	font-size: 12px;
+}
+
+a {
+	text-decoration:none !important;
+	color: inherit;
+}
+
+/* Font face */
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.woff') format('woff');
+}
+/*-------------------------------------------------------*/
+
+/* Wrap */
+
+/*-------------------------------------------------------*/
+#container {
+	margin: 0 auto;
+	width: 860px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+#content {
+	background-color: #FFF;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+
+/*-------------------------------------------------------*/
+
+/* Generic Classes */
+
+/*-------------------------------------------------------*/
+.hidden {
+	display: none;
+}
+
+/* Clearfix */
+.clear {
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0
+}
+
+* html .clearfix, :first-child+html .clearfix {
+	zoom: 1
+}
+
+.extra-text {
+	font-size: 17px;
+	padding: 24px 0;
+	border-bottom: 1px solid #ededed;
+	color: #333;
+	margin-bottom: 20px;
+	font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.transition {
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.word-wrap {
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+/*-------------------------------------------------------*/
+
+/* Typography */
+
+/*-------------------------------------------------------*/
+h1 {
+	font-size: 37px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+h5 {
+	font-size: 13px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+strong {
+	font-weight: bold;
+	color: #333;
+}
+
+h3.main-heading {
+	margin: 0px 2px 20px 0px;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 14px;
+	color: #333;
+	line-height: 16px;
+	font-size: 16px;
+	font-weight: 500;
+	display: block;
+	clear: both;
+	position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+ 
+}
+
+h3.main-heading .now{
+    background-color: black !important;
+}
+
+h3.main-heading::after {
+	content: '';
+	width: 40px;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	background:#cf455c;
+}
+
+/*-------------------------------------------------------*/
+
+/* Top Section */
+
+/*-------------------------------------------------------*/
+header {
+    height: 76px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Logo */
+#logo {
+	float: left;
+	overflow: hidden;
+	margin-left: 10px;
+	display: none;
+}
+
+#logo h2 {
+	font-size: 30px;
+	font-weight: 900;
+	color: #444;
+	line-height: 40px;
+}
+
+#logo h4 {
+	color: #666;
+	line-height: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Social icons */
+.socialicons {
+	float: right;
+	margin-top: 18px;
+    padding-bottom: 18px;
+}
+
+.socialicons li {
+	float: left;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	margin-right: 2px;
+}
+
+.socialicons li a {
+    
+    font-size: 18px;
+    display: block;
+    padding: 1px 8px;
+    background-color: #cf455c;
+    color: #FFF;
+}
+.caroufredsel_wrapper {
+    width: 600px!important;
+}
+.socialicons li a:hover {
+	color:#cf455c;
+}
+
+.social-icons li:last-child {
+	margin-right: 0
+}
+
+.socialicons .socials-text {
+    padding: 5px 7px!important;
+    height: 26px;
+    background-color: #222;
+    color: #FFF;
+    font-size: 12px;
+}
+
+/*-------------------------------------------------------*/
+
+
+/*-------------------------------------------------------*/
+
+/* Menu */
+
+/*-------------------------------------------------------*/
+.menu {
+	height: 100px;
+	background-color: #ededed;
+	position: relative;
+	padding-left: 130px;
+	padding-right: 130px;
+}
+
+.tabs {
+	height: 116px;
+	position: absolute;
+	margin-top: -14px;
+	z-index: 100;
+}
+
+.tabs li {
+	float: left;
+	height: 116px;
+}
+
+.tabs li > a {
+    padding-top: 28px;
+    width: 115px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: #b9b9b9;
+    text-align: center;
+    font-weight: 580;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+.tabs li.active {
+	background: url('../images/tab-hover.png') no-repeat;
+}
+
+.tabs li.active a {
+	color:#cf455c;
+     
+}
+
+.tabs li > a > i {
+	font-size: 45px;
+	font-family: 'icomoon';
+	display: block;
+	margin-bottom: 5px;
+}
+
+.next, .prev {
+	font-family: 'icomoon';
+	font-size: 34px;
+	color: #eee;
+	position: absolute;
+	top: 30px;
+	width: 40px;
+	background-color: #ccc;
+	text-align: center;
+	cursor: pointer;
+}
+
+.next {
+	right: 0px;
+}
+
+.prev {
+	left: 0px;
+}
+
+.disabled {
+	display: none !important;
+}
+
+/*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+
+/* Isotope filtering */
+
+/*-------------------------------------------------------*/
+.isotope-item {
+	z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+
+.isotope, .isotope .isotope-item {
+
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
+.isotope {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+
+.isotope .isotope-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+
+/*-------------------------------------------------------*/
+
+
+/* Footer */
+
+/*-------------------------------------------------------*/
+footer {
+	margin-top: 20px;
+	height: 20px;
+}
+
+footer .copyright {
+	float: left;
+	color: #333;
+	padding-left: 6px;
+}
+
+/*-------------------------------------------------------*/
+
+/* Footer */
+
+/*-------------------------------------------------------*/
+div.footer {
+	margin-top: 20px;
+	height: 20px;
+}
+
+div.footer .copyright {
+	float: left;
+	color: #333;
+	padding-left: 6px;
+}
