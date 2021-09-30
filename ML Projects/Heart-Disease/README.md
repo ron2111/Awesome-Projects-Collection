@@ -1,5 +1,5 @@
 This Project can classify whether some one has a heart disease or not.
 
-Language - 'Python'
+Language - `Python`
 
-Modules - 'Scikit-Learn' 'Pandas' 'Numpy' 'Matplotlib'
+Modules - `Scikit-Learn` `Pandas` `Numpy` `Matplotlib`
