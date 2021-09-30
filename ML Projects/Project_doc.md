@@ -30,3 +30,7 @@ Made a Deep learning model, which could predict NASDAQ stock prices (National As
 The model was built using Tensorflow Sequential API :
 A stacked LSTM was made with three LSTM layers, two Dropouts layers, and one final output layer.
 Since our task was stock price prediction, mean squared error loss was used with ‘adam’ optimizer for gradient descent.
+
+<b><h3>DataScience3</h3></b>
+
+A mini project for predictive analysis on a given large data set to predict whether the patient is frequent buyer of medicine or not . Done using certain classificaton models like KNN,GMM,BayesClassification etc
