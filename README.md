@@ -35,5 +35,5 @@ After you've added code, just come back to the README and add your name under co
 
 [Akash Srivastava]( https://github.com/Akashsri3bi  /  https://www.linkedin.com/in/akash-srivastava-b087261a7/ )
 
-[Santhosh Charan Murarishetty] ( https://github.com/santhoshcharan-001 )
+[Santhosh Charan Murarishetty](https://github.com/santhoshcharan-001)
 ## All the best for **Hacktoberfest** :)
