@@ -27,3 +27,6 @@ Allows you to search for any location's current weather (built using JS, node.js
 
 
 <hr />
+
+# Musify
+* Music player app in vanilla js
