@@ -19,8 +19,3 @@
 <h3>API used : </h3> https://api.covid19india.org/data.json
 
 
-<h3>Authors:</h3>
-<ul>
-<li><a href="https://github.com/Mayur2506">@Mayur2506</a></li>
-<li><a href="https://github.com/ask01">@ask01</a></li>
-</ul>
