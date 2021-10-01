@@ -1,3 +1,6 @@
+// This project works with clang only not with MinGW
+// card.raw is the camera's memory card file
+// card.raw file source is from Harvard's CS50x
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
