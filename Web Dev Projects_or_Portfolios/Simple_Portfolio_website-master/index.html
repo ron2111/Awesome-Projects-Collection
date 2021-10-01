@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ayush Jha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        /* Profile Section */
+        /*-------------------------------------------------------*/
+        
+        #profile {
+            background: #455acf;
+            background-image: url(images/header-shadow.png);
+            background-position: center bottom;
+            background-repeat: repeat-x;
+            overflow: hidden;
+        }
+        /* About */
+        
+        .about {
+            float: left;
+            margin-top: 30px;
+            width: 490px;
+            margin-left: 20px;
+        }
+        
+        .about .photo-inner {
+            float: left;
+            background: url(images/photo-inner.png) no-repeat;
+            width: 214px;
+            height: 212px;
+            padding: 12px 0 0 19px;
+        }
+        
+        .about .photo-inner img {
+            background-color: #FFF;
+        }
+        
+        .about h1 {
+            font-weight: 900;
+            color: #FFF;
+            line-height: 34px;
+            margin-top: 8px;
+        }
+        
+        .about h3 {
+            margin-top: 5px;
+            font-size: 18px;
+            color: #FFF;
+            line-height: 18px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        h3.main-heading .now {
+            background: #4565cf !important;
+        }
+        
+        .about p {
+            font-size: 14px;
+            margin-top: 15px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 24px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        /* Personal info */
+        
+        .personal-info {
+            float: left;
+            margin-top: 30px;
+            width: 310px;
+            min-height: 230px;
+            margin-left: 10px;
+            background: url(images/personal-info-sep.png) no-repeat left top;
+            padding: 20px 0 19px 20px;
+        }
+        
+        span.word-wrap a {
+            color: #fff;
+        }
+        
+        .personal-info li {
+            line-height: 12px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            float: left;
+            width: 293px;
+        }
+        
+        .personal-info li label {
+            color: #fff;
+            float: left;
+            padding: 4px 7px;
+            font-weight: 550;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .personal-info li span {
+            float: right;
+            width: 220px;
+            padding-top: 4px;
+            font-weight: 400;
+            color: #fff;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+        }
+        /* Resume Section */
+        /*-------------------------------------------------------*/
+        
+        #resume {
+            padding: 0px 0px;
+            overflow: hidden;
+        }
+        
+        .skills-section,
+        .timeline-section {
+            float: left;
+        }
+        /* Timeline Section */
+        
+        .timeline-section {
+            width: 100%;
+        }
+        
+        .timeline {
+            margin-bottom: 30px;
+        }
+        
+        .timeline li {
+            margin-bottom: 20px;
+        }
+        
+        .timeline li .timelineUnit {
+            line-height: 17px;
+            margin-left: 0px;
+            color: #444;
+            font-size: 13px;
+            border-left: 1px solid #455acf;
+            padding-left: 15px;
+        }
+        
+        .timeline li .timelineUnit .timelineDate {
+            line-height: 17px;
+            color: #455acf;
+            font-size: 14px;
+            margin-left: 10px;
+            font-weight: normal;
+            padding: 2px 6px;
+            float: right;
+        }
+        
+        .timeline li .timelineUnit h4 {
+            line-height: 24px;
+            font-size: 15px;
+            color: #444;
+        }
+        
+        .timeline li .timelineUnit h5 {
+            line-height: 18px;
+            font-size: 13px;
+            color: #999;
+        }
+        
+        .timeline li .timelineUnit p {
+            color: #666;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        /* Skills Section */
+        
+        .skills-section {
+            width: 270px;
+        }
+        
+        .skills {
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        
+        .skills li {
+            margin-bottom: 15px;
+            float: left;
+            padding-left: 0px;
+        }
+        
+        .skills li h4 {
+            width: 140px;
+            float: left;
+            font-size: 15px;
+            color: #444;
+        }
+        
+        .skills li .rating {
+            width: 123px;
+            height: 14px;
+            float: left;
+        }
+        
+        .skills li .rating>span {
+            opacity: 0.3;
+            height: 12px;
+            width: 12px;
+            background-color: #455acf;
+            display: block;
+            float: left;
+            margin-right: 1px;
+            border: 2px solid #eeeeee;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+        }
+        /* Download Button */
+        
+        #resume .button {
+            width: 250px;
+            padding: 10px;
+            background-color: #455acf;
+            overflow: hidden;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            margin: 20px 0px 0px -20px;
+            color: #fff;
+            display: block;
+            text-align: center;
+            -webkit-border-radius: 0px 4px 4px 0px;
+            -moz-border-radius: 0px 4px 4px 0px;
+            border-radius: 0px 4px 4px 0px;
+        }
+        
+        #resume .button:hover {
+            background-color: #455acf;
+        }
+        /* Portfolio Section */
+        /*-------------------------------------------------------*/
+        
+        .row>.column {
+            padding: 0 8px;
+        }
+        
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            width: 572px;
+            max-width: 100%;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .column {
+            float: left;
+            width: 25%;
+        }
+        
+        .close {
+            opacity: .7;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff!important;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Modal Content */
+        /* The Close Button */
+        
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        img {
+            margin-bottom: -4px;
+        }
+        
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+        
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+        
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #portfolio {
+            padding: 20px 20px 20px 20px;
+        }
+        /* Images list */
+        
+        #portfolio-list {
+            width: 820px;
+            overflow: hidden;
+        }
+        
+        #portfolio-list li {
+            float: left;
+            margin-right: 25px;
+            text-align: center;
+            background-color: #fbfbfb;
+            border-bottom: 1px solid #e5e5e5;
+            height: 185px;
+            margin-bottom: 30px;
+            width: 180px;
+        }
+        
+        #portfolio-list li:hover {
+            border-bottom: 1px solid #4571cf;
+            height: 185px;
+        }
+        
+        #portfolio-list img {
+            background-color: #FFF;
+            height: 120px;
+            width: 180px;
+        }
+        
+        #portfolio-list li:hover .title {
+            color: #4553cf;
+        }
+        
+        #portfolio-list li .title {
+            font-size: 14px;
+            margin-top: 15px;
+            font-weight: 400;
+            color: #3A3A3A;
+        }
+        
+        #portfolio-list li .categorie {
+            font-size: 11px;
+            line-height: 25px;
+            color: #999;
+        }
+        /* Filter menu */
+        
+        .cats-filter {
+            border-bottom: 1px solid #ededed;
+            overflow: hidden;
+            padding: 15px 0;
+        }
+        
+        .cats-filter li a {
+            float: left;
+            margin-right: 7px;
+            color: #fff;
+            background-color: #666;
+            padding: 10px 10px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: 'Roboto Condensed', sans-serif;
+            border-radius: 50px;
+        }
+        
+        .cats-filter li a:hover {
+            background-color: #4547cf;
+            text-decoration: none;
+        }
+        
+        .cats-filter li a.current {
+            background-color: #4571cf;
+        }
+        /*-------------------------------------------------------*/
+        /* Contact Section */
+        /*-------------------------------------------------------*/
+        
+        #contact {
+            overflow: hidden;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .contact-info,
+        .contact-form {
+            float: left;
+            padding: 0 20px;
+        }
+        
+        .contact-info {
+            width: 250px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .contact-form {
+            width: 530px;
+        }
+        /* Contact info */
+        
+        .contact-info ul {
+            float: left;
+            border-left: 1px solid #2f1ec9;
+            padding-left: 18px;
+        }
+        
+        .contact-info ul li {
+            font-size: 13px;
+            line-height: 20px;
+            color: #666;
+            overflow: hidden;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        /* Google map */
+        
+        #map {
+            height: 300px;
+            margin-bottom: 25px;
+            width: 100%;
+            border-bottom: 1px solid #CCC;
+            border-top: 1px solid #CCC;
+            width: 100%;
+        }
+        
+        #map iframe {
+            width: 100%;
+        }
+        /*-------------------------------------------------------*/
+        /* Forms */
+        /*-------------------------------------------------------*/
+        
+        form .input,
+        form textarea {
+            -moz-box-shadow: inset 0 5px 16px -13px #333;
+            /* -webkit-box-shadow: inset 0 5px 16px -13px #333; */
+            /* box-shadow: inset 0 5px 16px -13px #333; */
+            background-color: #FDFDFD;
+            border: 1px solid #ced4da;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            color: #666;
+            font-size: 12px;
+            height: 30px;
+            outline: none;
+            padding: 6px 10px;
+            resize: none;
+            width: 96%;
+        }
+        
+        form textarea {
+            height: 112px;
+            line-height: 18px;
+            margin-bottom: 0;
+            padding-top: 8px;
+        }
+        
+        form p {
+            margin-bottom: 15px;
+        }
+        
+        form p label {
+            display: block;
+            color: #999;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .button {
+            color: #fff;
+            background-color: #3528f1;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        
+        .button:hover {
+            background-color: #1d86e7;
+        }
+        /*-------------------------------------------------------*/
+        
+        footer {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        /*-------------------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <section id="container">
+
+        <header>
+            <div id="logo">
+                <h2>AYUSH JHA</h2>
+                <h4>Web & App Developer And Cyberwarrior</h4>
+
+            </div>
+            <div class="social-icons-container">
+                <span class="socials-text"><button class="pulse-button"><i class="fa fa-share-alt-square" aria-hidden="true"></i></button></span>
+                <ul class="socialicons">
+                    <li><a href="https://www.facebook.com/profile.php?id=100028186568377"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/AyushJh51366862?ref_src=twsrc%5Etfw"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://in.linkedin.com/in/ayush-jha-87b976130"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.link/bf6bvt"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="content">
+            <div id="profile">
+                <div class="about">
+                    <div class="photo-inner">
+                        <ul>
+                            <li><img src="images/photo.jpg" height="186" width="153" /></li>
+                            <li><img src="images/photo1.jpg" height="186" width="153" /></li>
+                        </ul>
+                    </div>
+                    <h1>AYUSH JHA</h1>
+                    <h3>Web & App Developer And Cyberwarrior </h3>
+                    <br>
+                    <p>I am a Computer Science scholar(2nd year Btech) and coding enthusiast striving for new opportunities and knowledge with empirical approach to further endeavours.</p>
+                </div>
+                <ul class="personal-info">
+                    <li><label>Name</label><span>Ayush Jha</span></li>
+                    <li><label>Birthday</label><span>February 04, 2001</span></li>
+                    <li><label>Address</label><span>K190 Sukantnagar Kolkata, WB,India</span></li>
+                    <li><label>Email</label><span class="word-wrap">official.ayushjha@gmail.com</span></li>
+                    <li><label>Phone</label><span>+(91) 8637835583</span></li>
+                    <li><label>Website</label><span class="word-wrap"><a href="https://a-jha383.github.io/">a-jha383.github.io</a></span></li>
+                </ul>
+            </div>
+            <!-- /Profile -->
+            <nav class="menu">
+                <ul class="tabs">
+                    <li class="tmenu"><a href="#profile" class="tab-profile"><i><i class="fa fa-user" aria-hidden="true"></i></i>Profile</a></li>
+                    <li class="tmenu"><a href="#resume"><i><i class="fa fa-wpexplorer" aria-hidden="true"></i></i>Resume</a></li>
+                    <li class="tmenu"><a href="#portfolio"><i><i class="fa fa-eercast" aria-hidden="true"></i></i>Portfolio</a></li>
+                    <li class="tmenu"><a href="#contact"><i><i class="fa fa-telegram" aria-hidden="true"></i></i>Contact</a></li>
+                </ul>
+            </nav>
+            <section id="resume">
+                <div class="timeline-section">
+                    <div class="main-wrapper-resume">
+                        <!-- carttitle-wrapper start -->
+
+                        <div class="carttitle-wrapper">
+                            <div class="color-box">
+                                <button id="red-color" class="btn-style"></button>
+                                <button id="yellow-color" class="btn-style"></button>
+                                <button id="blue-color" class="btn-style"></button>
+                                <button id="green-color" class="btn-style"></button>
+                                <button class="setting-icon "><i class="fa fa-cog fa-spin" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="container no-padding">
+                                <div class="row no-margin">
+                                    <div class="col-md-6 no-padding bg-color-left">
+                                        <div class="left-name bg-color-1">
+                                            <h2>Ayush<span class="text-color">Jha</span></h2>
+                                            <h5>Web & App Developer And Cyberwarrior</h5>
+                                            <p>I am a Computer Science scholar(2nd year Btech) and coding enthusiast striving for new opportunities and knowledge with empirical approach to further endeavours.</p>
+                                        </div>
+                                        <div class="left-address">
+                                            <ul>
+                                                <li><span class="text-color">Phone no</span>+(91) 8637835583</li>
+                                                <li><span class="text-color">address</span>K190 Sukantnagar Kolkata, WB,India</li>
+                                                <li><span class="text-color">EMAIL US</span>official.ayushjha@gmail.com</li>
+                                            </ul>
+                                        </div>
+                                        <div class="ex-heading loader">
+                                            <h2>EXEPIRIENCE</h2>
+                                        </div>
+                                        <div class="ex-box">
+                                            <h2>May 2021 - Present</h2>
+                                            <h4> Web Development Intern</h4>
+                                            <p>Working as an web development intern at SHIVANJALI foundation for a period of 1 month. </p>
+                                        </div>
+                                        <div class="ex-box">
+                                            <h2>May 2021 - June 2021</h2>
+                                            <h4>TCS goIT</h4>
+                                            <p>TCS goIT Student Digital Innovation Program in June 2021. Under which we proposed new innovative idea on which we will work soon. </p>
+                                        </div>
+                                        <div class="ex-box">
+                                            <h2>April 2021 - May 2021</h2>
+                                            <h4>Intern Andriod App developer</h4>
+                                            <p>Worked as an INTERN for android app development under WHAT AFTER COLLEGE for a period of 45 days.</p>
+                                        </div>
+                                        <div class="ex-box">
+                                            <h2>April 2021 - May 2021</h2>
+                                            <h4>Penetration Testing</h4>
+                                            <p>Performed full-fledged pen testing on "bishnupursilksaree.co.in". Provided complete report on website with proper patch details.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 no-padding bg-color-right">
+                                        <div class="top-skills">
+                                            <div class="skill-name">
+                                                <div class="sn">PS</div>
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="skill-name">
+                                                <div class="sn">html</div>
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="skill-name">
+                                                <div class="sn">CSS</div>
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="skill-name">
+                                                <div class="sn">JS</div>
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="right-skills">
+                                            <div class="row no-margin">
+                                                <div class="col-md-12 heading-skills no-padding">
+                                                    <h3>MY skills</h3>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>C</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>C++</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>Java</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>Python</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin mt-25">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>AutoCad</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>web designing</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>Pen Testing</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>Malware Analysis</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-margin mt-25">
+                                                <div class="col-md-12 heading-skills no-padding">
+                                                    <h3>INTERSESTS</h3>
+                                                </div>
+                                                <div class="col-md-4 intetst-box">
+                                                    <div class="intetst-icons">
+                                                        <i class="fa fa-plane" aria-hidden="true"></i>
+                                                        <br><br>
+                                                        <h5>TRAVEL</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 intetst-box">
+                                                    <div class="intetst-icons">
+                                                        <i class="fa fa-headphones" aria-hidden="true"></i>
+                                                        <br><br>
+                                                        <h5>MUSIC</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 intetst-box">
+                                                    <div class="intetst-icons">
+                                                        <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                                                        <br><br>
+                                                        <h5>video</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 intetst-box">
+                                                    <div class="intetst-icons">
+                                                        <i class="fa fa-bicycle" aria-hidden="true"></i>
+                                                        <br><br>
+                                                        <h5>CYCLING</h5>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 intetst-box">
+                                                    <div class="intetst-icons">
+                                                        <i class="fa fa-pied-piper-alt" aria-hidden="true"></i>
+                                                        <br><br>
+                                                        <h5>SPORTS</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="eduction-right">
+                                            <div class="row no-margin">
+                                                <div class="col-md-12 heading-skills no-padding">
+                                                    <h3>EDUCATION</h3>
+                                                    <div class="ex-box">
+                                                        <h2>2019-Present</h2>
+                                                        <h4>B-tech(CSE)</h4>
+                                                        <p>I am currently in my 2nd year of Btech.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 heading-skills no-padding">
+                                                    <div class="ex-box">
+                                                        <h2>2017-18</h2>
+                                                        <h4>Higher Secondary School Certificate</h4>
+                                                        <p>I have completed my 12th with Physics, Chemestry, Math, Biology and English as my core subject. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="address-qr-right">
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <div class="qr-box">
+                                                        <img src="images/qr.png">
+
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="address-right-box">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                                <p>+(91) 8637835583</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                                <p>official.ayushjha@gmail.com</p>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                                <p>K190 Sukantnagar Kolkata, WB,India</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- /Resume -->
+            <section id="portfolio">
+                <ul class="cats-filter" id="portfolio-filter">
+                    <li><a href="" class="current transition" data-filter="*">All</a></li>
+                    <li><a href="" class="transition" data-filter=".webdesign">WebDesign</a></li>
+                    <li><a href="" class="transition" data-filter=".photoghraphy">Python</a></li>
+                    <li><a href="" class="transition" data-filter=".illustration">Android App Development</a></li>
+
+                </ul>
+                <div class="extra-text">Some of my works:</div>
+                <ul id="portfolio-list">
+                    <li class="illustration print">
+                        <a href="images/mar.jpg" class="folio">
+                            <img src="images/1-thumb.jpg" alt="Image Title">
+                            <h2 class="title">Meme Share App</h2>
+                            <span class="categorie">Android App Development</span>
+                        </a>
+
+                    </li>
+                    <li class="webdesign">
+                        <a href="images/4.jpg" class="folio">
+                            <img src="images/3-thumb.jpg" alt="">
+                            <h2 class="title">Portfolio Website</h2>
+
+                            <span class="categorie">Webdesign</span>
+                        </a>
+                    </li>
+                    <li class="photoghraphy">
+                        <a href="images/3.jpg" class="folio">
+                            <img src="images/2-thumb.jpg" alt="">
+                            <h2 class="title">Charity Website backend </h2>
+                            <span class="categorie">Python</span>
+                        </a>
+                    </li>
+
+                    <li class="webdesign print">
+                        <a href="images/0.jpg" class="folio">
+                            <img src="images/6-thumb.jpg" alt="">
+                            <h2 class="title">Drum Kit Website</h2>
+                            <span class="categorie">Webdesign</span>
+                        </a>
+                    </li>
+                    <li class="photoghraphy">
+                        <a href="images/2.jpg" class="folio">
+                            <img src="images/7-thumb.jpg" alt="">
+                            <h2 class="title">JARVIS</h2>
+                            <span class="categorie">Python</span>
+                        </a>
+                    </li>
+                    <li class="illustration">
+                        <a href="images/7.jpg" class="folio">
+                            <img src="images/8-thumb.jpg" alt="">
+                            <h2 class="title">News App</h2>
+                            <span class="categorie">Android app Development</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /Portfolio -->
+            <section id="contact">
+                <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28024.602586524452!2d77.10554486473156!3d28.597517055711215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1cea3e56dd05%3A0xb4616dffb2450129!2sDelhi%20Cantonment%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1574172903660!5m2!1sen!2sin"
+                        width="300" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+                <div class="contact-info">
+                    <h3 class="main-heading"><span>Contact info</span></h3>
+                    <ul>
+                        <li>K190 Sukantnagar Kolkata, WB,India<br /><br /></li>
+                        <li>EMAIL: official.ayushjha@gmail.com</li>
+                        <li>PHOME: 8637835583</li>
+                        <li>WEBSITE: https://a-jha383.github.io/</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3 class="main-heading"><span>Let's keep in touch</span></h3>
+                    <div id="contact-status"></div>
+                    <form id="my-form" action="https://formspree.io/f/mdoyzlyw" method="POST" class="contact-form">
+                        <p>
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" required name="full-name">
+                                <label name="full-name" class="form-control-placeholder" for="name">Your Name</label>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="form-group">
+                                <input type="text" id="email" class="form-control" required name="email">
+                                <label class="form-control-placeholder" for="email">Your Email</label>
+                            </div>
+                        </p>
+                        <p>
+                            <label for="message" name="message">Your Message</label>
+                            <textarea name="message" cols="88" rows="6" class="textarea"></textarea>
+                        </p>
+                        <input type="submit" name="submit" value="Send your message" class="button transition">
+                        <br>
+                        <br>
+                        <br>
+
+                    </form>
+                    <br><br><br>
+                    <p id="my-form-status" style="color:rgb(71, 187, 233);"></p>
+                    <br><br><br><br>
+                </div>
+            </section>
+            <!-- /contact -->
+        </section>
+        <!-- /Content -->
+        <footer>
+            <div class="copyright">Design by &copy; AYUSH JHA</div>
+        </footer>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.1.0/jquery.carouFredSel.packed.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#portfolio").magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+</body>
+
+</html>
