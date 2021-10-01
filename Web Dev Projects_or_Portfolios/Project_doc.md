@@ -31,3 +31,7 @@
  
 - This is a complete front end developer roadmap made using CSS grids with animated tiles and it also have a toggle switch between dark and light mode.
 
+<br>
+<b><h3>News App</h3></b> (by https://github.com/Aniket-508)
+<br>
+- A basic news web app built using News API
