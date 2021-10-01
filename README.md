@@ -6,8 +6,11 @@
 
 ## What to do?
 
-Add any project, piece of code or script of your choice you wish to share in this repository.
+1. Add any project, piece of code or script of your choice you wish to share in this repository.
 **Add your projects under the respective tech stack folder only**
+
+2. **Update project_doc.md file available in each project folder with the description of your project.**
+*Project Heading: <h3> tag*
 
 It can be any of any length and can be any number of scripts, just **add a folder with your projects name.**
 
@@ -20,15 +23,17 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 ## What's next?
 
-After you've added code, just come back to the README and add your name under contributor's list and you're done.
+After you've added code, just come back to the README and add your name under contributor's list and you're done. **If there are some conflicts, just *fetch upstream* to update your remote repo and then raise PR.**
 
 ## Maintainer
 
-[Rohan Sharma](https://www.linkedin.com/in/rohan-sharma-3a6b13203/)
+- [Rohan Sharma](https://www.linkedin.com/in/rohan-sharma-3a6b13203/)
 
 ## Pull Request Reviewers
 
-[Muskan](https://www.linkedin.com/in/muskan-bansal-095601189)
+- [Aflah](https://github.com/aflah02)
+- [Muskan](https://www.linkedin.com/in/muskan-bansal-095601189)
+
 
 ## Contributors
 
@@ -36,9 +41,31 @@ After you've added code, just come back to the README and add your name under co
 [Samarthya Singh]( https://github.com/Samarthya2912 / https://www.linkedin.com/in/samarthya-singh-17a261152/ ) <br>
 [Manasvi Goyal]( https://github.com/ManasviGoyal / https://www.linkedin.com/in/manasvi-goyal-2809/ ) <br>
 [Rishit Toteja]( https://github.com/RishitToteja / https://www.linkedin.com/in/rishit-toteja-727ab9118/ ) <br>
-[Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/) <br>
 
+- [Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/)
+
+- [Rishit Toteja](https://github.com/RishitToteja) 
+
+- [Anirudh Sharma](https://github.com/AnirudhBot)
+
+- [Sidharth Sethi](https://github.com/TechSpiritSS)
+  
+- [Ayush Jha](https://github.com/A-jha383)
 
 - [Anubhav Bagri](https://github.com/anubhavbagri)
+
+- [Aryan Gupta](https://github.com/aryan31200)
+
+- [Prajjwal Datir](https://github.com/PrajjwalDatir)
+  
+- [Nishant Giri](https://github.com/nishant-giri)
+  
+- [Rajib Mondal](https://github.com/mondalraj)
+ 
+- [Arko Sengupta](https://github.com/Arko707)
+  
+- [Prathima Kadari](https://github.com/prathimacode-hub)
+  
+-[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
 ## All the best for **Hacktoberfest** :)
