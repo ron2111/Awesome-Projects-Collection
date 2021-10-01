@@ -36,7 +36,8 @@ After you've added code, just come back to the README and add your name under co
 
 
 ## Contributors
-
+  
+- [Divyansh Bansal](https://github.com/idivyanshbansal) 
 
 - [Akash Srivastava](https://github.com/Akashsri3bi) 
 
