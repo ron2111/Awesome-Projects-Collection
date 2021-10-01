@@ -4,13 +4,24 @@
 
 ## Quality over Quantity :)
 
+## Update:
+
+### To resolve all the merge conflicts:
+1. Do not add your names in the contributor's list, we will do that on our own.
+
+2. **Make sure to add a readme.md file with your project's description inside your project's folder.**
+*From now onwards, no need to add the project description in project_doc.md file, instead so as mentioned above.*
+
+
 ## What to do?
 
 1. Add any project, piece of code or script of your choice you wish to share in this repository.
    **Add your projects under the respective tech stack folder only**
 
-2. **Update project_doc.md file available in each project folder with the description of your project.**
-   _Project Heading: <h3> tag_
+2. <strike>Update project_doc.md file available in each project folder with the description of your project.</strike>
+   
+
+
 
 It can be any of any length and can be any number of scripts, just **add a folder with your projects name.**
 
@@ -23,7 +34,7 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 ## What's next?
 
-After you've added code, just come back to the README and add your name under contributor's list and you're done. **If there are some conflicts, just _fetch upstream_ to update your remote repo and then raise PR.**
+ **If there are some conflicts, just _fetch upstream_ to update your remote repo and then raise PR.**
 
 ## Maintainer
 
