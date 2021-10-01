@@ -3,6 +3,11 @@
 <br>
 <b><h3>Weather App</h3></b>
 <br>
+- This is a single page restaurant website (built with HTML, CSS, JS and Bootstrap)
+
+<br>
+<b><h3>Weather App</h3></b>
+<br>
 - Lets you know the weather of your current location (built with HTML, CSS and vanilla JS)
 
 <br>
