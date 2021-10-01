@@ -27,3 +27,9 @@ Allows you to search for any location's current weather (built using JS, node.js
 
 
 <hr />
+
+## Candy Crush
+
+- The trendy candy crush mobile game recreated for the web using core javascript featues and event listeners. 
+
+- Developed using HTML, CSS and a majority of javascript.
