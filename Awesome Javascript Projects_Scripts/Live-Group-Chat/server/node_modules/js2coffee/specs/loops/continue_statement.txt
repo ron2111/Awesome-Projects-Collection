@@ -1,0 +1,10 @@
+----
+while (condition) {
+  if (x) continue;
+  a();
+}
+----
+while condition
+  if x
+    continue
+  a()

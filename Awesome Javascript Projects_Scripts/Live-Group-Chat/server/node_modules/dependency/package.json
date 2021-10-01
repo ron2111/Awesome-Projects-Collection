@@ -1,0 +1,34 @@
+{
+  "name": "dependency",
+  "version": "0.0.1",
+  "description" : "Resolve and List node module dependencies for given files.",
+  "keywords": ["dependency", "module"],
+  "bugs": {
+    "url": "https://github.com/tomoio/dependency/issues"
+  },
+  "main": "./lib/dependency",
+  "directories": {
+    "lib": "./lib",
+    "doc": "./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomoio/dependency"
+  },
+  "dependencies": {
+    "coffee-script": "",
+    "js2coffee": "",
+    "underscore" : "",
+    "async" : "",
+    "underscore" : ""
+  },
+  "devDependencies": {
+    "mocha": "",
+    "chai": ""
+  },
+  "author": {
+    "name": "Tomo I/O",
+    "email": "711@tomo.io",
+    "url": "http://tomo.io/"
+  }
+}

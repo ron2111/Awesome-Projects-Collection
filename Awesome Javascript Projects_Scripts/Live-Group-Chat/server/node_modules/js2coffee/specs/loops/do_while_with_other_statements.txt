@@ -1,0 +1,18 @@
+----
+function fn() {
+  before();
+  do {
+    b();
+  } while (a);
+  after();
+  return;
+}
+----
+fn = ->
+  before()
+  loop
+    b()
+    unless a
+      break
+  after()
+  return

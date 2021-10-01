@@ -1,0 +1,9 @@
+# this pattern was observed in EventEmitter2.
+----
+var a = x ? y : function () {
+  return a === "b";
+};
+----
+a = if x then y else (->
+  a == 'b'
+)

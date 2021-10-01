@@ -1,0 +1,18 @@
+warnings: [ /global variable/ ]
+----
+for (x=0; !x<2; x++) { alert(1) }
+for (; !x<2; ) { alert(1) }
+for (;;++x) { alert(1) }
+for (;;) { alert(1) }
+----
+x = 0
+while !x < 2
+  alert 1
+  x++
+while !x < 2
+  alert 1
+loop
+  alert 1
+  ++x
+loop
+  alert 1

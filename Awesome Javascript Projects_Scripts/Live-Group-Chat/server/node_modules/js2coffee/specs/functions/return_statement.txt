@@ -1,0 +1,10 @@
+----
+function a () {
+  if (x) return b;
+  return c;
+}
+----
+a = ->
+  if x
+    return b
+  c

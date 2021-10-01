@@ -1,0 +1,13 @@
+----
+function fn() {
+  if (a) b();
+  else c();
+  return;
+}
+----
+fn = ->
+  if a
+    b()
+  else
+    c()
+  return

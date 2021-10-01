@@ -1,0 +1,10 @@
+----
+if (true) {
+  for (a;b;c) { d; }
+}
+----
+if true
+  a
+  while b
+    d
+    c

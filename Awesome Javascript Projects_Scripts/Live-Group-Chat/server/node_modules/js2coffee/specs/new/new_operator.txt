@@ -1,0 +1,4 @@
+----
+var a = new B
+----
+a = new B

@@ -1,0 +1,17 @@
+Usage:
+    $0 FILES [options]
+
+Options:
+        --ast          prints the AST (for debugging)
+    -V, --verbose      prints more AST stuff (used with --ast)
+    -i, --indent N     indent by N spaces (default: 2)
+    -i, --indent tab   indent by tabs
+
+Modes:
+        --compat       compatibility mode *
+                       (implement workarounds to keep full compatibility)
+
+Other options:
+    -h, --help         print usage information
+    -v, --version      show version info and exit
+

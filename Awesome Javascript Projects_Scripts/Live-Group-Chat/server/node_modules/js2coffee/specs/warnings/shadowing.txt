@@ -1,0 +1,10 @@
+warnings: [
+  /Variable shadowing \('add'\)/
+]
+----
+function add () { var add = 2; return }
+----
+add = ->
+  `var add`
+  add = 2
+  return

@@ -1,0 +1,14 @@
+----
+function fn() {
+  /*
+   * hello
+   */
+}
+----
+fn = ->
+
+  ###
+  # hello
+  ###
+
+  return

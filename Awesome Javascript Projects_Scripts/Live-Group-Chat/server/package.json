@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This is the node backend for my GE Chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nishith P Shetty",
+  "license": "ISC",
+  "dependencies": {
+    "dependency": "^0.0.1",
+    "socket.io": "^4.1.3"
+  }
+}

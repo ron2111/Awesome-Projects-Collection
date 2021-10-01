@@ -1,0 +1,10 @@
+----
+function ifNullChecks() {
+  if (x===null) { yep() }
+  return
+}
+----
+ifNullChecks = ->
+  if x == null
+    yep()
+  return

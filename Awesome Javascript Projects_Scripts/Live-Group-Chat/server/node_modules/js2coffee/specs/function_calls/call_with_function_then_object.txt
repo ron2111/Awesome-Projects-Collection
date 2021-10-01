@@ -1,0 +1,10 @@
+----
+box.on('click', function () {
+  return go();
+}, { delay: 500, silent: true })
+----
+box.on 'click', (->
+  go()
+),
+  delay: 500
+  silent: true

@@ -1,0 +1,20 @@
+notes: """
+  CoffeeScript doesn't support adding `when` clauses that are empty, as you
+  probably would in JavaScript. Js2coffee will consolidate empty `case` clauses
+  together to make things more readable.
+"""
+----
+switch (a) {
+  case one:
+  case two:
+    b();
+    break;
+  default:
+    c();
+}
+----
+switch a
+  when one, two
+    b()
+  else
+    c()

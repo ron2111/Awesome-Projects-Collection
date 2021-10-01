@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>{{params['blog_name']}}</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/assets/favicon.ico') }}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="{{ url_for('static', filename='/js/all.js') }}" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="{{ url_for('static', filename='/css/font1.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='/css/font2.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='/css/styles.css') }}" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='/assets/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='/assets/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='/assets/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='/assets/site.webmanifest') }}">
+
+
+
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="/">{{params['blog_name']}}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <em class="fas fa-bars"></em>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='/assets/img/home-bg.jpg') }}')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1>Admin Panel</h1>
+                        <span class="subheading">Manage Your Posts And Change Them</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content-->
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <!-- Post preview-->
+
+
+                <h1>Welcome You Are Logged In</h1>
+                <hr>
+                <div class="d-flex mb-4">
+                    <a class="btn btn-primary text-uppercase rounded-pill" style="margin-right:5px;" href="/dashboard">Dashboard</a>
+                    <a class="btn btn-primary text-uppercase rounded-pill" style="margin-right:10px;" href="/edit/0">Add New Post</a>
+                    <a class="btn btn-primary text-uppercase rounded-pill" style="margin-right:10px;" href="/logout">Logout</a>
+                </div>
+                <hr>
+                <h1>Add/Edit posts</h1>
+                <hr>
+
+
+
+
+
+
+
+                <form name="sentMessage" id="contactForm" action="/edit/{{sno}}" method="POST" novalidate>
+                    <div class="form-floating">
+                        <input class="form-control" id="title" type="text" name="title" placeholder="Enter your Title here..." value="{{post.title}}" required />
+                        <label for="title">Title</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" id="subtitle" type="text" name="subtitle" placeholder="Enter your Tagline here..." value="{{post.subtitle}}" required />
+                        <label for="subtitle">Subtitle</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" id="slug" type="text" name="slug" placeholder="Enter your Slug here..." value="{{post.slug}}" required />
+                        <label for="slug">Slug</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="content" name="content" placeholder="Enter your Content here..." style="height: 12rem" required>{{post.content}}</textarea>
+                        <label for="content">Content</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" id="author" name="author" type="text" placeholder="Enter Author here..." value="{{post.author}}" required />
+                        <label for="author">Author</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" id="img_file" name="img_file" type="text" value="{{post.img_file}}" placeholder="Enter your image file name here..." required />
+                        <label for="imagefilename">Image File Name</label>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Apply</button>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="border-top ">
+        <div class="container px-4 px-lg-5 ">
+            <div class="row gx-4 gx-lg-5 justify-content-center ">
+                <div class="col-md-10 col-lg-8 col-xl-7 ">
+                    <ul class="list-inline text-center ">
+                        <li class="list-inline-item ">
+                            <a href="{{params[ 'twt_url']}} " target="_blank ">
+                                <span class="fa-stack fa-lg ">
+                                    <em class="fas fa-circle fa-stack-2x "></em>
+                                    <em class="fab fa-twitter fa-stack-1x fa-inverse "></em>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="{{params[ 'fb_url']}} " target="_blank ">
+                                <span class="fa-stack fa-lg ">
+                                    <em class="fas fa-circle fa-stack-2x "></em>
+                                    <em class="fab fa-facebook-f fa-stack-1x fa-inverse "></em>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="{{params[ 'git_url']}} " target="_blank ">
+                                <span class="fa-stack fa-lg ">
+                                    <em class="fas fa-circle fa-stack-2x "></em>
+                                    <em class="fab fa-github fa-stack-1x fa-inverse "></em>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic ">Copyright &copy; {{params['blog_name']}} 2021</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="{{ url_for( 'static', filename='/js/bootstrap.bundle.min.js' ) }} "></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for( 'static', filename='/js/scripts.js' ) }} "></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+notes: """
+  CoffeeScript has no `for` loop, so they are converted into `while` loops.
+"""
+----
+for (a;b;c) {
+  d();
+}
+----
+a
+while b
+  d()
+  c

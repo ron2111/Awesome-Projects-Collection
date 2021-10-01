@@ -1,0 +1,128 @@
+<!DOCTYPE html>  <html> <head>   <title>dependency.coffee</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               dependency.coffee             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>                            </td>             <td class="code">               <div class="highlight"><pre><span class="p">[</span><span class="nx">fs</span><span class="p">,</span><span class="nx">path</span><span class="p">,</span> <span class="nx">coffee</span><span class="p">,</span> <span class="nx">js2coffee</span><span class="p">,</span> <span class="nx">util</span><span class="p">,</span> <span class="nx">async</span><span class="p">,</span> <span class="nx">_</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+  <span class="nx">require</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="k">for</span> <span class="nx">v</span> <span class="k">in</span> <span class="p">[</span>
+    <span class="s">&#39;fs&#39;</span><span class="p">,</span> <span class="s">&#39;path&#39;</span><span class="p">,</span> <span class="s">&#39;coffee-script&#39;</span><span class="p">,</span> <span class="s">&#39;js2coffee&#39;</span><span class="p">,</span> <span class="s">&#39;util&#39;</span><span class="p">,</span> <span class="s">&#39;async&#39;</span><span class="p">,</span> <span class="s">&#39;underscore&#39;</span>
+  <span class="p">]</span>
+<span class="p">)</span>
+<span class="nv">module.exports = </span><span class="k">class</span> <span class="nx">Dependency</span>
+
+  <span class="nv">constructor : </span><span class="nf">(@localOnly = false) -&gt;</span>
+    <span class="vi">@dependencies = </span><span class="p">{}</span>
+  <span class="nv">read : </span><span class="nf">(file, cb) -&gt;</span>
+    <span class="nv">files = </span><span class="p">[]</span>
+    <span class="k">if</span> <span class="o">not</span> <span class="nx">util</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span>
+      <span class="nv">file = </span><span class="p">[</span><span class="nx">file</span><span class="p">]</span>
+    <span class="k">for</span> <span class="nx">v</span> <span class="k">in</span> <span class="nx">file</span>
+      <span class="nx">files</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">v</span><span class="p">))</span>
+
+    <span class="nx">@asyncRead</span><span class="p">(</span><span class="nx">files</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span>
+      <span class="nx">cb</span><span class="p">(</span><span class="nx">@dependencies</span><span class="p">)</span>
+    <span class="p">)</span>
+
+  <span class="nv">readFile : </span><span class="nf">(file, cb) -&gt;</span>
+    <span class="nv">extname = </span><span class="nx">path</span><span class="p">.</span><span class="nx">extname</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span>
+    <span class="nv">rfile = </span><span class="nx">file</span>
+    <span class="k">if</span> <span class="nx">extname</span> <span class="o">is</span> <span class="s">&#39;&#39;</span>
+      <span class="nv">rfile = </span><span class="nx">file</span> <span class="o">+</span> <span class="s">&#39;.coffee&#39;</span>
+    <span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="nx">rfile</span><span class="p">,</span> <span class="s">&#39;utf8&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span><span class="o">=&gt;</span>
+      <span class="k">if</span> <span class="o">not</span> <span class="nx">err</span>
+        <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="s">&#39;.coffee&#39;</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span>
+      <span class="k">else</span>
+        <span class="nv">rfile = </span><span class="nx">file</span> <span class="o">+</span> <span class="s">&#39;.js&#39;</span>
+        <span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="nx">rfile</span><span class="p">,</span> <span class="s">&#39;utf8&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span><span class="o">=&gt;</span>
+          <span class="nx">cb</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="s">&#39;.js&#39;</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+  <span class="nv">_read : </span><span class="nf">(file, cb) -&gt;</span>
+    <span class="nx">@readFile</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">extname</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span>
+      <span class="k">if</span> <span class="nx">err</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+        <span class="nx">cb</span><span class="p">()</span>
+      <span class="k">else</span>
+        <span class="nx">@dependencies</span><span class="p">[</span><span class="nx">file</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nv">children: </span><span class="p">[],</span> <span class="nv">extname : </span><span class="nx">extname</span><span class="p">}</span>
+        <span class="nv">jserror = </span><span class="kc">false</span>
+        <span class="nv">files = </span><span class="p">[]</span>
+        <span class="k">if</span> <span class="nx">extname</span> <span class="o">is</span> <span class="s">&#39;.js&#39;</span>
+          <span class="k">try</span>
+            <span class="nv">body = </span><span class="nx">js2coffee</span><span class="p">.</span><span class="nx">build</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span>
+          <span class="k">catch</span> <span class="nx">e</span>
+            <span class="nv">jserror = </span><span class="kc">true</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nx">jserror</span>
+          <span class="nx">cb</span><span class="p">()</span>
+        <span class="k">else</span>
+          <span class="nv">nodes = </span><span class="nx">coffee</span><span class="p">.</span><span class="nx">nodes</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span>
+          <span class="nx">@_parseNode</span><span class="p">(</span><span class="nx">nodes</span><span class="p">,</span> <span class="nx">file</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">files</span><span class="p">)</span>
+          <span class="nv">files = </span><span class="nx">_</span><span class="p">(</span><span class="nx">files</span><span class="p">).</span><span class="nx">uniq</span><span class="p">()</span>
+          <span class="k">if</span> <span class="nx">files</span><span class="p">.</span><span class="nx">length</span> <span class="o">isnt</span> <span class="mi">0</span>
+            <span class="nx">@asyncRead</span><span class="p">(</span><span class="nx">files</span><span class="p">,</span> <span class="nx">cb</span><span class="p">)</span>
+          <span class="k">else</span>
+            <span class="nx">cb</span><span class="p">()</span>
+    <span class="p">)</span>
+
+  <span class="nv">asyncRead: </span><span class="nf">(files, cb) -&gt;</span>
+    <span class="nx">async</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span>
+      <span class="nx">files</span>
+      <span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="o">=&gt;</span>
+        <span class="nx">@_read</span><span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span>
+          <span class="nx">callback</span><span class="p">()</span>
+        <span class="p">)</span>
+      <span class="p">()</span> <span class="o">=&gt;</span>
+        <span class="nx">cb</span><span class="p">()</span>
+    <span class="p">)</span>
+
+  <span class="nv">trim: </span><span class="nf">(str) -&gt;</span>
+    <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^\&#39;/</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\&#39;$/</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^\&quot;/</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\&quot;$/</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+
+  <span class="nv">isRequire: </span><span class="nf">(node, file, parent, gparent, files) -&gt;</span>
+    <span class="k">if</span> <span class="nx">node</span><span class="p">.</span><span class="nx">value</span> <span class="o">is</span> <span class="s">&#39;require&#39;</span>
+      <span class="k">for</span> <span class="nx">v</span> <span class="k">in</span> <span class="nx">gparent</span><span class="p">.</span><span class="nx">args</span>
+        <span class="k">if</span> <span class="nx">v</span><span class="p">.</span><span class="nx">base</span><span class="o">?</span><span class="p">.</span><span class="nx">value</span><span class="o">?</span> <span class="o">and</span> <span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">base</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^&#39;.*&#39;$/</span><span class="p">)</span> <span class="o">isnt</span> <span class="kc">null</span> <span class="o">or</span> <span class="nx">v</span><span class="p">.</span><span class="nx">base</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^&#39;.*&#39;$/</span><span class="p">)</span> <span class="o">isnt</span> <span class="kc">null</span><span class="p">)</span>
+          <span class="nv">moduleName = </span><span class="nx">@trim</span><span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">base</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+          <span class="k">if</span> <span class="nx">moduleName</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/\.{1,2}/</span><span class="p">)</span> <span class="o">isnt</span> <span class="kc">null</span>
+            <span class="nv">fname = </span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">dirname</span><span class="p">(</span><span class="nx">file</span><span class="p">),</span><span class="nx">moduleName</span><span class="p">)</span>
+            <span class="k">if</span> <span class="o">not</span> <span class="nx">@dependencies</span><span class="p">[</span><span class="nx">fname</span><span class="p">]</span><span class="o">?</span>
+              <span class="nx">files</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">fname</span><span class="p">)</span>
+          <span class="k">else</span> <span class="k">if</span> <span class="o">not</span> <span class="nx">@localOnly</span>
+            <span class="nv">fname = </span><span class="nx">moduleName</span>
+          <span class="k">else</span>
+            <span class="nv">fname = </span><span class="kc">false</span>
+          <span class="nx">unless</span> <span class="nx">fname</span> <span class="o">is</span> <span class="kc">false</span>
+            <span class="nx">@dependencies</span><span class="p">[</span><span class="nx">file</span><span class="p">].</span><span class="nx">children</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">fname</span><span class="p">)</span>
+            <span class="nx">@dependencies</span><span class="p">[</span><span class="nx">file</span><span class="p">].</span><span class="nv">children = </span><span class="nx">_</span><span class="p">(</span><span class="nx">@dependencies</span><span class="p">[</span><span class="nx">file</span><span class="p">].</span><span class="nx">children</span><span class="p">).</span><span class="nx">uniq</span><span class="p">()</span>
+  
+  <span class="nv">_parseNode: </span><span class="nf">(node, file, parent, gparent, files) -&gt;</span>
+    <span class="nx">@isRequire</span><span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">file</span><span class="p">,</span> <span class="nx">parent</span><span class="p">,</span> <span class="nx">gparent</span><span class="p">,</span> <span class="nx">files</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nx">util</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span>
+      <span class="k">for</span> <span class="nx">v</span><span class="p">,</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">node</span>
+        <span class="nx">@_parseNode</span><span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="nx">file</span><span class="p">,</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">parent</span><span class="p">,</span> <span class="nx">files</span><span class="p">)</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="k">typeof</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">is</span> <span class="s">&#39;object&#39;</span>
+      <span class="k">for</span> <span class="nx">k</span><span class="p">,</span> <span class="nx">v</span> <span class="k">of</span> <span class="nx">node</span>
+        <span class="k">if</span> <span class="nx">v</span><span class="o">?</span>
+          <span class="nx">@_parseNode</span><span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="nx">file</span><span class="p">,</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">parent</span><span class="p">,</span> <span class="nx">files</span><span class="p">)</span>
+  <span class="nv">addExtname : </span><span class="nf">(file, extname)-&gt;</span>
+    <span class="k">if</span> <span class="nx">path</span><span class="p">.</span><span class="nx">extname</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="o">is</span> <span class="s">&#39;&#39;</span>
+      <span class="k">return</span>  <span class="nx">file</span> <span class="o">+</span> <span class="nx">extname</span>
+    <span class="k">else</span>
+      <span class="k">return</span> <span class="nx">file</span>
+  <span class="nv">listLocalFiles : </span><span class="o">-&gt;</span>
+    <span class="nv">locals = </span><span class="p">[]</span>
+    <span class="k">for</span> <span class="nx">k</span><span class="p">,</span> <span class="nx">v</span> <span class="k">of</span> <span class="nx">@dependencies</span>
+      <span class="k">if</span> <span class="nx">k</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^\//</span><span class="p">)</span> <span class="o">isnt</span> <span class="kc">null</span>
+        <span class="nx">locals</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">@addExtname</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span> <span class="nx">v</span><span class="p">.</span><span class="nx">extname</span><span class="p">))</span>
+      <span class="k">for</span> <span class="nx">v2</span> <span class="k">in</span> <span class="nx">v</span><span class="p">.</span><span class="nx">children</span>
+        <span class="k">if</span> <span class="nx">v2</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^\//</span><span class="p">)</span> <span class="o">isnt</span> <span class="kc">null</span> <span class="o">and</span> <span class="nx">@dependencies</span><span class="p">[</span><span class="nx">v2</span><span class="p">]</span><span class="o">?</span>
+          <span class="nx">locals</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">@addExtname</span><span class="p">(</span><span class="nx">v2</span><span class="p">,</span> <span class="nx">@dependencies</span><span class="p">[</span><span class="nx">v2</span><span class="p">].</span><span class="nx">extname</span><span class="p">))</span>
+    <span class="k">return</span> <span class="nx">_</span><span class="p">(</span><span class="nx">locals</span><span class="p">).</span><span class="nx">uniq</span><span class="p">()</span>
+  <span class="nv">listNodeModules : </span><span class="o">-&gt;</span>
+    <span class="nv">modules = </span><span class="p">[]</span>
+    <span class="k">for</span> <span class="nx">k</span><span class="p">,</span> <span class="nx">v</span> <span class="k">of</span> <span class="nx">@dependencies</span>
+      <span class="k">if</span> <span class="nx">k</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^\//</span><span class="p">)</span> <span class="o">is</span> <span class="kc">null</span>
+        <span class="nx">modules</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">k</span><span class="p">)</span>
+      <span class="k">for</span> <span class="nx">v2</span> <span class="k">in</span> <span class="nx">v</span><span class="p">.</span><span class="nx">children</span>
+        <span class="k">if</span> <span class="nx">v2</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^\//</span><span class="p">)</span> <span class="o">is</span> <span class="kc">null</span>
+          <span class="nx">modules</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">v2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">_</span><span class="p">(</span><span class="nx">modules</span><span class="p">).</span><span class="nx">uniq</span><span class="p">()</span>
+    
+
+</pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 

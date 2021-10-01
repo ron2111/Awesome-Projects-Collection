@@ -1,0 +1,10 @@
+----
+var a = new MyClass('left', function () {
+  go();
+  return;
+})
+----
+a = new MyClass('left', ->
+  go()
+  return
+)

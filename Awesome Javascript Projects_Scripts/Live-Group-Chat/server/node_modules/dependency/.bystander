@@ -1,0 +1,21 @@
+{
+  "ignore": ["**/node_modules", "**/.", "**/assets", "**/test/tmp"],
+  "plugins": ["by-coffeescript", "by-write2js", "by-coffeelint", "by-docco", "by-mocha"],
+  "by": {
+    "coffeescript": {
+      "noCompile": ["**/test/*"]
+    },
+    "write2js": {
+      "bin": true,
+      "mapper": {
+        "**/src/*": ["/src/", "/lib/"]
+      }
+    },
+    "docco": {
+      "doccoSources": ["src/*.coffee"]
+    },
+    "mocha": {
+      "testPaths": ["test/*.coffee"]
+    }
+  }
+}

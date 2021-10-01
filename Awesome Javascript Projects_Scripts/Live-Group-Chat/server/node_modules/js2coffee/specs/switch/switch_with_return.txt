@@ -1,0 +1,18 @@
+----
+function fn () {
+  switch (obj) {
+    case 'one':
+      return a();
+    default:
+      return b();
+  }
+  return
+}
+----
+fn = ->
+  switch obj
+    when 'one'
+      return a()
+    else
+      return b()
+  return

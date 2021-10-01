@@ -1,0 +1,14 @@
+----
+function x() {
+  return y;
+  /*
+   * hello
+   */
+}
+----
+x = ->
+  y
+
+  ###
+  # hello
+  ###

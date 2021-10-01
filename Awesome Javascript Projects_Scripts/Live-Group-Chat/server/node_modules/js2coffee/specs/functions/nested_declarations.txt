@@ -1,0 +1,13 @@
+----
+function a () {
+  function b () {
+    return c;
+  }
+}
+----
+a = ->
+
+  b = ->
+    c
+
+  return

@@ -1,0 +1,7 @@
+----
+function fn () {
+  return;
+}
+----
+fn = ->
+  return

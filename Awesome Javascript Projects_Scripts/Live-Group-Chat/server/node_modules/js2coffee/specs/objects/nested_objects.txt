@@ -1,0 +1,9 @@
+warnings: [ /global variable/ ]
+----
+a = { b: { x: 3, y: 3 }, d: 4 }
+----
+a =
+  b:
+    x: 3
+    y: 3
+  d: 4

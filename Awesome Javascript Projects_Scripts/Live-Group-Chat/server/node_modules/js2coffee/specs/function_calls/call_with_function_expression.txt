@@ -1,0 +1,11 @@
+----
+run(function () {
+  a();
+  b();
+  return;
+});
+----
+run ->
+  a()
+  b()
+  return

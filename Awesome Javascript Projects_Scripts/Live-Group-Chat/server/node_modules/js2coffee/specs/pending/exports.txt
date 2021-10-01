@@ -1,0 +1,8 @@
+# As seen in underscore.js
+----
+if (typeof exports !== 'undefined') {
+  exports = module.exports = {};
+}
+----
+if typeof exports != 'undefined'
+  `exports = module.exports = {}`

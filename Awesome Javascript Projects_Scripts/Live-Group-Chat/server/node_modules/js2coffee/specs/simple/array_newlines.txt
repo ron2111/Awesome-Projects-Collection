@@ -1,0 +1,20 @@
+# Commonly seen in Angular.js.
+----
+controller('name', [
+  'a',
+  'b',
+  function (a, b) {
+    alert('ok');
+    return;
+  },
+  'z'
+]);
+----
+controller 'name', [
+  'a'
+  'b'
+  (a, b) ->
+    alert 'ok'
+    return
+  'z'
+]

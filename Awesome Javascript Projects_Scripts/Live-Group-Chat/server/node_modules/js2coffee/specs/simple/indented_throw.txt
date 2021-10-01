@@ -1,0 +1,5 @@
+----
+if (x) throw e
+----
+if x
+  throw e

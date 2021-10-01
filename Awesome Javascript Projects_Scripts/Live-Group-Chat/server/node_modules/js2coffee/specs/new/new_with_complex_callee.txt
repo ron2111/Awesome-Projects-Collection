@@ -1,0 +1,4 @@
+----
+var a = new (require('foo'))(b)
+----
+a = new (require('foo'))(b)

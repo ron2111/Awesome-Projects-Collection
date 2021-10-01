@@ -1,0 +1,8 @@
+notes: """
+  This is previously broken in js2coffee 0.x since Narcissus didn't handle this
+  case properly.
+"""
+----
+a ? b : c ? d : e
+----
+if a then b else if c then d else e

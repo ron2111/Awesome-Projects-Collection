@@ -1,0 +1,5 @@
+warnings: [ ]
+----
+a ? (b=c) : d
+----
+if a then (b = c) else d

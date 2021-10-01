@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>{{params['blog_name']}}</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/assets/favicon.ico') }}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="{{ url_for('static', filename='/js/all.js') }}" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="{{ url_for('static', filename='/css/font1.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='/css/font2.css') }}" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='/css/styles.css') }}" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='/assets/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='/assets/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='/assets/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='/assets/site.webmanifest') }}">
+
+
+
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="/">{{params['blog_name']}}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <em class="fas fa-bars"></em>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Page Header-->
+    <header class="masthead mb-1" style="background-image: url('{{ url_for('static', filename='/assets/img/home-bg.jpg') }}')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1>Admin Panel</h1>
+                        <span class="subheading">Manage Your Posts And Change Them</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+    <div class="mb-1 alert alert-{{category}} alert-dismissible fade show" role="alert">
+        <strong>Thankyou!</strong> {{message}}.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %} {% endif %} {% endwith %}
+
+
+
+    <!-- Main Content-->
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <!-- Post preview-->
+
+
+                <h1>Welcome You Are Logged In</h1>
+                <hr>
+                <div class="d-flex mb-4">
+                    <a class="btn btn-primary text-uppercase rounded-pill" style="margin-right:10px;" href="/dashboard">Dashboard</a>
+                    <a class="btn btn-primary text-uppercase rounded-pill" style="margin-right:10px;" href="/edit/0">Add New Post</a>
+                    <a class="btn btn-primary text-uppercase rounded-pill" style="margin-right:10px;" href="/logout">Logout</a>
+                </div>
+                <hr>
+                <h1>Upload A File</h1>
+                <div>
+
+
+
+
+
+                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                        <input class="btn btn-primary text-uppercase rounded-pill" type="file" name="file1">
+                        <button class="btn btn-primary text-uppercase rounded-pill" type="submit">Submit</button>
+                    </form>
+
+
+
+
+
+
+                </div>
+                <hr>
+                <h1>Edit Posts</h1>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Sno</th>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {% for post in posts %}
+                        <tr>
+                            <td>{{post.sno}}</td>
+                            <td>{{post.title}}</td>
+                            <td>{{post.date}}</td>
+                            <td><a href="/edit/{{post.sno}}"><button class="btn btn-primary text-uppercase rounded-pill">Edit</button></a></td>
+                            <td><a href="/delete/{{post.sno}}"><button class="btn btn-primary text-uppercase rounded-pill">Delete</button></a></td>
+                        </tr>
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="{{params['twt_url']}}" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <em class="fas fa-circle fa-stack-2x"></em>
+                                    <em class="fab fa-twitter fa-stack-1x fa-inverse"></em>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{{params['fb_url']}}" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <em class="fas fa-circle fa-stack-2x"></em>
+                                    <em class="fab fa-facebook-f fa-stack-1x fa-inverse"></em>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{{params['git_url']}}" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <em class="fas fa-circle fa-stack-2x"></em>
+                                    <em class="fab fa-github fa-stack-1x fa-inverse"></em>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; {{params['blog_name']}} 2021</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="{{ url_for('static', filename='/js/bootstrap.bundle.min.js') }}"></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for('static', filename='/js/scripts.js') }}"></script>
+</body>
+
+</html>

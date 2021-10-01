@@ -1,0 +1,27 @@
+notes: """
+  CoffeeScript doesn't support shadowing of outer variables (see
+  [coffee-script#712]). js2coffee uses a terrible hack to make this work.
+
+  Previously, this is unsupported in js2coffee 0.x.
+
+  [coffee-script#712]: https://github.com/jashkenas/coffee-script/issues/712
+"""
+warnings: [ /Variable shadowing.*not fully supported/ ]
+----
+var val = 2;
+var fn = function () {
+  var val = 1;
+  return;
+}
+fn();
+assert(val === 2);
+----
+val = 2
+
+fn = ->
+  `var val`
+  val = 1
+  return
+
+fn()
+assert val == 2

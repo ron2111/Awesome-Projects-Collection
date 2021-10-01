@@ -1,0 +1,15 @@
+----
+if (x) {
+  /**
+   * documentation here
+   */
+  y();
+}
+----
+if x
+
+  ###*
+  # documentation here
+  ###
+
+  y()

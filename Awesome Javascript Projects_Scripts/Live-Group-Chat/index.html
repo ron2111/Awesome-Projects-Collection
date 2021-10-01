@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+    <link rel="manifest" href="static/site.webmanifest">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="static/js/client.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>GE Chat</title>
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="static/icon.png" alt="">
+        <h1>Welcome to GE Chat App</h1>
+    </nav>
+    <div class="container"></div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" required maxlength="200">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+
+</html>

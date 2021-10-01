@@ -1,0 +1,17 @@
+----
+if (x) {
+  /*
+   * hello
+   * world
+   */
+  y();
+}
+----
+if x
+
+  ###
+  # hello
+  # world
+  ###
+
+  y()

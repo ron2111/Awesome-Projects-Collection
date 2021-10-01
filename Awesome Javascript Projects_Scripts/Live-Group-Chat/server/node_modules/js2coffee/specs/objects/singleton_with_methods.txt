@@ -1,0 +1,14 @@
+warnings: [ /global variable/ ]
+----
+App = {
+  start: function () { go(); return; },
+  stop: function () { halt(); return; }
+}
+----
+App =
+  start: ->
+    go()
+    return
+  stop: ->
+    halt()
+    return

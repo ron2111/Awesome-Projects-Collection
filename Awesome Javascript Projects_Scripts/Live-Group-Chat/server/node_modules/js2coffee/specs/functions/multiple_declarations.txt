@@ -1,0 +1,13 @@
+----
+function one() {
+  return a();
+}
+function two() {
+  return b();
+}
+----
+one = ->
+  a()
+
+two = ->
+  b()

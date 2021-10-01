@@ -1,0 +1,21 @@
+{
+    "params": {
+        "blog_name": "Your Blog Name",
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/clean_blog",
+        "prod_uri": "mysql://username:password@localhost/db_name",
+        "twt_url": "https://twitter.com/MyProfile/",
+        "fb_url": "https://www.facebook.com/MyProfile/",
+        "git_url": "https://github.com/MyProfile/",
+        "mail_server": "smtp.gmail.com",
+        "mail_port": "465",
+        "mail_uname": "your_email@gmail.com",
+        "mail_pwd": "YourPassword",
+        "mail_recipient": "your_email@gmail.com",
+        "about_text": "Hi!, I am XXX, I am Not A Devoloper ",
+        "no_of_posts": 3,
+        "admin_user": "admin",
+        "admin_pwd": "admin",
+        "upload_location": "D:\\Py-api\\static\\assets\\img"
+    }
+}

@@ -1,0 +1,20 @@
+notes: """
+  CoffeeScript doesn't support adding `when` clauses that are empty, as you
+  probably would in JavaScript. When an empty `case` is used just before
+  `default:`, it is effectively useless and is stripped away.
+"""
+----
+switch (a) {
+  case one:
+    b();
+    break;
+  case two:
+  default:
+    c();
+}
+----
+switch a
+  when one
+    b()
+  else
+    c()
