@@ -7,10 +7,10 @@
 ## What to do?
 
 1. Add any project, piece of code or script of your choice you wish to share in this repository.
-**Add your projects under the respective tech stack folder only**
+   **Add your projects under the respective tech stack folder only**
 
 2. **Update project_doc.md file available in each project folder with the description of your project.**
-*Project Heading: <h3> tag*
+   _Project Heading: <h3> tag_
 
 It can be any of any length and can be any number of scripts, just **add a folder with your projects name.**
 
@@ -23,7 +23,7 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 ## What's next?
 
-After you've added code, just come back to the README and add your name under contributor's list and you're done. **If there are some conflicts, just *fetch upstream* to update your remote repo and then raise PR.**
+After you've added code, just come back to the README and add your name under contributor's list and you're done. **If there are some conflicts, just _fetch upstream_ to update your remote repo and then raise PR.**
 
 ## Maintainer
 
@@ -34,33 +34,36 @@ After you've added code, just come back to the README and add your name under co
 - [Aflah](https://github.com/aflah02)
 - [Muskan](https://www.linkedin.com/in/muskan-bansal-095601189)
 
-
 ## Contributors
 
-[Akash Srivastava]( https://github.com/Akashsri3bi  /  https://www.linkedin.com/in/akash-srivastava-b087261a7/ ) <br>
-[Samarthya Singh]( https://github.com/Samarthya2912 / https://www.linkedin.com/in/samarthya-singh-17a261152/ ) <br>
-[Manasvi Goyal]( https://github.com/ManasviGoyal / https://www.linkedin.com/in/manasvi-goyal-2809/ ) <br>
-[Rishit Toteja]( https://github.com/RishitToteja / https://www.linkedin.com/in/rishit-toteja-727ab9118/ ) <br>
+- [Akash Srivastava](https://github.com/Akashsri3bi)
 
-- [Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/)
+- [Samarthya Singh](https://github.com/Samarthya2912)
 
-- [Rishit Toteja](https://github.com/RishitToteja) 
+- [Manasvi Goyal](https://github.com/ManasviGoyal)
+
+- [Rishit Toteja](https://github.com/RishitToteja)
 
 - [Anirudh Sharma](https://github.com/AnirudhBot)
 
 - [Sidharth Sethi](https://github.com/TechSpiritSS)
-  
-- [Ayush Jha](https://github.com/A-jha383)
 
+- [Game Bot](https://github.com/gbot2002)
+
+- [Ayush Jha](https://github.com/A-jha383)
 
 - [Anubhav Bagri](https://github.com/anubhavbagri)
 
 - [Aryan Gupta](https://github.com/aryan31200)
 
+- [Kairav Bansal](https://github.com/karry26)
+
 - [Prajjwal Datir](https://github.com/PrajjwalDatir)
-  
+
 - [Nishant Giri](https://github.com/nishant-giri)
-  
+
+- [Aarshita Acharya](https://github.com/aarshita02)
+
 - [Rajib Mondal](https://github.com/mondalraj)
 
 - [Nandita Manchikanti](https://github.com/nandita-manchikanti)
@@ -71,6 +74,23 @@ After you've added code, just come back to the README and add your name under co
 
 - [Rohan Gupta](https://github.com/Rohan-here)
 
--[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
+- [Mayur Kongutte ](https://github.com/Mayur2506)
+
+- [Kinshuk Kumar](https://github.com/kinshukk100)
+
+- [Agnibha Sarkar](https://github.com/casafurix)
+
+- [Ayushi Shrivastava](https://github.com/ayushi424)
+- [Satyam Tripathi](https://github.com/Iamtripathisatyam)
+
+- [Aniket Pawar](https://github.com/Aniket-508)
+- [Atishi Jain](https://github.com/atishij)
+
+- [Aniket Pawar](https://github.com/ramyamahi)
+- [Keegan Paul Colaco](https://github.com/KeeganC09)
+
+- [Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/)
+
+-[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
 
 ## All the best for **Hacktoberfest** :)
