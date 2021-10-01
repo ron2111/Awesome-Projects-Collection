@@ -5,10 +5,8 @@
 <br>
 - Lets you know the weather of your current location (built with HTML, CSS and vanilla JS)
 
-<<<<<<< HEAD
 ## iNotebook - Your notes everywhere you go!
 **iNotebook is a single page web application based on MERN (Mongodb, Express Js, React Js & Node Js) technologies, which can be used to stores your notes on the cloud so that you can access your notes from everywhere you are. It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.**
-=======
 <br>
 <b><h3>Stock Market Simulator</h3></b>
 <br>
@@ -30,4 +28,3 @@
 - Technologies Used - HTML, CSS and JavaScript ( by https://github.com/mondalraj )
  
 - This is a complete front end developer roadmap made using CSS grids with animated tiles and it also have a toggle switch between dark and light mode.
->>>>>>> 29ddea1a9ea7f0acec1447257dfcf6efe0aaf960
