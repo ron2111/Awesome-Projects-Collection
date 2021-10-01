@@ -60,13 +60,15 @@ After you've added code, just come back to the README and add your name under co
 - [Nishant Giri](https://github.com/nishant-giri)
   
 - [Rajib Mondal](https://github.com/mondalraj)
- 
+
+- [Nandita Manchikanti](https://github.com/nandita-manchikanti)
+
 - [Arko Sengupta](https://github.com/Arko707)
-  
+
 - [Prathima Kadari](https://github.com/prathimacode-hub)
-  
+
 - [Rohan Gupta](https://github.com/Rohan-here)
-  
+
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
 ## All the best for **Hacktoberfest** :)
