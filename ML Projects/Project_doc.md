@@ -40,6 +40,6 @@ The results of the model were as follows:
 3) Precision Score : 0.87
 4) Recall Score : 0.84
 Application: This project can be used for screening/shortlisting resumes in Univerities / Colleges / Companies / Schools.
-<b> <h3> Virtual assistance for you computer using python </h3><br>
+<b> <h3> Virtual assistance for you computer using python </h3></b>
  
 Project based on virtual assistance with AI using python. This can come handy if you want to automate your computer using some of the amazing python libraries. This project uses voice assistance, pyemailer, and much more. Just by saying few words and sentences you can can literally write mail,open browser, open youtube,wikipedia and so much more!!! So take a look at this amazing project and implement it into your computer!
