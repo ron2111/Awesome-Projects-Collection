@@ -2,11 +2,11 @@
 
 **GOAL**
 
-The goal of this project is to analyse and predict purchases in the black friday sales from features as age group, gender, occupation, product category etc.
+The goal of this project is to predict the real estate price using various Machine Learning Algorithms and performing accuracy & error check to find which alorithm works best for this project.
 
 **DATASET**
 
-Dataset can be downloaded from [here](https://www.kaggle.com/sdolezel/black-friday?select=train.csv).
+Dataset can be downloaded from [here]().
 
 **WHAT I HAD DONE**
 - Step 1: Data Preprocessing & Exploration
