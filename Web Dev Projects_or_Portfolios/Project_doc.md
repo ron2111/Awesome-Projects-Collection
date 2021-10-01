@@ -20,6 +20,13 @@
 - Website for e-IPL Auction event. (built with HTML, CSS and JavaScript)
 
 <br>
+<b><h3>Front End Developer Roadmap using CSS Grids</h3></b>
+
+- Technologies Used - HTML, CSS and JavaScript ( by https://github.com/mondalraj )
+ 
+- This is a complete front end developer roadmap made using CSS grids with animated tiles and it also have a toggle switch between dark and light mode.
+
+<br>
 <b><h3>News App</h3></b>
 <br>
 - A basic news web application built using News API
