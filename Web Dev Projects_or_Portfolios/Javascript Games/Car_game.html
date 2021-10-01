@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Game</title>
+    <link rel="stylesheet" href="static/css/car_game.css">
+    <link rel="icon" href="static/images/favicon.png">
+    <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="header-logo">
+            <a href="index.html"><img class="image" img src="static/images/favicon.png"></a>
+         </div>
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">JS Games</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ml-sm-auto mr-xs-auto">
+                <li class="nav-item"><a href="./index.html" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-play fa-lg"></span> Games</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-info fa-lg"></span> About </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="btnStart"> Start Game</div>
+    <div class="dashboard">
+        <span class="speedDash"></span>/MPH |
+        Score :<span class="scoreDash"></span> |
+        <span class="lifeDash"></span>
+    </div>
+    <div id="container"></div>
+
+
+    <script src="static/js/car_game.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+#container{
+    position: relative;
+    height: 600px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(145, 69, 7);
+    overflow: hidden;/******************************/
+    /*left: %;*/
+}
+.dashboard{
+    background-color: black;
+    color:white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px;
+}
+.btnStart{
+    position: absolute;
+    top: 550px;
+    left: 20px;
+    width: 200px;
+    z-index: 200;
+    border: 1px solid red;
+    padding: 1em;
+    border-radius: 25px;
+    background-color: coral;
+    color: aliceblue;
+    text-align: center;
+    /*left: 50%;*/
+}
+.road{
+    position: absolute;
+    height: 60px;
+    width: 250px;
+    top: 0;
+    
+    left: 200px;
+    text-align: center;
+    color: aliceblue;
+    background-color: #444444;
+    border-radius: 5px;
+}
+
+.road:before{
+    content:"||";
+    vertical-align: top;
+    color:white;
+    width: 1px;
+    height: 10px;
+    line-height: 30px;
+    left: 50%;
+    
+    position: absolute;
+}
+
+.baddy{
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-image: url(../images/car_game/car2.png);
+    background-size: cover;
+    z-index: 99;
+    text-align: center;
+}
+.playerCar{
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    bottom: 60px;
+    left: 250px;
+    border-radius: 5px;
+    background-image: url(../images/car_game/car1.png);
+    background-size: cover;
+    z-index: 100;
+}
