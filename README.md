@@ -53,7 +53,12 @@ After you've added code, just come back to the README and add your name under co
 
 - [Aryan Gupta](https://github.com/aryan31200)
 
+
+- [Kairav Bansal](https://github.com/karry26)
+
+
 - [Prajjwal Datir](https://github.com/PrajjwalDatir)
+
 - [Nishant Giri](https://github.com/nishant-giri)
 
 - [Aarshita Acharya]((https://github.com/aarshita02)
@@ -79,5 +84,6 @@ After you've added code, just come back to the README and add your name under co
 - [Aniket Pawar](https://github.com/ramyamahi)
 
 -[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
+
 
 ## All the best for **Hacktoberfest** :)
