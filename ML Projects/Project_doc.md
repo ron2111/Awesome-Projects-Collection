@@ -44,3 +44,8 @@ Application: This project can be used for screening/shortlisting resumes in Univ
 <b><h3>Breast Cancer Prediction using Various Algorithms</h3></b>
 
 This project predicts whether a patient who is suffering from breast cancer is benign or malignant. We have used Logistic Regression, Decision Tree Classifier, Random Forest Classifier and Support Vector Classifier to predict this case. Comparing the accuracy of these 4 models, we can see that Logistic Regression(97.07%) and Support Vector Classifier(95.32%) has highest accuracy. Very feasible and useful application to overcome complications and know the severity of breast cancer.
+
+
+<b><h3>Coronavirus Information Chat Bot</h3></b>
+
+This is a coronavirus information chatbot developed in python. It is interactive and resolves the user's query related to the covid-19 virus and responds back with the most appropriate response respective to the query. The natural language toolkit (NLTK) is used to process and tokenize the text fetched from the World Health Organization's (WHO) official article page using the newspaper library of python. Finally, the response is created by comparing the cosine_similarity of the generated list. 
