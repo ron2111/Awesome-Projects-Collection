@@ -31,8 +31,6 @@
  
 - This is a complete front end developer roadmap made using CSS grids with animated tiles and it also have a toggle switch between dark and light mode.
 
-<br>
-
 <b>Covid Dashboard</b>   (by https://github.com/Mayur2506)
 - Technologies used - HTML,CSS,JAVASCRIPT  
 - it allows us to see available vaccine slots by entering pincode of city and no of covid cases in india
@@ -55,4 +53,7 @@
  
 - Lets you manipulate the text in the way you want and need (copy, clear, capitalise and many more!). Also has dark-mode feature which you can toggle on/off. Built using React JS.
 
-
+<br>
+<b><h3>News App</h3></b> (by https://github.com/Aniket-508)
+<br>
+- A basic news web app built using News API

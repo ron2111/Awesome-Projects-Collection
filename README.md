@@ -82,6 +82,8 @@ After you've added code, just come back to the README and add your name under co
 - [Ayushi Shrivastava](https://github.com/ayushi424)
 
 
+- [Aniket Pawar](https://github.com/Aniket-508)
+
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
 ## All the best for **Hacktoberfest** :)
