@@ -5,10 +5,8 @@
 <br>
 - Lets you know the weather of your current location (built with HTML, CSS and vanilla JS)
 
-<<<<<<< HEAD
 ## iNotebook - Your notes everywhere you go!
 **iNotebook is a single page web application based on MERN (Mongodb, Express Js, React Js & Node Js) technologies, which can be used to stores your notes on the cloud so that you can access your notes from everywhere you are. It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.**
-=======
 <br>
 <b><h3>Stock Market Simulator</h3></b>
 <br>
@@ -18,11 +16,15 @@
 <br>
 - This is a budget manager chrome extension. (built with HTML, CSS, jQuery, JavaScript, JSON)
 
-<br>
+<br> 
 <b><h3>Trickaza - e-IPL Auction</h3></b> (by https://github.com/nishant-giri)
 <br>
 - Website for e-IPL Auction event. (built with HTML, CSS and JavaScript)
 
+<br>
+<b><h3>E-commerce Application</h3></b> (by https://github.com/Rohan-here)
+<br>
+- E-commerce website that lets admin add and delete products and shows records of sales. (built with HTML, CSS , JS, MongoDB , NodeJS, ExpressJS)
 
 <br>
 <b><h3>Front End Developer Roadmap using CSS Grids</h3></b>
@@ -30,4 +32,4 @@
 - Technologies Used - HTML, CSS and JavaScript ( by https://github.com/mondalraj )
  
 - This is a complete front end developer roadmap made using CSS grids with animated tiles and it also have a toggle switch between dark and light mode.
->>>>>>> 29ddea1a9ea7f0acec1447257dfcf6efe0aaf960
+
