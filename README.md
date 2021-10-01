@@ -78,7 +78,8 @@ After you've added code, just come back to the README and add your name under co
 - [Kinshuk Kumar](https://github.com/kinshukk100)
           
 - [Agnibha Sarkar]( https://github.com/casafurix)
-
+  
+- [Prince Roy](https://github.com/iprinceroyy) 
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
