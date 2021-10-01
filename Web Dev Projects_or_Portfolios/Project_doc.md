@@ -19,3 +19,7 @@
 <br>
 - Website for e-IPL Auction event. (built with HTML, CSS and JavaScript)
 
+<br>
+<b><h3>News App</h3></b>
+<br>
+- A basic news web application built using News API
