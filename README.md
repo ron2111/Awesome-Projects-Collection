@@ -47,9 +47,10 @@ After you've added code, just come back to the README and add your name under co
 
 - [Anirudh Sharma](https://github.com/AnirudhBot)
 
-- [Rohan Gupta](https://github.com/Rohan-here)
+- [Sidharth Sethi](https://github.com/TechSpiritSS)
+  
+- [Ayush Jha](https://github.com/A-jha383)
 
-[Ayush Jha]( https://github.com/A-jha383 / https://www.linkedin.com/in/00-ayush-jha/)
 - [Anubhav Bagri](https://github.com/anubhavbagri)
 
 - [Aryan Gupta](https://github.com/aryan31200)
@@ -61,6 +62,10 @@ After you've added code, just come back to the README and add your name under co
 - [Rajib Mondal](https://github.com/mondalraj)
  
 - [Arko Sengupta](https://github.com/Arko707)
+  
+- [Prathima Kadari](https://github.com/prathimacode-hub)
+  
+- [Rohan Gupta](https://github.com/Rohan-here)
   
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
