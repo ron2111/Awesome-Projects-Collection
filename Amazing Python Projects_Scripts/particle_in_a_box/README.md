@@ -6,4 +6,3 @@ giving a particles probability density and wave functions for different values.
 - Numpy
 - MatplotLib
 - Math
-- 
