@@ -44,3 +44,16 @@ Application: This project can be used for screening/shortlisting resumes in Univ
 <b><h3>Breast Cancer Prediction using Various Algorithms</h3></b>
 
 This project predicts whether a patient who is suffering from breast cancer is benign or malignant. We have used Logistic Regression, Decision Tree Classifier, Random Forest Classifier and Support Vector Classifier to predict this case. Comparing the accuracy of these 4 models, we can see that Logistic Regression(97.07%) and Support Vector Classifier(95.32%) has highest accuracy. Very feasible and useful application to overcome complications and know the severity of breast cancer.
+
+<b><h3>Real Estate Price Prediction Project</h3></b>
+
+This project predicts the price of the real estate using various machine leaning algorithms that are:
+-  Linear Regression
+-  Decision Tree Regressor
+-  Random Forest Regressor
+
+Steps followed in this project are as :
+- Step 1: Data Preprocessing & Exploration
+- Step 2: Data Visualization
+- Step 3: Data Training & Model Creation
+- Step 4: Performance Evaluation
