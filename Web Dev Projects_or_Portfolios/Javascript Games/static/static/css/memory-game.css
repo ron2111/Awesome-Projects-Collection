@@ -1,0 +1,60 @@
+*{
+    /*Adding a reset to all items*/
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image:url("../images/memory-game/Gifs/Background.jpg");
+}
+.memory-game{
+    width: 680px;
+    height: 640px;
+    /*this bring the game in center of page*/
+    margin:auto; 
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card{
+    width: calc(25%  - 10px); 
+    /*calc remove the margin area form the width*/
+    height: calc(33.33% - 10px);
+    /*calc remove the margin area form the height*/
+    position: relative;
+    margin: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    /*For the image to comeback to its original shape after it shrinked on clicking*/
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+  }
+
+.memory-card:active{
+    /*Image shrinks to its 80%*/
+    transform: scale(.75);
+    /*Then comes back to its original shape after 2secs of shrinking*/
+    transition: transform.2s;
+}
+
+.front-face,
+.back-face{
+    width: 185px;
+    height: 200px;
+    padding: 27px;
+    position: absolute; /*One image on top of the other*/
+    border-radius: 5px;
+    /*To make the front-face image visible*/
+    backface-visibility: hidden;
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}
