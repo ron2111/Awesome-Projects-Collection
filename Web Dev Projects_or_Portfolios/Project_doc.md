@@ -26,3 +26,9 @@
 - Technologies Used - HTML, CSS and JavaScript ( by https://github.com/mondalraj )
  
 - This is a complete front end developer roadmap made using CSS grids with animated tiles and it also have a toggle switch between dark and light mode.
+
+<br>
+<b><h3>Musical Band </h3></b>
+- Technologies Used - HTML, CSS and JavaScript ( by https://github.com/amitShindeGit )
+
+- How it works -> One can play different music using keys as specified on the main page.
