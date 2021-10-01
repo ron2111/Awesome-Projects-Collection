@@ -33,7 +33,7 @@ After you've added code, just come back to the README and add your name under co
 
 ## Contributors
 
-[Your name here](Your GitHub/Linkedin URL here)
+Prannov Jamadagni (https://github.com/Prannov)
 
 
 ## All the best for **Hacktoberfest** :)
