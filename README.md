@@ -56,7 +56,7 @@ After you've added code, just come back to the README and add your name under co
   
 - [Nishant Giri](https://github.com/nishant-giri)
  
-- [Ashwin Kumar R](https://github.com/Ash515)
+- [Ashwin Kumar Ramaswamy](https://github.com/Ash515)
   
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
