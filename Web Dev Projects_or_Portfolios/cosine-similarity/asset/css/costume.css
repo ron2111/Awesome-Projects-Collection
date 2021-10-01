@@ -1,0 +1,45 @@
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+/* Section */
+section p span,
+section h1 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+section img {
+    width: 100%;
+}
+
+section#error p a {
+    text-decoration: none;
+    color: #DC3545;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #4635dc;
+}
+
+.breadcrumb-item a:hover {
+    color: #2f39c0;
+}
+
+/* Footer */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}

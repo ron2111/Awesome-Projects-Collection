@@ -57,3 +57,8 @@
 <b><h3>News App</h3></b> (by https://github.com/Aniket-508)
 <br>
 - A basic news web app built using News API
+<br><br>
+
+<b><h3>Cosine Similarity</h3></b>
+- Technologies Used - HTML, CSS, JS, Bootstrap 5, PHP (by https://github.com/suryamsj).
+- website to find a match between me and him using cosine similarity.
