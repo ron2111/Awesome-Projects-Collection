@@ -67,6 +67,6 @@ After you've added code, just come back to the README and add your name under co
   
 - [Rohan Gupta](https://github.com/Rohan-here)
   
--[Guru Pravallika Reddy D](https://github.com/Pravalli21) 
+- [Guru Pravallika Reddy D](https://github.com/Pravalli21) 
 
 ## All the best for **Hacktoberfest** :)
