@@ -1,0 +1,168 @@
+* {
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.2rem;
+}
+
+p {
+  margin-left: 6rem;
+}
+ol {
+  margin-left: 6rem;
+}
+main {
+  /* background-image: linear-gradient(to right, #c0c0aa, #1cefff, #c0c0aa); */
+  background-color: #f3f0e8;
+  background-image: linear-gradient(to right, #eeeee4, #96f3fa, #f0f0ea);
+}
+
+#logo {
+  width: 11rem;
+  height: 5rem;
+  margin-left: 3rem;
+}
+#nav {
+  background-color: #404040;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+.navbar a {
+  /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: 0.2rem solid white;
+  font-size: 1.18rem;
+}
+
+.iframe {
+  margin-left: 19rem;
+}
+h1,
+h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#preloader {
+  width: 100%;
+  background: white url("../images/loader.gif") no-repeat center;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  background-size: 40%;
+}
+
+footer {
+  background-color: #37474f;
+  color: whitesmoke;
+  text-align: center;
+  /* bottom:0px;
+  position: fixed;
+  width:100%; */
+}
+
+.arrow_up {
+  border: solid black;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  /* float: right;
+  margin-right: 0.6rem; */
+}
+
+#slots {
+  /* margin-left: calc( 50vw - 175px );
+  margin-top: calc( 50vh - 30px ); */
+  /* margin-left: 42rem;
+  width: 20rem; */
+  text-decoration: none;
+  height: 17px;
+  /* border: none;
+  border-radius: 5px;
+  background: #fff; */
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #666;
+  /* box-shadow: 0 6px 6px #06f; */
+  outline: none;
+  margin-left: 6rem;
+}
+
+#slots:active {
+  animation: gradient 100ms;
+  background: #f88;
+  color: #fff;
+  box-shadow: none;
+}
+@media (max-width: 1024px) {
+  .iframe {
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  iframe {
+    height: 24rem;
+    width: 35rem;
+  }
+  .iframe {
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 697px) {
+  iframe {
+    width: 35rem;
+    height: 18rem;
+  }
+  .iframe {
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 405px) {
+  iframe {
+    width: 25rem;
+    height: 16rem;
+  }
+  .iframe {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  iframe {
+    height: 14rem;
+    margin-left: 8rem;
+  }
+}
