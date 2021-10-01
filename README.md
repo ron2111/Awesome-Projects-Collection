@@ -61,7 +61,7 @@ After you've added code, just come back to the README and add your name under co
   
 - [Nishant Giri](https://github.com/nishant-giri)  
 
-- [Aarshita Acharya]((https://github.com/aarshita02)
+- [Aarshita Acharya](https://github.com/aarshita02)
 
 - [Rajib Mondal](https://github.com/mondalraj)
 
@@ -74,6 +74,8 @@ After you've added code, just come back to the README and add your name under co
 - [Rohan Gupta](https://github.com/Rohan-here)
   
 - [Mayur Kongutte ](https://github.com/Mayur2506) 
+
+- [Harshil Jani](https://github.com/Harshil-Jani)
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 

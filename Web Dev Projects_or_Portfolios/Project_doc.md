@@ -43,4 +43,8 @@
  
 - A static photo site which displays the black and white photos in an aesthetic manner.
 
+<br>
+<b><h3>Web Camera Capture</h3></b>
+<br>
+- Allows you with a feature to capture the image from your WebPage (built with HTML, CSS and vanilla JS)
 
