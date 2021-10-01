@@ -80,6 +80,8 @@ After you've added code, just come back to the README and add your name under co
 - [Agnibha Sarkar]( https://github.com/casafurix)
 
 - [Ayushi Shrivastava](https://github.com/ayushi424)
+  
+- [Satyam Tripathi](https://github.com/Iamtripathisatyam)
 
 
 - [Aniket Pawar](https://github.com/Aniket-508)
