@@ -31,8 +31,6 @@
  
 - This is a complete front end developer roadmap made using CSS grids with animated tiles and it also have a toggle switch between dark and light mode.
 
-<br>
-
 <b>Covid Dashboard</b>   (by https://github.com/Mayur2506)
 - Technologies used - HTML,CSS,JAVASCRIPT  
 - it allows us to see available vaccine slots by entering pincode of city and no of covid cases in india
@@ -43,6 +41,7 @@
  
 - A static photo site which displays the black and white photos in an aesthetic manner.
 
+
 <br>
 <b><h3>Web Camera Capture</h3></b>
 <br>
@@ -50,3 +49,19 @@
 -  Technologies Used - HTML CSS and JS( by https://github.com/Harshil-Jani )
 - Allows you with a feature to capture the image from your personal device on WebPage. 
 
+<b><h3>Age Calculator</h3></b>
+
+- Technologies Used - HTML, CSS and JS( by https://github.com/ayushsoni1010 )
+ 
+- It's a age calculator which counts the age of a person.
+
+<b><h3>TextUtils Web App</h3></b>
+
+- Technologies Used - HTML, CSS, JS, React ( by https://github.com/casafurix )
+ 
+- Lets you manipulate the text in the way you want and need (copy, clear, capitalise and many more!). Also has dark-mode feature which you can toggle on/off. Built using React JS.
+
+<br>
+<b><h3>News App</h3></b> (by https://github.com/Aniket-508)
+<br>
+- A basic news web app built using News API
