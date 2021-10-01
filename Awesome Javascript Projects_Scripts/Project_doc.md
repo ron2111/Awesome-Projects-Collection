@@ -24,6 +24,12 @@ It Scraps Only Course Playlists based on the Search Query. It writes PlaylistId,
 <h3><b>Weather app using JS and its frameworks</b></h3><hr>
 
 Allows you to search for any location's current weather (built using JS, node.js and express)
+<br>
+<br>
+<h3><b>Snake-Game</b></h3><hr>
+
+Just a simple Snake Game Made Using HTML CSS and JS
+
 
 
 <hr />
