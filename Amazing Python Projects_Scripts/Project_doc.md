@@ -3,4 +3,4 @@
 #### Features 
 > BOUNDRY CHECK <br>
 > BODY COLLISION CHECK <br>
-> SCORE CHECK <br>
+> SCORE CHECK For Every Player <br>
