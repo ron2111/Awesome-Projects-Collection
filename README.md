@@ -75,6 +75,8 @@ After you've added code, just come back to the README and add your name under co
   
 - [Mayur Kongutte ](https://github.com/Mayur2506) 
 
+- [Pankaj Biradar](https://github.com/pankaj892)
+
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
 ## All the best for **Hacktoberfest** :)

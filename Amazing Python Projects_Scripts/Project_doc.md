@@ -4,3 +4,5 @@
 - Fidget Spinner using Turtle
 =======
 - Convert live camera video stream into cartoon effect
+
+- Dice Simulator using Python
