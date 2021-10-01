@@ -6,7 +6,7 @@ Small project made using javascript which shows github dp on entering github use
 
 ![Github API Calls With Axios video](https://user-images.githubusercontent.com/56643117/135519622-394625e9-0e97-40e7-95d6-29b8a90bd498.gif)
 
-<hr />
+<hr>
 <h3><b>Basic Calculator</b></h3>
 <hr />
 
@@ -18,3 +18,12 @@ Simple Calculator allowing basic operations on numbers(addition, multiplication,
 Yet Another Wrapper Over Youtube Scrapper
 It Scraps Only Course Playlists based on the Search Query. It writes PlaylistId, PlaylistTitle, PlaylistUrl, PlaylistThumbnail and PlaylistCategory to json file named dataset.json
 ![image](https://user-images.githubusercontent.com/46681482/135529898-08bf305c-dd80-4417-af55-7758198f50a9.png)
+
+<br>
+<br>
+<h3><b>Weather app using JS and its frameworks</b></h3><hr>
+
+Allows you to search for any location's current weather (built using JS, node.js and express)
+
+
+<hr />
