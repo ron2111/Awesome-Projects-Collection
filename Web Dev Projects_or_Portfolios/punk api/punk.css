@@ -1,0 +1,136 @@
+body {
+  font-size: 14px;
+  line-height: 1.462;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.beers {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 18px;
+}
+
+.beers .beer {
+  background: #f9f9f9;
+  padding: 7px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.beers .beer img {
+  width: 20%;
+}
+
+.beers .beer .fa-star {
+  float: right;
+  color: #d6d6d6;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.active-star {
+  color: rgb(0, 0, 0) !important;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 10%;
+  background: rgb(139, 132, 139);
+  text-align: center;
+  padding: 20%;
+  margin-bottom: 18px;
+}
+
+.tab__item {
+  background: rgb(127, 145, 127);
+  cursor: pointer;
+  color: rgb(8, 8, 8);
+  padding: 16%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.active {
+  background: rgb(82, 76, 76);
+  color: #fff;
+}
+
+.pop-up {
+  display: none;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  padding: 3%;
+  width: 55%;
+  top: 100%;
+  z-index: 99;
+}
+
+.fa-window-close-o {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(126, 93, 93);
+  display: none;
+}
+
+.title {
+  color: rgb(156, 9, 9);
+}
+
+.favourites {
+  display: none;
+  background: rgb(22, 11, 11);
+  position: absolute;
+  width: 100%;
+}
+
+.favourites img {
+  width: 20%;
+}
+
+.favourites__title {
+  background: rgb(129, 58, 32);
+  display: inline-block;
+  padding: 5px;
+  color: tan;
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.favourites__item {
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+}
+
+.favourites__close {
+  float: left;
+  cursor: pointer;
+}
+.beer-wrapper {
+  border: 5px solid #565656;
+}
