@@ -46,5 +46,7 @@
 <br>
 <b><h3>Web Camera Capture</h3></b>
 <br>
-- Allows you with a feature to capture the image from your WebPage (built with HTML, CSS and vanilla JS)
+
+-  Technologies Used - HTML CSS and JS( by https://github.com/Harshil-Jani )
+- Allows you with a feature to capture the image from your personal device on WebPage. 
 
