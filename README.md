@@ -47,6 +47,9 @@ After you've added code, just come back to the README and add your name under co
 - [Anirudh Sharma](https://github.com/AnirudhBot)
 
 - [Sidharth Sethi](https://github.com/TechSpiritSS)
+
+- [Game Bot](https://github.com/gbot2002)
+
 - [Ayush Jha](https://github.com/A-jha383)
 
 - [Anubhav Bagri](https://github.com/anubhavbagri)
@@ -74,7 +77,9 @@ After you've added code, just come back to the README and add your name under co
 - [Rohan Gupta](https://github.com/Rohan-here)
 
 - [Mayur Kongutte ](https://github.com/Mayur2506)
+
 - [Kinshuk Kumar](https://github.com/kinshukk100)
+
 - [Agnibha Sarkar](https://github.com/casafurix)
 
 - [Ayushi Shrivastava](https://github.com/ayushi424)
