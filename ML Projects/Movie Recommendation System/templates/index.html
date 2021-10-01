@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		@font-face {
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 800;
+			src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+		}
+
+		body {
+			background-color: #121212;
+			align-items: center;
+			text-align: center;
+		}
+
+		table {
+			border-collapse: collapse;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+
+		h1,
+		th {
+			color: #bb86fc;
+			font-family: 'open sans', arial, sans-serif;
+			text-align: center;
+
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+
+		td {
+			color: #353535;
+			font-family: 'open sans', arial, sans-serif;
+			text-align: justify;
+		}
+
+		td,
+		th {
+			background-color: #fff;
+
+			padding-left: 50px;
+			padding-right: 50px;
+
+		}
+
+		.container-4 {
+			overflow: hidden;
+			width: 300px;
+			vertical-align: middle;
+			white-space: nowrap;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.container-4 input#search {
+			width: 300px;
+			height: 50px;
+			background: #898991;
+			border: none;
+			font-size: 10pt;
+			float: left;
+			color: #fff;
+			padding-left: 15px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+
+		/* clears the 'X' from Chrome */
+		input[type="search"]::-webkit-search-decoration,
+		input[type="search"]::-webkit-search-cancel-button,
+		input[type="search"]::-webkit-search-results-button,
+		input[type="search"]::-webkit-search-results-decoration,
+		input::-webkit-calendar-picker-indicator {
+			display: none;
+		}
+
+		.container-4 input#search::-webkit-input-placeholder {
+			color: #f5f5f5;
+		}
+
+		.container-4 input#search:-moz-placeholder {
+			/* Firefox 18- */
+			color: #f5f5f5;
+		}
+
+		.container-4 input#search::-moz-placeholder {
+			/* Firefox 19+ */
+			color: #f5f5f5;
+		}
+
+		.container-4 input#search:-ms-input-placeholder {
+			color: #f5f5f5;
+		}
+
+		.container-4 button.icon {
+			/* -webkit-border-top-right-radius: 5px;
+			-webkit-border-bottom-right-radius: 5px;
+			-moz-border-radius-topright: 5px;
+			-moz-border-radius-bottomright: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px; */
+
+			border: none;
+			background: #e0e0e0;
+			height: 50px;
+			width: 50px;
+			color: #0f0f0f;
+			/* opacity: 0; */
+			font-size: 10pt;
+
+			-webkit-transition: all .25s ease;
+			-moz-transition: all .25s ease;
+			-ms-transition: all .25s ease;
+			-o-transition: all .25s ease;
+			transition: all .25s ease;
+		}
+
+		.container-4:hover button.icon,
+		.container-4:active button.icon,
+		.container-4:focus button.icon {
+			outline: none;
+			opacity: 1;
+			margin-left: -50px;
+		}
+
+
+
+		.container-4:hover button.icon:hover {
+			background: #bb86fc;
+		}
+
+
+
+		/*the container must be positioned relative:*/
+		.autocomplete {
+			position: relative;
+			display: inline-block;
+		}
+
+		.autocomplete-items {
+			position: absolute;
+			border: 1px solid #d4d4d4;
+			border-bottom: none;
+			border-top: none;
+			z-index: 99;
+			/*position the autocomplete items to be the same width as the container:*/
+			top: 100%;
+			left: 0;
+			right: 0;
+		}
+
+		.autocomplete-items div {
+			padding: 10px;
+			cursor: pointer;
+			background-color: #fff;
+			border-bottom: 1px solid #d4d4d4;
+		}
+
+		/*when hovering an item:*/
+		.autocomplete-items div:hover {
+			background-color: #888888;
+		}
+
+		/*when navigating through the items using the arrow keys:*/
+		.autocomplete-active {
+			/* background-color: rgb(0, 0, 0) !important; */
+			color: #ffffff;
+		}
+
+
+		.box {
+			width: 100%;
+			text-align: center;
+			justify-content: center;
+			margin-bottom: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Movie Recommender</h1>
+	<form method="POST" action="/send_data" class="search-box" onsubmit="return onSubmit()" name="mForm">
+		<div class="box">
+			<div class="container-4">
+				<div class="autocomplete">
+					<input type="search" id="search" placeholder="Search Movie..." name="search" list="moviesList" />
+					<datalist id="moviesList">
+						{% for movie in MOVIES %}
+						<option value="{{movie}}">{{movie}}</option>
+						{% endfor %}
+					</datalist>
+					<button class="icon" type="submit" form="mForm">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	<table>
+		<tr>
+			{% for header in headings %}
+			<th>{{header}}</th>
+			{% endfor %}
+		</tr>
+
+		{% for i in range(movies|length) %}
+		<tr>
+			<td>{{movies[i]}}</td>
+			<td>{{scores[i]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<script>
+		function onSubmit() {
+			// console.log("submitted")
+			var movie = document.mForm.search.value;
+			if (movie.length == 0) {
+				alert("Please Enter a Valid Movie")
+				return false;
+			}
+			if (!is_valid_datalist_value('moviesList', document.getElementById('search').value)) {
+				alert("Please Enter a Valid Movie")
+				return false;
+			}
+			return true;
+		}
+
+		function is_valid_datalist_value(idDataList, inputValue) {
+			var option = document.querySelector("#" + idDataList + " option[value='" + inputValue + "']");
+			if (option != null) {
+				return option.value.length > 0;
+			}
+			return false;
+		}
+	</script>
+</body>
+
+</html>
