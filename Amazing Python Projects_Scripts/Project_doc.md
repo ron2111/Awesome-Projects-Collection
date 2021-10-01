@@ -17,4 +17,4 @@
   ```python
    import qrcode
   ```
-Using the qrcode library, we create a customizable QRcode. We'll need a link for which the QR code is to be generated before generating it in another file. Here, we need to first provide a link for which the QR is to be generated, then provide the script as data, and finally decide on the size and color of the QR, which will be generated in another file.
+  Using the qrcode library, we create a customizable QRcode. We'll need a link for which the QR code is to be generated before generating it in another file. Here, we need to first provide a link for which the QR is to be generated, then provide the script as data, and finally decide on the size and color of the QR, which will be generated in another file.
