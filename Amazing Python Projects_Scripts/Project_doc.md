@@ -1,10 +1,8 @@
 ## Add your Python projects or automated scripts 
 - Enron Dataset Exploratory Analysis
-
+- Weather_Scraping
 - Fidget Spinner using Turtle
-=======
 - Convert live camera video stream into cartoon effect
-
 - Identifies only the red color objects
 
 - Scan and Generate QR Code:

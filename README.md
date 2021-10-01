@@ -79,6 +79,8 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 - [Rajib Mondal](https://github.com/mondalraj)
 
+- [Euhid Aman](https://github.com/euhidaman)
+
 - [Nandita Manchikanti](https://github.com/nandita-manchikanti)
 
 - [Arko Sengupta](https://github.com/Arko707)
