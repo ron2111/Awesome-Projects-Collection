@@ -79,8 +79,9 @@ After you've added code, just come back to the README and add your name under co
 
 - [Agnibha Sarkar]( https://github.com/casafurix)
 
-- [Naman Garg](https://github.com/iamkakashi)
+- [Ayushi Shrivastava](https://github.com/ayushi424)
 
+- [Naman Garg](https://github.com/iamkakashi)
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
