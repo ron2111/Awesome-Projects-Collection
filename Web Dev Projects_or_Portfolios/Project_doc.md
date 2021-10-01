@@ -44,3 +44,10 @@
 - A static photo site which displays the black and white photos in an aesthetic manner.
 
 
+<b><h3>Age Calculator</h3></b>
+
+- Technologies Used - HTML, CSS and JS( by https://github.com/ayushsoni1010 )
+ 
+- It's a age calculator which counts the age of a person.
+
+
