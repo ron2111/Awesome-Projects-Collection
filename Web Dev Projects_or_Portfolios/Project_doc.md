@@ -44,8 +44,9 @@
 - A static photo site which displays the black and white photos in an aesthetic manner.
 
 <br>
-<b>Open Music API<b> (by https://github.com/Khalilmaulana01)
- - Technologies used - NodeJs
- - It allow sharing music and listen together.
+<b><h3>Open Music API</h3><b> (by https://github.com/Khalilmaulana01)
+
+- Technologies used - NodeJs
+- It allow sharing music and listen together.
 
 
