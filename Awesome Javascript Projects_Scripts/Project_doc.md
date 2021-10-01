@@ -18,3 +18,12 @@ Simple Calculator allowing basic operations on numbers(addition, multiplication,
 Yet Another Wrapper Over Youtube Scrapper
 It Scraps Only Course Playlists based on the Search Query. It writes PlaylistId, PlaylistTitle, PlaylistUrl, PlaylistThumbnail and PlaylistCategory to json file named dataset.json
 ![image](https://user-images.githubusercontent.com/46681482/135529898-08bf305c-dd80-4417-af55-7758198f50a9.png)
+
+
+--- 
+
+## Group Chat Web App
+
+- A group chat application made with nodejs, socketio.
+- has sound notification when new message arrives.
+- Light weight, uses less resources.
