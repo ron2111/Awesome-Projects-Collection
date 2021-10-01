@@ -1,4 +1,4 @@
-![JS-games](https://socialify.git.ci/geekymeeky/JS-games/image?description=1&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+![JS-games]
 
 <h2>Introduction🤩</h2>
 
@@ -16,7 +16,7 @@ by letting you enjoy the addictive games, and provides an amazing visualisation.
 
 <h2>Workflow📌</h2>
 
-<p>The JS-games keeps you updated about the computer games and is an interesting way for everyone to showcase their skills in building games. There are various games available in <a href style="color:green">https://geekymeeky.github.io/JS-games/</a>. The most amazing feature is that the games available are very easy to play on just a simple click.
+<p>The JS-games keeps you updated about the computer games and is an interesting way for everyone to showcase their skills in building games. There are various games available in ... The most amazing feature is that the games available are very easy to play on just a simple click.
 You can view different types of games in the webpage and play them as many times you want.</p>
 
 <h2>How it helps the community🌼</h2>
