@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.svg') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Todo App</title>
+    <style>
+        .box {
+            border: 1px solid green ;
+            width: 400px;
+            padding: 50px;
+            margin: 20px;
+        }
+        input[type=text],input[type=datetime-local]{
+            width: 25%;
+            padding: 12px 16px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+            color: black;
+        }
+        h3 , p{
+            font-family: 'Roboto Mono', monospace;
+        }
+
+    </style>
+</head>
+<body style="background-color: #98B4D4;"> 
+    <div id="title" align="center">
+        <h3><u>Todo App</u></h3>
+    </div>
+    <br><br />
+    <div id="form" align="center">
+        <form action="/add" method="post">
+            Add Task: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" name="title" placeholder="Add todo.." required><br><br />
+            Enter Due Date and Time: <input type="datetime-local" name="date"><br><br />
+            <button type="submit" class="btn btn-outline-primary">Add</button>
+        </form>
+        <br><br />
+    {% for x in todos %}
+        <div class="box" align="center">
+            <p><strong>Title: </strong>{{x.title}}</p>
+            <p><strong>Deadline:</strong> {{x.date}}</p>
+            {% if x.status == False %}
+                <p style="color: red;"><strong style="color: black;">Status: </strong>Not Completed</p>
+            {% else %}
+                <p style="color: green;"><strong style="color: black;">Status: </strong>Completed</p>
+            {% endif %}
+                <a href="/delete?id={{x.id}}"><button type="button" class="btn btn-outline-danger">Delete</button></a>
+                <a href="/update?id={{x.id}}"><button type="button" class="btn btn-outline-info">Update</button></a>
+        </div>
+        <br>
+    {% endfor %}
+    </div>
+</body>
+</html>
