@@ -1,0 +1,229 @@
+:root {
+  --background-color: rgb(230, 230, 230);
+  --text-color: #333;
+  --toggle-bar-color: #383838;
+  --tile-color-darkblue: #264653;
+  --tile-color-lightblue: #49bbcc;
+  --tile-color-pink: rgb(255, 157, 173);
+  --tile-color-yellow: #e9c46a;
+  --tile-color-lightorange: #f4a261;
+  --tile-color-darkorange: #e76f51;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: var(--background-color);
+  transition: all 0.5s;
+}
+
+body.active {
+  --background-color: #333;
+}
+
+header {
+  height: 5rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+header > h1 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+header > h1.active {
+  --text-color: #fff;
+}
+
+#toggle {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: var(--toggle-bar-color);
+  box-shadow: inset 10px 10px 21px #212121, inset -10px -10px 21px #919191;
+}
+
+#toggle.active {
+  --toggle-bar-color: #fff;
+  box-shadow: inset 10px 10px 21px #b9b9b9, inset -10px -10px 21px #8f8e8e;
+}
+
+#toggle > .switch {
+  position: absolute;
+  top: 0;
+  /* right: -42px; */
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #dadada;
+  transition: all 0.5s ease;
+  transform: scale(0.9);
+}
+
+#toggle.active .switch {
+  left: 30px;
+  background-color: #383838;
+}
+
+.grid-container {
+  min-height: calc(100vh - 8rem);
+  max-width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-template-areas:
+    "a h h v"
+    "b c d v"
+    "l l e f";
+}
+
+.grid-item {
+  background-color: var(--tile-color-pink);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  background: #ffb8d1;
+  box-shadow: inset 10px 10px 22px #d69bb0, inset -10px -10px 22px #ffd5f2;
+  transition: all 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.grid-item > p {
+  display: none;
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+.grid-item:hover {
+  transform: rotateY(180deg);
+}
+
+.grid-item:hover > h1 {
+  display: none;
+}
+
+.grid-item > h1 + p {
+  position: absolute;
+}
+
+.grid-item:hover > p {
+  transform: rotateY(180deg);
+  display: block;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.grid-item > h1 {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.grid-item > p {
+  color: #212121;
+}
+
+.grid-item-1 {
+  grid-area: a;
+}
+
+.grid-item-2 {
+  grid-area: h;
+  border-radius: 0px;
+  background: #ffc062;
+  box-shadow: inset 10px 10px 22px #d6a152, inset -10px -10px 22px #ffdf72;
+}
+
+.grid-item-3 {
+  grid-area: v;
+  border-radius: 0px;
+  background: #ff8484;
+  box-shadow: inset 10px 10px 22px #d66f6f, inset -10px -10px 22px #ff9999;
+}
+
+.grid-item-4 {
+  grid-area: b;
+  border-radius: 0px;
+  background: #a3d5ff;
+  box-shadow: inset 10px 10px 22px #89b3d6, inset -10px -10px 22px #bdf7ff;
+}
+
+.grid-item-5 {
+  grid-area: c;
+  border-radius: 0px;
+  background: #d79eff;
+  box-shadow: inset 10px 10px 22px #b585d6, inset -10px -10px 22px #f9b7ff;
+}
+
+.grid-item-6 {
+  grid-area: d;
+  border-radius: 0px;
+  background: #a8ffa8;
+  box-shadow: inset 10px 10px 22px #8dd68d, inset -10px -10px 22px #c3ffc3;
+}
+
+.grid-item-7 {
+  grid-area: l;
+  border-radius: 0px;
+  background: #f2ff7e;
+  box-shadow: inset 10px 10px 22px #cbd66a, inset -10px -10px 22px #ffff92;
+}
+
+.grid-item-8 {
+  grid-area: e;
+}
+
+.grid-item-9 {
+  grid-area: f;
+  border-radius: 0px;
+  background: #ffc062;
+  box-shadow: inset 10px 10px 22px #d6a152, inset -10px -10px 22px #ffdf72;
+}
+
+.copyright {
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  left: 5%;
+}
+
+.copyright.active {
+  color: #bbbbbb;
+}
+
+@media all and (max-width: 960px) and (min-width: 580px) {
+
+}
+
+@media all and (max-width: 580px) and (min-width: 240px) {
+  
+}

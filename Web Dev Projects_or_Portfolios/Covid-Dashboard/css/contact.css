@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#logo {
+  width: 11rem;
+  height: 5rem;
+  margin-left: 3rem;
+}
+#nav {
+  background-color: #404040;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+.navbar a {
+  /* display: flex;
+      flex-direction: row;
+      justify-content: space-around; */
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: 0.2rem solid white;
+  font-size: 1.18rem;
+}
+#preloader {
+  width: 100%;
+  background: white url("../images/loader.gif") no-repeat center;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  background-size: 40%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+      to bottom right,
+      rgb(245, 98, 98),
+      rgb(240, 240, 88)
+    )
+    no-repeat;
+}
+
+.contact {
+  position: relative;
+  /* min-height: 100vh; */
+  min-height: 25rem;
+
+  padding: 3.2rem 6.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-size: cover; */
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.9rem;
+}
+
+.contactForm {
+  width: 80%;
+  padding: 3rem;
+  background: rgb(238, 243, 238);
+  border-radius: 5%;
+  margin: auto auto 3rem auto;
+}
+.contactForm h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: maroon;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 0.625rem;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 0.12rem 0;
+  font-size: 0.94rem;
+  margin: 2.5rem 0;
+  border: none;
+  border-bottom: 0.125rem solid;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+
+  padding: 0.1875rem 0;
+  font-size: 0.94rem;
+  margin: 0.625rem 0;
+
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: crimson;
+  font-size: 0.625rem;
+
+  transform: translateY(-5px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 6.25rem;
+  background: honeydew;
+  color: rgb(7, 6, 6);
+  border: none;
+  cursor: pointer;
+
+  padding: 0.625rem;
+  font-size: 1.125rem;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  display: grid;
+}
+
+.links {
+  font-size: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  text-align: center;
+}
+
+.links p {
+  color: rgb(156, 13, 42);
+  font-size: 1.5rem;
+  text-align: center;
+  font-size: small;
+}
+.links a {
+  text-decoration: none;
+  color: rgb(8, 8, 71);
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.links a:hover {
+  color: rgb(160, 167, 182);
+}
+/* footer {
+  background-color: antiquewhite;
+  color: crimson;
+  bottom: 0px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+} */
+footer {
+  background-color: #37474f;
+  color: whitesmoke;
+  bottom: 0px;
+  /* position: fixed; */
+  text-align: center;
+  width: 100%;
+}
+
+.arrow_up {
+  border: solid black;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  /* float: right;
+  margin-right: 0.6rem; */
+}
+
+#send {
+  margin-bottom: 2rem;
+  color: rgb(117, 8, 8);
+}
+#send:hover {
+  color: rgb(230, 139, 139);
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 300px) {
+  .contact h2 {
+    font-size: 1.3rem;
+  }
+  #send {
+    width: 60%;
+  }
+}
