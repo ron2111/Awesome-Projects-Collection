@@ -61,3 +61,10 @@ This project predicts the price of the real estate using various machine leaning
 and Random Forest Regressor. Steps followed in this project are as Step 1: Data Preprocessing & Exploration, Step 2: Data Visualization,
 Step 3: Data Training & Model Creation and Step 4: Performance Evaluation.
 
+<h3>Social Network Ads Project</h3>
+A categorical dataset to determine whether a user purchased a particular product <br />
+It based on Single Layer Perceptron Model<br />
+It predicts where a person will purchase a product or not based on his/her Age and Salary<br />
+There will be two codes - one based on sklearn libraries and other based on basic python class <br />
+Dataset used for this model is also provided
+
