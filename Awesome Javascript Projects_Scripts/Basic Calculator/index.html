@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="calculator-body">
+      <table>
+        <tr>
+          <td colspan="4">
+            <input id="screen" type="text" disabled />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="enterText(this)" id="symadd">+</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="symsub">-</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="symmul">×</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="symdiv">÷</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="enterText(this)" id="num7">7</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="num8">8</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="num9">9</button>
+          </td>
+          <td rowspan="4">
+            <button onclick="enterText(this)" id="symeq">=</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="enterText(this)" id="num4">4</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="num5">5</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="num6">6</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="enterText(this)" id="num1">1</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="num2">2</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="num3">3</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="enterText(this)" id="num0">0</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="symdot">.</button>
+          </td>
+          <td>
+            <button onclick="enterText(this)" id="symclr">C</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
