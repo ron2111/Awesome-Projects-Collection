@@ -1,23 +1,27 @@
-#GUI Calculator
-from tkinter import *
+#GUI based Calculator
+#It performs functions that can be performed between 2 numbers
+#It takes a number and when a operation is clicked, it stores it and starts showing the next element
+#If any other operation or equals is presseds then it computes the result of previous operations but do not show at screen if other operation is pressed.
 
-window = Tk()
-window.title('Calculator')
-window.resizable(0,0)
-z = BooleanVar()           #z ensures the occurence of decimal point only once.
+from tkinter import *               #importing library
+
+window = Tk()                       #Tkinter instance
+window.title('Calculator')          #Title of GUI
+window.resizable(0,0)          
+z = BooleanVar()                    #z ensures the occurence of decimal point only once.
 z.set((True))
-prev_data = ''
-cmd2 = ''
-commands = ['+','-','*','/']  #Available Commands
+prev_data = ''                      #Stores previous operand
+cmd2 = ''                           #Stores the operation to perform
+commands = ['+','-','*','/']        #Available Commands
 
-def number(digit):
-    global prev_data
+def number(digit):                  #Making a string with the numbers pressed
+    global prev_data           
     x = data.get()
     data.delete(0, 'end')
     data.insert(0, x + str(digit))
 
 
-def dec():
+def dec():                          #To insert decimal point
     x = data.get()
     if z.get():
         data.delete(0, 'end')
@@ -25,7 +29,7 @@ def dec():
         z.set(False)
 
 
-def operation(oper):
+def operation(oper):                #To perform operation
     equals()
     global cmd2
     global prev_data
@@ -39,13 +43,13 @@ def operation(oper):
 
 
 
-def clearall():
+def clearall():                     #Clears the screen
     data.delete(0, 'end')
     z.set(False)
     global prev_data
     prev_data = ''
 
-def equals():
+def equals():                       #Displays result at screen
     global prev_data
     global cmd2,commands
     if cmd2 in commands:
@@ -59,7 +63,8 @@ def equals():
     data.insert(0, x)
     cmd2 = ''
 
-data = Entry(window,width = 15,font = ('',24), justify = 'right')
+#Various parts of GUI
+data = Entry(window,width = 15,font = ('',24), justify = 'right')                                      
 plusb = Button(window, text = '+',command = lambda: operation('+'),height = 7,width = 8)
 minusb = Button(window, text = '-',command = lambda: operation('-'),height = 3,width = 8)
 multpyb = Button(window, text = '*',command = lambda: operation('*'),height = 3,width = 8)
@@ -78,7 +83,7 @@ bt8 = Button(window, text = '8',command = lambda: number(8),height = 3,width = 8
 bt9 = Button(window, text = '9',command = lambda: number(9),height = 3,width = 8)
 clearallb = Button(window, text = 'CE',command = clearall,height = 3,width = 18)
 
-
+#Placements of various parts on the GUI window
 data.grid(row = 0, column = 0,columnspan = 4)
 clearallb.grid(row = 1, column = 0,columnspan = 2)
 minusb.grid(row = 1, column = 2)
@@ -97,4 +102,6 @@ bt3.grid(row = 4, column = 2)
 bt0.grid(row = 5, column = 0,columnspan = 2)
 decimal.grid(row = 5, column = 2)
 equalto.grid(row = 5,column = 3)
+
+#To run untill close button is pressed
 window.mainloop()
