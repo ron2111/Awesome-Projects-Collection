@@ -37,6 +37,7 @@ After you've added code, just come back to the README and add your name under co
 
 ## Contributors
 
+
 - [Akash Srivastava](https://github.com/Akashsri3bi) 
 
 - [Samarthya Singh](https://github.com/Samarthya2912) 
@@ -47,7 +48,11 @@ After you've added code, just come back to the README and add your name under co
 
 - [Anirudh Sharma](https://github.com/AnirudhBot)
 
-[Ayush Jha]( https://github.com/A-jha383 / https://www.linkedin.com/in/00-ayush-jha/)
+- [Sidharth Sethi](https://github.com/TechSpiritSS)
+  
+- [Ayush Jha](https://github.com/A-jha383)
+
+
 - [Anubhav Bagri](https://github.com/anubhavbagri)
 
 - [Aryan Gupta](https://github.com/aryan31200)
@@ -59,7 +64,15 @@ After you've added code, just come back to the README and add your name under co
 - [Aarshita Acharya]((https://github.com/aarshita02)
 
 - [Rajib Mondal](https://github.com/mondalraj)
-  
+
+- [Nandita Manchikanti](https://github.com/nandita-manchikanti)
+
+- [Arko Sengupta](https://github.com/Arko707)
+
+- [Prathima Kadari](https://github.com/prathimacode-hub)
+
+- [Rohan Gupta](https://github.com/Rohan-here)
+
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
 ## All the best for **Hacktoberfest** :)
