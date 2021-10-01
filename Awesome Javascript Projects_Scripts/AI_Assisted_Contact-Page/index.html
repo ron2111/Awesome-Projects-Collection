@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Speak Only To Contact</title>
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <div class="container">
+                <a href="#" class="logo">{ CodeWithShubham }</a>
+                <nav>
+                    <ul>
+                        <li><i class="fa fa-phone"></i> +91-9696969696</li>
+                        <li><i class="fa fa-envelope"></i> shubhamjain310@yahoo.in</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="video-outer">
+            <video id="myVideo" src="/assets/video.mp4" loop autoplay muted></video>
+            <div class="form-area-outer">
+                <div class="form-area-inner">
+                    <h2>Get in touch with us</h2>
+                    <form id="myform">
+                        <input type="text" id="username" placeholder="Name">
+                        <input type="email" id="emailadd" placeholder="Email Address">
+                        <input type="tel" id="telnum" placeholder="Contact Number">
+                        <textarea id="mymessage" placeholder="Any Message for me" rows="6"></textarea>
+                        <button type="submit" id="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
