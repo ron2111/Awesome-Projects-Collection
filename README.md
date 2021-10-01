@@ -38,7 +38,7 @@ After you've added code, just come back to the README and add your name under co
 ## Contributors
   
   
- - [Guru Pravallika Reddy D](https://github.com/Pravalli21)
+- [Guru Pravallika Reddy D](https://github.com/Pravalli21)
 
 - [Akash Srivastava](https://github.com/Akashsri3bi) 
 
