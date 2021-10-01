@@ -57,3 +57,9 @@
 <b><h3>News App</h3></b> (by https://github.com/Aniket-508)
 <br>
 - A basic news web app built using News API
+
+<b><h3>Assignment Submission Form</h3></b>
+
+- Technologies Used - HTML, CSS, JS, React, Firebase Firestore, Firebase Storage( by https://github.com/yashgangwar123 )
+ 
+- Its a simple assignment submission form where you can enter al your details and upload your assignment in PDF format. It also has a very cool drag and drop feature where you can simply drag the files to the greyed area to upload it.
