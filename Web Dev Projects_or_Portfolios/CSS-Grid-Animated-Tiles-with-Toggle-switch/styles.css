@@ -26,24 +26,14 @@ body.active {
   --background-color: #333;
 }
 
-header {
-  height: 5rem;
-  max-width: 90vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.5s;
+ nav > h1 {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 400;
 }
-
-header > h1 {
-  color: var(--text-color);
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-
-header > h1.active {
-  --text-color: #fff;
+  
+ nav > h1.active {
+    --text-color: rgb(0, 129, 168);
 }
 
 #toggle {
