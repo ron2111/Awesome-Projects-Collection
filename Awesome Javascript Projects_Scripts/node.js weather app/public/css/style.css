@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+    min-width: 97vw;
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.links {
+    margin-top: -15px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+a {
+    color: lightgray;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.main-content {
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.location {
+    margin: 20px;
+}
+
+.searchResult {
+    margin: 60px;
+    font-size: larger;
+    color: white;
+}
+
+.temp {
+    margin: 20px;
+    font-size: larger;
+    color: white;
+}
+
+.weatherdesc {
+    margin: 20px;
+    font-size: larger;
+    color: white;
+}
+
+h3 {
+    color: lightgray;
+    text-align: center;
+}
+
+.me {
+    width: 150px;
+}
