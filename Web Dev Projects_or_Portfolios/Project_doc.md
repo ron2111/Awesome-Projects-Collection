@@ -57,3 +57,10 @@
 <b><h3>News App</h3></b> (by https://github.com/Aniket-508)
 <br>
 - A basic news web app built using News API
+<br>
+
+<h3>Todo List App </h3>
+
+- It is built based on Flask , SQL-Alchemy , HTML
+- Performs all basic CRUD Operations
+- User can update his works Completed or Not Completed
