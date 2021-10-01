@@ -1,0 +1,17 @@
+{
+  "name": "contact-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "validator": "^13.5.2",
+    "yargs": "^16.2.0"
+  }
+}
