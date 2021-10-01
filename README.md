@@ -82,6 +82,8 @@ After you've added code, just come back to the README and add your name under co
 - [Satyam Tripathi](https://github.com/Iamtripathisatyam)
 
 - [Aniket Pawar](https://github.com/Aniket-508)
+  
+- [Atishi Jain](https://github.com/atishij)
 
 - [Aniket Pawar](https://github.com/ramyamahi)
 
