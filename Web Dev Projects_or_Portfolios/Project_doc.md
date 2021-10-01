@@ -1,5 +1,28 @@
 ## Add your Web Development Projects like Personal Portfolio using HTML/CSS or any other Frontend Dev Tool.
 
+Javascript Games
+
+<h2>Introduction🤩</h2>
+
+<p>Javascript-Games is an exciting web application which keeps you updated of the Javascript based fun games, lightens up your mood 
+by letting you enjoy the addictive games, and provides an amazing visualisation.</p>
+
+<h2>Features✨</h2>
+<ul>
+ <li>User Friendly Interface</li>
+ <li>Efficient and time saving</li>
+ <li>Minimal requirements needed</li>
+ <li>Accessible from anywhere and anytime</li>
+ <li>Eligible for all age groups</li>
+</ul>
+
+<h2>Software Used💻</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+  </ul>
+
 <br>
 <b><h3>Weather App</h3></b>
 <br>
