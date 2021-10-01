@@ -58,3 +58,10 @@ This project predicts whether a patient who is suffering from breast cancer is b
 <b><h3>Coronavirus Information Chat Bot</h3></b>
 
 This is a coronavirus information chatbot developed in python. It is interactive and resolves the user's query related to the covid-19 virus and responds back with the most appropriate response respective to the query. The natural language toolkit (NLTK) is used to process and tokenize the text fetched from the World Health Organization's (WHO) official article page using the newspaper library of python. Finally, the response is created by comparing the cosine_similarity of the generated list. 
+
+<b><h3>Real Estate Price Prediction Project</h3></b>
+
+This project predicts the price of the real estate using various machine leaning algorithms that are Linear Regression, Decision Tree Regressor
+and Random Forest Regressor. Steps followed in this project are as Step 1: Data Preprocessing & Exploration, Step 2: Data Visualization,
+Step 3: Data Training & Model Creation and Step 4: Performance Evaluation.
+

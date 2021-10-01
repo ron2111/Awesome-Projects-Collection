@@ -72,7 +72,7 @@ After you've added code, just come back to the README and add your name under co
 - [Prathima Kadari](https://github.com/prathimacode-hub)
 
 - [Rohan Gupta](https://github.com/Rohan-here)
-  
+
 - [Mayur Kongutte ](https://github.com/Mayur2506)
   
 - [Kinshuk Kumar](https://github.com/kinshukk100)
@@ -80,6 +80,8 @@ After you've added code, just come back to the README and add your name under co
 - [Agnibha Sarkar]( https://github.com/casafurix)
 
 - [Atan Bhardwaj]( https://github.com/atanbhardwaj)
+
+- [Ayushi Shrivastava](https://github.com/ayushi424)
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
