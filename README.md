@@ -38,18 +38,18 @@ After you've added code, just come back to the README and add your name under co
 ## Contributors
 
 
-- [Akash Srivastava](https://github.com/Akashsri3bi) 
+- [Akash Srivastava](https://github.com/Akashsri3bi)
 
-- [Samarthya Singh](https://github.com/Samarthya2912) 
+- [Samarthya Singh](https://github.com/Samarthya2912)
 
-- [Manasvi Goyal](https://github.com/ManasviGoyal) 
+- [Manasvi Goyal](https://github.com/ManasviGoyal)
 
-- [Rishit Toteja](https://github.com/RishitToteja) 
+- [Rishit Toteja](https://github.com/RishitToteja)
 
 - [Anirudh Sharma](https://github.com/AnirudhBot)
 
 - [Sidharth Sethi](https://github.com/TechSpiritSS)
-  
+
 - [Ayush Jha](https://github.com/A-jha383)
 
 
@@ -58,7 +58,7 @@ After you've added code, just come back to the README and add your name under co
 - [Aryan Gupta](https://github.com/aryan31200)
 
 - [Prajjwal Datir](https://github.com/PrajjwalDatir)
-  
+
 - [Nishant Giri](https://github.com/nishant-giri)  
 
 - [Aarshita Acharya]((https://github.com/aarshita02)
@@ -72,12 +72,14 @@ After you've added code, just come back to the README and add your name under co
 - [Prathima Kadari](https://github.com/prathimacode-hub)
 
 - [Rohan Gupta](https://github.com/Rohan-here)
-  
+
 - [Mayur Kongutte ](https://github.com/Mayur2506)
-  
+
 - [Kinshuk Kumar](https://github.com/kinshukk100)
-          
+
 - [Agnibha Sarkar]( https://github.com/casafurix)
+
+- [Naman Garg](https://github.com/iamkakashi)
 
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
