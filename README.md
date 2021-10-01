@@ -47,7 +47,8 @@ After you've added code, just come back to the README and add your name under co
 
 - [Anirudh Sharma](https://github.com/AnirudhBot)
 
-[Ayush Jha]( https://github.com/A-jha383 / https://www.linkedin.com/in/00-ayush-jha/)
+- [Ayush Jha]( https://github.com/A-jha383 / https://www.linkedin.com/in/00-ayush-jha/)
+
 - [Anubhav Bagri](https://github.com/anubhavbagri)
 
 - [Aryan Gupta](https://github.com/aryan31200)
@@ -56,6 +57,8 @@ After you've added code, just come back to the README and add your name under co
   
 - [Nishant Giri](https://github.com/nishant-giri)
   
+- [Aniket Pawar](https://github.com/Aniket-508)
+
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
 ## All the best for **Hacktoberfest** :)
