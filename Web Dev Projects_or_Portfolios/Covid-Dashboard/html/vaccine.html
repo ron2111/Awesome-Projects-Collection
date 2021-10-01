@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Tracker | Vaccine Slots</title>
+    <link rel="shortcut icon" href="../images/coronavirus-covid-19-11582576817stitsadz7y.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/vaccine.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <div id="preloader">
+
+    </div>
+    <header>
+        <nav id="nav">
+            <a href="../index.html" rel="noopener noreferrer"><img
+                    src="../images/CORVID19-Tracker-Preview-removebg-preview.png" alt="COVID TRACKER" id="logo"></a>
+            <div class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="../html/help.html">Help</a>
+
+                <a href="../html/contact.html">Contact Us</a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+           
+        <input type="text" placeholder="Enter Pincode of Your Area" id="pincode">
+        <button id="btn">&#128269;</button>
+    </main>
+
+    <a href="#nav" id="arrow_up"><i class="arrow_up"></i></a>
+
+<div id="response_">
+
+</div>
+
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/vaccine_1.png" class="d-block w-100" alt="Covid-Vaccine">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/vaccine_2.jpg" class="d-block w-100" alt="Covid-Vaccine">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/vaccine_3.jpg" class="d-block w-100" alt="Covid-Vaccine">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <footer>
+        <!-- <div id="37474f"></div> -->
+
+         
+        <p>Developed by:</p>
+
+        <strong>ASCI TEAM 2021 Members</strong>
+        <p>&bull; Mayur Kongutte
+            &bull; Akshay Khoje</p>
+
+    </footer>
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+    <script src="../javascript/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+  AOS.init();
+  AOS.init({
+offset: 300, 
+delay: 50,
+duration: 1000, 
+});
+</script>
+
+</body>
+</html>

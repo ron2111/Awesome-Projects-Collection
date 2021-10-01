@@ -7,11 +7,11 @@
 ## Update:
 
 ### To resolve all the merge conflicts:
-
 1. Do not add your names in the contributor's list, we will do that on our own.
 
 2. **Make sure to add a readme.md file with your project's description inside your project's folder.**
-   _From now onwards, no need to add the project description in project_doc.md file, instead so as mentioned above._
+*From now onwards, no need to add the project description in project_doc.md file, instead so as mentioned above.*
+
 
 ## What to do?
 
@@ -19,6 +19,9 @@
    **Add your projects under the respective tech stack folder only**
 
 2. <strike>Update project_doc.md file available in each project folder with the description of your project.</strike>
+   
+
+
 
 It can be any of any length and can be any number of scripts, just **add a folder with your projects name.**
 
@@ -31,7 +34,7 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 ## What's next?
 
-**If there are some conflicts, just _fetch upstream_ to update your remote repo and then raise PR.**
+ **If there are some conflicts, just _fetch upstream_ to update your remote repo and then raise PR.**
 
 ## Maintainer
 
@@ -64,7 +67,9 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 - [Aryan Gupta](https://github.com/aryan31200)
 
+
 - [Kairav Bansal](https://github.com/karry26)
+
 
 - [Prajjwal Datir](https://github.com/PrajjwalDatir)
 
@@ -73,6 +78,8 @@ It can be any of any length and can be any number of scripts, just **add a folde
 - [Aarshita Acharya](https://github.com/aarshita02)
 
 - [Rajib Mondal](https://github.com/mondalraj)
+
+- [Euhid Aman](https://github.com/euhidaman)
 
 - [Nandita Manchikanti](https://github.com/nandita-manchikanti)
 
@@ -89,16 +96,20 @@ It can be any of any length and can be any number of scripts, just **add a folde
 - [Agnibha Sarkar](https://github.com/casafurix)
 
 - [Ayushi Shrivastava](https://github.com/ayushi424)
+  
 - [Satyam Tripathi](https://github.com/Iamtripathisatyam)
 
 - [Aniket Pawar](https://github.com/Aniket-508)
+  
 - [Atishi Jain](https://github.com/atishij)
 
 - [Aniket Pawar](https://github.com/ramyamahi)
-- [Keegan Paul Colaco](https://github.com/KeeganC09)
+  
+- [Keegan Paul Colaco](https://github.com/KeeganC09)  
 
 - [Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/)
 
 -[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
+
 
 ## All the best for **Hacktoberfest** :)
