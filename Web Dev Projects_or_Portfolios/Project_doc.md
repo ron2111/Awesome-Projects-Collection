@@ -31,6 +31,16 @@
  
 - This is a complete front end developer roadmap made using CSS grids with animated tiles and it also have a toggle switch between dark and light mode.
 
+<b>Covid Dashboard</b>   (by https://github.com/Mayur2506)
+- Technologies used - HTML,CSS,JAVASCRIPT  
+- it allows us to see available vaccine slots by entering pincode of city and no of covid cases in india
+
+<b><h3>Photo Site</h3></b>
+
+- Technologies Used - HTML and CSS( by https://github.com/ManasviGoyal )
+ 
+- A static photo site which displays the black and white photos in an aesthetic manner.
+
 <br>
 <b><h3>News App</h3></b> (by https://github.com/Aniket-508)
 <br>
