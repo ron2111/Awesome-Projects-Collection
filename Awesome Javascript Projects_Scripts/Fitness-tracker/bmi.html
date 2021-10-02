@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="script" href="homepage.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="b">
+  <section id="logon">
+   <img src="http://www.oininteractive.com/wp-content/uploads/2011/01/CA-fitness-logo-PNG.png" style="width: 200px;"class="logo">
+   <mark><h1>FITNESS-TRACKER</h\1></mark> 
+ </section>
+ <div id="navbar">
+   <a  href="homepage.html" ><em><b>Home</a></b></em>
+   <a  href="countdown.html"><em><b>Count down for Exercise</a></b></em>
+   <a  class="active" href=""><em><b>BMI Calculator</a></b></em>
+   <a   href="exercisecalc.html"><em><b>Calorie Calculator</a></b></em>
+   <a   href="exercise.html"><em><b>Yoga Facts</a></b></em>
+ </div>
+ <div class="content">
+   <nav id="side">
+    <ul>
+      <li><a href="#header">HOME</a></li>
+      <li><a href="#maps">ABOUT US</a></li>
+      <li><a href="#join">REGISTER</a></li>
+      <li><a href="bmi.html">BMI Calculator</a></li>
+      <li><a href="countdown.html">CountDown For Exercise</a></li>
+      <li><a href="exercisecalc.html">Calorie Calculator</a></li>
+      <li><a href="exercise.html">Yoga Facts</a></li>
+    </ul>
+  </nav>
+  <img src="https://royalposthumus.com/images/white_menu_icon.png" style="width: 100px;"id="menu">
+
+
+
+
+  <section style="background-color: black;">
+    <section id="header">
+      <div class="container">
+        <h1  class="few" style="color:blue;"><b>BODY MASS INDEX</b></h1>
+
+
+        <p  class="common">BMI can be used to screen for weight categories that may lead to health problems<br>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that is used by the calculator.<br>This is the World Health Organization's (WHO) recommended body weight based on BMI values for adults. It is used for both men and women, age 18 or older.
+
+          <br></p>
+          
+
+          <form id="bmi">
+            <br><br>
+            <h4 style="color: red; font-size: 40px; " align="center">BMI Calculator</h4>
+
+            <input id="weight" type="text" placeholder="Your weight in kilograms" />
+            <br />
+            <br />
+            <input id="height" type="text" placeholder="Your height in meters" />
+            <br />
+            <br />
+            
+            <input class = "submit" type="button"  value="Submit" onclick="bmi()" /><br>
+            <input class="reset" type="reset">
+            <br>
+            <p id="result" style="font-size: 30px;">Here will be your result</p>
+            <p id="concl" align="center" style="font-size: 40px;"></p>
+
+          </form>
+         
+      </div>
+          <img class="img" src="https://i.pinimg.com/originals/91/7f/76/917f76fec193a4781881b7ed4c53cc31.png"/>
+        </div>                   
+      </section>
+      
+      <section id="maps">
+        <div class="header-text">
+          <h1><big><strong> ABOUT US</strong></big></h1>
+          <span class="square"></span>
+          <p><big><i>
+            We are making this Project to Help others to stay fit by knowing their BMI, amount of calories consumed and also how to exercise with countdown timer
+          </p></big></i>
+          <div class="line">
+            <span class="line-1"></span><br>
+            <span class="line-2"></span><br>
+            <span class="line-3"></span><br>
+          </div>
+        </div>
+      </section>
+      <section id="features" style="padding-left: 200px;">
+        <div class="row">
+         <div class="col">
+           <img  src="https://cdn4.iconfinder.com/data/icons/medical-icons-rounded-vector/1250/path_health_calculator-512.png"></img>
+           <h4>BMI Calculator</h4>
+           <q>Calculates Your current BMI </q>
+         </div>
+         <div class="col">
+          <img src="https://cdn0.iconfinder.com/data/icons/ketogenic-diet-glyph/64/ketogenic-diet-calculator-calories-nutrition-512.png"></img>
+          <h4>Nutrition Calculator</h4>
+          <q>calculates the total calories consumed</q>
+        </div>
+        <div class="col">
+          <img src="https://cdn3.iconfinder.com/data/icons/auto-racing/423/Stopwatch_Timer-512.png"></img>
+          <h4>Exercise Timer</h4>
+          <q>Calculates the time while exercising</q>
+        </div>
+        <div class="col">
+          <img src="http://pngimg.com/uploads/fitness/fitness_PNG94.png"></img>
+          <h4>Fitness</h4>
+          <q>This Website supports fitness for every individual</q>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="align">
+     <p style="font-size: larger; color: black;"> @2020 Fitness-Tracker Made by  @Krithikha</p>
+   </div>  
+ </section>
+</div>
+<script>
+  function bmi () {
+    var height = Number(document.getElementById("height").value);
+    var weight = Number(document.getElementById("weight").value);
+    var result = (weight / (height * height)*10000);
+    result=Math.round(result*100)/100;
+    document.getElementById("result").innerHTML = "Your BMI score is : " + result;
+
+    if(result<16)
+      document.getElementById("concl").innerHTML = "You are underweight--severe thinness";
+    else if(result>=16 && result<=17)
+      document.getElementById("concl").innerHTML = "You are underweight--moderate thinness";
+    else if(result>17 && result<=18.5)
+      document.getElementById("concl").innerHTML = "You are underweight--mild thinness";
+    else if(result>18.5 && result <=25)
+      document.getElementById("concl").innerHTML = "You are Normal";
+    else if(result>25 && result <=30)
+      document.getElementById("concl").innerHTML = "You are Overweight";
+    else if(result>30 && result<=35)
+      document.getElementById("concl").innerHTML = "You are Obese Class I";
+    else if (result>35 && result <=40)
+      document.getElementById("concl").innerHTML = "You are Obese Class II";
+    else if(result>40)
+      document.getElementById("concl").innerHTML = "You are Obese Class III";
+    else
+      document.getElementById("concl").innerHTML = "Please enter correct input";
+
+
+
+
+
+
+
+
+
+  }
+  var menu=document.getElementById("menu");
+  var side=document.getElementById("side");
+  side.style.right="-250px";
+  menu.onclick=function(){
+    if(side.style.right=="-250px"){
+      side.style.right="0px"
+    }
+    else{
+      side.style.right="-250px"
+    }
+  }
+  var scroll = new SmoothScroll('a[href*="#"]');
+  window.onscroll = function() {myFunction()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+
+
+</script>
+
+</body>
+</html>
+
