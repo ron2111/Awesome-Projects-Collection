@@ -18,7 +18,7 @@
 1. Add any project, piece of code or script of your choice you wish to share in this repository.
    **Add your projects under the respective tech stack folder only**
 
-2. <strike>Update project_doc.md file available in each project folder with the description of your project.</strike>
+2. Update project_doc.md file available in each project folder with the description of your project.\
    
 
 
