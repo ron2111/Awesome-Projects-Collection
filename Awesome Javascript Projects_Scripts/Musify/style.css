@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+	margin: 0;
+	bottom: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-image: linear-gradient(
+		0deg,
+		rgb(247, 247, 247) 23.8%,
+		rgb(252, 221, 221) 92%
+	);
+	font-family: poppins;
+}
+header{
+	display: flex;
+	justify-content: center;
+	margin: 1rem 0 0 0;
+}
+
+.music-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 90vh;
+}
+.music-info p{
+	text-align: left;
+
+}
+.img-container{
+	margin: 0 0 3rem 0;
+	position: relative;
+}
+.img-container::after{
+	content: '';
+	background-color: #fff;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.img-container img{
+	border-radius: 50%;
+	width: 250px;
+	animation: rotate 3s linear infinite;
+	animation-play-state: paused;
+}
+
+.music-container.play .img-container img{
+	animation-play-state: running;
+}
+
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.navigation{
+	display: flex;
+	justify-content: space-around;
+	width: 400px;
+	margin-top: 1rem;
+}
+.navigation button{
+	border: none;
+	background: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+.navigation button:hover{
+	color: rgb(20, 20, 20);
+}
+.action-btn:focus{
+	outline: 0;
+}
+
+.progress-container{
+	margin-top: 1rem;
+	width: 300px;
+	background: #e1e1e1;
+	height: 5px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.progress{
+	background-color: #fe8daa;
+	height: 100%;
+	width: 0%;
+	border-radius: 20px;
+	transition: width 0.1s linear;
+}
+

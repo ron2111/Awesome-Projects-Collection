@@ -15,12 +15,16 @@ body{
     font-family: "Garamond", serif;
 }
 
-.location, .temperature {
+.location, .temperature, .navbar, .footer {
     height: 30vh;
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.navbar h1{
+   font-size: 50px;
 }
 
 .temperature{
