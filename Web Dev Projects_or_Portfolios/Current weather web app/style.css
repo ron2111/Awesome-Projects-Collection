@@ -15,7 +15,7 @@ body{
     font-family: "Garamond", serif;
 }
 
-.location, .temperature, .navbar {
+.location, .temperature, .navbar, .footer {
     height: 30vh;
     width: 50%;
     display: flex;

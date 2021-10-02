@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(184, 174, 207), rgb(38, 50, 107));
+  font-family: Arial;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  background-image: url(./images/d.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  max-width: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-container ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  opacity: 10%;
+}
+
+.top {
+  text-align: center;
+  z-index: 999;
+}
+
+.top h1 {
+  color: rgb(255, 255, 255);
+  line-height: 2.5;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.top input,
+.top button {
+  display: block;
+  width: 80%;
+  margin: 0 auto 5px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.top input {
+  background-color: rgb(26, 32, 30);
+  border-bottom: solid 2px rgb(44, 44, 42);
+  border-radius: 10px 0 10px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.top input:focus {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.top input::placeholder {
+  color: white;
+}
+
+.top button {
+  background-color: rgb(90, 42, 167);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.top button:hover {
+  background-color: rgb(168, 135, 223);
+}
+
+.top .error {
+  color: white;
+  font-size: 15px;
+}
+
+.icon {
+  text-align: center;
+  padding-top: 16px;
+}
+.place-info {
+  padding-bottom: 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.location .city {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.weather-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+.weather-info {
+  width: 100%;
+  position: relative;
+  padding-top: 15px;
+  color: rgb(253, 253, 253);
+  text-align: justify;
+}
+
+.weather-info > * {
+  padding-bottom: 5px;
+}
+

@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+:root {
+  --white: #fff;
+  --black: #000;
+  --neon: rgb(5, 214, 204);
+  --lightgrey: #959595;
+  --input-color: rgba(230, 230, 230, 0.692);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Balsamiq Sans", cursive;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+header {
+  height: 12vh;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+.container a {
+  font-size: 25px;
+  color: var(--neon);
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: 6px;
+  color: var(--black);
+}
+nav ul li {
+  margin-left: 52px;
+}
+.video-outer video {
+  width: 100%;
+  opacity: 0.8;
+}
+.form-area-outer {
+  background-color: var(--white);
+  position: absolute;
+  top: 160px;
+  right: 100px;
+  width: 30%;
+  height: 60%;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+#myform {
+  display: flex;
+  flex-direction: column;
+}
+.form-area-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0 27px;
+}
+.form-area-inner h2 {
+  margin: 15px;
+  color: var(--neon);
+}
+.form-area-inner p {
+  color: var(--black);
+}
+#myform input,
+textarea {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  outline: none;
+  background: var(--input-color);
+}
+#btn {
+  position: absolute;
+  padding: 10px 28px;
+  bottom: 35px;
+  right: 35px;
+  border: 1px solid var(--neon);
+  background: var(--neon);
+  border-radius: 15px;
+  cursor: pointer;
+  color: var(--white);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 376px) {
+  .form-area-outer {
+    top: 200px;
+    right: 20px;
+    width: 88%;
+    height: 55%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .video-outer video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+}
