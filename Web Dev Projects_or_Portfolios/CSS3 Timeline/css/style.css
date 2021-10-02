@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Arial',sans-serif;
+  background: #e9f0f5;
+}
+
+p{
+  margin: 10px 0;
+}
+
+.container{
+  width: 940px;
+  overflow: auto;
+  margin: auto;
+}
+
+header{
+  background: #5e6482;
+  height: 70px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#timeline{
+  background: url(../img/line.png);
+  background-repeat: repeat-y;
+  background-position: 50% 0;
+  min-height: 700px;
+  margin: 20px 0 20px 0;
+}
+
+.tl-block{
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
+.tl-year{
+  background: url(../img/point-big.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.tl-year div{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding-top: 23px;
+  text-align: center;
+}
+
+.tl-event{
+  background: url(../img/point-small.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  visibility: visible;
+  -webkit-animation: fade;
+  -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes fade{
+  0%{opacity: 0;}
+  100%{opacity: 1}
+}
+
+.tl-event > div{
+  width: 45%;
+  position: relative;
+}
+
+.tl-event div div{
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.event-r{
+  float: right;
+  background: url(../img/arrow-left.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.event-l{
+  float: left;
+  background: url(../img/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.event-r div{
+  margin-left: 20px;
+}
+
+.event-l div{
+  margin-right: 20px;
+}
+
+.tl-event time {
+  background: #c03b44;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer{
+  background: #5e6482;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width:768px){
+  .container{
+    width: 95%;
+  }
+
+  header{
+    height: 50px;
+  }
+
+  h1{
+    font-size: 23px;
+  }
+
+  #timeline{
+    background: url(../img/line.png);
+    background-repeat: repeat-y;
+    background-position: 30px 0;
+  }
+
+  .tl-year{
+    background: url(../img/point-big.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-align: left;
+    margin: 0;
+  }
+
+  .tl-event{
+    background: url(../img/point-small.png);
+    background-repeat: no-repeat;
+    background-position: 16px 0;
+  }
+
+  .tl-event div{
+    width: 85%;
+    position: relative;
+  }
+
+  .event-l{
+    float: right;
+    background: url(../img/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .event-l div{
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+
+}
