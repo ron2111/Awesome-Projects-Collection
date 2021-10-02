@@ -64,3 +64,10 @@
 - Technologies Used - HTML and CSS ( by https://github.com/ramyamahi )
 
 - A simple portfolio website. You can create your porfolio from this project.
+
+<br>
+<b><h3>Pre-Loaders</h3></b> (by https://github.com/sujalgera01)
+<br>
+- An awesome pre-loaders that developers can add at the loading time of website.
+
+- Technologies Used : HTML and CSS 
