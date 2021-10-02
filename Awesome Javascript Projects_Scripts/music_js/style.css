@@ -1,0 +1,105 @@
+
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: grid;
+    place-items: center center;
+}
+
+.music{
+    width: 22rem;
+    height: 35rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 3rem 0.5rem rgba(0,0,0,0.5);
+    padding: 3rem;
+    text-align: center;
+    margin: auto;
+}
+
+.music .image img{
+   height: 15rem;
+   width: 15rem;
+   border-radius: 50%;
+   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.3);
+   object-fit: cover;
+}
+
+#title{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    color: black;
+    margin: 1rem 0 0.3rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+
+#artist{
+color: black;
+text-transform: capitalize;
+letter-spacing: 0.1rem;
+font-size: 2rem;
+margin-bottom: 2rem;
+font-weight: 300;
+
+}
+
+.controls{
+width: 15rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: auto;
+margin-top: 2rem;
+}
+
+.controls #play{
+    border-radius: 50%;
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.controls #prev, .controls #next{
+    padding-right: 15px;
+    cursor: pointer;
+
+}
+
+.controls .fas:hover{
+    color: dimgray;
+}
+
+.controls #play:hover{
+    background-color: #f5f5f5;
+    color: black;
+    box-shadow: 0 1.5rem 3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.animations {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+   from {transform: rotate(0deg);}
+
+   to{transform: rotate(360deg);}
+}
+
+
