@@ -15,6 +15,15 @@ Simple Calculator allowing basic operations on numbers(addition, multiplication,
 ---
 
 ## YT-GetDataSet
+
 Yet Another Wrapper Over Youtube Scrapper
 It Scraps Only Course Playlists based on the Search Query. It writes PlaylistId, PlaylistTitle, PlaylistUrl, PlaylistThumbnail and PlaylistCategory to json file named dataset.json
 ![image](https://user-images.githubusercontent.com/46681482/135529898-08bf305c-dd80-4417-af55-7758198f50a9.png)
+
+<hr />
+<h3><b>Javascript Movie App</b></h3>
+<hr />
+
+Simple Javascript movie application that uses the omdb api and fetch the moive with details like summary, rating with poster.
+
+---
