@@ -2,6 +2,8 @@
 - Enron Dataset Exploratory Analysis
 
 - Fidget Spinner using Turtle
+
+- Dice Stimular using tkinter
 =======
 - Convert live camera video stream into cartoon effect
 
