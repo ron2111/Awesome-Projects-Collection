@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboardid"
+            android:icon="@drawable/ic_ashboard"
+            android:title="@string/dashboard" />
+
+        <item
+            android:id="@+id/profileid"
+            android:icon="@drawable/ic_person"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/aboutAppid"
+            android:icon="@drawable/ic_info"
+            android:title="@string/about_app" />
+    </group>
+
+
+</menu>
