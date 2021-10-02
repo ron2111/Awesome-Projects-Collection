@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+ ul{
+list-style-type: none;
+  
+  overflow: hidden;
+  background-color: rgb(22, 1, 1);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(227, 235, 227);
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+li a:hover {
+  background-color: rgb(218, 21, 21);
+}
+.bgimage {
+            background: url(res.jpg) center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+        }
+
+        .wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: black;
+            transform: translate(-50%, -50%);
+        }
+
+        .wrap h1 {
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .wrap p{
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(254, 254, 255);
+            line-height: 23px;
+        }
+
+        .form {
+            text-align: center;
+        }
+
+        .form .post {
+            display: block;
+            width: 80%;
+            margin: auto;
+            border-radius: 25px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid ridge;
+            text-align: center;
+            font-size: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        .form button {
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            background-color: skyblue;
+            color: rgb(224, 216, 216);
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 18px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            background-color: red;
+            color: rgb(221, 206, 206);
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 18px;
+            cursor: pointer;
+        }
+        .head1{
+            text-align: center;
+        }
+        .product{
+            padding: 10px;
+            width: 80%;
+            margin-top: 20px;
+            display: flex;
+            
+        }
+        .item{
+            width: 33%;
+            margin: 20px;
+        }
+        img{
+           width: 400px;
+           height: 400px;
+        }
+        .image{
+            margin: auto;
+        }
+        .para{
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="bgimage">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#delivery">Delivery Boys</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#orders">Orders</a></li>
+          </ul>
+        <div class="wrap">
+            <h1>Welcome to Zwiggy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit et perferendis animi laboriosam
+                debitis error distinctio eveniet vel? lorem ipsum Culpa laudantium nobis harum neque atque maxime, tenetur vero eius
+                et mollitia impedit ratione, veniam error.</p>
+            <form class="form">
+                <input class="post" type="text" placeholder="Enter your address">
+                <button type="submit">Zwiggy it</button>
+            </form>
+        </div>
+    </section>
+    <h1 class="head1">MENU SECTION</h1>
+    <section class="product">
+        <div class="item">
+            <img class="image" src="pic1.jpg" alt="">
+            <h2 class="head2">American Cheese Toast</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique veritatis quisquam eligendi!
+                Dolores consectetur provident perferendis? Sint, totam numquam.</p>
+        </div>
+        <div class="item">
+            <img class="image" src="pic2.jpg" alt="">
+            <h2 class="head2">Japanese Sushi</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique veritatis quisquam eligendi!
+                Dolores consectetur provident perferendis? Sint, totam numquam.</p>
+        </div>
+         <div class="item">
+        <img class="image" src="pic3.jpg" alt="">
+        <h2 class="head2">Thai Noodles</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique veritatis quisquam eligendi! Dolores
+            consectetur provident perferendis? Sint, totam numquam.</p>
+        </div>
+     </section>
+</body>
+
+</html>
