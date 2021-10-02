@@ -20,3 +20,6 @@
   Using the qrcode library, we create a customizable QRcode. We'll need a link for which the QR code is to be generated before generating it in another file. Here, we need to first provide a link for which the QR is to be generated, then provide the script as data, and finally decide on the size and color of the QR, which will be generated in another file.
 
 - Script to Organise your files to their respective folder grouped according to the file extension.
+
+## Inventory-Management-System
+### Python (Jupyter) and JSON It fetches and updates the data regular on the JSON file to keep track of inventory and sales made
