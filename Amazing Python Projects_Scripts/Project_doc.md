@@ -4,7 +4,7 @@
 - Fidget Spinner using Turtle
 - Convert live camera video stream into cartoon effect
 - Identifies only the red color objects
-- Dice Stimular using tkinter
+- Dice Stimular using tkinter module
 
 - Scan and Generate QR Code:
 
