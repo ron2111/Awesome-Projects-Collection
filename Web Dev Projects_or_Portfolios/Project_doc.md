@@ -82,3 +82,55 @@
 
 - It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.
 <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<b><h3>Blogging</h3></b> (by https://github.com/ItsRoy69)
+<br>
+- Website for Blogging. (built with HTML, CSS and JavaScript)
+

@@ -44,6 +44,7 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 - [Aflah](https://github.com/aflah02)
 - [Muskan](https://www.linkedin.com/in/muskan-bansal-095601189)
+- [Sidharth Sethi](https://github.com/TechSpiritSS)
 
 ## Contributors
 
