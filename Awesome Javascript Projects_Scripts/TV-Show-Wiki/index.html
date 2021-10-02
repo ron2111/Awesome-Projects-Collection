@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "api.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Tv-Show-Wiki</title>
+</head>
+<body>
+        <h1 class= "heading">TV Show Wikipedia</h1>
+        <p><h3 class= "sub">Search your favourite tv shows!</h3></p>
+        <div class = "container">
+        <h5>You can use this website to search about your favourite tv shows!</h5>
+        <p><input id="word" type="text" name="search" placeholder="Search..."/> 
+        <button id="search">Submit</button></p>
+        </div>
+        <div id="output"></div>
+        
+        <footer>
+          <p>Made with &hearts; by Sam.</p>
+        </footer>
+      <script>
+        document.getElementById('search').addEventListener('click',getresult);
+        document.getElementById('word').addEventListener('keyup',function(event){
+          if (event.keyCode === 13) {
+         event.preventDefault();
+         document.getElementById("search").click();
+        }
+        });
+        function getresult(){
+            fetch(" https://task4-api.herokuapp.com/")
+            .then(function(res){
+              return res.json();
+            })
+            .then(function(data){
+                output=""
+                  flag=0;
+                var search=document.getElementById('word').value.toLowerCase();     
+                data.data.tv_shows.forEach(p => {
+                    if(search.localeCompare(p.name.toLowerCase())==0)
+                    {
+                    output+=`
+                          <img src="${p.image_thumbnail_path}">
+                          <ul>
+                          <li>Name: ${p.name}</li>  
+                          <li>Start Date : ${p.start_date}</li>
+                          <li>End Date: ${p.end_date}</li>
+                          <li>Status: ${p.status}</li>
+                          <li>Country: ${p.country}</li>
+                          <li>Network: ${p.network}</li>
+                          </ul>          
+                    `
+                    flag=1;
+                    }
+                });
+                if(flag==0)
+                {
+                    output=`<h1>Couldn't find ${document.getElementById('word').value} in the list!!<h1>`;
+                }
+                document.getElementById('output').innerHTML=output;
+            })
+        }
+        
+      
+      </script>
+</body>    
+</html>
