@@ -1,0 +1,1 @@
+A useful scrolling animation layout, made using HTML/CSS and Vanilla Javascript. The elements show up from the sides when you scroll down.

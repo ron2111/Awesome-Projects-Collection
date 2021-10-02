@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    overflow-x: hidden;
+}
+
+span{
+    background-color: rgb(0, 61, 61);
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 3rem;
+    color: blanchedalmond;
+    border-radius: 20px 20px;
+    box-shadow: 10px 10px 11px rgba(10,20,30,0.4);
+    transform: translateX(500%);
+    transition: transform 1s ease;
+}
+
+span:nth-child(2n){
+    transform: translateX(-500%);
+}
+
+span.active{
+    transform: translateX(80%);
+}
+
+span.active:nth-child(2n){
+    transform: translateX(-80%);
+}
