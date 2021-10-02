@@ -3,6 +3,11 @@ Inspiration taken from frontendmentor.io
 
 #React To-Do Web Appliation
 
+
+<img src="src/to-do-preview.png" alt="preview" />
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
