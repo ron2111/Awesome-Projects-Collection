@@ -106,7 +106,9 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 - [Aniket Pawar](https://github.com/ramyamahi)
   
-- [Keegan Paul Colaco](https://github.com/KeeganC09)  
+- [Keegan Paul Colaco](https://github.com/KeeganC09)
+
+- [Anmol](https://github.com/Anmol1804)
 
 - [Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/)
 
