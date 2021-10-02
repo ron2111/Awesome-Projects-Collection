@@ -4,4 +4,4 @@
 - CSS
 - vanilla Javascript
 
-<img src="img-1.png" style="height:300px; width:400px;">
+<img src="img-1.png" style="height:300px; width:500px;">
