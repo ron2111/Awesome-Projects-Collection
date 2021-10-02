@@ -52,7 +52,6 @@ After you've added code, just come back to the README and add your name under co
   
 - [Ayush Jha](https://github.com/A-jha383)
 
-
 - [Anubhav Bagri](https://github.com/anubhavbagri)
 
 - [Aryan Gupta](https://github.com/aryan31200)
@@ -77,10 +76,9 @@ After you've added code, just come back to the README and add your name under co
   
 - [Kinshuk Kumar](https://github.com/kinshukk100)
           
-- [Agnibha Sarkar]( https://github.com/casafurix)
+- [Agnibha Sarkar](https://github.com/casafurix)
 
 - [Ayushi Shrivastava](https://github.com/ayushi424)
-
 
 - [Aniket Pawar](https://github.com/Aniket-508)
 
