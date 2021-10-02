@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blogs</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach(function($el) {
+            $el.addEventListener('click', function() {
+              var target = $el.dataset.target;
+              var $target = document.getElementById(target);
+              $el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
+
+    <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
+      <div class="container">
+
+        <div class="navbar-brand"> <a class="navbar-item" href="#"> <strong>Blogging Website</strong> </a>
+          <div class="navbar-burger" data-target="navbar-menu"> <span></span> <span></span> <span></span></div>
+        </div>
+
+        <div class="navbar-menu has-background-black" id="navbar-menu">
+
+          <div class="navbar-end">
+            <a class="navbar-item" href="./index.html">HOME</a>
+            <a class="navbar-item" href="./index.html#about">ABOUT</a>
+            <a class="navbar-item" href="#contact">CONTACT</a>
+            <a class="navbar-item is-active" href="./blog.html">BLOG</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="hero is-fullheight" id="blog">
+        <div class="hero-body">
+            <div class="container">
+
+                <nav class="level has-text-centered">
+
+                    <div class="level-left">
+                        <p class="subtitle is-uppercase has-text-weight-medium has-text-black">Lets's Read</p>
+                    </div>
+
+                    <div class="level-right">
+                        <div class="level-item">
+                            <div class="field has-addons has-text-weight-medium has-text-grey" id="search">
+                                <p class="control">
+                                  <input id="search-input" class="input is-shadowless is-uppercase has-text-grey has-text-weight-normal" type="text" placeholder="Search Here">
+                                </p>
+                                <p class="control">
+                                  <button class="button">
+                                    <i class="fas fa-search has-text-grey"></i>
+                                  </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <!--Blog Cards Section-->
+        <div class="columns has-text-centered" id="blog-card">
+            <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
+                <div class="image is-16by9" style="background-image: url(./Pictures/background.jpg);"></div>
+            </div>
+
+                <div class="column has-text-left-desktop has-text-left-tablet">
+                    <h1 class="title is-size-4-touch">Blog 1</h1>
+                    <div class="content has-text-grey"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      <hr class="has-background-grey" style="margin: 0.50rem auto;height: 1px;left: -276px;position: relative;width:20%;">
+                         <span class="has-text-grey">Published on <span class="has-text-weight-semibold">September 5, 2021</span></span>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="columns has-text-centered" id="blog-card">
+            <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
+                <div class="image is-16by9" style="background-image: url(./Pictures/background.jpg);"></div>
+            </div>
+
+                <div class="column has-text-left-desktop has-text-left-tablet">
+                    <h1 class="title is-size-4-touch">Blog 2</h1>
+                    <div class="content has-text-grey"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      <hr class="has-background-grey" style="margin: 0.50rem auto;height: 1px;left: -276px;position: relative;width:20%;">
+                         <span class="has-text-grey">Published on <span class="has-text-weight-semibold">September 5, 2021</span></span>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="columns has-text-centered" id="blog-card">
+            <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
+                <div class="image is-16by9" style="background-image: url(./Pictures/background.jpg);"></div>
+            </div>
+
+                <div class="column has-text-left-desktop has-text-left-tablet">
+                    <h1 class="title is-size-4-touch">Blog 3</h1>
+                    <div class="content has-text-grey"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      <hr class="has-background-grey" style="margin: 0.50rem auto;height: 1px;left: -276px;position: relative;width:20%;">
+                         <span class="has-text-grey">Published on <span class="has-text-weight-semibold">September 5, 2021</span></span>
+                    </div>
+                </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="Contacts fullheight has-text-centered" id="contact">
+      <div class="container">
+        <h1 class="has-text-black is-size-1 is-uppercase has-text-weight-bold" style="text-align: center; margin: auto 0.75rem !important ">Contact Us</h1>
+
+        <div class="column is-full is-size-3">
+          <a href="http://www.facebook.com/xddd" target="_blank" class="has-text-black">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="http://www.twitter.com/xddd" target="_blank" class="has-text-black">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="http://www.instagram.com/xddd" target="_blank" class="has-text-black">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="http://www.linkedin.com/in/xddd" target="_blank" class="has-text-black">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="http://www.github.com/xddd" target="_blank" class="has-text-black">
+            <i class="fab fa-github"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+
+
+  </body>
+</html>

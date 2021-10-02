@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tic tac toe kotlin</string>
+    <string name="player_one">PLAYER ONE</string>
+    <string name="player_one_0">PLAYER ONE : 0</string>
+    <string name="player_two">PLAYER TWO</string>
+    <string name="player_two_0">PLAYER TWO: 0</string>
+
+</resources>

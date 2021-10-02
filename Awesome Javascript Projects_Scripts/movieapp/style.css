@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(245, 229, 241);
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px  5px 5px 5px grey;
+}
+.container h1{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #000;
+    color: rgb(29, 167, 231);
+}
+.myForm{
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+.myForm input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+#title{
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #000;
+}
+#title:valid{
+    background:rgb(245, 229, 241);
+}
+img{
+    height: 200px;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px grey;
+}
+span{
+    text-decoration: underline;
+}
+input[type=submit]{
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #000;
+    background: none;
+    outline: none;
+}
+input[type=submit]:hover{
+    background: linear-gradient(rgb(238, 163, 175),rgb(229, 154, 248));
+}
+#demo{
+    display: grid;
+    margin-top: 30px;
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+}
+.plot{
+    grid-column: 1/3;
+    margin: 10px;
+}
+.description{
+    text-align: left;
+}
+.image{
+    margin-left: 30px;
+}
+.image h3{
+   margin-left: 25px;
+   font-weight: normal;
+    color: rgb(29, 167, 231);
+}
+
