@@ -57,9 +57,3 @@
 <b><h3>News App</h3></b> (by https://github.com/Aniket-508)
 <br>
 - A basic news web app built using News API
-
-<br>
-<b><h3>Teknoday Web App</h3></b>
-- Technologies Used - HTML, CSS, JS, Bootstrap 5 (by https://github.com/suryamsj).
-- Teknoday is an event that showcases products, services, food, etc.
-<br>
