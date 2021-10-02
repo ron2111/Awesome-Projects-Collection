@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	top: 0;
+	left: 0;
+	background-color: #222f3e;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.line {
+	position: relative;
+	height: 2px;
+	width: 600px;
+	margin: auto;
+	margin-top: 300px;
+	border: 2px solid whitesmoke;
+}
+
+.box {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border: 1px solid whitesmoke;
+	top: -35px;
+	left: 0px;
+	border-radius: 15%;
+	background-color: #fff;
+	animation: roll 3s linear infinite;
+}
+
+p {
+	position: absolute;
+	top: -30px;
+	right: -87px;
+	font-size: 25px;
+	color: #222f3e;
+	font-weight: bold;
+
+
+}
+
+@keyframes roll {
+	0%{
+		left: 0;
+	}
+
+	50%{
+		left: 100%;
+		transition-delay: 2s;
+		transform: rotate(360deg);
+		width: 100px;
+		height: 100px;
+	}
+
+	75%{
+		left: 100%;
+		width: 100px;
+		height: 100px;
+	}
+
+	100%{
+		left: 0;
+		transform: rotate(-360deg);
+
+	}
+
+}
+
