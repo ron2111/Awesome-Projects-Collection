@@ -1,6 +1,6 @@
 # RAINFALL PATTERN PREDICTION PROJECT
 
-Machine Learning code to predict the rainfall pattern in India based on previous databases.
+Predicting Rainfall pattern in India using various ML models.
 
 ## DATASET (From Kaggle)
 
