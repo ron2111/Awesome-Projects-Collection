@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #730099;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+body.dark{
+    background-color: #4f205e;
+}
+body.dark .buttons{
+    background-color: #292c35;
+    color: #fff;
+}
+body.dark .togggle{
+    background-color: #292c35;
+}
+body.dark .result{
+    background-color: #fff;
+    color: #292c35;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 30rem;
+    background-color: #fff; 
+}
+.togggle{
+    flex: .5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.togggle label{
+    cursor: pointer;
+    background-color: #111;
+    height: 25px;
+    width: 50px;
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    position: relative;
+}
+.togggle label .fa-moon{
+    color: #f1c40f;
+}
+.togggle .checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.togggle .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+.togggle label .fa-sun{
+    color: #fff;
+}
+.calculator label .ball{
+    background-color: #fff;
+    height: 22px;
+    width: 22px;
+    left: 2px;
+    top: 2px;
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+
+}
+.result{
+    background-color: #ffe6cc;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 1rem;
+    overflow: auto;
+}
+#output{
+    font-size: 2.5rem;
+}
+#input{
+    font-size: 1.2rem;
+}
+.buttons{
+    background-color: #fff;
+    flex: 5;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    text-align: center;
+    padding: 5px;
+}
+.buttons .orange{
+    background-color: #ff9900;
+    color: #fff;
+}
+.buttons > div{
+    border-radius: 50%;
+    width: 4rem;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.buttons>div:active{
+    background-color: #e5e5e5;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}

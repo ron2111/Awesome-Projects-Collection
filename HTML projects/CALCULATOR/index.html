@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="calculator">
+        <div class="togggle">
+            <input type="checkbox" class="checkbox" id="chk">
+            <label for="chk" class="label">
+                <i class="fa fa-moon"></i>  
+                <i class="fa fa-sun"></i>  
+                <div class="ball"></div>
+            </label>
+        </div>
+        <div class="result" id="result">
+            <h1 id="output">0</h1>
+            <p id="input"></p>
+        </div>
+        <div class="buttons">
+            <div class="orange" onclick="calculate('C')">C</div>
+            <div class="orange" onclick="calculate('AC')">AC</div>
+            <div class="orange" onclick="calculate('%')">%</div> 
+            <div class="orange" onclick="calculate('/')">/</div>
+            <div onclick="calculate('7')">7</div>
+            <div onclick="calculate('8')">8</div>
+            <div onclick="calculate('9')">9</div>
+            <div class="orange"onclick="calculate('*')">X</div>
+            <div onclick="calculate('4')">4</div>
+            <div onclick="calculate('5')">5</div>
+            <div onclick="calculate('6')">6</div>
+            <div class="orange" onclick="calculate('-')">-</div>
+            <div id="one" value = "1" onclick="calculate('1')">1</div>
+            <div onclick="calculate('2')">2</div>
+            <div onclick="calculate('3')">3</div>
+            <div class="orange" id="plus" onclick="calculate('+')">+</div>
+            <div onclick="calculate('0')">0</div>
+            <div onclick="calculate('00')">00</div>
+            <div onclick="calculate('.')">.</div>
+            <div class="orange" onclick="calculate('=')">=</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js" integrity="sha512-XTa+nLKjbTCUazCWzwYpykjsTQDaepuKlg9YToCij7+Bdi9aHQhBQlV0rfnYmactJjHdusRQQV+6qWNNv0BScA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
