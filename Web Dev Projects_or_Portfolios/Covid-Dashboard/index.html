@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Tracker | Home</title>
+    <link rel="shortcut icon" href="./images/coronavirus-covid-19-11582576817stitsadz7y.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Arimo&family=Kanit:wght@200&display=swap"
+        rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div id="preloader">
+
+    </div>
+    <header>
+        <nav id="nav">
+            <a href="#nav" rel="noopener noreferrer"><img src="./images/CORVID19-Tracker-Preview-removebg-preview.png"
+                    alt="COVID TRACKER" id="logo"></a>
+            <div class="navbar">
+                 <a href="./html/vaccine.html">Vaccine Slots</a>
+                <a href="./html/help.html">Help</a>
+                <a href="./html/contact.html">Contact Us</a>
+            </div>
+
+        </nav>
+    </header>
+
+ <section id="color">
+
+   
+        <div id="text"></div>
+        <section id="reference">
+            <p>Welcome to Co-Tracker Website !</p>
+            <p>Here you will find informartion regarding current pandemic situation ...</p>
+        </section>
+        <main>
+            <div class="totalcases">
+                <h2>Total active cases</h2>
+
+                <p id="totalcases"></p>
+
+            </div>
+            <div class="totalconfirmed">
+                <h2>Total Confirmed</h2>
+                <p id="totalconfirmed"></p>
+            </div>
+            <div class="totaldeaths">
+                <h2>Total Deaths</h2>
+                <p id="totaldeaths"></p>
+            </div>
+            <div class="last-updated">
+                <h2>Last Updated</h2>
+                <p id="last-updated"></p>
+            </div>
+
+
+
+
+
+        </main>
+        <div id="graph">
+            <h2>Line Charts Depicting State Wise Active Cases</h2>
+            <hr>
+            <canvas id="canvas" height="300rem"></canvas>
+            <hr>
+            <canvas id="canvas1"></canvas>
+            <hr>
+            <canvas id="canvas2"></canvas>
+        </div>
+        
+    
+    
+ </section>      
+    
+ <div class="pre-footer">
+    <h3 >To Check Vaccine Slots Avialable.Click Below.</h3>
+    
+</div>
+<a href="./html/vaccine.html" id="slots">Vaccine Slots</a>
+
+        
+      
+        <a href="#nav" id="arrow_up"><i class="arrow_up"></i></a>
+        <footer>
+            <!-- <div id="37474f"></div> -->
+
+
+            <p>Developed by:</p>
+            <strong>ASCI TEAM 2021 Members</strong>
+            <p>&bull; Mayur Kongutte
+                &bull; Akshay Khoje</p>
+
+        </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        var i = 0,text;
+        text = "COVID-19 Dashboard";
+        function typing() {
+                if (i < text.length) {
+                document.getElementById("text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typing, 50);
+            }
+           
+        }
+        typing();
+
+    </script>
+    <script src="./javascript/app.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+    <script src="./javascript/graph.js"></script>
+    <script src="./javascript/graph1.js"></script>
+    <script src="./javascript/graph2.js"></script>
+
+</body>
+
+</html>

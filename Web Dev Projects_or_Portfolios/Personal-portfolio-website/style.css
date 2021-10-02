@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins, sans-serif";
+  color: #fff;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
+
+.portfolio-header {
+  background: url(/images/portfolio-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(255, 144, 0, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.container {
+  position: absolute;
+  width: 100vw;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  height: 150px;
+  width: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name,
+.title,
+.techstack,
+.blog {
+  margin: 10px;
+}
+
+.name {
+  font-family: "Kaushan Script", cursive;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.techstack {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.social-icons i {
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.social-icons i:hover {
+  border-radius: 50%;
+  background-color: #ef9c1f;
+}
+
+.blog {
+  text-decoration: none;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.blog:hover {
+  background-color: #ef9c1f;
+  /* background-color: #fcbf2c; */
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    top: 5%;
+  }
+  .profile {
+    height: 140px;
+    width: 130px;
+  }
+}
