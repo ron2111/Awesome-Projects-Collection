@@ -1,0 +1,59 @@
+@media(min-width:468px){
+    .container-1{
+      display:flex;
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+        flex-direction: row;
+      align-items: stretch;
+    }
+    
+    .container-2{
+      display:flex;  
+      /*
+      justify-content:flex-start;
+      justify-content:flex-end;
+      justify-content:center;
+      justify-content:space-around;
+      */
+      justify-content:space-between;
+    }
+  }
+  
+  .container-3{
+    display:flex;  /*to give flex box display*/
+    flex-wrap:wrap; /*to adjust according to page size responsive*/
+    justify-content:space-between; /*give space between the boxes*/
+  }
+  
+  .container-1 div, .container-2 div, .container-3 div{
+    border:1px #ccc solid;
+    padding:10px;
+  }
+  
+  .box-1{
+    flex:2; /*width of the div relative*/
+    order:3;    /*order of the divs/container */
+  }
+  
+  .box-2{
+    flex:1;
+    order:2;
+  }
+  
+  .box-3{
+    flex:1;
+    order: 1;
+  }
+  
+  .container-2-box{
+    flex-basis: 27%;  /*width of the div/container */
+  }
+  
+  .container-3-box{
+    flex-basis:12%;
+  }
