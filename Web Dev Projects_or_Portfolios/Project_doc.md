@@ -65,9 +65,28 @@
 
 - A simple portfolio website. You can create your porfolio from this project.
 
+
 <br>
 <b><h3>Pre-Loaders</h3></b> (by https://github.com/sujalgera01)
 <br>
 - An awesome pre-loaders that developers can add at the loading time of website.
 
 - Technologies Used : HTML and CSS 
+  <br>
+
+<br>
+<b><h3>Amazing Devs Social Network</h3></b>
+
+- A full-stack app built for developers network using the MVC architecture.
+
+- Technologies used - HTML, CSS, JavaScript, Nodejs, Expressjs, MongoDB, passport, passport-local and other libraries.
+
+<br>
+
+<br>
+<b><h3>iNotebook - Your notes everywhere you go!</h3></b>
+
+- iNotebook is a single page web application based on MERN (Mongodb, Express Js, React Js & Node Js) technologies, which can be used to stores your notes on the cloud so that you can access your notes from everywhere you are.
+
+- It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.
+<br>

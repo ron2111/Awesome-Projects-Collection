@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter var',sans-serif;
+}
+header{
+    position: relative;
+    height: 72px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 15%);
+    margin-bottom: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.head{
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.left{
+    height: 100%;
+    cursor: pointer;
+}
+.head>.left>img{
+    width: 142px;
+    margin-top: -20px;
+    height: 91px;
+}
+.head>.right{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    position: relative;
+}
+.head>.right>ul{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    position: relative;
+    height: 100%;
+}
+.head>.right>ul>li{
+    list-style: none;
+    padding: 8px 16px;
+}
+/* .head>.right>ul>li:nth-child(1){
+    margin-left: 0;
+} */
+.head>.right>ul>li>.login{
+    background: #fff;
+    border: 1px solid #008BDC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #008BDC;
+    padding: 7px 15px;
+    font-weight: 600;
+    min-width: 80px;
+    line-height: 1.14285714;
+    font-size: 14px;
+}
+.head>.right>ul>li>.register{
+    height: 32px;
+    margin-top: 2px;
+    padding: 4px 16px;
+    background: #00A5EC;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #00A5EC;
+    font-weight: 600;
+    min-width: 80px;
+    line-height: 1.14285714;
+    font-size: 14px;
+}
+.searchBox{
+    padding-top: 24px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+.searchBox>input{
+    height: 48px;
+    border-radius: 3px 0 0 3px!important;
+    padding: 11px 15px;
+    line-height: 24px;
+    border: 1px solid #DDD;
+    font-size: 16px!important;
+    outline: none;
+    width: 512px;
+}
+.searchBox>span{
+    height: 100px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    height: 48px;
+    width: 55px;
+    font-size: 29px;
+    color: white;
+    background: #008BDC;
+    display: grid;
+    place-items: center;
+}
+.body{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.images, .images1, .images2, .images3{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+    justify-content: space-between;
+    text-align: center;
+}
+.img{
+    border-radius: 8px;
+    padding: 20px;
+}
+img{
+    height: 100px;
+    margin-bottom: 5px;
+}
+.img:hover{
+    box-shadow: 2px 2px 10px rgba(194, 193, 193, 0.562);
+}
+.foot{
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    line-height: 2.571429;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 23px;
+    padding-bottom: 26px;
+}
+.img0{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: -10px 5px;
+}
+.d5{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+button{
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    margin-right: 32px;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.slide {
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px !important;
+  }
+  #button1 {
+    margin-left: 40px !important;
+  }
+  #button1,
+  #btn2 {
+    background-color: #faf8f4;
+    color: rgb(109, 107, 107);
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  #slider {
+    text-align: center;
+    display: flex;
+    margin-left: 3%;
+  }
+
+  #slider img {
+    height: 400px;
+    width:auto;
+    margin-right: 40px;
+
+  }
+  #dot > div {
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    background-color: #dddddd;
+    margin: 10px;
+  }
+  #dot {
+    display: flex;
+    justify-content: center;
+  }
+
+  #headOffer {
+    background-color: #ff8c00;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.view_all_cta {
+    min-width: 328px;
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    color: #0ca1f1;
+    margin-left: 83%;
+}
