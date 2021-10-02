@@ -1,0 +1,94 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    background-image: url(./pexels-markus-spiske-1089438.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header {
+    background-color: rgba(85, 80, 80, 0.308);
+    height: 118px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(143, 129, 129, 0.288);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main {
+    text-align: center;
+    /* padding-left: 240px;
+    padding-right:240px; */
+    height: 400px;
+}
+
+.mail-link {
+    color: #f8f8f8;
+    text-decoration: none;
+    border: inset;
+    background: black;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.411);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-size: 84px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: auto;
+    text-align: center;
+}
+
+p {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.btn {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+    margin-left: 430px;
+    margin-right: 410px;
+    background-color: #296eda;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+a {
+    color: rgb(223, 208, 208);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifś;
+}
+
+footer p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
