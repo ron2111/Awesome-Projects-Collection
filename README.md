@@ -61,7 +61,7 @@ After you've added code, just come back to the README and add your name under co
   
 - [Nishant Giri](https://github.com/nishant-giri)  
 
-- [Aarshita Acharya]((https://github.com/aarshita02)
+- [Aarshita Acharya](https://github.com/aarshita02)
 
 - [Rajib Mondal](https://github.com/mondalraj)
 

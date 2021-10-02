@@ -5,5 +5,3 @@
 - Technologies Used - HTML, CSS and JS( by https://github.com/ayushsoni1010 )
  
 - It's a Chess Clone project.
-
-
