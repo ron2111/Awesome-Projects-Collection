@@ -1,0 +1,127 @@
+/* body{
+    background-image:url("../images/another.jpg");
+    background-size: 100%;
+} */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.carGame{
+    width:100vw;
+    height:100vh;
+}
+.hide{
+    display:none;
+}
+.car , .enemyCar{
+    width:50px;
+    height:80px;
+    background-color: red;
+    position:absolute;
+    top:550px;
+    left:0px;
+    z-index:1;
+}
+.enemyCar{
+    background-color: blue;
+}
+.gameArea{
+    background-color: #444941;
+    width:400px;
+    height:100vh;
+    margin:auto;
+    position:relative;
+    border-left:8px dashed yellow;
+    border-right:8px dashed yellow;
+}
+.lines{
+    background-color: #fff;
+    width:10px;
+    height:100px;
+    position: absolute;
+    margin-left:50%;
+}
+.score{
+    position: absolute;
+    width:300px;
+    height:70px;
+    top:20px;
+    left:20px;
+    background-color:#10ac84;
+    box-shadow:5px 5px 5px #444941;
+    text-align: center;
+    font-size:1.5rem;
+    font-family: fantasy;
+    text-shadow:3px 3px 3px #444941;
+    color:white;
+}
+.startScreen{
+    position: absolute;
+    background-color: #ee5253;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    z-index:2;
+    text-align:center;
+    border:1px solid #ff6b6b;
+    padding:15px;
+    margin:auto;
+    width: 50%;
+    cursor: pointer;
+    font-family:fantasy;
+    letter-spacing:10;
+    font-size:20px;
+    word-spacing: 3;
+    line-height:30px;
+    text-transform: uppercase;
+    box-shadow:0 5px 5px #777;
+    text-shadow:3px 3px 3px #444941;
+}
+.btn{
+    display:none;
+}
+
+#rightbtn{
+    left:90%;
+}
+#leftbtn{
+left:10%;
+}
+/* media queries */
+@media screen and (max-width:480px){
+    .btn{
+        display: block;
+    }
+    .score{
+        z-index:10;
+        width:150px;
+    }
+    .carGame{
+        display:inline-block;
+        width:100%;
+        overflow:hidden;
+        height:100vh;
+    }
+    .gameArea{
+        width:100%;
+        height:100vh;
+    }
+    body{
+        width:100vw;
+        height:100vh;
+    }
+    .btn{
+        position:absolute;
+        z-index:10;
+        left:50%;
+        top:80%;
+        transform: translate(-50%,50%);
+        background-color: coral;
+        color:white;
+        padding:10px;
+        font-size:2rem;
+        padding:20px;
+    }
+}

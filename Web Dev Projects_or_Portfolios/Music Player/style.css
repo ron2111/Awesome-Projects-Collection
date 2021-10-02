@@ -1,0 +1,150 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    
+}
+
+
+body{
+    background-image:url("https://i.pinimg.com/originals/e6/0e/53/e60e531bb26f15c5f69c2cb35633bf46.jpg");
+    background-repeat: no-repeat;
+    background-position:4px;
+        
+}
+
+html{
+    font-size:62.5%;
+}
+
+.music{
+    
+    display:grid;
+    place-items:center;
+    height:100vh;
+    width: 100vw;
+}
+
+.music_container{
+    box-shadow:0 1.2rem 3rem  0.5rem black; 
+    text-align:center;
+    width:35rem;
+    height:54rem;
+    background-color:darkslateblue;
+    border-radius:2rem;
+    padding:30px;
+    margin-top:2px;
+}
+
+.music_container #song{
+    text-transform: uppercase;
+    font-size:2.5rem;
+    text-shadow: 0 0.2rem 0.5rem black;
+    font-weight:lighter;
+    color:cyan;
+    margin-top:5%;
+}
+
+.music_container #artist{
+    text-transform: uppercase;
+    font-size:1.5rem;
+    color:tomato;
+    margin-top:2%;
+    
+}
+
+.image_container{
+    width:150px;
+    height:150px;
+    margin:auto; 
+    position:relative; 
+} 
+
+img{
+    border-radius:50%;
+    height:130%;
+    width:130%; 
+    object-fit:cover;
+    box-shadow:0 0 17px  1px black;
+    place-items:center;
+    margin-top:50px;
+    position:absolute;
+    left:-10%;
+}
+
+
+.music_controls{
+    margin-top: 30%;
+    width: 20rem;
+    margin: auto;
+    border-radius: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem 1.2rem;
+}
+
+.music_controls .fas{
+     margin:5px; 
+     cursor:pointer;
+     margin-top:150px;
+     font-size:4rem;
+}
+
+.music_controls .fas:hover{
+    color:grey;
+    font-size:4.2rem;
+    
+}
+
+.music_controls .playbtn{
+    width: 4rem;
+    height: 4rem;
+    background-color: #111;
+    border-radius:50%;
+    color:white;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.music_controls .playbtn:hover{
+    background-color:grey;
+    color:white;
+    font-size:22px;
+}
+
+.anime{
+    animation:rotatePlayer 4s linear infinite;
+}
+
+@keyframes rotatePlayer{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.heading{
+    text-align: center;
+    color:blueviolet;
+    font-size:45px;
+    letter-spacing: 25px;
+    font-weight:bolder;
+    font-style:italic;
+    
+}
+
+
+.progress{
+    width:100%;
+    display:flex;
+    height:auto;
+    justify-content:space-between;
+    margin-top:1rem;
+    padding:1rem 0;
+}
