@@ -1,3 +1,5 @@
+
+   
 * {
     margin: 0;
     padding: 0;
@@ -73,12 +75,20 @@ body {
 
 }
 
-.sigin {
+.signin {
 
     margin-left: 7px;
     font-size: 17px;
     color: white;
     text-decoration: none;
+    transition: all 0.3s ease;
+
+    padding: 7px;
+    border-radius: 3px;
+}
+.signin:hover{
+    background-color: white;
+    color: black;
 }
 
 /* Part-1 */
@@ -127,7 +137,12 @@ body {
     border-radius: 2px;
     width: 250px;
     text-align: center;
+    transition: all 0.3s ease;
 
+}
+.login-prime:hover{
+    transform: translateY(-3px);
+    background-color: #2dacec;
 }
 
 .login-link {
@@ -137,6 +152,7 @@ body {
     font-weight: 700;
 
 }
+
 
 /* Part-2 */
 
@@ -179,6 +195,11 @@ body {
     border-radius: 2px;
     width: 150px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+.started:hover{
+    transform: translateY(-3px);
+    background-color: #2dacec;
 }
 
 .start-link {
