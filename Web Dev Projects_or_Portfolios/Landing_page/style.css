@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Libre Baskerville', serif;
+}
+.content{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 15px;
+
+}
+h1{
+  font-size: 65px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+  margin-top: 50px;
+}
+h3{
+  margin-left: 15;
+}
+h1 span ,h3 {
+  color: #f4c613;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.video {
+   z-index: -1;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(37, 34, 34);
+  opacity: 0.5;
+}
+.btn{
+  background:#f4c613 ;
+  border-radius: 40px;
+  color: rgb(17, 17, 19);
+  font-size: 1.5em;
+  padding: .5em 1.2em;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: 10;
+}
+.text{
+  font-size: 20px;
+  margin-left: 15;
+  margin-top: 20;
+}
+a:hover{
+  color:white;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    margin-left: 20;
+  }
+  h3{
+    font-size: 15px;
+    margin-left: 20;
+  }
+  .text{
+    font-size: 10px;
+    margin-left: 20;
+    margin-top: 20;
+  }
+  .btn{
+    margin-left: 20;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
