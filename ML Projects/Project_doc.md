@@ -61,3 +61,6 @@ This project predicts the price of the real estate using various machine leaning
 and Random Forest Regressor. Steps followed in this project are as Step 1: Data Preprocessing & Exploration, Step 2: Data Visualization,
 Step 3: Data Training & Model Creation and Step 4: Performance Evaluation.
 
+
+<b><h3>Create audio dataset of 6 second each file</h3></b>
+This project creates audio dataset using python code. steps followed in this project are as step 1: extracting Audio from dataset, step2: dividing the audio file into chuncks of 6 second file, step 3: check the sampling rate of all the audio file of dataset created.
