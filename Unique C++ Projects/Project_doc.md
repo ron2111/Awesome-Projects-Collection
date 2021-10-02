@@ -11,3 +11,8 @@
 ### Single statement sum of digits
 
 #### C++ statement to implement sum of digits of a number in a single statement.
+
+### Predict my number
+
+#### A CLI based fun project using 'BITS n BYTES', user have to choose a number between 1 to 32 and the host will show some sets user have to tell him wether the number is present or not in that sets, at last the predicted number will be on screen. Result will be 100% right, tested hundreds of times :)
+
