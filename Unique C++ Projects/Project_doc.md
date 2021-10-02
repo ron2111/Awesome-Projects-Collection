@@ -7,3 +7,7 @@
 ### Tic Tac Toe
 
 ### A CLI Based Tic Tac Toe game made in C++ which uses vector to play with PC and 2D Array to play with human. It contains basic errors detectors to avoid some common bugs like pressing the occupied positions. Made in Windows using MinGW for C++ Compiling
+
+### Single statement sum of digits
+
+#### C++ statement to implement sum of digits of a number in a single statement.
