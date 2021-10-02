@@ -82,3 +82,11 @@
 
 - It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.
 <br>
+
+<br>
+<b><h3>Musical Kit</h3></b>
+
+- Musical kit is a simple musical band simulator, where one can play different musical notes with the help of keys specified on the main page.
+
+- Technologies used: HTML, CSS, Javascript.
+<br>
