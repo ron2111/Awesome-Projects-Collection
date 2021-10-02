@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Photo Gallery</title>
+	<!--Main CSS file---->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!---Fancy Box CSS files---->
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav id="navbar"></nav>
+		</div>
+	</header><!-----Container---->
+
+	<section id="main">
+		<div class="container">
+			<ul id="gallery">
+				<li data-tags="Logo Design, Print Design"><a class="fancybox" rel="group" href="img/1.jpg"><img src="img/1.jpg"></a></li>
+					<li data-tags="Web Design, Logo Design"><a class="fancybox" rel="group" href="img/2.jpg"><img src="img/2.jpg"></a></li>
+					<li data-tags="Print Design"><a class="fancybox" rel="group" href="img/3.jpg"><img src="img/3.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design, Web Design"><a class="fancybox" rel="group" href="img/4.jpg"><img src="img/4.jpg"></a></li>
+					<li data-tags="Logo Design"><a class="fancybox" rel="group" href="img/5.jpg"><img src="img/5.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design, Web Design"><a class="fancybox" rel="group" href="img/6.jpg"><img src="img/6.jpg"></a></li>
+					<li data-tags="Logo Design, Web Design"><a class="fancybox" rel="group" href="img/7.jpg"><img src="img/7.jpg"></a></li>
+					<li data-tags="Print Design"><a class="fancybox" rel="group" href="img/8.jpg"><img src="img/8.jpg"></a></li>
+					<li data-tags="Web Design, Print Design, Logo Design"><a class="fancybox" rel="group" href="img/9.jpg"><img src="img/9.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design"><a class="fancybox" rel="group" href="img/10.jpg"><img src="img/10.jpg"></a></li>
+					<li data-tags="Print Design"><a class="fancybox" rel="group" href="img/11.jpg"><img src="img/11.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design"><a class="fancybox" rel="group" href="img/12.jpg"><img src="img/12.jpg"></a></li>
+					<li data-tags="Web Design, Print Design, Logo Design"><a class="fancybox" rel="group" href="img/13.jpg"><img src="img/13.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design"><a class="fancybox" rel="group" href="img/14.jpg"><img src="img/14.jpg"></a></li>
+					<li data-tags="Print Design"><a class="fancybox" rel="group" href="img/15.jpg"><img src="img/15.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design"><a class="fancybox" rel="group" href="img/16.jpg"><img src="img/16.jpg"></a></li>
+					<li data-tags="Web Design, Print Design"><a class="fancybox" rel="group" href="img/17.jpg"><img src="img/17.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design"><a class="fancybox" rel="group" href="img/18.jpg"><img src="img/18.jpg"></a></li>
+					<li data-tags="Web Design"><a class="fancybox" rel="group" href="img/19.jpg"><img src="img/19.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design"><a class="fancybox" rel="group" href="img/20.jpg"><img src="img/20.jpg"></a></li>
+					<li data-tags="Logo Design, Print Design"><a class="fancybox" rel="group" href="img/21.jpg"><img src="img/21.jpg"></a></li>
+					<li data-tags="Logo Design"><a class="fancybox" rel="group" href="img/22.jpg"><img src="img/22.jpg"></a></li>
+					<li data-tags="Print Design"><a class="fancybox" rel="group" href="img/23.jpg"><img src="img/23.jpg"></a></li>	
+
+			</ul>	
+		</div><!---container--->
+		<hr>
+		<footer>
+			<div class="container">
+				<p>HTML5    Photo    Gallery &copy; 2020</p>
+			</div><!----Container-->
+		</footer>
+	</section>
+
+	<!---Include JQuery----->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!----Quicksand plugins---->
+	<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+	<!-- Fancybox js -->
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox-buttons.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!---Include custom js--->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+			//Call Fancybox
+			$(document).ready(function(){
+				$(".fancybox").fancybox();
+			});
+		</script>
+
+</body>
+</html>
