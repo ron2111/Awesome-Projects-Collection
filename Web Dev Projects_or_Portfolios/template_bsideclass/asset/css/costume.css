@@ -1,0 +1,208 @@
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.bg-navbar {
+    background: #1E4592;
+}
+
+a.navbar-brand {
+    color: #ffffff;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #e6e6e6;
+}
+
+
+/* Header */
+header {
+    background: #1E4592;
+    color: #ffffff;
+}
+
+header h1 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+}
+
+header p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+header img {
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 20px 20px 10px #1a3979;
+}
+
+/* Section About */
+section#about {
+    margin-top: -8rem;
+}
+
+section#about h1 {
+    font-size: 2rem;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #3b3b3b;
+}
+
+section#about p {
+    text-align: justify;
+}
+
+section#about img {
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px #36363621;
+}
+
+/* Section Why */
+/* section#why {
+    margin-top: -8rem;
+} */
+
+section#why h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #3b3b3b;
+}
+
+section#why h2 {
+    margin-bottom: 2rem;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+}
+
+section#why h2 span {
+    color: #FF823C;
+}
+
+#card__why {
+    box-shadow: 3px 3px 3px rgba(190, 190, 190, 0.2);
+    border-radius: 10px;
+}
+
+#card__why h5 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+#card__why img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Section Teacher */
+section#teacher h1#kenalan {
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+section#teacher span {
+    color: #FF823C;
+}
+
+.card__profile {
+    width: 100%;
+}
+
+.card__profile__image img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.card__profile__body {
+    padding: 1rem 0;
+}
+
+.card__profile__body h1,
+h2 {
+    text-align: center;
+}
+
+h1.teacher__name {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+h2.teacher__from {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.list {
+    margin: 1rem 0;
+    list-style: none;
+    font-size: 1rem;
+    display: flex;
+}
+
+.list p {
+    margin-top: -4px;
+    text-align: justify;
+    margin-left: 8px;
+}
+
+/* Footer */
+footer {
+    background: #0A2540;
+    color: #ffffff;
+}
+
+/* Utility */
+.button__oren {
+    background: #FF823C;
+    color: #ffffff;
+}
+
+.button__oren:hover {
+    background: #ec7a38;
+    color: #ffffff;
+}
+
+.button__border {
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.button__border:hover {
+    background: #ffffff;
+    color: #333333;
+}
+
+.button__radius {
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+}
+
+.button__index {
+    z-index: 99999;
+    position: relative;
+}
+
+.hr-dash {
+    border-top: 2px dashed rgb(67, 72, 86, 0.2);
+}
+
+.margin__min__bottom {
+    margin-bottom: -1rem;
+}
