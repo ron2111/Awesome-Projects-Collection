@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* showcase */
+.showcase {
+    position: relative;
+    background-image: url("../img/Netflix-Background.jpg");
+    min-height: 750px;
+    color: #fff;
+   border-bottom: #312e2e 7px solid;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    box-shadow: inset 20px 120px 320px  #000000;
+}   
+
+.navbar {
+    position: relative;
+    padding: 10px;
+    z-index: 2;
+}
+
+.main-logo {
+    height: 90px;
+    width: 200px;
+    float: left;
+}
+
+.signin-btn {
+    float: right;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 10%;
+    height: 40px;
+    width: 90px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.main {
+    margin-top: 200px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.main-title {
+    width: 40%;
+    margin: auto;
+    font-size: 3.5rem;
+}
+
+.main-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.main-para {
+    font-size: 1.3rem;
+}
+
+input[type="email"] {
+    height: 50px;
+    width: 35%;
+    padding: 7px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    
+    padding-bottom: 23px;
+    padding-top: 10px;
+    padding-right: 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+    min-width: 18%;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.email-form {
+    margin-bottom: 20px;
+}
+
+/* about */
+.about {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+.device-1, .device-2,.device-3 {
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #000000;
+    color: #fff;
+    flex-wrap: wrap;
+    border-bottom: #312e2e 7px solid;
+    padding: 50px;
+}
+
+
+.dev-img {
+    height: 400px;
+    width: 500px;
+}
+
+.tv, .mac {
+    width: 30%;
+    margin: auto;
+    text-align: left;
+    float: left;
+    font-size: 1.4rem;
+}
+
+.tv-img, .mac-img{
+    float: right;
+    width: 30%;
+    margin: auto;
+    
+}
+
+.mobile {
+    font-size: 1.4rem;
+    float: right;
+    width: 35%;
+    margin: auto;
+    order: 2;
+}
+
+.mobile-img {
+    float:left;
+    order: 1;
+}
+
+/* faqs */
+
+.faqs {
+    background-color: black;
+    color: #fff;
+    border-bottom: #312e2e 7px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.faqs h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.faq-content p{
+    font-size: 1.2rem;
+    margin-top: 60px;
+}
+
+i {
+    float: right;
+    padding-left: 10px;
+}
+
+/* faqs-colllapsible */
+.collapsible {
+    background-color: #312e2e;
+    color: #fff;
+    width: 50%;
+    height: 80px;
+    margin: auto;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 ;
+    border-top: 2px black solid;
+    overflow: hidden;
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 30px;
+    max-height:0;
+    background-color: #312e2e;
+    transition: max-height 0.2s ease-out;
+}   
+
+/* footer */
+
+footer {
+    margin-top: 0;
+    padding: 10px;
+    background-color: #000000;
+}
+
+footer a {
+    color: #888787;
+}
+
+footer p {
+    color: #888787;
+}
+
+footer p {
+    width: 60%;
+    margin: auto;
+}
+
+.info {
+    width: 60%;
+    margin: auto;
+    font-size: 13px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    line-height: 3;
+}
+
+/* media queries */
+
+@media(max-width:1250px) {
+
+    .main-title {
+        font-size: 2.8rem;
+    }
+
+    .device-1, .device-2,.device-3 {
+
+        text-align: center;
+        background-color: #000000;
+        color: #fff;
+        border-bottom: #312e2e 7px solid;
+        padding: 50px;
+    }
+
+    .device-1 h1 , .device-2 h1, .device-3 h1 {
+        margin: 50px;
+        display: block;
+    }
+}
