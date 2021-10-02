@@ -1,0 +1,2 @@
+Training a simple MNIST data set for detection of handwritten numbers using Pytorch
+(uploaded a processed dataset for access)
