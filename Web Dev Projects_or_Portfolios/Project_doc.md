@@ -83,8 +83,15 @@
 - It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.
 <br>
 
+<br>
+<b><h3>Blogging</h3></b> (by https://github.com/ItsRoy69)
+<br>
+- Website for Blogging. (built with HTML, CSS and JavaScript)
+
 <b><h3>Assignment Submission Form</h3></b>
 
 - Technologies Used - HTML, CSS, JS, REACT, FIREBASE( by https://github.com/yashgangwar123 )
 
 - Its a simple assignment submission form where you can enter al your details and upload your assignment in PDF format. It also has a very cool **drag and drop** feature where you can simply drag the files to the greyed area to upload it.
+
+

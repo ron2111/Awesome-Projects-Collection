@@ -12,3 +12,14 @@
 ### Predict my number
 
 #### A CLI based fun project using 'BITS n BYTES', user have to choose a number between 1 to 32 and the host will show some sets user have to tell him wether the number is present or not in that sets, at last the predicted number will be on screen. Result will be 100% right, tested hundreds of times :)
+
+### 2048 Game
+#### A CLI based input based game. Play using arrow keys, add numbers of same value to form a number equal to their sum. Game ends when the player achieves a scorre of 2048 or the grid runs our of space. Play and have fun! Written in C++ with love! 
+=======
+### Recover
+
+### A camera memory card images recovering tool, which takes memory card file and recover jpg images from it.
+
+### Copy
+
+### Implementation of copy paste command using C language 
