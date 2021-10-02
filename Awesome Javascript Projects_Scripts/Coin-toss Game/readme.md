@@ -13,4 +13,4 @@ Additionally, you can choose to bet an amount on your coin flip. Now, how confid
 
 ## Screenshot
 
-![image]()
+![image](https://github.com/Harikrishnaa3131/Hacktoberfest2021_awesome-projects/blob/main/Awesome%20Javascript%20Projects_Scripts/Coin-toss%20Game/Output_Images/Output.gif)
