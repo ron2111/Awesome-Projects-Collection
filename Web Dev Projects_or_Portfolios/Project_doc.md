@@ -83,6 +83,14 @@
 - It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.
 <br>
 
+<br>
+<b><h3>CSS Timeline</h3></b>
+
+- A timeline app to manage your important dates like birthdays, meetings etc.
+
+- Technologies Used : HTML5 and CSS3 
+<br>
+
 
 
 
