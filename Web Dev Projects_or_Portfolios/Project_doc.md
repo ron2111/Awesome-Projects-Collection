@@ -59,6 +59,6 @@
 - A basic news web app built using News API
 <br><br>
 
-<b><h3>Cosine Similarity</h3></b>
-- Technologies Used - HTML, CSS, JS, Bootstrap 5, PHP (by https://github.com/suryamsj).
-- website to find a match between me and him using cosine similarity.
+<b><h3>Teknoday Web App</h3></b>
+- Technologies Used - HTML, CSS, JS, Bootstrap 5 (by https://github.com/suryamsj).
+- Teknoday is an event that showcases products, services, food, etc.
