@@ -33,7 +33,13 @@ Just a simple Snake Game Made Using HTML CSS and JS
 
 
 ---
+<br>
+<h3><b>Movie App</b></h3><hr>
 
+Simple movie app made using HTML CSS and JS
+
+---
+<br>
 ## AI-Assited Contact Page
 
 Awesome interactive contact page
