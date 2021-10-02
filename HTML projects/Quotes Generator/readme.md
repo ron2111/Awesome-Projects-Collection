@@ -1,0 +1,1 @@
+This project is based on HTML and JS. It basically shows a new quote everytime a user refreshes the page using random function of javascript. To give a good UI, the background colors have been keep bright and gradients are added.

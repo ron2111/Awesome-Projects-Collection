@@ -18,7 +18,7 @@
 1. Add any project, piece of code or script of your choice you wish to share in this repository.
    **Add your projects under the respective tech stack folder only**
 
-2. <strike>Update project_doc.md file available in each project folder with the description of your project.</strike>
+2. Update project_doc.md file available in each project folder with the description of your project.\
    
 
 
@@ -109,6 +109,8 @@ It can be any of any length and can be any number of scripts, just **add a folde
 - [Keegan Paul Colaco](https://github.com/KeeganC09)  
 
 - [Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/)
+
+- [Hafitz Setya](https://github.com/breakdowns)
 
 -[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
 
