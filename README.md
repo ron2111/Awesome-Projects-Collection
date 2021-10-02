@@ -110,6 +110,8 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 - [Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/)
 
+- [Hafitz Setya](https://github.com/breakdowns)
+
 -[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
 
 
