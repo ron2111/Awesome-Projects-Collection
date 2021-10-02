@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blogging Website</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach(function($el) {
+          $el.addEventListener('click', function() {
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+
+  <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
+    <div class="container">
+
+      <div class="navbar-brand"> <a class="navbar-item" href="#"> <strong>Blogging Website</strong> </a>
+        <div class="navbar-burger" data-target="navbar-menu"> <span></span> <span></span> <span></span></div>
+      </div>
+
+      <div class="navbar-menu has-background-black" id="navbar-menu">
+
+        <div class="navbar-end">
+          <a class="navbar-item is-active" href="#">HOME</a>
+          <a class="navbar-item" href="#about">ABOUT</a>
+          <a class="navbar-item" href="#contact">CONTACT</a>
+          <a class="navbar-item" href="./blog.html">BLOG</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Html Body Contents -->
+
+  <section class="hero is-fullheight has-text-centered" id="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">Blogging Website</h1>
+        <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless"> A customizable blogging website</h3>
+        <br>
+        <hr>
+        <br>
+        <a href="#about" id="read" class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal" style="left: -500px;
+        position: relative">Read More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-fullheight has-text-centered has-background-white-ter" id="about">
+    <div class="hero-body">
+      <div class="container">
+        <div class="column has-text-center-desktop has-text-center-tablet has-text-center-fullhd has-text-center-widescreen">
+          <h1 class="has-text-black is-size-1 is-uppercase has-text-weight-bold" style="text-align: center; margin: auto 0.75rem !important ">About Us</h1>
+          <br>
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget pharetra velit, dapibus bibendum ex. Maecenas vitae laoreet mauris, ac luctus metus. Aliquam luctus velit vel ipsum feugiat, vel venenatis mauris hendrerit.
+            Sed at vulputate sapien, eget vehicula dolor. Aliquam volutpat pulvinar neque sit amet sodales.
+          </h3>
+          <br>
+          <br>
+          <div class="container columns is-centered">
+            <div>
+              <a href="./blog.html" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Blogs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Contacts fullheight has-text-centered" id="contact">
+    <div class="container">
+      <h1 class="has-text-black is-size-1 is-uppercase has-text-weight-bold" style="text-align: center; margin: auto 0.75rem !important ">Contact Us</h1>
+
+      <div class="column is-full is-size-3">
+        <a href="http://www.facebook.com/xddd" target="_blank" class="has-text-black">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="http://www.twitter.com/xddd" target="_blank" class="has-text-black">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="http://www.instagram.com/xddd" target="_blank" class="has-text-black">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="http://www.linkedin.com/in/xddd" target="_blank" class="has-text-black">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="http://www.github.com/xddd" target="_blank" class="has-text-black">
+          <i class="fab fa-github"></i>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
