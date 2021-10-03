@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second</title>
+  </head>
+  <body>
+    <canvas width="600" height="600"></canvas>
+    <script>
+      let canvas = document.querySelector("canvas");
+      let context = canvas.getContext("2d");
+
+      context.lineWidth = 4;
+
+      for (let i = 0; i < 5; ++i) {
+        for (let j = 0; j < 5; ++j) {
+          let heigth = 60;
+          let width = 60;
+          let gap = 20;
+          let x = 100 + (width + gap) * i;
+          let y = 100 + (heigth + gap) * j;
+
+          context.beginPath();
+          context.rect(x, y, width, heigth);
+          context.stroke();
+
+          if (Math.random() > 0.5) {
+            context.beginPath();
+            context.rect(x + 8, y + 8, width - 16, heigth - 16);
+            context.stroke();
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
