@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#C59F18</color>
+    <color name="purple_700">#C59F18</color>
+    <color name="teal_200">#C59F18</color>
+    <color name="teal_light">#f6fffe</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#00CC00</color>
+    <color name="red">#FF0000</color>
+    <color name="grey">#808080</color>
+
+    <color name="colorPrimary">#024265</color>
+    <color name="colorPrimaryDark">#024265</color>
+    <color name="colorAccent">#05af9b</color>
+
+    <color name="color_one">#fb7268</color>
+    <color name="color_white">#ededf2</color>
+    <color name="color_two">#E3E0E0</color>
+
+    <color name="R">#52D726</color>
+    <color name="Python">#FFEC00</color>
+    <color name="CPP">#FF7300</color>
+    <color name="Java">#FF0000</color>
+
+    <color name="FavRed">#ff726f</color>
+    <color name="FavGreen">#ADFF2F</color>
+
+
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
+
+</resources>
