@@ -1,6 +1,11 @@
 ## Add your Web Development Projects like Personal Portfolio using HTML/CSS or any other Frontend Dev Tool.
 
 <br>
+<b><h3>Nabar Animations</h3></b>
+<br>
+- Different animations on navbar (built with HTML, CSS)
+
+<br>
 <b><h3>Restaurant Website</h3></b>
 <br>
 - This is a single page restaurant website (built with HTML, CSS, JS and Bootstrap)
