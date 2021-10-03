@@ -2,7 +2,7 @@
 
 ## Projects can be based on both Android & iOS platform.
 
-- Solar System Simulation:
+- #Solar System Simulation:
   This is a 3D simulation of our Solar System made in Unity Game Developer, it is currently limited to only the following celestial bodies:
 
   Sun
