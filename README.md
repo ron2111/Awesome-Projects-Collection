@@ -97,8 +97,9 @@ It can be any of any length and can be any number of scripts, just **add a folde
 - [Muktanshu Mishra](https://github.com/muktanshumishra24)
 - [Dhroov Makwana](https://github.com/pabloescoder)
 
--[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
+-[Prince Roy](https://www.github.com/iprinceroyy)
 
+-[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
 
 - [Prannov Jamadagni](https://github.com/Prannov)
 

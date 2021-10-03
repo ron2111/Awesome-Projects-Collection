@@ -1,6 +1,11 @@
 ## Add your Web Development Projects like Personal Portfolio using HTML/CSS or any other Frontend Dev Tool.
 
 <br>
+<b><h3>Restaurant Website</h3></b>
+<br>
+- This is a single page restaurant website (built with HTML, CSS, JS and Bootstrap)
+
+<br>
 <b><h3>Weather App</h3></b>
 <br>
 - Lets you know the weather of your current location (built with HTML, CSS and vanilla JS)
