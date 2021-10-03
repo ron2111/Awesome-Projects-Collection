@@ -1,0 +1,6 @@
+Required libraries and setup
+Python version 3
+Jupyter Notebook
+pandas
+seaborn
+numpy
