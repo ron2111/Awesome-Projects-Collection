@@ -1,0 +1,1 @@
+This is a simple Machine Learning project which enables us to see the  handwritten text into the typed text
