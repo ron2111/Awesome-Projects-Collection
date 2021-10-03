@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta view="viewport" content="width=device-width initial-scale=1.0" />
+    <meta name="description" content="Restaurant website" />
+    <meta name="keywords" content="html, css, javascript, bootstrap" />
+    <meta name="author" content="Prince Roy" />
+
+    <title>Restaurant Website</title>
+
+    <!--  Template Main CSS File  -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <!--  Vendor CSS Files  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+</head>
+
+<body>
+    <header>
+        <!--  Header  -->
+        <nav>
+            <h2><a href="#" id="logo">pink sugar</a></h2>
+            <button class="nav-button fa fa-bars"></button>
+            <div>
+                <!--     <ul> -->
+                <ul>
+                    <button class="exit-menu fa fa-times"></button>
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#about-us">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#chef">chef</a></li>
+                    <li><a href="#reservation">reservations</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <!--     </ul> -->
+            </div>
+        </nav>
+        <div class="center">
+            <h1 class="alex-brush">Welcome</h1>
+            <h2>the pink sugar</h2>
+            <span id="asterisk">*</span>
+            <p>ready to be opened</p>
+        </div>
+    </header>
+    <!--  End Header  -->
+
+    <!--   About Us Section    -->
+    <section id="about-us" class="add-padding add-flex">
+        <div class="center-text">
+            <h1 class="alex-brush"><span class="custom-font">Discover</span><br />OUR STORY</h1>
+            <h2>*</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur beatae laboriosam dicta tempora ab, dolorem mollitia perspiciatis, deleniti quidem dolor repellat animi. Quidem eligendi iste distinctio fugit maxime modi. Lorem
+                ipsum dolor sit amet.</p>
+            <a href="#">about us</a>
+        </div>
+        <div class="stuffed-cherries" data-aos="fade-left" data-aos-delay="300">
+        </div>
+    </section>
+
+    <section>
+        <div class="statistic-area">
+            <div class="sts-overlay section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-count count-one xs-mb-30 sm-mb-30">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h2><span class="count-num">18</span></h2>
+                                <p>years of experienced</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-count count-two xs-mb-30 sm-mb-30">
+                                <i class="fas fa-pizza-slice"></i>
+                                <h2><span class="count-num">200</span></h2>
+                                <p>menu/dish</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-count count-three xs-mb-30">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <h2><span class="count-num">80</span></h2>
+                                <p>staffs</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-count count-four">
+                                <i class="fa fa-child"></i>
+                                <h2><span class="count-num">150</span></h2>
+                                <p>happy customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  End About Us Section  -->
+
+    <!--  Menu section  -->
+    <section class="bread-background center-h1">
+        <h1 class="custom-h1 alex-brush"><span class="custom-font">Tasteful</span><br />RECIPES</h1>
+    </section>
+
+    <section id="menu" class="menu add-flex add-padding">
+        <div class="menu-images">
+            <img src="assets/images/pexels-angela-roma-7363690.jpg" data-aos="fade-down" data-aos-delay="300" />
+            <img src="assets/images/pexels-ella-olsson-1640777.jpg" data-aos="fade-left" data-aos-delay="300" />
+            <img src="assets/images/pexels-lisa-1279330.jpg" data-aos="fade-right" data-aos-delay="300" />
+            <img src="assets/images/pexels-olga-lioncat-7245473.jpg" data-aos="fade-up" data-aos-delay="300" />
+        </div>
+        <div class="center-text">
+            <h1><span class="custom-font alex-brush">Discover</span><br />MENU</h1>
+            <h2>*</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae distinctio possimus tempore voluptatem, quo repellendus quas culpa quasi, hic optio sapiente molestias necessitatibus, aliquam excepturi consequatur a voluptates quam beatae!
+            </p>
+            <a href="#">view the full menu</a>
+        </div>
+    </section>
+    <!--  End Menu Section  -->
+
+    <!--  Chef Section  -->
+    <section id="chef" class="chef-section">
+        <div class="center-text">
+            <h1><span class="custom-font alex-brush">Chef</span><br />OUR MASTER CHEF</h1>
+            <h2>*</h2>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active">prince</li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/chef1.jpg" alt="Los Angeles" width="900" height="450">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/chef3.jpg" alt="Chicago" width="900" height="450">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/chef4.jpg" alt="New York" width="900" height="450">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <!--  End Chef Section-->
+
+    <!--  Reservation Section  -->
+    <section class="cake-background center-h1">
+        <h1 class="custom-h1"><span class="custom-font alex-brush">The perfect</span><br />BLEND</h1>
+    </section>
+
+    <section id="reservation" class="add-flex reservation-section">
+        <div class="center-text add-padding">
+            <h1><span class="custom-font alex-brush">Culinary</span><br />DELIGHT</h1>
+            <h2>*</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi odit in dignissimos neque ratione, laboriosam rerum! Deleniti accusamus non, aliquam tempora, mollitia laborum ad, fugiat at explicabo esse aut. Lorem ipsum dolor sit amet,
+                adipisicing elit.</p>
+            <a href="#">make a reservation</a>
+        </div>
+        <div>
+            <img src="assets/images/pexels-larissa-deruzzi-6546164.jpg" data-aos="fade-up" data-aos-delay="300" />
+            <img src="assets/images/pexels-polina-tankilevitch-4109111.jpg" data-aos="fade-down" data-aos-delay="300" />
+        </div>
+    </section>
+    <!--  End Reservation Section  -->
+
+    <footer>
+        <!--  Footer  -->
+        <button class="to-top"><i class="fa fa-chevron-up"></i>TOP</button>
+
+        <div id="contact" class="restaurant-info">
+
+            <div class="locations">
+                <h4>LOCATIONS</h4>
+                <!--location-1-->
+                <div class="location-1">
+                    <h5>Unit-5<br />Bhubaneswar, Odisha &#8212; 751021</h5>
+                </div>
+                <!--location-2-->
+                <div class="location-2">
+                    <h5>Town<br />Balasore, Odisha &#8212; 756019</h5>
+                </div>
+            </div>
+            <!--locations end-->
+
+            <div class="hours">
+                <h4>HOURS</h4>
+                <div class="weekdays">
+                    <h5>Monday - Thursday<br /> 5:30pm - 10:00pm
+                    </h5>
+                </div>
+                <!--weekdays end-->
+
+                <div class="weekends">
+                    <h5>Friday & Saturday<br /> 5:30pm - 11:00pm
+                    </h5>
+                </div>
+                <!--weekends end-->
+
+                <div class="private-events">
+                    <h5>Available for private<br /> events on Sunday
+                    </h5>
+                </div>
+
+            </div>
+            <!--hours end-->
+
+        </div>
+        <!--restaurant-info end-->
+
+        <div class="copyright">
+            <p><small>Copyright &#169; Designed with love &#10084; by <span>Prince Roy</span></small></p>
+            <p><small>All Rights Reserved &#8226; Contact The Creator</small></p>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/vendor/jquery.waypoints.js" type="text/javascript"></script>
+    <script src="assets/vendor/jquery.rcounterup.js" type='text/javascript'></script>
+
+    <!--  Template Main JS File  -->
+    <script src="assets/js/main.js" type="text/javascript"></script>
+
+</body>
+
+</html>

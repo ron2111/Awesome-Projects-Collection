@@ -4,6 +4,7 @@
 - Fidget Spinner using Turtle
 - Convert live camera video stream into cartoon effect
 - Identifies only the red color objects
+- Dice Stimular using tkinter module
 
 - Scan and Generate QR Code:
 
@@ -23,3 +24,7 @@
 
 ## Inventory-Management-System
 ### Python (Jupyter) and JSON It fetches and updates the data regular on the JSON file to keep track of inventory and sales made
+
+## Dots and Boxes
+
+### Dots and Boxes is a fun and simple classic game for 2 or more players. The game starts with an empty grid of dots. Players take turns connecting two unjoined horizontally or vertically adjacent dots. A player who completes the fourth side of a 1×1 box earns one point and must take another turn.

@@ -1,0 +1,107 @@
+html,body {
+	background-color: #404456;
+}
+
+h1 {
+	text-align: center;
+	color: whitesmoke;
+}
+
+hr{
+	align-content: center;
+	width: 20%;
+	line-height: 2px;
+}
+
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 43.2px;
+	margin-left: 43.2px;
+	width: 86.4px;
+	height: 86.4px;
+	background-color: #404456;
+	justify-content: center;
+	margin: auto;
+
+}
+
+.box {
+	position: absolute;
+	background-color: transparent;
+	height: 16px;
+	width: 16px;
+	left: 0;
+	bottom: -1.6px;
+	border: 4px solid whitesmoke;
+	border-radius: 15%;
+	transform: translate(0,-16px) rotate(-45deg);
+	animation: roll 2.5s cubic-bezier(.79, 0, .47, .97) infinite;
+}
+
+.slope {
+	position: absolute;
+	height: 113.6px;
+	width: 113.6px;
+	top: 27.2px;
+	left: 27.2px;
+	background-color: transparent;
+	border-left: 4px solid whitesmoke;
+	transform: rotate(45deg);
+}
+
+.slope:after {
+	content: '';
+	position: absolute;
+	width: 113.6px;
+	height: 113.6px;
+	left: 0;
+	background-color: #404456;
+}
+
+@keyframes roll {
+	0%{
+		transform: translate(0,-16px) rotate(-45deg);
+	}
+
+	5%{
+		transform: translate(0,-16px) rotate(-50deg);
+	}
+
+	20%{
+		transform: translate(16px ,-32px) rotate(47deg);
+	}
+
+	25%{
+		transform: translate(16px,-32px) rotate(45deg);
+	}
+
+	30%{
+		transform: translate(16px,-32px) rotate(40deg);
+	}
+
+	45%{
+		transform: translate(32px,-48px) rotate(137deg);
+	}
+
+	50%{
+		transform: translate(32px,-48px) rotate(135deg);
+	}
+
+	55%{
+		transform: translate(32px,-48px) rotate(130deg);
+	}
+
+	70%{
+		transform: translate(48px,-64px) rotate(217deg);
+	}
+
+	75%{
+		transform: translate(48px,-64px) rotate(220deg);
+	}
+
+	100%{
+		transform: translate(0px,-16px) rotate(-225deg);
+	}
+}

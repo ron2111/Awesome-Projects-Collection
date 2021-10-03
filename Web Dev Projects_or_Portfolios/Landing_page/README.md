@@ -1,0 +1,1 @@
+This is a basic landing page made by using html,css and javascript.You can also subscribe to newsletter.
