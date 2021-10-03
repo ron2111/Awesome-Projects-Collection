@@ -1,0 +1,26 @@
+nav {
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    background: url(../../assets/liquid-cheese.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 10px;
+    color: white;
+}
+
+.icon {
+    display: flex;
+    border: solid red;
+}
+
+.icon > h3 {
+    font-weight: 200;
+}
+
+nav i {
+    font-size: xx-large;
+    margin: 0;
+    padding: 0;
+}

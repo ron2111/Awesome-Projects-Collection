@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css");
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth !important;
+    transition: all 0.25s ease;
+}
+
+
+#navbar .navbar-burger span:nth-child(2) {
+    left: calc(50%);
+    width: 8px
+}
+
+.is-active {
+    font-weight: bold
+}
+
+.columns .button {
+    margin: 0.5rem !important
+}
+
+hr {
+    margin: 0.50rem auto;
+    height: 1px;
+    left: -276px;
+    position: relative;
+    width:50%;
+
+}
+
+.column {
+    margin: auto 0.5rem;
+    padding: 0.5rem
+}
+
+.searchResult a .title {
+    text-decoration: underline
+}
+
+#navbar {
+    opacity: 0.95
+}
+
+.is-active {
+    font-weight: 600
+}
+
+.navbar-dropdown {
+    border: none;
+    right: 0;
+    left: auto
+}
+
+a.navbar-item:hover,
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    color: white !important
+}
+
+a.navbar-item.is-active {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    color: white !important
+}
+
+a.navbar-item.is-active:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    color: grey
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-color: grey
+}
+
+#hero {
+    background: #000;
+    position:  left;
+
+}
+
+#hero::before {
+    filter: blur(0.15rem);
+    background-image: url(../Pictures/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0.25;
+    content: "";
+}
+
+.title {
+    text-align: left;
+    margin: auto 0.75rem !important
+}
+
+.subtitle {
+  text-align: left;
+  padding-left: 1rem;
+  letter-spacing: 0.25rem
+}
+
+
+
+#about a {
+    min-width: 25vmax;
+    margin: 0.5rem
+
+}
+
+
+#blog .hero-body {
+    padding: 3rem 0.25rem 1rem 0.25rem;
+      background-color: grey;
+
+}
+
+#blog .container {
+    margin: 1.5rem auto;
+    background-color: grey;
+}
+
+#blog #blog-card {
+    transition: all 0.25s ease;
+    margin-bottom: 0.5vmax;
+    transform: scale(0.85);
+    margin-right: 2.5vmax;
+    margin-left: 2.5vmax;
+    line-height: normal;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1)
+}
+
+#blog #blog-card:hover {
+    transform: scale(0.875);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25)
+}
+
+
+#blog #blog-card .title {
+    margin: 0.5rem !important
+}
+
+#blog #blog-card .content {
+    margin: 0.5rem
+}
+
+#blog #blog-card .column {
+    display: grid
+}
+
+#blog #blog-card .column .image {
+    border-radius: 0.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#search {
+    border-bottom: 0.15rem solid
+}
+
+#search input {
+    border: none;
+    outline: none;
+    font-weight: 500 !important
+}
+
+#search input::placeholder {
+    font-weight: 500;
+    color: grey;
+    letter-spacing: 0.25rem
+}
+
+#search .button {
+    transition: all 0.25s ease;
+    border: none
+}
+
+#search .button:focus {
+    outline: 0.25rem solid white
+}
+
+
+
+@media (max-width: 768px) {
+    #blog #blog-card {
+        transform: scale(1);
+        margin-bottom: 5vmax !important
+    }
+    #blog #blog-card:hover {
+        transform: scale(1.025);
+        margin-bottom: 5vmax !important;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25)
+    }
+    #blog #blog-card .image {
+        padding-top: 50% !important
+    }
+}

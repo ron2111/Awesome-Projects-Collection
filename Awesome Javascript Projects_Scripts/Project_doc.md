@@ -1,5 +1,15 @@
 ## Add your Javascript projects/code or automated scripts.
 
+<h3><b> Meditation App</b></h3>
+
+Created a meditation/ambient sounds app that a user can enjoy by picking the amount of time to listen to and choose different ambient sounds.
+You can have a look at working and manipulating music and video with javascript and how to build out a timer.
+
+Tech Stack - HTML , CSS , Javascript
+
+#Enjoy the calming music and relax !
+
+
 <h3><b>Github DP Loader</b></h3><hr>
 
 Small project made using javascript which shows github dp on entering github username in the input field. Made with [Axios](https://axios-http.com/) which helps in calling the github API enabling us to fetch user data including the url of their dp which is then shown on the screen.
@@ -15,6 +25,7 @@ Simple Calculator allowing basic operations on numbers(addition, multiplication,
 ---
 
 ## YT-GetDataSet
+
 Yet Another Wrapper Over Youtube Scrapper
 It Scraps Only Course Playlists based on the Search Query. It writes PlaylistId, PlaylistTitle, PlaylistUrl, PlaylistThumbnail and PlaylistCategory to json file named dataset.json
 ![image](https://user-images.githubusercontent.com/46681482/135529898-08bf305c-dd80-4417-af55-7758198f50a9.png)
@@ -24,6 +35,22 @@ It Scraps Only Course Playlists based on the Search Query. It writes PlaylistId,
 <h3><b>Weather app using JS and its frameworks</b></h3><hr>
 
 Allows you to search for any location's current weather (built using JS, node.js and express)
+<br>
+<br>
+<h3><b>Snake-Game</b></h3><hr>
+
+Just a simple Snake Game Made Using HTML CSS and JS
 
 
-<hr />
+---
+<br>
+<h3><b>Movie App</b></h3><hr>
+
+Simple movie app made using HTML CSS and JS
+
+---
+<br>
+## AI-Assited Contact Page
+
+Awesome interactive contact page
+It is a small project where i created a simple contact form webpage with intreasting speech recoginition. With help of speaking some basic commands, you can fill form without typing anything.

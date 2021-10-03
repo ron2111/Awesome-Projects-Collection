@@ -1,0 +1,58 @@
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.branding {
+  font-family: "Pacifico", cursive;
+}
+
+.gradient {
+  background: rgb(71, 65, 252);
+  background: linear-gradient(
+    135deg,
+    rgba(71, 65, 252, 1) 0%,
+    rgba(71, 65, 252, 1) 80%,
+    rgba(99, 12, 145, 1) 100%
+  );
+}
+.page-header {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.feature {
+  color: white;
+}
+
+.feature ul {
+  list-style: none;
+}
+
+.icon {
+  color: white;
+  height: 5rem;
+  width: 5rem;
+  font-size: 1.75rem;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contribute {
+  color: white;
+}
+
+.page-footer {
+  color: white;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+.page-footer a {
+  text-decoration: none;
+}
+
+.page-footer a:hover {
+  color: purple;
+}

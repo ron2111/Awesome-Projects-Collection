@@ -31,6 +31,11 @@ The model was built using Tensorflow Sequential API :
 A stacked LSTM was made with three LSTM layers, two Dropouts layers, and one final output layer.
 Since our task was stock price prediction, mean squared error loss was used with ‘adam’ optimizer for gradient descent.
 
+
+<b><h3>DataScience3</h3></b>
+
+A mini project for predictive analysis on a given large data set to predict whether the patient is frequent buyer of medicine or not . Done using certain classificaton models like KNN,GMM,BayesClassification etc
+
 <b><h3>Resume Selection using Machine Learning (Naïve Bayes Classifier)</h3></b>
 
 Build a Machine Learning Model on Naïve Bayes classifier to predict whether a given resume text should be flagged or not. Our training data consist of 125 resumes with 33 flagged resumes and 92 non-flagged resumes. Matplotlib and seaborn libraries were used for Data Visualization. Natural Processing Toolikt (NLTK) was used for pre-processing the written text (removing stop words and unnecesary words). Sklearn module in python was used to transform the training data to countvectorizer sparse matrix and train the Naïve Bayes Classifier
@@ -41,6 +46,30 @@ The results of the model were as follows:
 4) Recall Score : 0.84
 Application: This project can be used for screening/shortlisting resumes in Univerities / Colleges / Companies / Schools.
 
+
+
+<b><h3> Number Generator (Developing a GAN for Generating MNIST Handwritten Digits) </h3></b>
+
+These are the points which the project accomplishes
+
+- How to define and train the standalone discriminator model for learning the difference between real and fake images.
+- How to define the standalone generator model and train the composite generator and discriminator model.
+- How to evaluate the performance of the GAN and use the final standalone generator model to generate new images.
+
 <b><h3>Breast Cancer Prediction using Various Algorithms</h3></b>
 
 This project predicts whether a patient who is suffering from breast cancer is benign or malignant. We have used Logistic Regression, Decision Tree Classifier, Random Forest Classifier and Support Vector Classifier to predict this case. Comparing the accuracy of these 4 models, we can see that Logistic Regression(97.07%) and Support Vector Classifier(95.32%) has highest accuracy. Very feasible and useful application to overcome complications and know the severity of breast cancer.
+
+
+<b><h3>Real Estate Price Prediction Project</h3></b>
+
+This project predicts the price of the real estate using various machine leaning algorithms that are Linear Regression, Decision Tree Regressor
+and Random Forest Regressor. Steps followed in this project are as Step 1: Data Preprocessing & Exploration, Step 2: Data Visualization,
+Step 3: Data Training & Model Creation and Step 4: Performance Evaluation.
+
+
+<b><h3>Coronavirus Information Chat Bot</h3></b>
+
+This is a coronavirus information chatbot developed in python. It is interactive and resolves the user's query related to the covid-19 virus and responds back with the most appropriate response respective to the query. The natural language toolkit (NLTK) is used to process and tokenize the text fetched from the World Health Organization's (WHO) official article page using the newspaper library of python. Finally, the response is created by comparing the cosine_similarity of the generated list. 
+<b><h3>Create audio dataset of 6 second each file</h3></b>
+This project creates audio dataset using python code. steps followed in this project are as step 1: extracting Audio from dataset, step2: dividing the audio file into chuncks of 6 second file, step 3: check the sampling rate of all the audio file of dataset created.

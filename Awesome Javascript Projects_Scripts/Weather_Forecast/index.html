@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- This is the main body of the Weather container-->
+    <div class="main-container">
+
+      <!-- Heading and Form Section-->
+      <div class="container top">
+        <h1>Weather Forecast</h1>
+        <form action="" onsubmit="return false">
+          <input type="text" placeholder="Search your city" class="search" />
+          <button type="submit" class="btn">Submit</button>
+          <p class="error"></p>
+        </form>
+    
+        <!-- Information section gathered from API-->
+        <section>
+          <div class="information">
+            <div class="icon">
+              <img src="" alt="" class="icon-weather" />
+            </div>
+
+            <div class="place-info">
+              <div class="city"></div>
+              <div class="date"></div>
+            </div>
+
+            <div class="weather-info">
+              <div class="temp"></div>
+              <div class="state"></div>
+              <div class="range"></div>
+            </div>
+          </div>
+             <div>
+               <p style="color:white; margin-top: 40px ; font-size: 10px;" >Made with ❤ &copy Open Source</p>
+             </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
