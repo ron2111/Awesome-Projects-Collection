@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invest in Promising Startups</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/option.css" />
+  </head>
+  <body>
+    <%- include('header.ejs'); -%>
+
+    <div class="choose-option" data-aos="zoom-in">
+      <div class="desc-1">
+        <h1 class="startup-heading">I am a Startup</h1>
+        <h2 class="startup-desc">
+          Pitch your idea, connect to top Investors & get your project going
+        </h2>
+        <button
+          onclick="window.location.href='/startup_form_main';"
+          class="startup-sign-up"
+          type="submit"
+        >
+          Sign Up as Startup
+        </button>
+      </div>
+      <img class="option-image-1" src="assets/6909.jpg" alt="" />
+    </div>
+
+    <div class="choose-option-2" data-aos="zoom-in">
+      <div class="desc-2">
+        <h1 class="investor-heading">I am an Investor</h1>
+        <h2 class="investor-desc">
+          Find the most promising startups to invest & see them prosper
+        </h2>
+        <button
+          onclick="window.location.href='/investor_form';"
+          class="investor-sign-up" type="submit">
+          Sign Up as Investor
+        </button>
+      </div>
+      <img class="option-image-2" src="assets/6143.jpg" alt="" />
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1000,
+      });
+    </script>
+    <!-- <div class="desc-2">
+        <h1>I am a Investor</h1>
+        <h2>Find the most promising startups to investment</h2>
+        <button type="submit">Sign Up as Investor</button>
+        <img class="option-image-2" src="assets/6143.jpg" alt="" /> -->
+  </body>
+</html>

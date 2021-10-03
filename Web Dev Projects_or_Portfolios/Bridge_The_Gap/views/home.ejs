@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Screen</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/home.css" type="text/css" />
+
+    <script
+      src="https://kit.fontawesome.com/5ce7758448.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="logo">
+      <img class="logo-img" src="assets/logo.png" alt="" />
+    </div>
+
+    <%- include('header.ejs'); -%>
+
+
+    <div class="row header-area">
+      <div class="col-lg-5 big-heading-main" data-aos="fade-right">
+        <h1 class="big-heading">Let's Bridge The Gap</h1>
+        <h2 class="sub-heading">
+          A platform to boost your project if you are a startup & to multiply
+          returns if you are an investor
+        </h2>
+        <a href="" class="main-button">Get Started</a>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <img class="title-image" src="assets/5222.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="row" data-aos="zoom-in">
+        <div class="feature-box col-lg-4">
+          <!-- <i class="fas fa-user-check fa-4x"></i> -->
+          <!-- <i class="fas fa-laptop-code fa-4x"></i> -->
+          <i class="icon fas fa-rocket fa-4x"></i>
+          <h3>Launch.</h3>
+          <p>Get a boost to your startup & set it going.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-user-friends fa-4x"></i>
+          <h3>Connect.</h3>
+          <p>Get in touch with those you want.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-laptop-code fa-4x"></i>
+          <h3>Market.</h3>
+          <p>Fetch the latest market requirements & plan accordingly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RoadMap -->
+    <section id="roadmap">
+      <div class="container roadmap-container">
+        <div class="page-header" data-aos="fade-right">
+          <h1 id="timeline">Flow of the platform</h1>
+        </div>
+        <div class="timeliner" data-aos="fade-left">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-badge">
+                <i class="far fa-check-circle"></i>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Specify</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Specify your role as a startup or invester</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge warning">
+                <i class="fas fa-sign-in-alt"></i>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Register</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Sign up today & load your profile</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge danger">
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Search</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Explore your interested domains</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-inverted">
+              <div class="timeline-badge success">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Connect</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Get in contact with the other community people</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+      </div>
+      </div>
+    </section>
+
+    <!-- Domains -->
+    <section id="domains">
+      <div class="domain-heading">
+        <h1 class="heading-domain">Explore startups under various domains</h1>
+      </div>
+      <div class="container domain-container" data-aos="zoom-out">
+        <div class="row">
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Healthcare, Education & Governance
+            </p>
+          </div>
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Cyber Security
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Agritech & livestock
+            </p>
+          </div>
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Banking, Finance & Insurance
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>
+              Environment, Public Safety & Disaster Management
+            </p>
+          </div>
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Logistics & Transformation
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Enterprise Transformation,
+              Industry 4.0
+            </p>
+          </div>
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Multimedia & Broadcast
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Smart Cities & Infrastructure
+            </p>
+          </div>
+          <div class="col domain-components">
+            <p class="domain-labels">
+              <i class="fas fa-star star"></i>Others - Hardware, Computing, etc
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>BTG © 2020</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1000,
+      });
+    </script>
+  </body>
+</html>
