@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+   
+    background-color: rgb(233, 123, 187);
+    font-family: 'Itim', cursive;
+    
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 35px;
+    padding: 0 34px;
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    /* color: rgb(117, 121, 151); */
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+   
+    
+}
+.search input{
+    width: 30vw;
+    height: 23px;
+   
+    border-radius: 6px;
+    margin: 0 16px 0 56px;
+    padding: 0 16px;
+
+}
+.search button{
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+
+}
+.btn:hover {
+  background-color: white;
+  color: rgb(233, 123, 187);
+}
+.slider{
+    margin:12px auto;
+    width: 80vw;
+    overflow: hidden;
+}
+.card{
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family:'Itim', cursive ;
+}
+.cards{
+    display: flex;
+    overflow: hidden;
+    
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card h2{
+    font-family:'Itim', cursive ;
+}
+.container{
+    min-height: calc(100vh - 50px - 12vh);
+}
+    
+    
+footer{
+    height: 12vh;
+    background-color: rgb(233, 123, 187);
+    color: white;
+    font-family: 'Itim', cursive;
+}
