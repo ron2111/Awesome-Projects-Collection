@@ -18,8 +18,8 @@
 1. Add any project, piece of code or script of your choice you wish to share in this repository.
    **Add your projects under the respective tech stack folder only**
 
-<strike>2. Update project_doc.md file available in each project folder with the description of your project.</strike>
-         *- This rule is changed now*
+<strike> Update project_doc.md file available in each project folder with the description of your project.</strike>
+         *- This rule is changed now to resolve the merge conflicts*
 
 2. It can be any of any length and can be any number of scripts, just **add a folder with your projects name.**
 3.  There is no need to raise an issue to add your project, you can directly raise a PR.
@@ -39,9 +39,10 @@
 
 - [Rohan Sharma](https://www.linkedin.com/in/rohan-sharma-3a6b13203/)
 
-## Pull Request Reviewers
+## Collaborators/Pull Request Reviewers
 
 - [Aflah](https://github.com/aflah02)
+- [Aditya Teltia](https://github.com/AdityaTeltia/AdityaTeltia)
 - [Muskan](https://www.linkedin.com/in/muskan-bansal-095601189)
 - [Sidharth Sethi](https://github.com/TechSpiritSS)
 
