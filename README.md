@@ -18,12 +18,12 @@
 1. Add any project, piece of code or script of your choice you wish to share in this repository.
    **Add your projects under the respective tech stack folder only**
 
-<strike>2. Update project_doc.md file available in each project folder with the description of your project.</strike>
-         *- This rule is changed now*
+<strike> Update project_doc.md file available in each project folder with the description of your project.</strike>
+         *- This rule is changed now to resolve the merge conflicts*
 
-
-
-It can be any of any length and can be any number of scripts, just **add a folder with your projects name.**
+2. It can be any of any length and can be any number of scripts, just **add a folder with your projects name.**
+3.  There is no need to raise an issue to add your project, you can directly raise a PR.
+4.  While raising a PR, make sure to fill the description and checklist as per the description template following your project's specification & delete all the irrelevant  checkboxes.
 
 - IF you have any doubts regarding "How to merge your first PR" , checkout this video:<br>
 <p><a href="https://hacktoberfest.digitalocean.com/resources?wvideo=tf3u5ruz5y"><img src="https://embedwistia-a.akamaihd.net/deliveries/4bdee00ef68274f35bc6ad84ac1e49c6.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=1e71e7e0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://hacktoberfest.digitalocean.com/resources?wvideo=tf3u5ruz5y">Merge your first PR</a></p>
@@ -40,9 +40,10 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 - [Rohan Sharma](https://www.linkedin.com/in/rohan-sharma-3a6b13203/)
 
-## Pull Request Reviewers
+## Collaborators/Pull Request Reviewers
 
 - [Aflah](https://github.com/aflah02)
+- [Aditya Teltia](https://github.com/AdityaTeltia/AdityaTeltia)
 - [Muskan](https://www.linkedin.com/in/muskan-bansal-095601189)
 - [Sidharth Sethi](https://github.com/TechSpiritSS)
 
@@ -96,11 +97,7 @@ It can be any of any length and can be any number of scripts, just **add a folde
 - [Hafitz Setya](https://github.com/breakdowns)
 - [Muktanshu Mishra](https://github.com/muktanshumishra24)
 - [Dhroov Makwana](https://github.com/pabloescoder)
-
--[Prince Roy](https://www.github.com/iprinceroyy)
-
--[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
-
+- [Prince Roy](https://www.github.com/iprinceroyy)
 - [Prannov Jamadagni](https://github.com/Prannov)
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
