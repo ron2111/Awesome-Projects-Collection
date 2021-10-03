@@ -100,4 +100,9 @@ It can be any of any length and can be any number of scripts, just **add a folde
 -[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
 
 
+- [Prannov Jamadagni](https://github.com/Prannov)
+
+-[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
+
+
 ## All the best for **Hacktoberfest** :)
