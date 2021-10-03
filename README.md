@@ -99,6 +99,8 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 -[Prince Roy](https://www.github.com/iprinceroyy)
 
+- [Satkar Acharya](https://github.com/satkar2001)
+
 -[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
 
 - [Prannov Jamadagni](https://github.com/Prannov)
