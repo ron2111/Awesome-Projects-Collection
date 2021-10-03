@@ -90,7 +90,11 @@
 
 - It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.
 <br>
+<b><h3>Web Camera Capture</h3></b>
 
+- A simple webpage that asks access to your camera and then it will store the screenshot on the canvas on the same webpage. You can then download the canvas, Or even check the camera angles after pausing camera.
+- Technologies use : HTML, CSS and vanilla JS.
+<br>
 
 
 
