@@ -21,8 +21,6 @@ import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.fragment_firebase_google_login.*
 
 class FirebaseGoogleLoginFragment : Fragment() {
-
-
     companion object {
         private const val TAG = "GoogleActivity"
         private const val RC_SIGN_IN = 9001
