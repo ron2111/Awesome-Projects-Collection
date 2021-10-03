@@ -1,0 +1,224 @@
+* {  margin: 0;
+    padding: 0;
+    
+}
+
+
+.navbar{
+display: flex;
+height: 40px;
+align-items: center;
+justify-content: center;
+position: sticky;
+top: 0;
+cursor: pointer;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+.nav-list{
+    width: 70%;
+   
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+
+
+}
+.nav-list img { border-radius: 100px;
+    border: 5px solid white;
+    margin-top:2px;
+}
+.nav-list li{
+   list-style: none;
+   padding: 20px;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: red;
+}
+.rightNav{
+   
+    width: 30%;
+    text-align: right;
+
+}
+#search{
+    padding :5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7)url(pexels-pixabay-51947.jpg);
+     background-size: cover;
+     background-blend-mode: darken;
+     width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("farmslogin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-up-form{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    border-color: black;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+
+.sign-up-form h1{
+    color: rgb(250, 249, 249);
+    margin-bottom: 30px;
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border: 1px solid rgb(3, 0, 0);
+    outline: none;
+    padding-left: 10px;
+}
+button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup-btn{
+    background-color: #00080a;
+}
+
+.signup-btn:hover{
+    background-color: #000508;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.twitter-btn{
+    background-color: #00090c;
+}
+.twitter-btn:hover{
+    background-color: #00060a;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.agree  a:hover{
+    color: black;
+}
+
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+.agree{
+    color: white;
+}
+.or{
+    background: rgb(3, 0, 0);
+    width: 30px;
+    margin: -19px auto 10px;
+    color: rgb(253, 253, 253);
+}
+
+img{
+    width: 70px;
+    margin-top: -50px;
+    margin-top: 30px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right:5%;
+    top:15px;
+
+}
+.line{
+    width: 33px;
+    background-attachment: fixed;
+    background-color: blanchedalmond;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction:column;
+    }
+    .navbar{
+        height:478px;
+        flex-direction: column;
+        transition: all 0.8s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 30px;
+    }   
+    .v-class-resp{
+        opacity: 0;
+    }
+   
+    .secRight{
+        flex-direction: column;
+        padding-bottom: 40px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .secLeft{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    body{
+        height: auto;
+        background-attachment: fixed;
+        width: 100%;
+    }
+}
