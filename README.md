@@ -3,6 +3,9 @@
 # Hacktoberfest2021_awesome-projects
 
 ## Quality over Quantity :)
+<a href="https://discord.gg/KrkbmCSZVQ">
+  <img src="https://cdn.svgporn.com/logos/discord.svg" alt="Discord" style="height:10vh; width:10vw;"/>
+</a>
 
 ## Update:
 
