@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
+
+.home{
+    box-sizing: border-box;
+    height: 94vh;
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 6vh; */
+}
+
+.avatar{
+    height: 50%;
+    width: 50%;
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 6vh; */
+}
+
+.btns > button{
+    /* width: 25%;
+    height: 25%; */
+    width: 6em;
+    height: 2.5em;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 2px 3px 5px rgb(102, 101, 101);
+    border-radius: 15px;
+    border: none;
+    transition: 0.2s;
+}
+
+.btns > button:active{
+    box-shadow: none;
+}
+
+.btns >button:hover{
+    background-color: #ffffff;
+}
+
+.generate > button{
+    width: 6em;
+    height: 2.5em;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 2px 3px 5px rgb(102, 101, 101);
+    transition: 0.2s;
+    margin: 15px;
+}
+
+.generate > button:active{
+    box-shadow: none;
+}
+
+#gen{
+    background-color: #4361ee;
+}
+
+#down{
+    background-color: #ee6c4d;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+.nav{
+    height: 6vh;
+    width: 100%;
+    top: 0;
+    background-color: #313442;
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.nav > p{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 35px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    .btns > button{
+        width: 25%;
+        height: 25%;
+    }
+
+    .btns{
+        margin-top: 0;
+    }
+
+    .avatar{
+        height: 30%;
+        width: 50%;
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+}
