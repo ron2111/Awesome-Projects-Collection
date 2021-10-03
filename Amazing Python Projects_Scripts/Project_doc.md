@@ -28,3 +28,7 @@
 ## Dots and Boxes
 
 ### Dots and Boxes is a fun and simple classic game for 2 or more players. The game starts with an empty grid of dots. Players take turns connecting two unjoined horizontally or vertically adjacent dots. A player who completes the fourth side of a 1×1 box earns one point and must take another turn.
+
+- # Transpose the Image:
+  ## Description:
+  We will use the Image module which comes under the PIL module, after that Open the Image, using **image.transpose** just transpose the image, and at last save it.
