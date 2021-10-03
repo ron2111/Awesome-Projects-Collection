@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s all ease;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Hina Mincho', serif; */
+    font-family: 'Allison', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-size: 25px;
+    /* width: 100vw; */
+    align-items: center;
+    height: 100vh;
+    background-color: #F8EA8C;
+}
+.head{
+    /* width: 100vw; */
+    margin-top: 10px;
+    /* padding-left: 40vw; */
+    text-align: center;
+}
+.body{
+    padding-left: 30vw;
+}
+.body img:nth-child(2){
+    width: 40vw;
+    height: 50vh;
+}
+button{
+    background-color: rgb(101, 101, 223);
+    padding: 10px 25px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    margin-left: 43vw;
+    color: ivory;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    /* align-items: center; */
+}
+button:hover{
+    background-color: rgb(65, 65, 192);
+}
