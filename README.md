@@ -73,50 +73,29 @@ It can be any of any length and can be any number of scripts, just **add a folde
 
 
 - [Prajjwal Datir](https://github.com/PrajjwalDatir)
-
 - [Nishant Giri](https://github.com/nishant-giri)
-
 - [Aarshita Acharya](https://github.com/aarshita02)
-
 - [Rajib Mondal](https://github.com/mondalraj)
-
 - [Euhid Aman](https://github.com/euhidaman)
-
 - [Nandita Manchikanti](https://github.com/nandita-manchikanti)
-
 - [Arko Sengupta](https://github.com/Arko707)
-
 - [Prathima Kadari](https://github.com/prathimacode-hub)
-
 - [Rohan Gupta](https://github.com/Rohan-here)
-
 - [Mayur Kongutte ](https://github.com/Mayur2506)
-
 - [Kinshuk Kumar](https://github.com/kinshukk100)
-
 - [Agnibha Sarkar](https://github.com/casafurix)
-
 - [Ayushi Shrivastava](https://github.com/ayushi424)
-  
 - [Satyam Tripathi](https://github.com/Iamtripathisatyam)
-
 - [Aniket Pawar](https://github.com/Aniket-508)
-  
 - [Atishi Jain](https://github.com/atishij)
-
 - [Aniket Pawar](https://github.com/ramyamahi)
-  
 - [Sujal Gera](https://github.com/sujalgera01)
-
 - [Keegan Paul Colaco](https://github.com/KeeganC09)  
-
 - [Nishant Singh](https://www.linkedin.com/in/nishant-singh-362a70201/)
-  
 - [Atan Bhardwaj]( https://github.com/atanbhardwaj)
-
 - [Hafitz Setya](https://github.com/breakdowns)
-
 - [Muktanshu Mishra](https://github.com/muktanshumishra24)
+- [Dhroov Makwana](https://github.com/pabloescoder)
 
 -[Your name](your-github*url or linkedlin-url) : \_Don't edit this template*
 
