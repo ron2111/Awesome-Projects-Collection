@@ -1,0 +1,2 @@
+D:\CODE\Mini Projects\Mini Games\TETRIS\Debug\TETRIS.exe
+D:\CODE\Mini Projects\Mini Games\TETRIS\Debug\TETRIS.pdb
