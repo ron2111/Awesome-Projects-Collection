@@ -1,0 +1,44 @@
+name: New Issue
+description: Description
+title: "[Create New Issue]: "
+labels: ["Hacktoberfest21"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make an issue!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Enter a brief description
+      placeholder: Please include a summary. Please also include relevant motivation and context. 
+      value: "Description"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Domain
+      description: Select domain of Contribution
+      options:
+        - Web Development
+        - App Development
+        - Flutter Projects
+        - Python Projects
+        - C++ Projects
+        - Clone Projects
+        - HTML Projects
+        - Javascript Projects
+        - Machine Learning Projects
+        - Others
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct]()
+      options:
+        - label: I follow Contributing Guidelines & Code of conduct.
+          required: true

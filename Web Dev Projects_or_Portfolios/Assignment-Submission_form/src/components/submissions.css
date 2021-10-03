@@ -1,0 +1,28 @@
+.Submissions-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection {
+    /* border: 2px solid black; */
+    margin: 8px;
+    padding: 10px;
+    width: 70%;
+    background: rgba(248, 247, 247, 0.836);
+    box-shadow: rgba(207, 209, 209, 0.568) 0.3rem 0.3rem 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.sub {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #26a69a;
+}
+
+.heading {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #26a69a
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scramble</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 15vh;
+            background-color: #20bf6b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: 'Carter One', cursive;
+        }
+
+        section {
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #7bed9f;
+        }
+
+        .gameArea {
+            width: 50%;
+            height: 400px;
+            background-color: #2ed573;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        input {
+            text-align: center;
+            outline: none;
+            border: none;
+            font-size: 1.1 rem;
+            width: 40%;
+            padding: 15px 0;
+            border-radius: 25px;
+            background-color: #dff9fb;
+            margin: 2rem 0;
+        }
+
+        button {
+            font-size: 1rem;
+            outline: none;
+            border: #2f3542;
+            color: #eb4d4b;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 9px #999;
+        }
+
+        button.btn {
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #c8ecc9
+        }
+
+        .btn:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .hidden {
+            display: none;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>"Guess the technology"</h1>
+    </header>
+
+    <section>
+        <div class="gameArea">
+            <h3 class="msg"></h3>
+            <input type="text" class="hidden">
+            <button class="btn">Start</button>
+        </div>
+    </section>
+
+    <script>
+        const msg = document.querySelector('.msg');
+        const guess = document.querySelector('input');
+        const btn = document.querySelector('.btn');
+
+        let play = false;
+        let newWord;
+        let randWord;
+        let swords = ['python', 'javascript', 'c++', 'php', 'java', 'c#', 'html', 'css', 'reactjs', 'angular', 'swift', 'android', 'sql'];
+
+        const createNewWords = () => {
+            let i = Math.floor((Math.random() * swords.length));
+            return swords[i];
+        }
+
+        const scramble = (arr) => {
+            //shuffling the array
+            for (let i = arr.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]]; //array variable swap es6
+            }
+            return arr;
+        }
+
+        btn.addEventListener('click', function () {
+            if (!play) {
+                play = true;
+                btn.innerHTML = "Guess";
+                //guess.classList.remove('hidden');
+                guess.classList.toggle('hidden');
+                newWord = createNewWords();
+                randWord = scramble(newWord.split("")).join(""); //converting string to array then to string
+                msg.innerHTML = `Guess the technological term: ${randWord}`;
+            }
+            else {
+                tempWord = guess.value;
+                if (newWord === tempWord) {
+                    play = false;
+                    msg.innerHTML = `Congrats, You are correct. It is ${newWord}`;
+                    btn.innerHTML = "Start again";
+                    guess.classList.toggle('hidden');
+                    guess.value = "";
+                } else {
+                    msg.innerHTML = `Sorry, You are incorrect. Try again ${randWord}`;
+                    guess.value = "";
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

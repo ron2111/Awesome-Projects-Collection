@@ -1,6 +1,11 @@
 ## Add your Web Development Projects like Personal Portfolio using HTML/CSS or any other Frontend Dev Tool.
 
 <br>
+<b><h3>Restaurant Website</h3></b>
+<br>
+- This is a single page restaurant website (built with HTML, CSS, JS and Bootstrap)
+
+<br>
 <b><h3>Weather App</h3></b>
 <br>
 - Lets you know the weather of your current location (built with HTML, CSS and vanilla JS)
@@ -64,6 +69,14 @@
 - Technologies Used - HTML and CSS ( by https://github.com/ramyamahi )
 
 - A simple portfolio website. You can create your porfolio from this project.
+
+
+<br>
+<b><h3>Pre-Loaders</h3></b> (by https://github.com/sujalgera01)
+<br>
+- An awesome pre-loaders that developers can add at the loading time of website.
+
+- Technologies Used : HTML and CSS 
   <br>
 
 <br>
@@ -82,7 +95,11 @@
 
 - It uses some modern express Js packages like bcrypt to secure your notes and ensure no-one but yourself can access them.
 <br>
+<b><h3>Web Camera Capture</h3></b>
 
+- A simple webpage that asks access to your camera and then it will store the screenshot on the canvas on the same webpage. You can then download the canvas, Or even check the camera angles after pausing camera.
+- Technologies use : HTML, CSS and vanilla JS.
+<br>
 
 
 
