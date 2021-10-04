@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "averta";
+  src: url("../fonts/AvertaDemo-Regular.otf");
+}
+
+* {
+  font-family: averta;
+}
+
+.hero {
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar .navbar-nav .nav-item:nth-child(1) .nav-link {
+  color: #a5410f;
+  font-weight: 700;
+}
+.navbar .navbar-nav .nav-item {
+  margin-left: 24px;
+}
+
+/* hero section */
+.hero-section {
+  align-items: center;
+  height: 100%;
+}
+.hero-section h1 {
+  font-weight: bold;
+  font-size: 65px;
+  color: #506269;
+}
+.hero-section p {
+  font-size: 24px;
+  color: #848484;
+  line-height: 50px;
+}
+.hero-section button {
+  height: 65px;
+  border-radius: 0px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #a5410f;
+}
+.hero-section button:hover {
+  background-color: white;
+  border: 2px solid #a5410f;
+  color: #a5410f;
+}
+.hero-section img {
+  width: 500px;
+}
+
+/* about section */
+.about {
+  margin: 100px 0px;
+}
+.about .first-col .content-wrapper {
+  border-top: 2px solid black;
+  width: 200px;
+}
+.about .first-col p {
+  color: #506269;
+  font-weight: 600;
+  line-height: 48px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.about .first-col img {
+  width: 192px;
+}
+.about .second-col .content-wrapper {
+  width: 80%;
+}
+
+/* recent projects */
+.recent-projects {
+  background: #efddd4;
+  min-height: 600px;
+}
+.recent-projects .projects-content {
+  position: relative;
+  top: 100px;
+}
+.recent-projects hr {
+  width: 220px;
+  border: 1px solid #a5410f;
+  background: #a5410f;
+  margin-bottom: -5px;
+}
+.recent-projects .heading {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #a5410f;
+  margin-bottom: 50px;
+}
+.recent-projects .heading span:nth-child(1) {
+  font-size: 30px;
+  position: relative;
+  left: 5px;
+}
+.recent-projects .projects-cards {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.recent-projects .projects-cards .card {
+  background: rgba(253, 253, 253, 0.14);
+}
+.recent-projects .projects-cards .card img {
+  width: 100%;
+  transform: 0.5s;
+}
+.recent-projects .projects-cards .card:hover {
+  animation: pulse;
+  animation-duration: 0.5s;
+}
+.recent-projects .projects-cards .card h1 {
+  font-size: 17px;
+  color: #a5410f;
+  font-weight: 700;
+}
+.recent-projects .projects-cards .card p {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: #a5410f;
+}
+
+/* our client section */
+.our-client .our-client-content {
+  position: relative;
+  top: 100px;
+}
+.our-client hr {
+  width: 220px;
+  border: 1px solid rgb(34, 34, 34);
+  background-color: rgb(34, 34, 34);
+  margin-bottom: -5px;
+}
+.our-client .heading {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #d5963d;
+  margin-bottom: 70px;
+}
+.our-client .heading span:nth-child(1) {
+  font-size: 30px;
+  position: relative;
+  color: rgb(34, 34, 34);
+  left: 5px;
+}
+.our-client .first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* why choose us */
+.why-choose-us {
+  margin-top: 400px;
+}
+.why-choose-us .land {
+  background-color: #d5963d;
+  height: 301px;
+}
+.why-choose-us .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.why-choose-us .content span:nth-child(1) {
+  margin-top: -50px;
+  position: relative;
+  left: 100px;
+}
+.why-choose-us .content span:nth-child(1) img {
+  width: 500px;
+}
+.why-choose-us .content span:nth-child(2) {
+  width: 400px;
+  background-color: #a5410f;
+  height: 400px;
+  position: relative;
+  right: 150px;
+  padding: 50px;
+  color: white;
+  top: -100px;
+}
+
+/* advantages section */
+
+.card,
+.card-header,
+.card-body {
+  background-color: transparent;
+  border: none;
+}
+.our-advantages {
+  background-color: #131e07;
+  padding: 50px 0px;
+}
+.our-advantages .heading h1 {
+  font-size: 50px !important;
+  line-height: 47px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.our-advantages .heading h1 span:nth-child(1) {
+  font-size: 32px;
+  font-weight: 400;
+}
+.our-advantages .card-header h1 {
+  font-size: 20px;
+  color: #d5963d;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: -10px;
+}
+.our-advantages .card-body p {
+  font-size: 18px;
+  color: white;
+}
+
+/* contact us section */
+.contact {
+  background-color: #a5410f;
+  padding: 100px 0px;
+}
+.contact .content h1 {
+  color: white;
+  font-weight: bold;
+}
+.contact .content p {
+  color: white;
+}
+.contact li.list-group-item {
+  background-color: transparent;
+  border: none;
+  font-size: 19px;
+  padding-left: 0px;
+  color: white;
+  padding: 8px 0px;
+}
+.contact li.list-group-item ion-icon {
+  color: #d5963d;
+  font-size: 23px;
+}
+.contact li.list-group-item span {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
