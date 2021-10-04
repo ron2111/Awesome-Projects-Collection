@@ -3,23 +3,14 @@
 # Hacktoberfest2021_awesome-projects
 
 ## Quality over Quantity :)
-
-## Update:
-
-### To resolve all the merge conflicts:
-1. Do not add your names in the contributor's list, we will do that on our own.
-
-2. **Make sure to add a readme.md file with your project's description inside your project's folder.**
-*From now onwards, no need to add the project description in project_doc.md file, instead so as mentioned above.*
+### Before starting with the contributions, make sure to go through the <a href="https://hacktoberfest.digitalocean.com/resources"><b>Official Hacktoberfest rules & values</b></a> to get an idea about what Open Source is really about.
+**We strictly prefer and allow valid contributions only. NO SPAMMING**
 
 
 ## What to do?
 
-1. Add any project, piece of code or script of your choice you wish to share in this repository.
+1. Add some unique and amazing projects as per your favourite tech stack for the community to get benifitted.
    **Add your projects under the respective tech stack folder only**
-
-<strike> Update project_doc.md file available in each project folder with the description of your project.</strike>
-         *- This rule is changed now to resolve the merge conflicts*
 
 2. It can be any of any length and can be any number of scripts, just **add a folder with your projects name.**
 3.  There is no need to raise an issue to add your project, you can directly raise a PR.
@@ -31,6 +22,14 @@
 **Note : Don't add hello world programs / small changes in README file. PRs will be labelled "invalid" & closed immediately . Please add unique codes**
 
 **You will be banned indefinately from Hacktoberfest after two invalid PRs.**
+
+## Update:
+
+### To resolve all the merge conflicts:
+1. Do not add your names in the contributor's list, we will do that on our own.
+
+2. **Make sure to add a readme.md file with your project's description inside your project's folder.**
+*From now onwards, no need to add the project description in project_doc.md file, instead so as mentioned above.*
 
 ## What's next?
 
