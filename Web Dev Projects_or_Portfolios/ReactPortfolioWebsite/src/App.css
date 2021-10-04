@@ -1,0 +1,563 @@
+/** @format */
+
+* {
+  margin: 0px;
+}
+
+ul > li{
+  margin: 6px;
+}
+
+.heighter {
+  height: 100vh;
+  width: 78%;
+}
+
+.info a {
+  text-decoration: beige;
+  color: rgb(225, 224, 224);
+}
+
+.terminal-window header .button {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 3.8rem;
+  margin-right: 7px;
+}
+
+.terminal-window li {
+  margin-bottom: 3px;
+}
+
+.green {
+  background: #3bb662;
+}
+
+.yellow {
+  background: #f2d12e;
+}
+
+.red {
+  margin-left: 1.2rem;
+  background: #e75448;
+}
+
+@media only screen and (min-width: 1000px) {
+  .name {
+    font-family: "Inconsolata";
+    font-size: 43px;
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    right: 8vw;
+    font-weight: lighter;
+    font-stretch: expanded;
+    transition: 0.6s linear;
+  }
+
+  .info {
+    height: 78vh;
+    width: 100%;
+    font-family: "Inconsolata";
+    background-color: rgb(245, 245, 245);
+  }
+
+  .heading {
+    font-size: 2.5em;
+    margin: 1em 1.5em 0em 0em;
+    color: #011820;
+    float: right;
+    letter-spacing: -1px;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 27%;
+    right: 8vw;
+    height: 24vh;
+    border-radius: 100%;
+    border: 1.5px solid white;
+    transition: 0.6s linear;
+  }
+
+  .terminal-window section.terminal {
+    color: white;
+    font-family: "Fira Code", monospace;
+    font-size: 1.37vw;
+    background: #011820;
+    padding: 1.3em;
+    box-sizing: border-box;
+    position: relative;
+    width: 55vw;
+    font-stretch: extra-expanded;
+    overflow: auto;
+    height: 50vh;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .terminal-window {
+    border-radius: 0.625rem;
+    position: relative;
+    top: 17vh;
+    right: -14vw;
+    float: right;
+  }
+
+  .terminal-window header {
+    background: hsl(211, 47%, 91%);
+    height: 30px;
+    border-radius: 1rem 1rem 0 0;
+    width: 54.7vw;
+    display: flex;
+    align-items: center;
+    padding: 6.5px 2px;
+    flex-direction: row;
+  }
+  .filename {
+    color: black;
+    font: "Ubuntu Mono";
+    font-weight: bold;
+    font-size: 1.1em;
+    transform: translateX(19vw);
+    letter-spacing: 0.2px;
+  }
+  .sidebarLg {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 23vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0e1117;
+    padding-top: 40px;
+    padding-right: 10px;
+  }
+  .sidebarSm {
+    display: none;
+  }
+  .stacker .tech {
+    font-size: 1em;
+    transform: translateY(10px);
+  }
+
+  .progress {
+    border-radius: 9px;
+    background-color: transparent;
+    width: 20vw;
+    border: 0.9px solid rgb(213, 213, 213);
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .icons {
+    height: fit-content;
+    width: fit-content;
+    margin: 1em;
+    display: flex;
+    position: relative;
+    float: right;
+    top: 15vh;
+    right: 1vw;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+  .name {
+    font-family: "Inconsolata";
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    right: 10vw;
+    font-weight: lighter;
+    font-stretch: expanded;
+    transition: 0.6s linear;
+  }
+
+  .info {
+    height: 80vh;
+    width: 100%;
+    font-family: "Inconsolata";
+    background-color: rgb(245, 245, 245);
+  }
+
+  .avatar {
+    position: absolute;
+    top: 30%;
+    right: 10vw;
+    height: 23vh;
+    border-radius: 100%;
+    border: 1.5px solid white;
+    transition: 0.6s linear;
+  }
+
+  .terminal-window section.terminal {
+    color: white;
+    font-family: "Fira Code", monospace;
+    font-size: 2.2vw;
+    background: #011820;
+    padding: 1em;
+    box-sizing: border-box;
+    position: relative;
+    width: 75vw;
+    overflow: auto;
+    height: 50vh;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .terminal-window {
+    border-radius: 0.625rem;
+    position: relative;
+    top: 5vh;
+    right: 3.5vw;
+    float: right;
+  }
+
+  .terminal-window header {
+    background: hsl(211, 47%, 91%);
+    height: 30px;
+    border-radius: 1rem 1rem 0 0;
+    width: 74.5vw;
+    display: flex;
+    align-items: center;
+    padding: 6.5px 2px;
+    flex-direction: row;
+  }
+  .filename {
+    color: black;
+    font: "Ubuntu Mono";
+    font-weight: bold;
+    font-size: 1.1em;
+    transform: translateX(16vw);
+    letter-spacing: 0.2px;
+  }
+  .sidebarLg {
+    display: none;
+  }
+  .sidebarSm {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 10vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0e1117;
+    padding-top: 4.5em;
+  }
+  .stacker .tech {
+    font-size: 0.95em;
+    transform: translate(-6px, 5px);
+  }
+  .progress {
+    border-radius: 9px;
+    background-color: transparent;
+    width: 26vw;
+    border: 1px solid rgb(213, 213, 213);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+  .heading {
+    font-size: 2.5em;
+    margin: 1em 1.5em 0em 0em;
+    color: #011820;
+    float: right;
+    letter-spacing: -1px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .name {
+    font-family: "Inconsolata";
+    font-size: 29px;
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    right: 10vw;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    transition: 0.6s linear;
+  }
+
+  .info {
+    height: 70vh;
+    width: 100%;
+    font-family: "Inconsolata";
+    background-color: rgb(245, 245, 245);
+  }
+
+  .avatar {
+    position: absolute;
+    top: 38%;
+    right: 15vw;
+    height: 18vh;
+    border-radius: 100%;
+    border: 0.9px solid white;
+    transition: 0.6s linear;
+  }
+
+  .terminal-window section.terminal {
+    color: white;
+    font-family: "Fira Code", monospace;
+    font-size: 3.3vw;
+    background: #011820;
+    margin: auto;
+    padding: 1em;
+    box-sizing: border-box;
+    position: relative;
+    width: 91vw;
+    overflow: auto;
+    height: 45vh;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .terminal-window {
+    border-radius: 0.625rem;
+    position: relative;
+    top: 5vh;
+    right: 5vw;
+    float: right;
+    margin: auto;
+  }
+
+  .terminal-window header {
+    background: hsl(211, 47%, 91%);
+    height: 30px;
+    border-radius: 1rem 1rem 0 0;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    padding: 6.5px 2px;
+    flex-direction: row;
+  }
+
+  .filename {
+    color: black;
+    font: "Ubuntu Mono";
+    font-weight: bold;
+    font-size: 1.1em;
+    transform: translateX(16vw);
+    letter-spacing: 0.2px;
+  }
+
+  .sidebarLg {
+    display: none;
+  }
+  .sidebarSm {
+    display: none;
+  }
+
+  .stacker .tech {
+    font-size: 0.95em;
+    transform: translate(-6px, 5px);
+  }
+
+  .heading {
+    font-size: 2em;
+    margin: 30px 20px 0px 20px;
+    color: #011820;
+    letter-spacing: -1px;
+    float: right;
+  }
+
+  .progress {
+    border-radius: 9px;
+    background-color: transparent;
+    width: 26vw;
+    border: 1px solid rgb(213, 213, 213);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+  .icons {
+    height: fit-content;
+    width: fit-content;
+    margin: 1em;
+    display: flex;
+    position: relative;
+    float: right;
+    top: 12vh;
+    right: 0vw;
+  }
+}
+
+.navicons {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.typer {
+  color: aquamarine;
+  height: 20px;
+  padding-top: 10px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.run {
+  position: relative;
+  float: right;
+  background: #011820;
+  border-width: 0px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.sidebarLg h1 {
+  display: block;
+  color: white;
+  font-family: "Fira Code";
+  letter-spacing: 1.8px;
+  font-weight: 400;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.sidebarLg div {
+  display: block;
+  padding: 0.85em 0.6em;
+  color: rgb(182, 182, 182);
+  font-family: "Fira Code";
+  letter-spacing: 0.3px;
+  font-size: 1.24em;
+  text-align: right;
+  font-weight: 100;
+  margin-right: 3%;
+}
+
+.active {
+  color: white;
+  font-weight: 900;
+  transition: 50ms linear;
+}
+
+.sidebarLg div:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebarLg p {
+  color: rgb(216, 216, 216);
+  font-size: 1.23em;
+  margin-top: 1.3em;
+  transition: 0.5s linear;
+  font-family: "Nunito";
+  align-self: center;
+}
+
+.sidebarSm span {
+  color: rgb(210,210,210);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.6vh 3vw;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+.active-icon {
+  color: white;
+}
+
+.sidebarLg article {
+  color: rgb(211, 209, 209);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+.sidebarLg article:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+.sidebarLg hr {
+  margin-top: 2vh;
+  width: 76%;
+}
+
+.stacker article {
+  transform: translate(0, -60px);
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.progress-bar {
+  height: 7px;
+  background-color: rgb(213, 213, 213);
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+}
+
+.container:hover .container__arrow,
+.container:hover .container__content {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.container__arrow {
+  opacity: 0;
+  pointer-events: none;
+  border: 8px solid transparent;
+  border-top-color: #f0f0f0;
+  bottom: 80%;
+  left: 80%;
+  position: absolute;
+  transform: translate(-10%, 8px);
+  height: 0;
+  width: 0;
+  z-index: 30;
+}
+
+.container__content {
+  font-family: "Inconsolata";
+  opacity: 0;
+  text-decoration: none;
+  pointer-events: none;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  bottom: 100%;
+  color: #0e1117;
+  left: 100%;
+  position: absolute;
+  transform: translate(-50%, 8px);
+  padding: 10px;
+  z-index: 10;
+}
