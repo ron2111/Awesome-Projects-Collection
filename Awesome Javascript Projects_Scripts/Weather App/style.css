@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image:url(wback.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    
+    font-family: 'Poppins', sans-serif;
+   overflow-y: scroll;
+    }
+
+
+.container{
+    padding: 20px 70px;
+    color:#fff;
+}
+
+.current-info{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+.date-container{
+    font-weight: 100;
+}
+.date-container .time{
+    font-size: 70px;
+}
+
+.date-container #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.date-container .date{
+  font-size: 30px;
+}
+
+.card {
+  align-items: center;
+  height: 47vh;
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(24, 24, 27, 0.7);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1px 0;
+  border: 1px solid #eee;
+}
+.card .weather.loading{
+  display: flex;
+  justify-content: space-between;
+
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.3em 1em;
+  border-radius: 22px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.future-forecast{
+  background: rgba(24,24,27,0.7);
+  padding: 24px;
+  position:relative;
+  bottom: 0;
+  display: flex;
+  color:white;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.future-forecast .today{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding:15px;
+  padding-right: 40px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2)
+}
+ .pp{   
+  
+  background: rgba(24,24,27,0.7);
+  text-align: center;
+  color: #fff;
+align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.future-forecast .today .day{
+  padding: 5px 15px;
+  background: #3c3c44;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.future-forecast .today .temp{
+  font-size: 13px;
+  padding-top: 15px;
+}
+.future-forecast .weather-forecast{
+  display: flex;
+}
+.weather-forecast .weather-forecast-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2)
+}
+.weather-forecast .weather-forecast-item .day{
+  padding: 5px 15px;
+  background: #3C3C44;
+  border-radius: 50px;
+  text-align: center;
+}
+.weather-forecast .weather-forecast-item .temp{
+  font-weight: 100;
+  font-size: 12px;
+}
+
+@media only screen and  (max-width:730px){
+    
+  .container{
+      padding: 20px;
+  }
+  .future-forecast{
+    justify-content: start;
+    align-items: none;
+    
+}
+
+.future-forecast .today .temp{
+    font-size: 13px;
+}
+
+
+.date-container .time{
+    font-size: 50px;
+}
+
+.date-container #am-pm{
+    font-size: 20px;
+}
+
+.date-container .date{
+    font-size: 20px;
+}
+
+.current-info .card{
+    padding: 12px;
+}
+
+.current-info .card .weather.loading{
+    font-size: 14px;
+}
+
+}
+
+@media only screen and (max-width: 1000px){
+.future-forecast{
+    justify-content: start;
+    align-items: none;
+    overflow-x: scroll;
+}
+.future-forecast .today .temp{
+  font-size: 13px;
+}
+}
