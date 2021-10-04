@@ -99,6 +99,7 @@
 - [Dhroov Makwana](https://github.com/pabloescoder)
 - [Prince Roy](https://www.github.com/iprinceroyy)
 - [Prannov Jamadagni](https://github.com/Prannov)
+- [Saloni Thete](https://github.com/SaloniThete)
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
