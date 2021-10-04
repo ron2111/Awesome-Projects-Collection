@@ -37,16 +37,16 @@
 
 ## Maintainer
 
-- [Rohan Sharma](https://www.linkedin.com/in/rohan-sharma-3a6b13203/)
+- [Rohan Sharma](https://github.com/ron2111)
 
-## Collaborators/Pull Request Reviewers
+## Our hardworking Collaborators/Pull Request Reviewers
 
 - [Aflah](https://github.com/aflah02)
 - [Aditya Teltia](https://github.com/AdityaTeltia/AdityaTeltia)
 - [Muskan](https://www.linkedin.com/in/muskan-bansal-095601189)
 - [Sidharth Sethi](https://github.com/TechSpiritSS)
 
-## Contributors
+## Our valuable Contributors
 
 - [Akash Srivastava](https://github.com/Akashsri3bi)
 
