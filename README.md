@@ -3,7 +3,7 @@
 # Hacktoberfest2021_awesome-projects
 
 ## Quality over Quantity :)
-## <a href="https://discord.gg/KrkbmCSZVQ" target="_blank" > <img src="https://media.pocketgamer.biz/2021/5/110514/discord-new-logo-2021-r225x.jpg" width="150" height="150" alt=""></a>
+## Join our <a href="https://discord.gg/KrkbmCSZVQ" target="_blank" > <img src="https://media.pocketgamer.biz/2021/5/110514/discord-new-logo-2021-r225x.jpg" width="150" height="150" alt=""></a> for all the discussions & updates regarding this repo.
 
 ## Update:
 
