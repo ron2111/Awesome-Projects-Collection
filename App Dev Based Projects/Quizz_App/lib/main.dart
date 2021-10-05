@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 // ignore: unused_import
 import 'package:quiz_app/question.dart';
 import 'package:quiz_app/result.dart';
@@ -21,14 +22,12 @@ class _MyAppState extends State<MyApp> {
 
   var _totalScore = 0;
 
-
-  void _resetQuiz(){
-    setState(() {
-      
-    });
+  void _resetQuiz() {
+    setState(() {});
     questionIndex = 0;
-     _totalScore = 0;
+    _totalScore = 0;
   }
+
   void answerQues(int score) {
     _totalScore += _totalScore + score;
 
@@ -73,19 +72,26 @@ class _MyAppState extends State<MyApp> {
 
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: ThemeData(primarySwatch: Colors.deepPurple, fontFamily: 'Raleway'),
       home: Scaffold(
-          appBar: AppBar(
-            brightness: Brightness.dark,
-            centerTitle: true,
-            title: Text("QUIZ"),
+        appBar: AppBar(
+          systemOverlayStyle:
+              SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+          brightness: Brightness.dark,
+          elevation: 0,
+          centerTitle: true,
+          title: Text(
+            "Quiz App",
+            style: TextStyle(fontSize: 40, fontFamily: 'Raleway'),
           ),
-          body: questionIndex < _questions.length
-              ? Quiz(
-                  answerQues: answerQues,
-                  questionIndex: questionIndex,
-                  questions: _questions)
-              : Result(_totalScore,_resetQuiz)),
+        ),
+        body: questionIndex < _questions.length
+            ? Quiz(
+                answerQues: answerQues,
+                questionIndex: questionIndex,
+                questions: _questions)
+            : Result(_totalScore, _resetQuiz),
+      ),
       debugShowCheckedModeBanner: false,
     );
   }
