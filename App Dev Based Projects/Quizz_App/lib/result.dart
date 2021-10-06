@@ -12,7 +12,7 @@ class Result extends StatelessWidget {
     } else if (result > 10 && result < 40) {
       resultText = "Better luck next time!";
     } else {
-      resultText = "Sorry... you did not score well";
+      resultText = "Sorry... you did not score well !";
     }
 
     return resultText;
@@ -21,20 +21,41 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: double.infinity,
+      width: double.infinity,
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: [Colors.deepPurple, Color.fromRGBO(176, 74, 243, 1)],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter)),
       child: Column(
         children: <Widget>[
-          Text(
-            resultPhrase,
-            style: TextStyle(
-              fontSize: 36,
-              fontWeight: FontWeight.bold,
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.08,
+          ),
+          Wrap(children: [
+            Text(
+              resultPhrase,
+              style: TextStyle(
+                color: Color.fromRGBO(236, 232, 236, 1),
+                fontSize: 36,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
+          ]),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.2,
           ),
           TextButton(
-            child: Text('Restart Quizz!',textAlign: TextAlign.center,),
+            child: Text(
+              'Restart Quizz!',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 35),
+            ),
             style: ButtonStyle(
-                foregroundColor: MaterialStateProperty.all(Colors.orangeAccent)),
+                foregroundColor:
+                    MaterialStateProperty.all(Colors.orangeAccent)),
             onPressed: resetHandler,
           ),
         ],
