@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.ocean {
+	height: 220px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+}
+.water {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	animation: water 10s linear infinite;
+}
+
+@keyframes water {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(1000px);
+	}
+}
+
+.boat {
+	width: 350px;
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.boat img {
+	width: 100%;
+	-webkit-box-reflect: below 0
+		linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6));
+	animation: boat 2s linear infinite;
+}
+
+@keyframes boat {
+	0% {
+		transform: rotate(0deg) translateY(0);
+	}
+	25% {
+		transform: rotate(-2deg) translateY(-3px);
+	}
+	50% {
+		transform: rotate(0deg) translateY(-5px);
+	}
+	75% {
+		transform: rotate(2deg) translateY(-3px);
+	}
+	100% {
+		transform: rotate(0deg) translateY(0);
+	}
+}
+
+.cloud {
+	height: 250px;
+	position: absolute;
+	right: 0;
+	animation: cloud 10s linear infinite;
+}
+
+@keyframes cloud {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(600px);
+	}
+}
