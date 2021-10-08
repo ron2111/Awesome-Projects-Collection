@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/startup_form_main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/5ce7758448.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <%- include('header.ejs'); -%>
+
+
+    <div class="headings">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="top-heading">Create your startup profile</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 justify-content-start form-pic" data-aos="fade-right">
+          <img class="pic" src="assets/3704257.jpg" alt="" />
+        </div>
+
+        <div class="col-lg-6 form-menu" data-aos="fade-left">
+          <div class="col-lg-12 text-center">
+            <div class="card col-lg-12">
+              <h2 id="heading">Sign Up Your User Account</h2>
+              <p>Fill all form field to go to next step</p>
+              <form id="msform" action="/registerStartup" enctype="multipart/form-data" method="POST">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                  <li class="active" id="account"><strong>Founder</strong></li>
+                  <li id="personal"><strong>Startup</strong></li>
+                  <li id="payment"><strong>Product</strong></li>
+                  <li id="confirm"><strong>Finish</strong></li>
+                </ul>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <br />
+                <!-- fieldsets -->
+                <fieldset>
+                  <div class="form-card">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 class="fs-title">Founder Information:</h2>
+                      </div>
+                      <div class="col-5">
+                        <h2 class="steps">Step 1 - 4</h2>
+                      </div>
+                    </div>
+                    <label class="fieldlabels"
+                      >How many founders/co-founders do you have? *</label
+                    >
+                    <input type="text" name="founders" />
+                    <label class="fieldlabels">Name: *</label>
+                    <input type="text" name="name" placeholder="Name" />
+                    <label class="fieldlabels">Email: *</label>
+                    <input type="email" name="email" placeholder="Email ID" />
+                    <label class="fieldlabels">Password: *</label>
+                    <input type="password" name="password" placeholder="Password" />
+                    <label class="fieldlabels">Confirm Password: *</label>
+                    <input type="password" name="confirmPassword" placeholder="Confirm Password" />
+                    <label class="fieldlabels">Phone: *</label>
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="Mobile Number"
+                    />
+                    <label class="fieldlabels">LinkedIn URL: *</label>
+                    <input
+                      type="url"
+                      name="lurl"
+                      placeholder="LinkedIN profile"
+                    />
+                  </div>
+                  <input
+                    type="button"
+                    name="next"
+                    class="next action-button"
+                    value="Next"
+                  />
+                </fieldset>
+                <fieldset>
+                  <div class="form-card">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 class="fs-title">Startup Information:</h2>
+                      </div>
+                      <div class="col-5">
+                        <h2 class="steps">Step 2 - 4</h2>
+                      </div>
+                    </div>
+                    <label class="fieldlabels">Startup Name: *</label>
+                    <input
+                      type="text"
+                      name="fname"
+                      placeholder="Startup Name"
+                    />
+                    <label class="fieldlabels">Startup Stage: *</label>
+                    <select
+                      name="sstage"
+                      id="startup-stage"
+                      class="form-control selectpicker stage"
+                    >
+                      <option value="">Select Startup Stage</option>
+                      <option value="Ideation">Ideation</option>
+                      <option value="Proof of Concept">Proof of Concept</option>
+                      <option value="Beta Launched">Beta Launched</option>
+                      <option value="early-rev">Early Revenues</option>
+                      <option value="steady-rev">Steady Revenues</option>
+                    </select>
+                    <label class="fieldlabels">Website Address: </label>
+                    <input
+                      type="text"
+                      name="website"
+                      placeholder="Website URL"
+                    />
+                    <label class="fieldlabels">Startup Domain: *</label>
+                    <input
+                      type="text"
+                      name="domain"
+                      placeholder="Enter domain of your project (agriculture, tech, business)"
+                    />
+                    <label class="fieldlabels">Founded In: *</label>
+                    <input
+                      type="text"
+                      name="date"
+                      placeholder="Month & Year of foundation"
+                    />
+                    <label class="fieldlabels">Location: </label>
+                    <input
+                      type="text"
+                      name="location"
+                      placeholder="Your City"
+                    />
+                    <label class="fieldlabels">Startup Type: *</label>
+                    <select
+                      name="btype"
+                      id="buisness-type"
+                      class="form-control selectpicker stage"
+                    >
+                      <option value="">Select Business Type</option>
+                      <option value="B2B">B2B</option>
+                      <option value="B2C">B2C</option>
+                    </select>
+                  </div>
+                  <input
+                    type="button"
+                    name="next"
+                    class="next action-button"
+                    value="Next"
+                  />
+                  <input
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  />
+                </fieldset>
+                <fieldset>
+                  <div class="form-card">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 class="fs-title">Product Information:</h2>
+                      </div>
+                      <div class="col-5">
+                        <h2 class="steps">Step 3 - 4</h2>
+                      </div>
+                    </div>
+
+                    <label class="fieldlabels"
+                      >Product/Service Summary: *</label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="productSumm"
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Provide a summary of product and services that you offer to customers"
+                    ></textarea>
+                    <label class="fieldlabels">Twitter Pitch: *</label>
+                    <textarea
+                      class="form-control"
+                      name="twitter"
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Twitter pitch is the first window of decision for your startup"
+                    ></textarea>
+                    <label class="fieldlabels">Team Summary: *</label>
+                    <textarea
+                      class="form-control"
+                      name="team"
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Provide highlights of your key team members"
+                    ></textarea>
+                    <label class="fieldlabels"
+                      >What differentiates you?: *</label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="diff"
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Provide how you are different"
+                    ></textarea>
+                    <label for="cloud-platform" class="fieldlabels"
+                      >Choose the cloud platform you use: *</label
+                    >
+                    <select
+                      name="cloudPlatform"
+                      id=""
+                      class="form-control selectpicker stage"
+                    >
+                      <option value="">
+                        Select your hosted cloud platform
+                      </option>
+                      <option value="aws">Amazon AWS</option>
+                      <option value="azure">Microsoft Azure</option>
+                      <option value="google">Google Cloud</option>
+                      <option value="other">Other</option>
+                      <option value="none">None</option>
+                    </select>
+                    <label class="fieldlabels">Upload Pitch Desk: *</label>
+                    <input type="file" name="file" />
+                    <label class="fieldlabels"
+                      >What is the amount you want to raise?: *
+                    </label>
+                    <input
+                      type="text"
+                      name="amountt"
+                      placeholder="Specify Amount"
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    name="next"
+                    class="next action-button"
+                    value="Submit"
+                  />
+                  <input
+                    type="button"
+                    name="previous"
+                    class="previous action-button-previous"
+                    value="Previous"
+                  />
+                </fieldset>
+                <fieldset>
+                  <div class="form-card">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 class="fs-title">Finish:</h2>
+                      </div>
+                      <div class="col-5">
+                        <h2 class="steps">Step 4 - 4</h2>
+                      </div>
+                    </div>
+                    <br /><br />
+                    <h2 class="purple-text text-center">
+                      <strong>SUCCESS !</strong>
+                    </h2>
+                    <br />
+                    <div class="row justify-content-center">
+                      <div class="col-3">
+                        <img
+                          src="https://i.imgur.com/GwStPmg.png"
+                          class="fit-image"
+                        />
+                      </div>
+                    </div>
+                    <br /><br />
+                    <div class="row justify-content-center">
+                      <div class="col-7 text-center">
+                        <h5 class="purple-text text-center">
+                          You Have Successfully Signed Up
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/startup_form.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1000,
+      });
+    </script>
+  </body>
+</html>
