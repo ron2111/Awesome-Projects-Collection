@@ -1,0 +1,65 @@
+{
+  "name": "Spicy Heat",
+  "short_name": "Spicy Heat",
+  "description": "Explore Food and Drink",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc262a",
+  "icons": [
+    {
+      "src": "assets/icon/apple-touch-icon-57x57.png",
+      "sizes": "57x57",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon/apple-touch-icon-60x60.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon/apple-touch-icon-76x76.png",
+      "sizes": "76x76",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon/favicon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon/mstile-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon/mstile-270x270.png",
+      "sizes": "270x270",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+		{
+      "src": "assets/icon/favicon-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon/mstile-558x558.png",
+      "sizes": "558x558",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

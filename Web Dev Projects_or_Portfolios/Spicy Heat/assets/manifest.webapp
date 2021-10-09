@@ -1,0 +1,14 @@
+{
+  "version": "3.0.0",
+  "name": "spicy-heat-v3",
+  "description": "Submission-3-Front-End-Expert-Dicoding",
+  "icons": {
+    "60": "/assets/firefox_app_60x60.png",
+    "128": "/assets/firefox_app_128x128.png",
+    "512": "/assets/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "adi purnomo",
+    "url": null
+  }
+}
