@@ -2,6 +2,7 @@
 # Awesome-Projects-Collection
 
 ## Quality over Quantity :)
+<a href="https://discord.gg/KrkbmCSZVQ"><img src="https://seeklogo.com/images/D/discord-logo-134E148657-seeklogo.com.png" alt="DiscordLogo" width="100" height="100"></a>
 
 <img src="https://pbs.twimg.com/profile_images/1195384351397208065/vPyf0-41_400x400.jpg" width="600" height="600" style="width: 600px; height: 600px;">
 ## What to do?
