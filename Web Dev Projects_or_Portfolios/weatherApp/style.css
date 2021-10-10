@@ -1,0 +1,129 @@
+body{
+    background-color:#343434;
+}
+
+.first{
+    width: 200px;
+    height: 90px;
+    background-color:#343434;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.second{
+    width: 320px;
+    height: 90px;
+    background-color:#343434;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    border-radius: 50px;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.third{
+    width: 200px;
+    height: 100px;
+    background-color:#2fb315;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    border-radius: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.fourth{
+    width: 320px;
+    height: 100px;
+    background-color:#084752;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    border-radius: 50px;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.five{
+    width: 200px;
+    height: 100px;
+    background-color:#343434;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    border-radius: 50px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.six{
+    width: 200px;
+    height: 100px;
+    background-color:#869215;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    border-radius: 50px;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.seven{
+    width: 200px;
+    height: 100px;
+    background-color:#862546;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    border-radius: 50px;
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ #heading{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+
+#myInput{
+    margin-left: 33px;
+    margin-top: 23px;
+    height: 40px;
+    width:250px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+#search{
+    color: white;
+    font-size: 40px;
+}
+
+#location{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+#temp{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+#description{
+    color: rgb(255, 255, 255);
+    font-size: 40px;  
+}
+#image{
+    color: rgb(255, 255, 255);
+    height: 90px;
+}
+#error{
+    color: rgb(255, 255, 255);
+    padding-left: 80px;
+    padding-top: 20px;
+} 
