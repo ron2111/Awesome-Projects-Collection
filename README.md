@@ -1,12 +1,9 @@
-<img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" width="700" height="300" style="width: 700px; height: 300px;">
 
-# Hacktoberfest2021_awesome-projects
+# Awesome-Projects-Collection
 
 ## Quality over Quantity :)
-### Before starting with the contributions, make sure to go through the <a href="https://hacktoberfest.digitalocean.com/resources"><b>Official Hacktoberfest rules & values</b></a> to get an idea about what Open Source is really about.
-**We strictly prefer and allow valid contributions only. NO SPAMMING**
 
-
+<img src="https://pbs.twimg.com/profile_images/1195384351397208065/vPyf0-41_400x400.jpg" width="600" height="600" style="width: 600px; height: 600px;">
 ## What to do?
 
 1. Add some unique and amazing projects as per your favourite tech stack for the community to get benifitted.
@@ -16,12 +13,6 @@
 3.  There is no need to raise an issue to add your project, you can directly raise a PR.
 4.  While raising a PR, make sure to fill the description and checklist as per the description template following your project's specification & delete all the irrelevant  checkboxes.
 
-- IF you have any doubts regarding "How to merge your first PR" , checkout this video:<br>
-<p><a href="https://hacktoberfest.digitalocean.com/resources?wvideo=tf3u5ruz5y"><img src="https://embedwistia-a.akamaihd.net/deliveries/4bdee00ef68274f35bc6ad84ac1e49c6.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=1e71e7e0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://hacktoberfest.digitalocean.com/resources?wvideo=tf3u5ruz5y">Merge your first PR</a></p>
-
-**Note : Don't add hello world programs / small changes in README file. PRs will be labelled "invalid" & closed immediately . Please add unique codes**
-
-**You will be banned indefinately from Hacktoberfest after two invalid PRs.**
 
 ## Update:
 

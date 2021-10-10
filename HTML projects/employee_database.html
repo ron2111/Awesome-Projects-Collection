@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="employee_database_css.css"> -->
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    #nav-bar {
+        height: auto;
+        width: 100%;
+        background-color: rgb(43, 41, 41);
+        color: cornsilk;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #nav-bar h2 {
+        margin: 0.5rem auto;
+    }
+    
+    #formHolder {
+        padding: 1rem;
+        height: auto;
+        width: 80%;
+        margin: 1rem auto;
+    }
+    
+    #formHolder legend {
+        text-align: center;
+        font-size: 18px;
+        color: blue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+    
+    #actionForm {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    #actionForm input {
+        margin: 0.5rem;
+        padding: 0.2rem;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        width: 70%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    #actionForm label {
+        margin: 0.2rem 0.5rem;
+        padding: 0.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    
+    #actionForm button {
+        margin: 0.5rem;
+        width: 6rem;
+        height: auto;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        background-color: blue;
+        padding: 0.5rem;
+        font-size: 14px;
+        border: none;
+        outline: none;
+    }
+    
+    #actionForm button:active {
+        background-color: orange;
+        color: palegoldenrod;
+    }
+    
+    table {
+        padding: 0.5rem;
+        overflow: auto;
+        width: 70%;
+    }
+    
+    #table_details {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #table_details #tt tr:nth-child(2n+2) {
+        background-color: gray;
+        color: white;
+    }
+    
+    .del_btn {
+        outline: none;
+        background: transparent;
+        border: none;
+    }
+    
+    .del_btn:active {
+        background-color: rgb(230, 221, 221);
+    }
+    
+    @media only screen and (max-width:400px) {
+        table {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div id="nav-bar">
+        <h2>Employee Database Management System</h2>
+    </div>
+    <fieldset id='formHolder'>
+        <legend>Enter your details here</legend>
+        <form action="none.html" id='actionForm'>
+            <label for="full_name">Name :</label>
+            <input type="text" placeholder="Enter name" name="full_name" id='full_name'>
+
+            <label for="contact">Contact Number :</label>
+            <input type="text" placeholder="Enter contact number" name="contact" id='contact_number'>
+
+            <label for="Email">Email :</label>
+            <input type="email" placeholder="Enter email" name='Email' id='email_address'>
+
+            <button type="button" id='add_btn'>Add Detail</button>
+        </form>
+    </fieldset>
+    <div id="table_details">
+        <table id='tt'>
+            <thead>
+                <th colspan="5" style="text-align: center; background-color: rgb(88, 88, 231); color: rgb(245, 233, 233);font-size: 20px; margin: 1.5rem;">Employee Details</th>
+            </thead>
+            <tr>
+                <td style="width: 15%;">ID</td>
+                <td style="width: 35%;">Name</td>
+                <td style="width: 20%;">Contact Number</td>
+                <td style="width: 20%;">Email</td>
+                <td style="width:10%; ;">Delete</td>
+            </tr>
+
+
+
+        </table>
+    </div>
+</body>
+<!-- <script src="employee_database_js.js"></script> -->
+<script>
+    let arr = [];
+    let id = 1;
+    class employee {
+        constructor(id, name, contact, email) {
+            this.id = id;
+            this.name = name;
+            this.contact = contact;
+            this.email = email;
+        }
+        show() {
+            let data = `<tr>
+      <td style="width: 15%;">${this.id}</td>
+      <td style="width: 35%;">${this.name}</td>
+      <td style="width: 20%;">${this.contact}</td>
+      <td style="width: 30%;">${this.email}</td>
+      <td style="width: 10%"><button class='del_btn' id='${this.id}' onclick=employee.delete(${this.id})><img src="https://img.icons8.com/ios/50/4a90e2/trash--v2.png" / style="width: 1rem; height: auto;"></button></td>
+  </tr>`
+            document.getElementById('tt').innerHTML += data;
+        }
+        static display(arr) {
+
+            for (let i = 0; i < arr.length; i++) {
+                let get_arr_at_index = arr[i];
+                let data = `<tr>
+      <td style="width: 15%;">${get_arr_at_index[0]}</td>
+      <td style="width: 35%;">${get_arr_at_index[1]}</td>
+      <td style="width: 20%;">${get_arr_at_index[2]}</td>
+      <td style="width: 30%;">${get_arr_at_index[3]}</td>
+      <td style="width: 10%"><button class='del_btn' id='${this.id}' onclick=employee.delete(${this.id})><img src="https://img.icons8.com/ios/50/4a90e2/trash--v2.png" / style="width: 1rem; height: auto;"></button></td>
+  </tr>`
+                document.getElementById('tt').innerHTML += data;
+            }
+            if (arr.length != 0) {
+                let id_take2 = arr[arr.length - 1];
+                id = id_take2[0];
+            }
+        }
+        static delete(id) {
+            let pos = -1;
+            for (let i = 0; i < arr.length; i++) {
+                let del_arr_find = arr[i];
+                if (del_arr_find[0] == id) {
+                    pos = i;
+                    break;
+                }
+            }
+            arr.splice(pos, 1);
+            localStorage.clear();
+            if (arr.length != 0) {
+                localStorage.setItem('emp_data', JSON.stringify(arr));
+            }
+            document.getElementById('tt').innerHTML = `<thead>
+        <th colspan="5" style="text-align: center; background-color: rgb(88, 88, 231); color: rgb(245, 233, 233);font-size: 20px; margin: 1.5rem;">Employee Details</th>
+    </thead>
+    <tr>
+        <td style="width: 15%;">ID</td>
+        <td style="width: 35%;">Name</td>
+        <td style="width: 20%;">Contact Number</td>
+        <td style="width: 20%;">Email</td>
+        <td style="width:10%; ;">Delete</td>
+    </tr>`;
+            employee.display(arr);
+        }
+
+
+    }
+
+    if (localStorage.length == 0 || localStorage.getItem('emp_data') == null || localStorage.getItem('emp_data') == undefined)
+        arr = [];
+    else {
+        // console.log(localStorage.length)
+        arr = JSON.parse(localStorage.getItem('emp_data'));
+        id_take = arr[arr.length - 1];
+        // console.log(arr)
+        id = id_take[0] + 1;
+
+        // console.log(id_take);
+        employee.display(arr);
+    }
+
+    document.getElementById('add_btn').addEventListener('click', function(e1) {
+        let n = document.getElementById('full_name').value;
+        let c = document.getElementById('contact_number').value;
+        let e = document.getElementById('email_address').value;
+        emp1 = new employee(id, n, c, e);
+        document.getElementById('full_name').value = '';
+        document.getElementById('contact_number').value = '';
+        document.getElementById('email_address').value = '';
+        let storing = [id, n, c, e];
+        arr.push(Array.from(storing));
+        console.log(arr);
+        localStorage.setItem('emp_data', JSON.stringify(arr));
+        emp1.show();
+        id++;
+    });
+</script>
+
+</html>
