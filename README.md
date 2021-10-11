@@ -1,7 +1,8 @@
 
 # Awesome-Projects-Collection
 
-## Quality over Quantity <a href="https://discord.gg/KrkbmCSZVQ"><img src="discordfinal.png" height="27" width="35" alt=""></a>:)
+## Quality over Quantity :)
+<a href="https://discord.gg/KrkbmCSZVQ">Join our discord for more updates <img src="discordfinal.png" height="27" width="35" alt=""></a>
 
 <img src="https://pbs.twimg.com/profile_images/1195384351397208065/vPyf0-41_400x400.jpg" width="600" height="600" style="width: 600px; height: 600px;">
 ## What to do?
