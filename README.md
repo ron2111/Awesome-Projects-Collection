@@ -89,6 +89,7 @@
 - [Dhroov Makwana](https://github.com/pabloescoder)
 - [Prince Roy](https://www.github.com/iprinceroyy)
 - [Prannov Jamadagni](https://github.com/Prannov)
+- [Shrejal Singh](https://github.com/shrejal99)
 
 -[Your name](your-github_url or linkedlin-url) : *Don't edit this template*
 
