@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  overflow: hidden;
+  
+}
+
+#progress-bar{
+    background-color:red;
+    height: 3px;
+    animation: loading 3s ease-in-out 1;
+    animation-fill-mode:both; 
+    
+}
+
+@keyframes loading {
+  0%{
+    width: 0%;
+    background-color:red;
+  }
+
+  50%{
+    width: 50%;
+    background-color: red;
+  }
+
+  80%{
+    width: 80%;
+    background-color: red;
+  }
+
+  99%{
+    width: 99%;
+    background-color: red;
+  }
+  100%{
+    width: 100%;
+    background-color: rgb(0, 173, 253);
+  }
+}
+
+.nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(0, 173, 253);
+    color: white;
+}
+
+.head{
+  margin-left: 30vw;
+  margin-top: -1vh;
+  font-size: 50px;
+  display: inline-block;
+  font-family: 'Nosifer', cursive;
+  text-shadow: 0px 6px 3px rgba(0,0,0,0.4),
+             0px 10px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+
+    .accessory {
+      height: 6px;
+      background-image: radial-gradient(
+        closest-side,
+        rgb(20, 20, 20),
+        hsla(0, 0%, 50%, 0) 100%);
+      position: relative;
+    }
+    .accessory:after {
+      position: absolute;
+      top:  50%;
+      left: 50%;
+      display:block;
+      background-color: hsl(0, 11%, 5%);
+      height: 12px;
+      width:  12px;
+      transform: rotate(45deg);
+      margin-top:  -10px;
+      margin-left: -10px;
+      border-radius: 4px 0;
+      border: 4px solid hsla(0, 3%, 6%, 0.35);
+      background-clip: padding-box;
+      box-shadow: -10px 10px 0 hsla(0, 3%, 7%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+    }
+    
+.tools-section{
+  height: 88vh;
+  width: 20vw;
+  float: right;
+  margin-top: -.5vh;
+  background-color: whitesmoke;
+  z-index: 1;
+  box-shadow: -6px 4px 10px 3px rgba(0,0,0,0.56);
+-webkit-box-shadow: -6px 4px 10px 3px rgba(0,0,0,0.56);
+-moz-box-shadow: -6px 4px 10px 3px rgba(0,0,0,0.56);
+z-index: 10;
+}
+
+.hide{
+  display: none;
+}
+
+.tool{
+  background-color: whitesmoke;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  text-shadow: 0px 4px 2px rgba(0,0,0,0.4),
+  0px 8px 10px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  
+}
+
+.black{
+  color: black;
+  margin-left: 0vw;
+}
+
+.brush{
+  width: 4vw;
+  height: 10vh;
+  margin-left: 67vw;
+  margin-top: -11vh;
+  margin-bottom: 18vh;
+ 
+}
+
+.tool-hr {
+  height: 10px;
+  
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
+  #canvas {
+    height: 87.6vh;
+    width: 78.9vw; 
+    background-color:white !important; 
+   border: 0px solid ;
+    cursor:crosshair;
+    box-shadow: -1px 6px 8px -2px rgba(0,0,0,1);
+-webkit-box-shadow: -1px 6px 8px -2px rgba(0,0,0,1);
+-moz-box-shadow: -1px 6px 8px -2px rgba(0,0,0,1);
+z-index: 1;
+    margin-top: .1vh;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8px;
+    padding:10px;
+  }
+  
+  .tools .class-field{
+    height: 35px;
+    width: 35px;
+    min-height: 35px;
+    min-width: 35px;
+    border: 1px dashed white;
+    cursor: pointer;
+    
+  }
+  .tools .button{
+    width: 100px ;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .color-picker{
+    border: 2px dotted black;
+   margin-left: 4vw;
+    width:10vw;
+    height:5vh;
+    cursor: pointer;
+  }
+  
+
+  .dropper{
+    width: 2vw;
+    height: 5vh;
+  }
+
+  .pallete{
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 6vw;
+  }
+
+  .range {
+    width: 15vw;
+    height: 2vh;
+    margin-left: 2vw;
+    -webkit-appearance: none;
+    background: #111;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  }
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(0, 173, 253);
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px rgb(0, 173, 253);
+  }
+
+  #rangeValue {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: larger;
+    color: black;
+    font-weight: 400;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .hr { 
+    border : 0;
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+  }
+  .button- {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+  width: 6vw;
+  position: relative;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+   border-radius: 10px;
+   font-family: 'Black Ops One', cursive;
+   font-size: large;
+   cursor: pointer;
+  }
+
+  .wrap{
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-around
+  }
+
+  .button-:hover{
+    background: radial-gradient(circle,  #0ff 0%, #e0e5ec 60%);
+      color: rgba(102,102,102,.5); 
+      animation: colorchange 3s linear infinite;
+    }
+    .button-:active{
+      box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                  -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    }
+    
+    @keyframes colorchange {
+      to {filter: hue-rotate(360deg);}
+    }
+
+    .erase{
+      width: 3vw;
+      height: 6vh;
+
+    }
+
+    .Eraser{
+      margin-left: 1vw;
+ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.0px );
+-webkit-backdrop-filter: blur( 0.0px ); 
+border-radius: 10px; 
+border: none;
+cursor: url("./images/eraser_3d.png"),pointer;
+
+    }
+
+    .erase:hover{
+      background-color: rgba(217, 255, 0, 0.877);
+      border-radius: 10px;
+      
+      
+    }
+
+    .square:hover{
+      background-color: rgba(217, 255, 0, 0.877);
+      border-radius: 10px;
+    }
+
+    .square{
+width: 3vw;
+      height: 6vh;
+    }
+
+    .square-btn{
+           box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.0px );
+-webkit-backdrop-filter: blur( 0.0px ); 
+border-radius: 15px; 
+border: none;
+cursor: url("./images/square_3d.png"),pointer;
+    }
+
+    .pencil{
+      width: 3vw;
+      height: 6vh;
+    }
+    .pencil-btn{
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 0.0px );
+      -webkit-backdrop-filter: blur( 0.0px ); 
+      border-radius: 15px;
+      border: none;
+      cursor: url("./images/pen_3d.png"),pointer;
+      
+    }
+
+    .pencil-btn:hover{
+      background-color: rgba(217, 255, 0, 0.877);
+      border-radius: 10px;
+    }
+
+    .flat-btn{
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 0.0px );
+      -webkit-backdrop-filter: blur( 0.0px ); 
+      border-radius: 15px;
+      border: none;
+      cursor: url("./images/flat_3d.png"),pointer;
+    }
+
+    .flat{
+      width: 3vw;
+      height: 6vh;
+    }
+
+    .flat-btn:hover{
+      background-color: rgba(217, 255, 0, 0.877);
+      border-radius: 10px;
+    }
+
+
+    .Eraser .pop-up{
+      visibility: hidden;
+      width: 5vw;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      margin-top: -4vh;
+      font-family: 'Orbitron', sans-serif;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .Eraser:hover .pop-up {
+      visibility: visible;
+    }
+
+    .square-btn .pop-up{
+      visibility: hidden;
+      width: 5vw;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      margin-top: -4vh;
+      font-family: 'Orbitron', sans-serif;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+
+    .square-btn:hover .pop-up{
+      visibility: visible;
+    }
+
+    .pencil-btn .pop-up{
+      visibility: hidden;
+      width: 5vw;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      margin-top: -4vh;
+      font-family: 'Orbitron', sans-serif;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+
+    .pencil-btn:hover .pop-up{
+      visibility: visible;
+    }
+
+    .flat-btn .pop-up{
+      visibility: hidden;
+      width: 5vw;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      margin-top: -4vh;
+      font-family: 'Orbitron', sans-serif;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+
+    .flat-btn:hover .pop-up{
+      visibility: visible;
+    }

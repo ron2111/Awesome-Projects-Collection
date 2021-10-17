@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="white.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Progress Bar -->
+    <div class="progress" id="progress-bar"></div>
+
+    <!-- Header -->
+    <header class="nav">
+        <h1 class="head">W&nbsp;H&nbsp;I&nbsp;T&nbsp;E&nbsp;<span>
+                <h1 class="head black">B&nbsp;O&nbsp;A&nbsp;R&nbsp;D</h1>
+            </span> </h1>
+        <div><img class="brush" src="./images/brush.jfif"></div>
+    </header>
+    <hr class="accessory">
+
+    <!-- Tools Section -->
+    <div class="tools-section">
+        <h1 class="tool">TOOLS</h1><hr class="tool-hr"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<button onclick="change_color(this)"  type="button" style="background: white;"class="Eraser"><span class="pop-up">Eraser</span><img class="erase" src="./images/eraser.png"/></button> &nbsp;&nbsp;&nbsp;
+
+        <button type="button" id="dtool" onclick="setBrush(this.value)"  value="square" class="square-btn"><span class="pop-up">Marker</span><img class=" square" src="./images/square.png"/></button>&nbsp;&nbsp;&nbsp;
+
+        <button type="button" id="dtool" class="pencil-btn" onclick="setBrush(this.value)" value="pencil"><span class="pop-up">Pencil</span><img class="pencil" src="./images/pen.png"/></button>&nbsp;&nbsp;&nbsp;
+
+        <button type="button" id="dtool" onclick="setBrush(this.value)" value="flat" class="flat-btn"><span class="pop-up">Brush</span><img class=" flat"src="./images/flat.png"/></button>
+        <br><br><hr class="hr">
+        
+          
+       
+
+        <div class="tools">
+           
+
+            <div>
+                <div onclick="change_color(this)" style="background:rgb(238, 71, 71)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(83, 83, 247)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(101, 45, 231)" class="class-field"></div>
+            </div>
+            <div>
+                <div onclick="change_color(this)" style="background:rgb(63, 235, 63)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(22, 104, 255)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(255, 255, 82)" class="class-field"></div>
+                
+            </div>
+            <div>
+                <div onclick="change_color(this)" style="background:rgb(216, 68, 10)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(74, 247, 161)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(253, 137, 176)" class="class-field"></div>
+            </div>
+            <div>
+                <div onclick="change_color(this)" style="background:rgb(126, 14, 179)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(94, 121, 243)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(92, 243, 168)" class="class-field"></div>
+            </div>
+            <div>
+                <div onclick="change_color(this)" style="background:rgb(238, 95, 143)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(211, 134, 247)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(216, 68, 10)" class="class-field"></div>
+            </div>
+            <div>
+                <div onclick="change_color(this)" style="background:rgb(91, 255, 85)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(250, 62, 62)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(255, 102, 0)" class="class-field"></div>
+            </div>
+            <div>
+                <div onclick="change_color(this)" style="background:rgb(79, 68, 236)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(231, 26, 187)" class="class-field"></div>
+                <div onclick="change_color(this)" style="background:rgb(7, 7, 7)" class="class-field"></div>
+
+            </div>
+        </div>
+        <hr class="hr"><br>
+
+
+        <!-- Color-Picker -->
+        <label class="pallete">Color-picker</label><br>
+        <span> <input type="color" oninput="draw_color = this.value" class="color-picker"> <img class="dropper"
+                src="./images/dropper.png" /></span><br><br>
+        <hr class="hr">
+
+        <!-- Thickness -->
+        <br>
+        <span id="rangeValue">0</span>
+        <input type="range" oninput="brush.size = this.value" class="range" min="1" max="10"
+            onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+        <label class="pallete">Thickness</label>
+        <br><br>
+        <hr class="hr"><br><br>
+
+        <!-- Buttons -->
+        <div class="wrap">
+            <button onClick="undo_last()" type="button" class="button-">Undo</button>
+            <button onClick="clear_canvas()" type="button" class="button-">Clear</button>
+        </div>
+
+    </div>
+
+
+
+    <canvas id="canvas"></canvas>
+
+    <script src="white.js"></script>
+</body>
+
+</html>
