@@ -8,21 +8,20 @@ Basic knowledge of HTML, CSS and JavaScript would be helpful but is not necessar
 
 ## Tools
 
-The following tools help make easier to work with sample code.
+The following tools help make easier to work with code.
 
 - [git](https://git-scm.com/downloads): A tool for managing source code
 - [Visual Studio Code](https://code.visualstudio.com/): A source code editor
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): A simple web server utility for Visual Studio Code
-- [Echo Post](https://github.com/craigshoemaker/echo-post): A simple Node.js server utility that displays post data.
 
 ## Setup
 
 If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
-[Download the ZIP from this location](https://github.com/ron2111/Awesome-Projects-Collection/Web Dev Projects_or_Portfolios/Movie-Selector/archive/master.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+[Download the ZIP from this location](https://github.com/ron2111/Awesome-Projects-Collection/archive/master.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
 
 ```bash
-git clone https://github.com/ron2111/Awesome-Projects-Collection/Web Dev Projects_or_Portfolios/Movie-Selector
+git clone https://github.com/ron2111/Awesome-Projects-Collection
 
 ```
 
