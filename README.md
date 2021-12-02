@@ -38,7 +38,6 @@
 
 - [Aflah](https://github.com/aflah02)
 - [Aditya Teltia](https://github.com/AdityaTeltia/AdityaTeltia)
-- [Muskan](https://www.linkedin.com/in/muskan-bansal-095601189)
 - [Sidharth Sethi](https://github.com/TechSpiritSS)
 
 ## Our valuable Contributors
