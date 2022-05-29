@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section id="logon">
+     <img src="http://www.oininteractive.com/wp-content/uploads/2011/01/CA-fitness-logo-PNG.png" style="width: 200px;"class="logo">
+     <mark><h1>FITNESS-TRACKER</h1></mark> 
+ </section>
+ <div id="navbar">
+   <a  href="homepage.html" ><em><b>Home</a></b></em>
+   <a class="active" href=""><em><b>Count down for Exercise</a></b></em>
+   <a  href="bmi.html"><em><b>BMI Calculator</a></b></em>
+   <a   href="exercisecalc.html"><em><b>Calorie Calculator</a></b></em>
+   <a   href="exercise.html"><em><b>Yoga Facts</a></b></em>
+</div>
+<div class="content">
+ <nav id="side">
+    <ul>
+        <li><a href="#header">HOME</a></li>
+        <li><a href="#maps">ABOUT US</a></li>
+        <li><a href="#join">REGISTER</a></li>
+        <li><a href="bmi.html">BMI Calculator</a></li>
+        <li><a href="countdown.html">CountDown For Exercise</a></li>
+        <li><a href="exercisecalc.html">Calorie Calculator</a></li>
+        <li><a href="exercise.html">Yoga Facts</a></li>
+    </ul>
+</nav>
+<img src="https://royalposthumus.com/images/white_menu_icon.png" style="width: 100px;"id="menu">
+
+<section id="header">
+    <div class="container">
+
+        <section style="background-color: grey;">
+          <mark style="font-size:3.5vw;"><h1 style="font-size:3.5vw;"><em style="font-size:3.5vw;">COUNTDOWN FOR EXERCISE</em></h1></mark> 
+      </section>
+      <section id="count" style="background-color: pink;">
+        <center><div><p style="font-size: xx-large;color: black;">HOURS:</p><p style="font-size: xx-large;">⬇️</p><span id="hour">0</span><p style="font-size: xx-large;color: black;">MINUTES:</p><p style="font-size: xx-large;">⬇️</p><span id="minute">0</span><p style="font-size: xx-large;color: black;">SECONDS:</p><p style="font-size: xx-large;">⬇️</p><span id="seconds">0</span></div></center><br>
+        <center><button id="start-btn"  type="button" class="btn btn-success btn-lg">Start</button>
+            <button id="stop-btn" type="button" class="btn btn-danger btn-lg">Stop</button>
+            <button id="reset-btn" type="button" class="btn btn-primary btn-lg">Reset</button></center>
+        </div>
+    </section>
+    <section id="features" style="padding-left: 200px;">
+        <div class="row">
+           <div class="col">
+             <img  src="https://cdn4.iconfinder.com/data/icons/medical-icons-rounded-vector/1250/path_health_calculator-512.png"></img>
+             <h4>BMI Calculator</h4>
+             <q>Calculates Your current BMI </q>
+         </div>
+         <div class="col">
+          <img src="https://cdn0.iconfinder.com/data/icons/ketogenic-diet-glyph/64/ketogenic-diet-calculator-calories-nutrition-512.png"></img>
+          <h4>Nutrition Calculator</h4>
+          <q>calculates the total calories consumed</q>
+      </div>
+      <div class="col">
+          <img src="https://cdn3.iconfinder.com/data/icons/auto-racing/423/Stopwatch_Timer-512.png"></img>
+          <h4>Exercise Timer</h4>
+          <q>Calculates the time while exercising</q>
+      </div>
+      <div class="col">
+        <img src="http://pngimg.com/uploads/fitness/fitness_PNG94.png"></img>
+        <h4>Fitness</h4>
+        <q>This Website supports fitness for every individual</q>
+    </div>
+</div>
+</div>
+</section>
+<section class="footer">
+  <div class="align">
+     <b><em><p style="font-size: larger;color: black;"> @Copyright 2020 Fitness-Tracker Made by  @Krithikha</p></em></b>
+ </div>  
+</section>
+</div>
+<script>
+    var menu=document.getElementById("menu");
+    var side=document.getElementById("side");
+    side.style.right="-250px";
+    menu.onclick=function(){
+        if(side.style.right=="-250px"){
+            side.style.right="0px"
+        }
+        else{
+            side.style.right="-250px"
+        }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]');
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+window.onload = () => {
+  let hour = 0;
+  let minute = 0;
+  let seconds = 0;
+  let totalSeconds = 0;
+  let intervalId = null;
+  function startTimer() {
+    ++totalSeconds;
+    hour = Math.floor(totalSeconds /3600);
+    minute = Math.floor((totalSeconds - hour*3600)/60);
+    seconds = totalSeconds - (hour*3600 + minute*60);
+    document.getElementById("hour").innerHTML =hour;
+    document.getElementById("minute").innerHTML =minute;
+    document.getElementById("seconds").innerHTML =seconds;
+}
+document.getElementById('start-btn').addEventListener('click', () => {
+    intervalId = setInterval(startTimer, 1000);
+})
+document.getElementById('stop-btn').addEventListener('click', () => {
+    if (intervalId)
+      clearInterval(intervalId);
+});
+document.getElementById('reset-btn').addEventListener('click', () => {
+   totalSeconds = 0;
+   document.getElementById("hour").innerHTML = '0';
+   document.getElementById("minute").innerHTML = '0';
+   document.getElementById("seconds").innerHTML = '0';
+});
+}
+</script>
+</body>
+</html>
