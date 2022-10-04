@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width= device-width,initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>resume_generator</title>
+</head>
+
+<body>
+    <!-- here goes html code -->
+
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2">Resume Generator</h1>
+        <p class="text-center">learning the path of legacy</p>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <!-- first column -->
+                <h3>personal information</h3>
+                <div class="form-group">
+                    <label for="namefield">your name</label>
+                    <input type="text" id="namefield" placeholder="enter here" class="form-control" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="contactfield">your contact</label>
+                    <input type="text" id="contactfield" placeholder="enter contact " class="form-control" />
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="addressfield">your address</label>
+                    <textarea type="text" id="addressfield" placeholder="enter contact " class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="imagefield">select your image</label>
+                    <input id="imagefield" type="file" class="form-control">
+                </div>
+
+                <p class="text-secondary my-3">Important Links</p>
+                <div class="form-group mt-2">
+                    <label for="fbfield">facebook</label>
+                    <input type="text" id="fbfield" placeholder="enter contact " class="form-control" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="instafield">instagram</label>
+                    <input type="text" id="instafield" placeholder="enter contact " class="form-control" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="linkedfield">linkedin</label>
+                    <input type="text" id="linkedfield" placeholder="enter contact " class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- second column  -->
+                <h3>professional information</h3>
+
+                <div class="form-group mt-2">
+                    <label for="">skills and intersets</label>
+                    <textarea id="objectivefield" placeholder="enter here " class="form-control"></textarea>
+                </div>
+
+                <div class="form-group mt-2" id="we">
+                    <label for="">work Experience</label>
+                    <textarea placeholder="enter here " class="form-control wefield" rows="3"></textarea>
+
+                    <!-- New textarea -->
+
+
+                    <div class="container text-center mt-2 " id="weaddbutton">
+                        <button onclick="addnewwefield()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea placeholder="enter here" class="form-control eqfield" rows="3"></textarea>
+
+                    <!-- new textarea -->
+
+                    <div class="container text-center mt-2" id="aqaddbutton">
+                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                        <!-- btn-sm means small button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center mt-2">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg" id="gnrcv">Generate cv</button>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- cv template -->
+
+    <div class="container" id="cv-template">
+        <div class="row">
+
+            <div class="col-md-4 text-center py-3 background">
+                <!-- first column -->
+                <img src="https://www.clipartkey.com/mpngs/m/107-1076987_user-staff-man-profile-person-icon-circle-png.png" alt="https://image.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1768126784.jpg" class="img-fluid myimg" id="imgTemplate"
+                />
+
+                <div class="container ">
+                    <p id="nameT1" class="profile">Albert Einstein</p>
+                    <p id="contactT1">+9164989339,+91763324902</p>
+                    <p id="addressT1">near st.john school,sector-34,california.</p>
+
+                    <hr>
+                    <!-- for dash line -->
+
+                    <p>
+                        <a id="fbT" href="#1">https://www.google.com/search?q=facebook&rlz=1C1RXQR</a>
+                    </p>
+                    <p>
+                        <a id="instaT" href="#1">https://www.instagram.com/aayushdadhich0409</a>
+                    </p>
+                    <p>
+                        <a id="linkedT" href="#1">https://www.linkedin/aayushdadhich0409</a>
+                    </p>
+
+
+                </div>
+
+            </div>
+            <div class="col-md-8 py-3">
+                <!-- second column  -->
+                <h1 id="nameT2" class="text-center" style="font-weight: 750;">Albert Einstein</h1>
+
+                <!-- objective card -->
+
+                <div class="card">
+                    <div class="card-header background">
+                        <h3>skills and intersets </h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia modi necessitatibus aperiam cupiditate odio molestiae iste incidunt obcaecati quaerat sequi optio possimus exercitationem, numquam, ratione natus officiis error
+                            in voluptatibus?</p>
+                    </div>
+                </div>
+
+                <!-- work Experience -->
+
+                <div class="card">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia magni non laboriosam debitis, optio saepe minus expedita dicta eos dignissimos, dolore explicabo. Eaque mollitia totam illum voluptatem modi iste.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia magni non laboriosam debitis, optio saepe minus expedita dicta eos dignissimos, dolore explicabo. Eaque mollitia totam illum voluptatem modi iste.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia magni non laboriosam debitis, optio saepe minus expedita dicta eos dignissimos, dolore explicabo. Eaque mollitia totam illum voluptatem modi iste.</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- academic Qualification -->
+
+                <div class="card">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia magni non laboriosam debitis, optio saepe minus expedita dicta eos dignissimos, dolore explicabo. Eaque mollitia totam illum voluptatem modi iste.</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia magni non laboriosam debitis, optio saepe minus expedita dicta eos dignissimos, dolore explicabo. Eaque mollitia totam illum voluptatem modi iste.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia magni non laboriosam debitis, optio saepe minus expedita dicta eos dignissimos, dolore explicabo. Eaque mollitia totam illum voluptatem modi iste.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container mt-3 textcenter">
+                    <button onclick="printCV()" class="btn background">Print CV</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+// alert("loading...")
+/*
+function addnewwefield() {
+    // console.log("adding new field");
+    let newnode = document.createElement("textarea");
+    newnode.classList.add('form-contorl');
+    newnode.classList.add('wefield');
+    newnode.classList.add('mt-2');
+    newnode.setAttribute("rows", 3);
+    // newnode.setAttribute("width", 13);
+    let weob = document.getElementById("we");
+    let weaddbuttonob = document.getElementById("weaddbutton");
+    weob.insertBefore(newnode, weaddbuttonob);
+}
+*/
+
+function addnewwefield() {
+    // console.log('Adding new Field');
+    let newNode = document.createElement('textarea');
+    newNode.classList.add('form-control');
+    newNode.classList.add('wefield');
+    newNode.classList.add('mt-2');
+    newNode.setAttribute('rows', 3);
+    newNode.setAttribute('placeholder', 'enter here');
+
+
+    let weob = document.getElementById('we');
+    let weaddbuttonob = document.getElementById('weaddbutton');
+
+    weob.insertBefore(newNode, weaddbuttonob);
+}
+
+function addNewAQField() {
+    let newNode = document.createElement('textarea');
+    newNode.classList.add('form-control');
+    newNode.classList.add('eqfield');
+    newNode.classList.add('mt-2');
+    newNode.setAttribute('rows', 3);
+    newNode.setAttribute('placeholder', 'enter here');
+
+    let aqob = document.getElementById('aq');
+    let aqaddbuttonob = document.getElementById('aqaddbutton');
+
+    aqob.insertBefore(newNode, aqaddbuttonob);
+}
+
+// genearating cv
+
+function generateCV() {
+    // console.log("generating cv..")
+
+    // namefield
+    let namefield = document.getElementById("namefield").value;
+    let nameT1 = document.getElementById("nameT1");
+    nameT1.innerHTML = namefield;
+
+    // direct 
+    document.getElementById('nameT2').innerHTML = namefield;
+    // contacts
+    let contactfield = document.getElementById("contactfield").value; //html line No. = 30
+    let contactT1 = document.getElementById("contactT1"); // html line no. =108
+    contactT1.innerHTML = contactfield;
+
+    // address
+    let addressfield = document.getElementById("addressfield").value; //html line No. = 30
+    let addressT1 = document.getElementById("addressT1"); // html line no. =108
+    addressT1.innerHTML = addressfield;
+
+    // important links
+    document.getElementById("fbT").innerHTML = document.getElementById("fbfield").value; //line 42 and 115
+    document.getElementById("instaT").innerHTML = document.getElementById("instafield").value; //line 42 and 115
+    document.getElementById("linkedT").innerHTML = document.getElementById("linkedfield").value; //line 42 and 115
+
+    // objective
+    document.getElementById("objectiveT").innerHTML = document.getElementById("objectivefield").value; //line 59 
+
+    // work experience
+    let wearr = document.getElementsByClassName('wefield') //line 151 & 64
+
+    let str = " ";
+
+    for (let e of wearr) {
+        str = str + `<li> ${e.value}</li>`;
+    }
+
+    document.getElementById('weT').innerHTML = str;
+
+    // Academic qualification....
+    let aqarr = document.getElementsByClassName('eqfield') //line 151 & 64
+
+    let str1 = " ";
+
+    for (let e of aqarr) {
+        str1 = str1 + `<li> ${e.value}</li>`;
+    }
+
+    document.getElementById('aqT').innerHTML = str1;
+
+    // code for setting image ......
+    let file = document.getElementById('imagefield').files[0];
+    console.log(file);
+
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    console.log(reader.result);
+
+    // set iamge to template
+    reader.onloadend = function() {
+        document.getElementById('imgTemplate').src = reader.result;
+    };
+
+
+
+
+    // ...................................................
+    document.getElementById('cv-form').style.display = "none";
+    document.getElementById('cv-template').style.display = "block";
+
+
+}
+
+// print cv
+function printCV() {#cv-form {
+    /* display: none; */
+    /* background-color: rgb(107, 176, 237);
+    margin-left: 100px; */
+    background: rgba(5, 121, 38, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 135, 54, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba(9, 0, 0, 0.18);
+}
+
+#cv-template {
+    display: none;
+    background-color: rgb(219, 230, 239);
+}
+
+.myimg {
+    border-radius: 140%;
+    margin-left: 40px;
+    width: 300px;
+    height: 320px;
+    border-image: auto;
+}
+
+#gnrcv {
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-1deg);
+    }
+    20% {
+        transform: rotateZ(1deg);
+    }
+    25% {
+        transform: rotateZ(-1deg);
+    }
+    30% {
+        transform: rotateZ(0deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+body {
+    background: rgb(80, 181, 209);
+}
+
+
+/* .profile {
+    margin-left: 58px;
+    /* background-color: aqua; */
+
+
+/* font-size: large; */
+
+
+/* } */
+
+.background {
+    background-color: rgb(89, 142, 174);
+}
+    window.print();
+}
