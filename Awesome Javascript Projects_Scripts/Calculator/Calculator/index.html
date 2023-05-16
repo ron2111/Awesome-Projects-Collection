@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            padding: 20px 40px;
+            height: auto;
+
+
+        }
+
+        .calculator {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 60px 60px 60px 90px;
+            margin: 15px auto;
+            font-size: 30px;
+        }
+
+        .numbers {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(152, 152, 245);
+            margin: 10px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+        }
+
+        .operator {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(245, 152, 152);
+            margin: 10px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .screen {
+            width: 300px;
+            height: 70px;
+            font-size: 30px;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            background-color: white
+        }
+
+        .ac {
+            /* text-align: left; */
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: left;
+            background-color: rgb(245, 0, 0);
+            color: white;
+            font-size: 23px;
+            border-radius: 50%;
+            margin: 10px 15px;
+            align-items: center;
+            justify-content: center;
+            align-self: flex-start;
+            margin: 20px 27px;
+            margin-bottom: -3px;
+        }
+    </style>
+
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <h1>Calculator Using Javascript</h1>
+    <div class="container">
+        <div>
+            <input type="text" class="screen" id="screen">
+        </div>
+        <div class="ac" id="ac">AC</div>
+        <div class="calculator">
+            <div class="numbers" id="number1" onkeypress="keypress()">1</div>
+            <div class="numbers" id="number2" onkeypress="keypress()">2</div>
+            <div class="numbers" id="number3" onkeypress="keypress()">3</div>
+            <div class="operator" id="+">+</div>
+            <div class="numbers" id="number4" onkeypress="keypress()">4</div>
+            <div class="numbers" id="number5" onkeypress="keypress()">5</div>
+            <div class="numbers" id="number6" onkeypress="keypress()">6</div>
+            <div class="operator" id="-">-</div>
+            <div class="numbers" id="number7" onkeypress="keypress()">7</div>
+            <div class="numbers" id="number8" onkeypress="keypress()">8</div>
+            <div class="numbers" id="number9" onkeypress="keypress()">9</div>
+            <div class="operator" id="*">*</div>
+            <div class="numbers" id="number.">.</div>
+            <div class="numbers" id="number0" onkeypress="keypress()">0</div>
+            <div class="operator" id="=">=</div>
+            <div class="operator" id="/">/</div>
+
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
