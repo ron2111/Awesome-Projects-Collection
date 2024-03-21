@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+
 *,
 *:before,
 *:after{
@@ -7,8 +11,20 @@
 
 }
 body{
-	background-color: #ee6cff;
+    height: 100vh;
+	background-image: linear-gradient(45deg, rgb(2, 6, 1) 0%, rgb(2, 6, 1) 14.286%,rgb(8, 29, 31) 14.286%, rgb(8, 29, 31) 28.572%,rgb(13, 52, 61) 28.572%, rgb(13, 52, 61) 42.858%,rgb(19, 75, 92) 42.858%, rgb(19, 75, 92) 57.144%,rgb(25, 98, 122) 57.144%, rgb(25, 98, 122) 71.43%,rgb(30, 121, 152) 71.43%, rgb(30, 121, 152) 85.716%,rgb(36, 144, 182) 85.716%, rgb(36, 144, 182) 100.002%);
+    
 }
+
+.title{
+    font-size: 20px;
+    color: white;
+    padding: 20vh 0vw 0vh 0vw;
+    text-align: center;
+    
+    font-family: 'Cedarville Cursive', cursive;
+}
+
 .container{
 	width: 40%;
 	min-width: 450px;
@@ -21,23 +37,28 @@ body{
 
 }
 .container *{
-	font-family: sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 	border:none;
 	outline: none;
 }
 .input{
-	background-color: #080808;
+	background-color: rgb(2, 6, 1);
 	padding: 30px 25px;
 	border-radius: 8px;
 	box-shadow: 0 15px 20px rgba(0,0,0,0.3);
 	margin-bottom: 50px;
-
+    transition: all 0.3s ease;
 
 }
+.input:hover{
+    background-color: #252525;
+    transform: translateY(-4px);
+}
 input,button{
+    background-color: rgb(25, 98, 122);
+
 	height: 50px;
-	background-color: #ffffff;
-	color:#080808;
+	color:white;
 	font-weight: 500px;
 	border-radius: 5px ;
 
@@ -51,18 +72,28 @@ input{
 button{
 	width: 30%;
 	float: right;
+    transition: all 0.3s ease;
+    background-color: rgb(25, 98, 122);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+button:hover{
+    transform: translateY(-4px);
+    background-color: rgb(30, 121, 152);
 }
 .output{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-
 }
+
 
 .output div{
 	height: 100px;
 	width: 100px;
-	background-color: #080808;
+	background-color: rgb(2, 6, 1);
 	border-radius: 5px;
 	color:#fff;
 	display: grid;
@@ -70,6 +101,12 @@ button{
 	align-items: center;
 	padding: 20px 0;
 	box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+
+}
+.output div:hover{
+    transform: translateY(-4px);
+    background-color: #252525;
 }
 span{
 	font-size: 30px;
@@ -77,6 +114,6 @@ span{
 }
 p{
 	font-size: 14px;
-	color: #707070;
+	color: white;
 	font-weight: 400;
 }
