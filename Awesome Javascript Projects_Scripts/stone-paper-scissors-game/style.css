@@ -1,0 +1,180 @@
+.game
+{height: 100vh;
+    /* background-image: url('game3.png'); */
+    background-color: rgb(192, 18, 18)   ;
+    /* <div style="background-image: ">; */
+    /* url('img_girl.jpg'); */
+}
+.score 
+{
+    height: 30vh;
+    margin-top: 1rem;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+    align-items: center;
+    
+ 
+}
+.intro
+{
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    /* margin-top: 8%; */
+    /* opacity:0; */
+}
+.intro h1{
+   font-size: 45px; 
+   /* color: blue ; */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+   
+}
+.border
+{
+    border: 10px solid black;
+}
+.intro button,.match button
+{
+    background-color: black;
+    width: 140px;
+    height: 50px;
+    color: skyblue;
+    border-radius: 40px;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    /* display: flex; */
+    /* padding:20px; */
+    justify-content: space-around;
+}
+
+.score h1{font-size: 30px;}
+.score p
+{text-align: center;}
+.match
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s ease 0.5s;
+
+}
+.winner
+{
+    font-size: 50px;
+    text-align: center;
+}
+.hands, .option
+{
+    display:flex;
+margin: auto;
+justify-content: space-around;
+align-items: center;
+}
+.player-hand
+{
+    transform: rotateY(180deg);
+}
+.computer-hand
+{
+    
+    margin-left: 10%;
+}
+div.fadeout
+{
+    opacity: 0;
+    pointer-events: none;
+}
+div.fadein
+{
+    opacity:1;
+    pointer-events: all;
+}
+@keyframes shakeplayer
+{
+   0% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+    15% {
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    25% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+    35% {
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    50% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+    65% {
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    75% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+    85% {
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    100% {
+        transform: rotateY(180deg) translateY(0px);
+    }
+}
+
+
+
+
+@keyframes shakecomputer
+{
+   0% {
+        transform:  translateY(0px);
+    }
+    15% {
+        transform:  translateY(-50px);
+    }
+    25% {
+        transform: translateY(0px);
+    }
+    35% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform:  translateY(0px);
+    }
+    65% {
+        transform: translateY(-50px);
+    }
+    75% {
+        transform: translateY(0px);
+    }
+    85% {
+        transform:  translateY(-50px);
+    }
+    100% {
+        transform:  translateY(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
