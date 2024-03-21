@@ -1,0 +1,212 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.9 (https://startbootstrap.com/theme/landing-page)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/LICENSE)
+ 
+ */
+.arrow {
+  line-height: 1em;
+  color: inherit;
+  letter-spacing: 0.06em;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background: #fe5f55;
+  display: inline-block;
+  padding: 15px 12px 15px 15px;
+  transition: background 200ms;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.arrow:hover {
+  background: #ff1d0d;
+  text-decoration: none;
+  color: #fff;
+}
+.arrow:after {
+  font-family: "FontAwesome", sans-serif;
+  font-weight: 300;
+  content: "\f105";
+  margin-left: 20px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+
+  vertical-align: middle;
+
+  transition: color 200ms;
+}
+
+.arrow:hover:after {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-bar {
+  position: absolute;
+  left: 1150px;
+  top: 20px;
+  width: 750px;
+  height: 40px;
+}
+.nav-bar a {
+  font-size: 18px;
+  padding: 1px 30px;
+  color: rgba(0, 114, 177, 1);
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+.sign-in-nav {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 110, 174, 1);
+  background-color: rgba(0, 110, 174, 1);
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.sign-up-nav {
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 110, 174, 1);
+  background-color: #fff;
+  color: rgba(0, 110, 174, 1);
+  font-size: large;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.logo {
+  top: 0%;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+}
+.logo-img {
+  height: 150px;
+  width: 150px;
+}
+body {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url(../assets/ezgif.com-gif-maker.png) no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+header.masthead h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+.showcase .showcase-text {
+  padding: 3rem;
+}
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0 5px 5px 0 #adb5bd;
+}
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url(../assets/bg-masthead.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #fff;
+  background-color: rgb(3, 136, 212);
+}
+.social-icon {
+  margin: 20px 10px;
+}

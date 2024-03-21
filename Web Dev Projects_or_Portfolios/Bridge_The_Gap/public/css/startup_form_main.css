@@ -1,0 +1,295 @@
+.nav-bar {
+  position: absolute;
+  left: 1150px;
+  top: 20px;
+  width: 750px;
+  height: 40px;
+}
+.nav-bar a {
+  font-size: 18px;
+  padding: 1px 30px;
+  color: rgba(0, 114, 177, 1);
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+.sign-in-nav {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 110, 174, 1);
+  background-color: rgba(0, 110, 174, 1);
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.sign-up-nav {
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 110, 174, 1);
+  background-color: #fff;
+  color: rgba(0, 110, 174, 1);
+  font-size: large;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.logo {
+  top: 0%;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+}
+.logo-img {
+  height: 150px;
+  width: 150px;
+}
+body {
+  background-color: #fafafa;
+}
+
+.headings {
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 60%;
+}
+.top-heading {
+  width: 60%;
+  font-size: 40px;
+  padding: 1px 30px;
+  font-weight: bold;
+  color: rgba(0, 114, 177, 1);
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+
+/* External */
+
+#heading {
+  text-transform: uppercase;
+  color: #673ab7;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-card {
+  text-align: left;
+}
+
+.form-menu {
+  margin-left: 4%;
+}
+.form-pic {
+  width: 800px;
+  height: 800px;
+  margin-left: 2%;
+}
+.pic {
+  width: 800px;
+  height: 800px;
+}
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #673ab7;
+  outline-width: 0;
+}
+
+#msform .action-button {
+  width: 100px;
+  background: #673ab7;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  background-color: #311b92;
+}
+
+#msform .action-button-previous {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  background-color: #000000;
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative;
+}
+
+.fs-title {
+  font-size: 25px;
+  color: #673ab7;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.purple-text {
+  color: #673ab7;
+  font-weight: normal;
+}
+
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.fieldlabels {
+  color: #000000;
+  text-align: left;
+}
+
+.stage {
+  margin-bottom: 25px;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .active {
+  color: #673ab7;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f007";
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f0c0";
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f5fc";
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #673ab7;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #673ab7;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
