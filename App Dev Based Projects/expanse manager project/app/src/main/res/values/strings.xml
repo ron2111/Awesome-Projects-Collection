@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">expanse manager</string>
+    <string name="login_as_guest">LogIn As Guest</string>
+    <string name="sign_in_by_email">Sign In By Email</string>
+
+    <string name="login_in_as_guest">Login In as Guest</string>
+    <string name="not_registered_click_here_to_register">NOT REGISTERED? CLICK HERE TO REGISTER</string>
+    <string name="login">Login</string>
+
+
+    <string name="todo">TODO</string>
+    <string name="email">Email</string>
+    <string name="already_registered_click_here_to_login">ALREADY REGISTERED? CLICK HERE TO LOGIN</string>
+    <string name="register">Register</string>
+
+    <string name="password">Password</string>
+    <string name="continue2">CONTINUE</string>
+    <string name="user_name">User Name</string>
+    <string name="setup_your_budget">SetUp Your Budget</string>
+    <string name="monthly_budget">Monthly Budget</string>
+    <string name="income">Income</string>
+    <string name="before_we_get_started">Before We Get Started</string>
+    <string name="continue1">continue</string>
+    <string name="userhname">User Name</string>
+    <string name="monthlyhbudget">Monthly Budget</string>
+    <string name="inhcome">Income</string>
+    <string name="your_budget">Your Budget</string>
+    <string name="save">save</string>
+    <string name="netibalance">Net Balance</string>
+    <string name="debit">Debit</string>
+    <string name="_00i0">00.0</string>
+    <string name="jjj000">00.0</string>
+    <string name="cash">Cash</string>
+    <string name="credit">Credit</string>
+    <string name="_j000">00.0</string>
+    <string name="hii">Hii,</string>
+    <string name="rishav">rishav</string>
+    <string name="_00">00</string>
+    <string name="upcommingtjransactions">Upcomming Transactions</string>
+    <string name="jj000">00.0</string>
+    <string name="dejbit">Debit</string>
+    <string name="i000">00.0</string>
+    <string name="camsh">Cash</string>
+
+    <string name="net_balance">Net Balance</string>
+    <string name="credjit">Credit</string>
+    <string name="j000">00.0</string>
+    <string name="upcommingtransactions">Upcomming Transactions</string>
+    <string name="hi">Hi,</string>
+    <string name="shivam">Shivam</string>
+    <string name="transaction_name">Transaction Name*</string>
+    <string name="recurring_transaction">Recurring Transaction</string>
+    <string name="transaction_date">Transaction Date*</string>
+    <string name="amount">Amount*</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="comment">Comment</string>
+    <string name="expense">Expense</string>
+    <string name="incomeid">income</string>
+    <string name="transactions_this_month">Transactions This Month</string>
+    <string name="netbalance">Net Balance</string>
+    <string name="i00">00</string>
+    <string name="view_all">View All</string>
+    <string name="april">APRIL</string>
+    <string name="_2021">2021</string>
+    <string name="before_we_get_startedF">before we get started</string>
+    <string name="setup_your_budgetF">setup your budget</string>
+    <string name="daily_expanse">Daily Expanse</string>
+    <string name="add_expanse">Add Expanse</string>
+    <string name="monthlyexpase">Monthly Expase</string>
+    <string name="you_can_edit_transaction">You can edit transaction</string>
+    <string name="calendertoransaction">calender Transaction</string>
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="you_can_view_calender">You can view calender</string>
+    <string name="calendertransaction">calender Transaction</string>
+    <string name="youcanviewcalender">You can view calender</string>
+    <string name="food">Food</string>
+    <string name="_100">100</string>
+    <string name="youcanedittransaction">You can edit transaction</string>
+    <string name="edittransaction">Edit Transaction</string>
+    <string name="item">item</string>
+    <string name="_27_august_2021">27 August, 2021</string>
+    <string name="casth">Cash</string>
+    <string name="_300">300</string>
+    <string name="sqsx">.</string>
+    <string name="mo">+</string>
+
+    <string name="navigation_drawer">navigation_drawer</string>
+    <string name="transactions_on_this_dateid">transactions_on_this_dateid</string>
+    <string name="transactions_on_this_date">transactions_on_this_date</string>
+    <string name="time">Time</string>
+
+    <string name="title">Title</string>
+    <string name="source">Source</string>
+    <string name="desc">Desc</string>
+    <string name="_01_january_2021">01 January 2021</string>
+    <string name="author">Author</string>
+
+    <string name="search">Search</string>
+    <string name="setting">Setting</string>
+    <string name="today_s_heading">Today\'s Heading</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="about_app">About App</string>
+    <string name="vvdvcdv">_00_0</string>
+    <string name="vdvdv">_00_0</string>
+    <string name="dvdvdv">_00_0</string>
+    <string name="upcomming_transactions">vdvd</string>
+    <string name="upcomming_transactionsk">upcomming_transactions</string>
+</resources>
