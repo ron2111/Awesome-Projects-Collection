@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="homepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#myModal").modal('show');
+		});
+	</script>
+</head>
+<body>
+	<div id="myModal" class="modal fade" >
+		<div class="modal-dialog" width=30%>
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Subscribe to our Newsletter to get regular fitness updates</h4>
+				</div>
+				<div class="modal-body" >
+					<p style="color:red;">Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
+					<center> <img src="http://www.oininteractive.com/wp-content/uploads/2011/01/CA-fitness-logo-PNG.png" style="width: 200px;"class="logo">
+					</center>
+						<form name="sb" onsubmit="return validate()" method="post"> </center>
+						<div id="sub">
+							<center><p style="color:green;"id="label">Name: <input type="text" name="Name" id="name2"></p></center>
+							<center><span id="username" style="color: red;"></span></center>
+							<center><br><p style="color:green;"id="label"> age: <input type="text" name="age" id="age2"></p></center>
+							<center><span id="agecheck2" style="color: red;"></span>    </center>
+							<center><br><p style="color:green;" id="label" >E-mail: <input type="text" name="EMail" id="email2" > </p></center>
+							<center><span id="emailcheck2" style="color: red;"></span> </center>
+							   
+							<center><br><p style="color:green;" id="label"><input type="submit" value="submit" name="Submit" type="button" class="btn btn-success btn-lg" id="test">  
+								<input type="reset" value="Reset" name="Reset" type="button" class="btn btn-primary btn-lg" id="test">   
+							</p>  </center> 
+						</div>
+						</form>  
+				<!--	<form id="sub" name="RegForm" onsubmit="return formValid()" method="post">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Name" >
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="age" placeholder="Age" ><span id="agecheck"></span>  
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" placeholder="Email Address" ><center><span id="emailcheck" style="color: red;"></span></center>
+
+						</div><center>
+							<input type="submit" class="btn btn-primary" data-dismiss="modal">Subscribe</center>
+						</form>-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="logon">
+			<img src="http://www.oininteractive.com/wp-content/uploads/2011/01/CA-fitness-logo-PNG.png" style="width: 200px;"class="logo">
+			<mark><h1>FITNESS-TRACKER</h1></mark> 
+		</section>
+		<div id="navbar">
+			<a class="active" href="" ><em><b>Home</a></b></em>
+			<a href="countdown.html"><em><b>Count down for Exercise</a></b></em>
+			<a  href="bmi.html"><em><b>BMI Calculator</a></b></em>
+			<a   href="exercisecalc.html"><em><b>Calorie Calculator</a></b></em>
+			<a   href="exercise.html"><em><b>Yoga Facts</a></b></em>
+		</div>
+		<div class="content">
+			<nav id="side">
+				<ul>
+					<li><a href="#header">HOME</a></li>
+					<li><a href="#maps">ABOUT US</a></li>
+					<li><a href="#join">REGISTER</a></li>
+					<li><a href="bmi.html">BMI Calculator</a></li>
+					<li><a href="countdown.html">CountDown For Exercise</a></li>
+					<li><a href="exercisecalc.html">Calorie Calculator</a></li>
+					<li><a href="exercise.html">Yoga Facts</a></li>
+				</ul>
+			</nav>
+			<img src="https://royalposthumus.com/images/white_menu_icon.png" style="width: 100px;"id="menu">
+
+			<section id="header">
+				<div class="container" style="background-color:black;">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="http://www.capefearfitness.net/wp-content/uploads/2015/04/Black-and-White.jpg" style="width: 2000px;" alt="Los Angeles" >
+								<div class="carousel-caption">
+									<h4></h4>
+									<p></p>
+								</div>
+							</div>
+
+							<div class="item">
+								<img src="http://getwallpapers.com/wallpaper/full/8/d/6/915375-crossfit-wallpapers-1920x1280-for-ipad-2.jpg" style="width: 2000px;"alt="Chicago" >
+								<div class="carousel-caption">
+									<h4></h4>
+									<p></p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Images-HD-Fitness-Wallpapers.jpeg" alt="New york" >
+								<div class="carousel-caption">
+									<h4></h4>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section style="background-color: blue;">
+						<section id="join">
+							<div class="container">
+								<div id="mail">
+									<center><h2><big>Join as a volunteer</big></h2></center>
+									<br>
+									<center><h1> REGISTRATION </h1> </center>     
+									<br>
+									<br>     
+									<center><form name="RegForm" onsubmit="return formValid()" method="post"> </center>
+										<div class="">
+											<center><p id="label"style="color: blue;">Name: <input type="text" name="Name" id="name"></p></center>
+											<center><span id="username" style="color: red;"></span></center>
+											<center><br><p id="label" style="color: blue;"> age: <input type="text" name="age" id="age"></p></center>
+											<center><span id="agecheck" style="color: red;"></span>    </center>
+											<center><br><p  id="label" style="color: blue;">E-mail: <input type="text" name="EMail" id="email" > </p></center>
+											<center><span id="emailcheck" style="color: red;"></span> </center>
+											<center><br> <p id="label"style="color: blue;">phone: <input type="text" name="Telephone" id="phone" ></p></center>
+											<center><span id="phonecheck" style="color: red;"></span></center>
+											<center><br> <p id="label"style="color: blue;">Password:<input type="password"  name="Password" id="password" ></p></center>
+											<center><span id="passwords" style="color: red;"></span></center>     
+											<center><br><p id="label"style="color: blue;"><input type="submit" value="Submit" name="Submit" type="button" class="btn btn-success btn-lg" id="test">  
+												<input type="reset" value="Reset" name="Reset" type="button" class="btn btn-primary btn-lg" id="test">   
+											</p>  </center> 
+										</div>   
+
+									</form>      
+								</section>
+								<section id="maps">
+									<div class="header-text" style="color: green;">
+										<h1><big><strong> ABOUT US</strong></big></h1>
+										<span class="square"></span>
+										<p ><big><i>
+											
+											We are making this Project to Help others to stay fit by knowing their BMI, amount of calories consumed and also how to exercise with countdown timer
+										</p></big></i>
+										<div class="line">
+											<span class="line-1"></span><br>
+											<span class="line-2"></span><br>
+											<span class="line-3"></span><br>
+										</div>
+									</div>
+								</section>
+								<section id="features" style="padding-left: 200px;">
+									<div class="row">
+										<div class="col">
+											<img  src="https://cdn4.iconfinder.com/data/icons/medical-icons-rounded-vector/1250/path_health_calculator-512.png"></img>
+											<h4>BMI Calculator</h4>
+											<q>Calculates Your current BMI </q>
+										</div>
+										<div class="col">
+											<img src="https://cdn0.iconfinder.com/data/icons/ketogenic-diet-glyph/64/ketogenic-diet-calculator-calories-nutrition-512.png"></img>
+											<h4>Nutrition Calculator</h4>
+											<q>calculates the total calories consumed</q>
+										</div>
+										<div class="col">
+											<img src="https://cdn3.iconfinder.com/data/icons/auto-racing/423/Stopwatch_Timer-512.png"></img>
+											<h4>Exercise Timer</h4>
+											<q>Calculates the time while exercising</q>
+										</div>
+										<div class="col">
+											<img src="http://pngimg.com/uploads/fitness/fitness_PNG94.png"></img>
+											<h4>Fitness</h4>
+											<q>This Website supports fitness for every individual</q>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="footer">
+								<div class="align">
+									<b><em><p style="font-size: larger;color: black;"> @Copyright 2020 Fitness-Tracker Made by  @Krithikha Balamurugan</p></em></b>
+								</div>  
+							</section>
+						</div>
+
+<script>
+var menu=document.getElementById("menu");
+var side=document.getElementById("side");
+side.style.right="-250px";
+menu.onclick=function(){
+if(side.style.right=="-250px"){
+	side.style.right="0px"
+}
+else{
+	side.style.right="-250px"
+	}
+}
+var scroll = new SmoothScroll('a[href*="#"]');
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+}
+ else {
+navbar.classList.remove("sticky");
+}
+}
+	
+function validate()                                    
+{ 
+	var email = document.getElementById('email2').value;    
+	var age = document.getElementById('age2').value;  
+	var ageregx=/^[0-9]{2}$/;
+	var emailregx=/^[A-Za-z0-9_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+	
+	if(ageregx.test(age)){
+		document.getElementById('agecheck2').innerHTML=" ";
+	}
+	else{
+		document.getElementById('agecheck2').innerHTML="**enter correct age**";
+		return false; 
+	}
+
+	if(emailregx.test(email)){
+		document.getElementById('emailcheck2').innerHTML=" ";
+	}
+	else{
+		document.getElementById('emailcheck2').innerHTML="**enter correct email**";
+		return false; 
+	}
+	
+
+}
+function formValid()                                    
+{ 
+	var name = document.getElementById('name').value;               
+	var email = document.getElementById('email').value;    
+	var phone = document.getElementById('phone').value;  
+	var password =document.getElementById('password').value ;  
+	var age = document.getElementById('age').value;  
+	var ageregx=/^[0-9]{2}$/;
+	var phoneno=/^[6-9][0-9]{9}$/;
+	var nameregx=/^[A-Za-z]{3,30}$/;
+	var emailregx=/^[A-Za-z0-9_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+	var passregx=/^[A-Z]{1}[A-Za-z]{8,}$/;
+
+	if(nameregx.test(name)){
+		document.getElementById('username').innerHTML=" ";
+	}
+	else{
+		document.getElementById('username').innerHTML="**enter correct name**";
+		return false; 
+	}
+	if(ageregx.test(age)){
+		document.getElementById('agecheck').innerHTML=" ";
+	}
+	else{
+		document.getElementById('agecheck').innerHTML="**enter correct age**";
+		return false; 
+	}
+
+	if(emailregx.test(email)){
+		document.getElementById('emailcheck').innerHTML=" ";
+	}
+	else{
+		document.getElementById('emailcheck').innerHTML="**enter correct email**";
+		return false; 
+	}
+	if(phoneno.test(phone)){
+		document.getElementById('phonecheck').innerHTML=" ";
+	}
+	else{
+		document.getElementById('phonecheck').innerHTML="**enter correct phone number**";
+		return false; 
+	}
+	if(passregx.test(password)){
+		document.getElementById('passwords').innerHTML=" ";
+	}
+	else{
+		document.getElementById('passwords').innerHTML="**enter correct password with atleast one capital character  and more than 8 character**";
+		return false; 
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+*{
+     margin:0;                            
+     padding:0;
+}
+  
+body{
+     background-color: black;
+     background-image: url("https://tse4.mm.bing.net/th?id=OIP.c_JDnC24vrlpXnHHVxI6UgHaPN&pid=Api&P=0&w=300&h=300");
+}
+
+li {list-style-type: none;
+font-size: 16pt;
+}
+
+#hour{
+    color:black;
+    font-size: xx-large;
+}
+#minute{
+    color:black;
+    font-size: xx-large;
+}
+#seconds{
+    color:black;
+    font-size: xx-large;
+}
+
+.mail {
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 400px;
+background : black;
+border: 1px soild silver;
+}
+.mail h2 {
+margin-left: 38px;
+}
+
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 12pt;
+}
+.rq {
+color: white;
+font-size: 10pt;
+}
+#header1{
+     padding-top: 400px;
+     padding-bottom: 400px;
+     background-image: url("");
+     background-repeat: no-repeat;
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover; 
+}
+#header{
+     padding-top: 80px;
+     padding-bottom: 50px;
+     background-repeat: no-repeat;
+     background-color: black;
+     background-position: center;
+     background-size: cover;
+}
+.container{
+     margin-right: 50px;
+     margin-left: 50px;
+}
+.logo{
+     margin-top: 10px;
+     width:100px;
+}
+.header-text{
+     max-width: 340px;
+     margin-top: 170px;
+     margin-left: 100px;
+     margin-bottom: 100px;
+     text-shadow: 3px 2px black;
+
+}
+h1{
+     font-size:40px ;
+     color:white;
+}
+.square{
+     height:12px;
+     width:12px;
+     display:inline-block;
+     background: white;
+     margin: 15px 0;
+}
+p big i{
+     font-size: 20px;
+     line-height: 18px;
+     color:lightgreen;
+}
+.header-text button{
+     margin-top: 20px;
+     margin-bottom: 60px;
+}
+.line-1{
+     width: 15px;
+     height:15px;
+     background:white;
+     display:inline-block;
+ 
+}
+.line-2{
+     width:80px;
+     height:1px;
+     background:white ;
+     display:inline-block;
+}
+.line-3{
+     width:60px;
+     height:1px;
+     background:white;
+     display: inline-block;
+}
+.line{
+     line-height: 8px;
+}
+#side{
+     width:250px;
+     height:700px;
+     position: fixed;
+     right:-250px;
+     top:0;
+     background-color:rgba(0,0,0,0.2);
+     z-index: 2;
+     transition: 2s;
+     overflow-y: scroll;
+}
+nav ul li{
+     list-style: none;
+     margin:50px 20px;
+}
+nav ul li a{
+     text-transform: uppercase;
+     text-decoration: none;
+     color: white;
+}
+a:hover{
+     background-color:gray;
+}
+#menu{
+     width:50px;
+     position: fixed;
+     right: 65px;
+     top:35px;
+     z-index:2;
+     cursor:pointer;
+}
+#about{
+     padding:200px 0;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rebeccapurple;
+     filter: brightness(40%);
+     filter:grayscale(10%);
+     background-position: center;
+     background-size: cover;
+}
+.right{
+     flex-basis: 50%;
+     text-align: right;
+
+}
+q blockquote big {
+     font-size: 15px;
+     line-height: 20px;
+     color:ghostwhite;
+}
+.text h2{ 
+     margin:50px 0 10px;
+     font-size:28px;
+     font-style:italic;
+}
+.text h3{
+     font-size:20px;
+     font-style: italic;
+     columns: #797979;
+}
+#features{
+     padding-top: 60px;
+     padding-bottom:60px ;
+     background-color: yellow;
+     background-image: url("https://tse2.mm.bing.net/th?id=OIP.CS-3ElqwPDmdbx6MQYMzSQHaEo&pid=Api&P=0&w=260&h=163");
+}
+.row{
+     width: 80%;
+     margin:auto;
+     display:flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+.col{
+     flex-basis: 25%;
+     text-align: center;
+}
+.col img{
+     width:100px;
+
+}
+.col h4{
+     margin-bottom: 15px;
+     font-size: 20px;
+     font-weight: 400px;
+}
+p{
+     color:white;
+}
+q{
+     color:black;
+}
+h1 big {
+     color:red;
+}
+.social{
+     width:50px;
+     position: fixed;
+     top: 75%;
+     left:0;
+     transform: translateY(-50%);
+     z-index:1;
+}
+.social img{
+     display: block;
+     width:30px;
+     margin:0 auto 20px;
+     cursor:pointer;
+}
+
+p big b{
+     color:white;
+}
+h1 big strong{
+     color:white;
+}
+h1 big em{
+     color:white;
+}
+p big i em b{
+     color:white;
+     display: inline;
+}
+.text{
+     max-width: 340px;
+     margin-top: 150px;
+     margin-left: 800px;
+     margin-bottom: 100px;
+     text-shadow: 3px 2px blue;
+
+}
+.footer{
+     padding-top: 60px;
+     padding-bottom:60px ;
+     background-color: lawngreen;
+     background-image: url("https://tse2.mm.bing.net/th?id=OIP.CS-3ElqwPDmdbx6MQYMzSQHaEo&pid=Api&P=0&w=260&h=163");
+}
+.align{
+     text-align: center;
+}
+.topnav {
+     background-color:grey;
+     overflow: hidden;
+     background-image: url("https://tse2.mm.bing.net/th?id=OIP.CS-3ElqwPDmdbx6MQYMzSQHaEo&pid=Api&P=0&w=260&h=163");
+  }
+  
+.topnav a {
+     float: left;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 30px;
+     text-decoration: none;
+     font-size: 17px;
+}
+.topnav a:hover {
+     background-color: grey;
+     color: darkred;
+}
+.topnav a.active {
+     background-color: darkred;
+     color:white;
+}
+mark h1{
+     color:lawngreen;
+     text-align: center;
+     text-shadow:2px 2px rgb(122, 117, 117);
+     font-size:  70px;
+     text-align-last: auto;
+     font-weight: bolder;
+}
+mark h1 em{
+     color:rgb(44, 42, 42);
+     text-align: center;
+     text-shadow:2px 2px pink;
+     font-size:  70px;
+     text-align-last: auto;
+     font-weight: bolder;
+}
+ #logon{
+     padding-top: 5px;
+     background-color: rosybrown;
+     background-image: url("https://tse4.mm.bing.net/th?id=OIP.c_JDnC24vrlpXnHHVxI6UgHaPN&pid=Api&P=0&w=300&h=300");
+}
+.content {
+     padding: 16px;
+}
+.sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+}
+.sticky + .content {
+     padding-top: 60px;
+}
+#navbar {
+     overflow: hidden;
+     background-color:lightgray;
+     background-image: url("https://tse2.mm.bing.net/th?id=OIP.CS-3ElqwPDmdbx6MQYMzSQHaEo&pid=Api&P=0&w=260&h=163");
+}
+#navbar a {
+     float: left;
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 30px 30px;
+     text-decoration: none;
+     font-size: 17px;
+}
+#navbar a:hover {
+     background-color: #ddd;
+     color: grey;
+}
+#navbar a.active {
+     background-color: black;
+     color: white;
+}
+#pic{
+     border-radius: 70%;
+}
+#pho{
+     border-radius:50%;
+     align-content: center;
+     top:50px;
+}
+.card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width: 40%;
+}
+.card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.space {
+     padding: 2px 16px;
+}
+#space{
+     height:1500px;
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+}
+
+h2 big{
+     color:white;
+     text-shadow: rgba(0,0,0,0.2);
+}
+   #side a, .dropdown-btn {
+     padding: 6px 8px 6px 16px;
+     text-decoration: none;
+     font-size: 20px;
+     color: white;
+     display: block;
+     border: none;
+     background: none;
+     width: 100%;
+     text-align: left;
+     cursor: pointer;
+     outline: none;
+   }
+   
+   #side a:hover, .dropdown-btn:hover {
+     color: yellow;
+   }
+
+   .main {
+     margin-left: 200px; 
+     font-size: 20px; 
+     padding: 0px 10px;
+   }
+
+   .active {
+     background-color: yellow;
+     color: white;
+   }
+
+   .dropdown-container {
+     display: none;
+     background-color: rebeccapurple;
+     padding-left: 8px;
+   }
+   .fa-caret-down {
+     float: right;
+     padding-right: 8px;
+   }
+   @media screen and (max-height: 450px) {
+     #side {padding-top: 15px;}
+     #side a {font-size: 18px;}
+   }
