@@ -1,0 +1,173 @@
+.nav-bar {
+  position: absolute;
+  left: 1150px;
+  top: 20px;
+  width: 750px;
+  height: 40px;
+}
+.nav-bar a {
+  font-size: 18px;
+  padding: 1px 30px;
+  color: rgba(0, 114, 177, 1);
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+.sign-in-nav {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 110, 174, 1);
+  background-color: rgba(0, 110, 174, 1);
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.sign-up-nav {
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 110, 174, 1);
+  background-color: #fff;
+  color: rgba(0, 110, 174, 1);
+  font-size: large;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.logo {
+  top: 0%;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+}
+.logo-img {
+  height: 150px;
+  width: 150px;
+}
+body {
+  background-color: #fafafa;
+}
+/* .choose-option {
+  position: absolute;
+  width: 1800px;
+  height: 800px;
+  top: 10%;
+  left: 4%;
+}
+
+.option-image-1 {
+  margin-top: 150px;
+  margin-left: 50px;
+  height: 600px;
+  width: 800px;
+}
+
+.option-image-2 {
+  margin-left: 80px;
+  height: 600px;
+  width: 800px;
+} */
+.choose-option {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 45%;
+  height: 85%;
+}
+.desc-1 {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  margin-left: 17%;
+}
+.option-image-1 {
+  margin-top: 185px;
+  margin-left: 30px;
+  height: 600px;
+  width: 800px;
+}
+/* .desc-2 {
+  position: absolute;
+  display: inline-block;
+} */
+.choose-option-2 {
+  position: absolute;
+
+  top: 10%;
+  left: 52%;
+  width: 45%;
+  height: 85%;
+}
+.desc-2 {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  margin-left: 17%;
+}
+.option-image-2 {
+  margin-top: 185px;
+  margin-left: 30px;
+  height: 600px;
+  width: 800px;
+}
+.startup-heading {
+  color: rgba(0, 114, 177, 1);
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.startup-desc {
+  color: rgba(0, 114, 177, 1);
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.startup-sign-up {
+  margin-top: 7px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 110, 174, 1);
+  background-color: rgba(0, 110, 174, 1);
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.investor-heading {
+  color: rgba(0, 114, 177, 1);
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.investor-desc {
+  color: rgba(0, 114, 177, 1);
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.investor-sign-up {
+  margin-top: 7px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 110, 174, 1);
+  background-color: rgba(0, 110, 174, 1);
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bridge the Gap</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    
+   
+    <%- include('header.ejs'); -%>
+    
+    
+
+    <div class="login-content" data-aos="fade-left">
+      <h1 class="main-heading">Welcome</h1>
+      <form action="/loginBoth" method="POST">
+
+     
+        <input
+          class="email"
+          type="text"
+          placeholder="Email or Phone"
+          name="Email"
+        />
+        <input
+          class="password"
+          type="password"
+          placeholder="Password"
+          name="Password"
+        />
+        <p class="forgot-pass">Forgot Password?</p>
+        <button type="submit" class="login" onclick="window.location.href='/login';">Login</button>
+        <button type="submit" class="sign-up" onclick="window.location.href='/option';">Sign up</button>
+    </form>
+    </div>
+    <div class="main-image" data-aos="fade-right">
+      <img class="img-main" src="assets/19871.jpg" alt="" />
+    </div>
+
+    <div class="footer">
+      <p>BTG © 2020</p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1000,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Landing Page - Start Bootstrap Theme</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <!-- Bootstrap core CSS -->
+   <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    >
+
+  <!-- Custom fonts for this template -->
+  <script
+  src="https://kit.fontawesome.com/5ce7758448.js"
+  crossorigin="anonymous"></script> 
+  
+  <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto" data-aos="zoom-in">
+          <h1 class="mb-5">Connect to different startups & See them Growing</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <h1>Explore Registered Startups</h1>
+    </div>
+  </section>
+
+  <!-- Image Showcases -->
+  <section class="showcase">
+      <%{%>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/feed1.jpg');" data-aos="fade-right"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text" data-aos="fade-left">
+          <h2><%= feedList[6].startupName %></h2>
+          <p class="lead mb-0"><%= feedList[6].productSummary %></p>
+          <br/><br/>
+          <a class="arrow" onclick="window.location.href='startupFeed/startupDetails?index=6';" href="#">Read More</a>
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <br><br>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/feed2.jpg');" data-aos="fade-right"></div>
+        <div class="col-lg-6 my-auto showcase-text" data-aos="fade-left">
+          <h2><%= feedList[7].startupName %></h2>
+          <p class="lead mb-0"><%= feedList[7].productSummary %></p>
+          <br><br>
+          <a class="arrow" onclick="window.location.href='startupFeed/startupDetails?index=7';" href="#">Read More</a>
+        </div>
+      </div>
+      <br><br><br><br>
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/feed3.jpg');" data-aos="fade-right"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text" data-aos="fade-left">
+          <h2><%= feedList[8].startupName %></h2>
+          <p class="lead mb-0"><%= feedList[8].productSummary %></p>
+          <br/><br/>
+          <a class="arrow" onclick="window.location.href='startupFeed/startupDetails?index=8';" href="#">Read More</a>
+    
+        </div>
+      </div>
+      
+      <br><br><br><br>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/feed4.jpg');" data-aos="fade-right"></div>
+        <div class="col-lg-6 my-auto showcase-text" data-aos="fade-left">
+          <h2><%= feedList[9].startupName %></h2>
+          <p class="lead mb-0"><%= feedList[9].productSummary %></p>
+          <br><br>
+          <a class="arrow" onclick="window.location.href='startupFeed/startupDetails?index=9';" href="#">Read More</a>
+        </div>
+      </div>
+      <br><br><br><br>
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/feed5.jpg');" data-aos="fade-right"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text" data-aos="fade-left">
+          <h2><%= feedList[10].startupName %></h2>
+          <p class="lead mb-0"><%= feedList[10].productSummary %></p>
+          <br/><br/>
+          <a class="arrow" onclick="window.location.href='startupFeed/startupDetails?index=10';" href="#">Read More</a>
+    
+        </div>
+      </div>
+      <br><br><br><br>
+    </div>
+    <%}%>
+  </section>
+  <br><br><br><br><br>
+
+
+  
+
+ 
+
+  
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer id="footer">
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
+    <p>BTG © 2020</p>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:300,
+      duration:1000,
+    });
+  </script>
+</body>
+
+</html>
