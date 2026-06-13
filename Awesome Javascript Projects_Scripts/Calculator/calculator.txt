@@ -1,0 +1,1 @@
+this is calclator which create using html and javascript logic 
