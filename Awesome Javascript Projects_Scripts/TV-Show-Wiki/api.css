@@ -1,0 +1,58 @@
+
+*
+{
+	background-color: #1D1B38;
+	font-family: 'Montserrat', sans-serif;
+	color: #c7b198;
+	text-align: center;
+	
+
+}
+
+.heading{
+	font-family: 'Montserrat Subrayada', sans-serif;
+    text-align: center;
+}
+.sub{
+	text-align: center;
+}
+.container
+{
+	text-align: center;
+}
+input[type=text] {
+	border: 2px solid #c7b198 ;
+	background-color: #c7b198;
+	height: 22.5px;
+	border-radius: 2px;
+	color: black;
+  }
+footer
+{
+	text-align: center;
+	margin-top: 20%;
+}
+  #search {
+	box-shadow:inset 0px 0px 50px -16px #d8a25c;
+	background:linear-gradient(to bottom,#c7b198 5%, #c7b198 100%);
+	background-color:#c7b198;
+	border-radius:1px;
+	border:1px solid #f3d984;
+	display:inline-block;
+	cursor:pointer;
+	color:#161516;
+	font-family:Georgia;
+	font-size:16px;
+	padding:3px 30px;
+	text-decoration:none;
+}
+#search:hover {
+	background:linear-gradient(to bottom, #dfd3c3 5%, #dfd3c3 100%);
+	background-color: #dfd3c3;
+}
+#search:active {
+	position:relative;
+	top:1px;
+}
+
+  
