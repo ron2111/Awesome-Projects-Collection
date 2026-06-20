@@ -1,0 +1,205 @@
+body{
+	background:#e2e2e2!important;
+}
+.bg-primary{
+	background: #009688!important;
+}
+.fas{
+	font-size:2rem;
+}
+.navbar-brand {
+    animation: donate 1s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes donate {
+      from {
+        transform: rotate(5deg);
+      }
+      to {
+        transform: rotate(-5deg);
+      }
+    }
+    .nav-item{
+    	font-size:17px;
+    }
+.banner{
+	width:100%;
+	height:90vh;
+	background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(2.jpeg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+}
+.aboutus{
+	width:100%;
+	height:90vh;
+	background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(charity.jfif);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+}
+.contact-section{
+	width:100%;
+	height:100vh;
+	background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.6)),url(con4.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.contact-section .container{
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+}
+.contact-section .container h2{
+	text-align:center;
+	text-decoration:underline;
+	text-underline-position:under;
+	color:rgb(238,235,235);
+	letter-spacing:2px;
+	margin-top:20px;
+}
+.contact-section .container p{
+	text-align:center;
+	width:70%;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:3%;
+	color:#fff;
+	letter-spacing:3px;
+}
+.contact-form{
+	display:grid;
+	place-items:center;
+}
+.contact-form input{
+	padding:10px;
+	margin:10px;
+	width:100%;
+	background-color:rgba(136,133,133,0.5);
+	color:#fff;
+	border:none;
+	outline:none;
+}
+.contact-form input::placeholder{
+	color:#fff;
+}
+.contact-form textarea{
+	padding:10px;
+	margin:10px;
+	width:100%;
+	background-color:rgba(136,133,133,0.5);
+	color:#fff;
+	border:none;
+	outline:none;
+}
+.contact-form textarea::placeholder{
+	color:#fff;
+}
+.submit{
+	width:40%;
+	background:none;
+	padding:4px;
+	outline:none;
+	font-size:13px;
+	font-weight:bold;
+	letter-spacing:2px;
+	height:33px;
+	text-align:center;
+	cursor:pointer;
+	letter-spacing:2px;
+	margin-left:3%;
+	border:2px solid rgb(190,190,190);
+	color:rgb(190,190,190);
+}
+.submit:hover{
+	border:1px solid black;
+	color:black;
+	cursor:pointer;
+	background:#fff;
+}
+.gallery-section{
+	padding:10px;
+}
+.gallery-section h1{
+	text-align:center;
+	color:#009688;
+	
+}
+.gallery-section .wrapper{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+	grid-gap:5px;
+}
+.gallery-section .wrapper img{
+	width:100%;
+	border:2px solid #009688;
+	border-radius:20px;
+}
+.gallery-section .wrapper img:hover{
+	transform:scale(1.2,1.2);
+	transition:1s transform;
+	border-radius:20px;
+}
+.gallery-section .wrapper .box{
+	padding:10px;
+	overflow:hidden;
+	border-radius:20px;
+}
+.footer{
+	width:100%;
+	height:12vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+}
+.footer a{
+	height:50px;
+	width:50px;
+	background:#f5f6fa;
+	border-radius:50px;
+	text-align:center;
+	margin:10px;
+	line-height:60px;
+}
+.footer a i{
+	transition: all 0.3s linear;
+}
+.footer a:hover i{
+	transform: scale(1.2);
+}
+.fa-instagram{
+	color:#e84393;
+}
+.fa-linkedin{
+	color:#113885;
+}
+.fa-twitter{
+	color:#008abe;
+}
+.fa-telegram{
+	color:#0097e6;
+}
+.fa-facebook{
+	color:#569ac5;
+}
+
+/*media queries*/
+
+@media(max-width:768px){
+	.contact-section .contact-form{
+	display:block;
+	width:100%;
+	text-align:center;
+	}
+	.contact-section .submit{
+	width:60%;
+	}
+}
