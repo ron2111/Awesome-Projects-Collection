@@ -2,6 +2,9 @@
 # Awesome-Projects-Collection
 
 ## Quality over Quantity :)
+<a href="https://discord.gg/KrkbmCSZVQ">
+  <img src="https://cdn.svgporn.com/logos/discord.svg" alt="Discord" style="height:10vh; width:10vw;"/>
+</a>
 
 
 <img src="https://pbs.twimg.com/profile_images/1195384351397208065/vPyf0-41_400x400.jpg" width="600" height="600" style="width: 600px; height: 600px;">
