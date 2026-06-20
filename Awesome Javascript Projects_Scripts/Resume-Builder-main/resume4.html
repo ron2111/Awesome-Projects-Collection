@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume Template</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
+
+  </head>
+
+  <body>
+
+
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/logo.png" width="50px" alt=""></a>
+				<div class="collapse navbar-collapse" id="navbarColor01">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link text-light" href="index.html">Home
+							</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<a class="btn btn-secondary text-light" href="sign-in.html">Log out</a>
+					</form>
+				</div>
+			</div>
+	</nav>
+<!-- form -->
+<div class="container p-3" id="cv-form">
+	<h1 class="text-center mt-1">Resume Builder - Alpha Release</h1>
+	<div
+		class="row">
+		<!-- first column -->
+		<div class="col-md-3">
+			<h3>Personal Info</h3>
+			<form action="#" autocomplete="off" id="myForm1">
+				<div class="form-group">
+					<label for="name">Your Name</label>
+					<input type="text" class="form-control" id="namefield"/>
+				</div>
+				<div class="form-group mt-2">
+					<label for="name">Your Age</label>
+					<input type="text" class="form-control" id="agefield"/>
+				</div>
+				<div class="form-group mt-2">
+					<label for="name">Your Gender</label>
+					<select name="gender" id="genderfield" class="form-control">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+					<!-- <input type="text" class="form-control" id="genderfield" /> -->
+				</div>
+				<div class="form-group mt-3">
+					<label for="address">Your Address</label>
+					<textarea type="text" rows="5" class="form-control" id="address"></textarea>
+				</div>
+				<div class="form-group mt-3">
+					<label for="contact">Your Phone</label>
+					<input type="text" class="form-control" id="contact"/>
+				</div>
+				<div class="form-group mt-3">
+					<label for="contact">Your Email</label>
+					<input type="text" class="form-control" id="email"/>
+				</div>
+				<div class="form-group mt-3">
+					<label for="">Select Photo</label>
+					<input id="imgField" type="file" class="form-control"/>
+				</div>
+
+				<p class="mt-3 text-primary">Social Links</p>
+				<div class="form-group mt-3">
+					<label for="facebook">Facebook</label>
+					<input type="text" class="form-control" id="facebook"/>
+				</div>
+				<div class="form-group mt-3">
+					<label for="insta">Instagram</label>
+					<input type="text" class="form-control" id="insta"/>
+				</div>
+				<div class="form-group mt-3">
+					<label for="linkedin">LinkedIn</label>
+					<input type="text" class="form-control" id="linkedin"/>
+				</div>
+			</form>
+		</div>
+
+		<!-- second column -->
+		<div class="col-md-3">
+			<h3>Professional Info</h3>
+			<form action="#" autocomplete="off" id="myForm2">
+				<label for="jobfield">Job</label>
+				<input type="text" class="form-control mt-2" id="jobfield"/>
+				<div class="form-group mt-3">
+					<label for="">Summary</label>
+					<textarea type="text" class="form-control" rows="4" id="objective"></textarea>
+				</div>
+				<h4 class="mt-2">Skills</h4>
+				<small class="text-muted">Ex: HTML ,CSS , Photoshop</small>
+
+				<input type="text" class="form-control" id="skillfield1"/>
+				<input type="range" id="range1" name="vol" min="0" max="100" step="10" class="form-range"/>
+				<input type="text" class="form-control" id="skillfield2"/>
+				<input type="range" id="range2" name="vol" min="0" max="100" step="10" class="form-range"/>
+				<input type="text" class="form-control" id="skillfield3"/>
+				<input type="range" id="range3" name="vol" min="0" max="100" step="10" class="form-range"/>
+				<input type="text" class="form-control" id="skillfield4"/>
+				<input type="range" id="range4" name="vol" min="0" max="100" step="10" class="form-range"/>
+				<h3>Certificate Info</h3>
+				<div id="edu-form1">
+					<input type="text" placeholder="Certificate Name" class="form-control" id="cert_name1">
+					<input type="text" placeholder="Certified from" class="form-control mt-2" id="cert_from1">
+					<hr>
+					<input type="text" placeholder="Certificate Name" class="form-control" id="cert_name2">
+					<input type="text" placeholder="Certified from" class="form-control mt-2" id="cert_from2">
+
+				</div>
+			</form>
+		</div>
+		<!-- Third column -->
+		<div class="col-md-3">
+			<form action="#" autocomplete="off" id="myForm1">
+				<div class="form-group mt-3" id="Qual">
+					<h3>Education Info</h3>
+					<div id="edu-form1">
+						<input type="text" placeholder="Course Name" class="form-control course " id="course1">
+						<input type="text" placeholder="University Name" class="form-control university mt-2" id="university1">
+						<input type="text" placeholder="Years" class="form-control years mt-2" id="years1">
+					</div>
+					<hr>
+					<input type="checkbox" name="" id="chck_form2" onclick="form2();">
+					<label for="chck_form2">add</label>
+					<div id="edu-form2" class="hide">
+						<input type="text" placeholder="Course Name" class="form-control course " id="course2">
+						<input type="text" placeholder="University Name" class="form-control university mt-2" id="university2">
+						<input type="text" placeholder="Years" class="form-control years mt-2" id="years2">
+						<hr>
+					</div>
+					<div class="hide" id="chck_form3"><input type="checkbox" onclick="form3();" id="check_form3">
+						<label for="check_form3">add</label>
+					</div>
+
+					<div id="edu-form3" class="hide">
+						<input type="text" placeholder="Course Name" class="form-control course " id="course3">
+						<input type="text" placeholder="University Name" class="form-control university mt-2" id="university3">
+						<input type="text" placeholder="Years" class="form-control years mt-2" id="years3">
+
+					</div>
+					<hr>
+					<h3>Language</h3>
+					<div id="we">
+						<small class="text-muted">Ex: English, Arabic, French</small>
+						<input type="text" placeholder="Language" id="lang" class="form-control language">
+						<button class=" mt-2 btn btn-primary" id="wAddBtn" onclick="addWxp()">
+							Add</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- forth column -->
+		<div class="col-md-3">
+			<h3>Professional Info</h3>
+			<form action="#" autocomplete="off" id="myForm2">
+				<div id="exp-form1">
+					<input type="text" placeholder="Job Title" class="form-control course " id="job1">
+					<input type="text" placeholder="Company Name" class="form-control university mt-2" id="company1">
+					<input type="text" placeholder="Years" class="form-control years mt-2" id="year1">
+					<textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp1" placeholder="description"></textarea>
+				</div>
+				<hr>
+				<input type="checkbox" name="" id="chck_exp2" onclick="exp2();">
+				<label for="chck_exp2">add</label>
+				<div id="exp-form2" class="hide">
+					<input type="text" placeholder="Job Title" class="form-control course " id="job2">
+					<input type="text" placeholder="Company Name" class="form-control university mt-2" id="company2">
+					<input type="text" placeholder="Years" class="form-control years mt-2" id="year2">
+					<textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp2" placeholder="description"></textarea>
+				</div>
+
+				<div class="hide" id="chck_exp3">
+					<hr>
+					<input type="checkbox" onclick="exp3();" id="check_exp3">
+					<label for="check_exp3">add</label>
+				</div>
+
+				<div id="exp-form3" class="hide">
+					<input type="text" placeholder="Job Title" class="form-control course " id="job3">
+					<input type="text" placeholder="Company Name" class="form-control university mt-2" id="company3">
+					<input type="text" placeholder="Years" class="form-control years mt-2" id="year3">
+					<textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp3" placeholder="description"></textarea>
+				</div>
+
+
+			</form>
+		</div>
+	</div>
+	<div class="container mt-5 text-center">
+		<button onclick="generateCv()" class="btn btn-dark btn-lg">
+			Generate CV
+		</button>
+		<button class="btn btn-danger btn-lg" id="reset">Reset</button>
+		<button class="btn btn-info btn-lg" onclick="autoFill();">
+			Auto fill sample
+		</button>
+	</div>
+</div>
+<!-- cv -->
+    <div class="main-wrapper" id="cv-template">
+      <div class="container px-3 px-lg-5">
+        <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+          <div class="resume-header">
+            <div class="row align-items-center">
+              <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+                <h2 class="resume-name mb-0 text-uppercase" id="Tname1">Simon Doe</h2>
+                <div class="resume-tagline mb-3 mb-md-0" id="Tjob">Senior Software Engineer</div>
+              </div>
+              <!--//resume-title-->
+              <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <i class="fas fa-phone-square fa-fw fa-lg me-2 "></i>
+                    <a class="resume-link"  id="Tcontact">0123 4567 890</a>
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-envelope-square fa-fw fa-lg me-2"></i>
+                    <a class="resume-link" id="Temail">simon@yourwebsite.com</a>
+                  </li>
+                  
+                  <li class="mb-0">
+                  </ul>
+                  <i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i> <span id="Taddress">New York</span></li>
+              </div>
+              <!--//resume-contact-->
+            </div>
+            <!--//row-->
+
+          </div>
+          <!--//resume-header-->
+          <hr>
+          <div class="resume-intro py-3">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-3 col-xl-2 text-center">
+                <img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto" id="imgTemplate" src="assets/images/resume-profile.png" alt="image">
+              </div>
+
+              <div class="col text-start">
+                <p class="mb-0" id="Tobjectives">
+                </p>
+              </div>
+              <!--//col-->
+            </div>
+          </div>
+          <!--//resume-intro-->
+          <hr>
+          <div class="resume-body">
+            <div class="row">
+              <div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+                <section class="work-section py-3">
+                  <h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+                  <div class="item mb-3">
+                    <div class="item-heading row align-items-center mb-2">
+                      <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" id="exp_title1"></h4>
+                      <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" id="exp_year1"></div>
+                      <span id="exp_comp1"></span>
+
+                    </div>
+                    <div class="item-content">
+                      <p id="exp_desc1"></p>
+                    </div>
+                  </div>
+                  <!--//item-->
+              
+                  <div class="item mb-3 hide" id="exp-item2">
+                    <div class="item-heading row align-items-center mb-2">
+                      <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" id="exp_title2">Senior Software Engineer</h4>
+                      <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" id="exp_year2">2019 - Present</div>
+                      <span id="exp_comp2"></span>
+
+                    </div>
+                    <div class="item-content">
+                      <p id="exp_desc2">Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
+                    </div>
+                  </div>
+                  <!--//item-->
+              
+                  <div class="item mb-3 hide" id="exp-item3">
+                    <div class="item-heading row align-items-center mb-2">
+                      <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" id="exp_title3">Senior Software Engineer</h4>
+                      <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end" id="exp_year3">2019 - Present</div>
+                      <span id="exp_comp3"></span>
+
+                    </div>
+                    <div class="item-content">
+                      <p id="exp_desc3">Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
+                    </div>
+                  </div>
+                  <!--//item-->
+                </section>
+                <!--//work-section-->
+
+
+                <section class="project-section py-3">
+                  <h3 class="text-uppercase resume-section-heading mb-4">Certificates</h3>
+                  <div class="item mb-3">
+                    <div class="item-heading row align-items-center mb-2">
+                      <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" id="cert_title1"></h4>
+
+                    </div>
+                    <div class="item-content">
+                      <p id="cert_desc1"></p>
+
+
+                    </div>
+                  </div>
+                  <!--//item-->
+                  <div class="item">
+                    <div class="item-heading row align-items-center mb-2">
+                      <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0" id="cert_title2"></h4>
+                      
+                    </div>
+                    <div class="item-content">
+                      <p id="cert_desc2"></p>
+
+                    </div>
+                  </div>
+                  <!--//item-->
+               
+                  <!--//item-->
+                </section>
+                <!--//project-section-->
+              </div>
+              <!--//resume-main-->
+              <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+                <section class="skills-section py-3">
+                  <h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+                  <div class="item">
+                   
+                    <ul class="list-unstyled resume-skills-list">
+                      <li class="mb-2" id="skillname1"></li>
+                      <li class="mb-2" id="skillname2"></li>
+                      <li></li>
+                      <li class="mb-2" id="skillname3"></li>
+                      <li class="mb-2" id="skillname4"></li>
+                      <span style="display: none;" id="progress1"></span>
+                         <span style="display: none;" id="progress2"></span>
+                         <span style="display: none;" id="progress3"></span>
+                         <span style="display: none;" id="progress4"></span>
+                      <span style="display: none;" id="Progress1"></span>
+                         <span style="display: none;" id="Progress2"></span>
+                         <span style="display: none;" id="Progress3"></span>
+                         <span style="display: none;" id="Progress4"></span>
+                    </ul>
+                  </div>
+               
+                </section>
+                <!--//skills-section-->
+                <section class="education-section py-3">
+                  <h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+                  <ul class="list-unstyled resume-education-list">
+                    <li class="mb-3">
+                      <div class="resume-degree font-weight-bold" id="coursename1"></div>
+                      <div class="resume-degree-org text-muted" id="uniName1"></div>
+                      <div class="resume-degree-time text-muted" id="Eyear1"></div>
+                    </li>
+                    <li id="edu-item2" class="hide">
+                      <div class="resume-degree font-weight-bold" id="coursename2"></div>
+                      <div class="resume-degree-org text-muted" id="uniName2"></div>
+                      <div class="resume-degree-time text-muted"  id="Eyear2"></div>
+                    </li>
+                    <li id="edu-item3" class="hide">
+                      <div class="resume-degree font-weight-bold" id="coursename3"></div>
+                      <div class="resume-degree-org text-muted" id="uniName3"></div>
+                      <div class="resume-degree-time text-muted"  id="Eyear3"></div>
+                    </li>
+                  </ul>
+                </section>
+                
+                <!--//education-section-->
+                <section class="skills-section py-3">
+                  <h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+                  <ul class="list-unstyled resume-lang-list" id="langItem">
+                 
+                    
+                  </ul>
+                </section>
+              </aside>
+              <!--//resume-aside-->
+            </div>
+            <!--//row-->
+          </div>
+          <!--//resume-body-->
+          <hr>
+          <div class="resume-footer text-center">
+            <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+              <li class="list-inline-item mb-lg-0 me-3">
+                <a class="resume-link" href="#" id="hrefFb">
+                  <i class="fab fa-facebook-f fa-2x me-2" data-fa-transform="down-4"></i>
+                  <span class="d-none d-lg-inline-block text-muted">Facebook</span>
+                </a>
+              </li>
+              <li class="list-inline-item mb-lg-0 me-3">
+                <a class="resume-link" href="#" id="hrefLin">
+                  <i class="fab fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i>
+                  <span class="d-none d-lg-inline-block text-muted" >LinkedIn</span>
+                </a>
+              </li>
+              <li class="list-inline-item mb-lg-0 me-lg-3">
+                <a class="resume-link" href="#" id="hrefinsta">
+                  <i class="fab fa-instagram fa-2x me-2" data-fa-transform="down-4"></i>
+                  <span class="d-none d-lg-inline-block text-muted">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--//resume-footer-->
+        </article>
+      </div>
+      <!--//container-->
+
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+      <button class="btn btn-danger btn-lg mt-4 mb-4" id="editCv" onclick="EditForm();">edit</button>
+      <button class="btn btn-success btn-lg mt-4 mb-4" id="resume-button">Download</button>
+        </div>
+      </div>
+    </div>
+		 <!-- script -->
+ <script src="assets/js/html2pdf.bundle.min.js"></script>
+ <script src="assets/js/main.js"></script>
+  </body>
+</html>

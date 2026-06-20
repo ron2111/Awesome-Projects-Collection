@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume Builder</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <!-- Google Font -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+   
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.png" width="50px" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Home
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a class="btn btn-secondary text-light" href="sign-in.html">Log out</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+<!-- form -->
+<div class="container p-3" id="cv-form">
+  <h1 class="text-center mt-1">Resume Builder - Alpha Release</h1>
+  <div
+    class="row">
+    <!-- first column -->
+    <div class="col-md-3">
+      <h3>Personal Info</h3>
+      <form action="#" autocomplete="off" id="myForm1">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="namefield"/>
+        </div>
+        <div class="form-group mt-2">
+          <label for="name">Your Age</label>
+          <input type="text" class="form-control" id="agefield"/>
+        </div>
+        <div class="form-group mt-2">
+          <label for="name">Your Gender</label>
+          <select name="gender" id="genderfield" class="form-control">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <!-- <input type="text" class="form-control" id="genderfield" /> -->
+        </div>
+        <div class="form-group mt-3">
+          <label for="address">Your Address</label>
+          <textarea type="text" rows="5" class="form-control" id="address"></textarea>
+        </div>
+        <div class="form-group mt-3">
+          <label for="contact">Your Phone</label>
+          <input type="text" class="form-control" id="contact"/>
+        </div>
+        <div class="form-group mt-3">
+          <label for="contact">Your Email</label>
+          <input type="text" class="form-control" id="email"/>
+        </div>
+        <div class="form-group mt-3">
+          <label for="">Select Photo</label>
+          <input id="imgField" type="file" class="form-control"/>
+        </div>
+
+        <p class="mt-3 text-primary">Social Links</p>
+        <div class="form-group mt-3">
+          <label for="facebook">Facebook</label>
+          <input type="text" class="form-control" id="facebook"/>
+        </div>
+        <div class="form-group mt-3">
+          <label for="insta">Instagram</label>
+          <input type="text" class="form-control" id="insta"/>
+        </div>
+        <div class="form-group mt-3">
+          <label for="linkedin">LinkedIn</label>
+          <input type="text" class="form-control" id="linkedin"/>
+        </div>
+      </form>
+    </div>
+
+    <!-- second column -->
+    <div class="col-md-3">
+      <h3>Professional Info</h3>
+      <form action="#" autocomplete="off" id="myForm2">
+        <label for="jobfield">Job</label>
+        <input type="text" class="form-control mt-2" id="jobfield"/>
+        <div class="form-group mt-3">
+          <label for="">Summary</label>
+          <textarea type="text" class="form-control" rows="4" id="objective"></textarea>
+        </div>
+        <h4 class="mt-2">Skills</h4>
+        <small class="text-muted">Ex: HTML ,CSS , Photoshop</small>
+
+        <input type="text" class="form-control" id="skillfield1"/>
+        <input type="range" id="range1" name="vol" min="0" max="100" step="10" class="form-range"/>
+        <input type="text" class="form-control" id="skillfield2"/>
+        <input type="range" id="range2" name="vol" min="0" max="100" step="10" class="form-range"/>
+        <input type="text" class="form-control" id="skillfield3"/>
+        <input type="range" id="range3" name="vol" min="0" max="100" step="10" class="form-range"/>
+        <input type="text" class="form-control" id="skillfield4"/>
+        <input type="range" id="range4" name="vol" min="0" max="100" step="10" class="form-range"/>
+        <h3>Certificate Info</h3>
+        <div id="edu-form1">
+          <input type="text" placeholder="Certificate Name" class="form-control" id="cert_name1">
+          <input type="text" placeholder="Certified from" class="form-control mt-2" id="cert_from1">
+          <hr>
+          <input type="text" placeholder="Certificate Name" class="form-control" id="cert_name2">
+          <input type="text" placeholder="Certified from" class="form-control mt-2" id="cert_from2">
+
+        </div>
+      </form>
+    </div>
+    <!-- Third column -->
+    <div class="col-md-3">
+      <form action="#" autocomplete="off" id="myForm1">
+        <div class="form-group mt-3" id="Qual">
+          <h3>Education Info</h3>
+          <div id="edu-form1">
+            <input type="text" placeholder="Course Name" class="form-control course " id="course1">
+            <input type="text" placeholder="University Name" class="form-control university mt-2" id="university1">
+            <input type="text" placeholder="Years" class="form-control years mt-2" id="years1">
+          </div>
+          <hr>
+          <input type="checkbox" name="" id="chck_form2" onclick="form2();">
+          <label for="chck_form2">add</label>
+          <div id="edu-form2" class="hide">
+            <input type="text" placeholder="Course Name" class="form-control course " id="course2">
+            <input type="text" placeholder="University Name" class="form-control university mt-2" id="university2">
+            <input type="text" placeholder="Years" class="form-control years mt-2" id="years2">
+            <hr>
+          </div>
+          <div class="hide" id="chck_form3"><input type="checkbox" onclick="form3();" id="check_form3">
+            <label for="check_form3">add</label>
+          </div>
+
+          <div id="edu-form3" class="hide">
+            <input type="text" placeholder="Course Name" class="form-control course " id="course3">
+            <input type="text" placeholder="University Name" class="form-control university mt-2" id="university3">
+            <input type="text" placeholder="Years" class="form-control years mt-2" id="years3">
+
+          </div>
+          <hr>
+          <h3>Language</h3>
+          <div id="we">
+            <small class="text-muted">Ex: English, Arabic, French</small>
+            <input type="text" placeholder="Language" id="lang" class="form-control language">
+            <button class=" mt-2 btn btn-primary" id="wAddBtn" onclick="addWxp()">
+              Add</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- forth column -->
+    <div class="col-md-3">
+      <h3>Professional Info</h3>
+      <form action="#" autocomplete="off" id="myForm2">
+        <div id="exp-form1">
+          <input type="text" placeholder="Job Title" class="form-control course " id="job1">
+          <input type="text" placeholder="Company Name" class="form-control university mt-2" id="company1">
+          <input type="text" placeholder="Years" class="form-control years mt-2" id="year1">
+          <textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp1" placeholder="description"></textarea>
+        </div>
+        <hr>
+        <input type="checkbox" name="" id="chck_exp2" onclick="exp2();">
+        <label for="chck_exp2">add</label>
+        <div id="exp-form2" class="hide">
+          <input type="text" placeholder="Job Title" class="form-control course " id="job2">
+          <input type="text" placeholder="Company Name" class="form-control university mt-2" id="company2">
+          <input type="text" placeholder="Years" class="form-control years mt-2" id="year2">
+          <textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp2" placeholder="description"></textarea>
+        </div>
+
+        <div class="hide" id="chck_exp3">
+          <hr>
+          <input type="checkbox" onclick="exp3();" id="check_exp3">
+          <label for="check_exp3">add</label>
+        </div>
+
+        <div id="exp-form3" class="hide">
+          <input type="text" placeholder="Job Title" class="form-control course " id="job3">
+          <input type="text" placeholder="Company Name" class="form-control university mt-2" id="company3">
+          <input type="text" placeholder="Years" class="form-control years mt-2" id="year3">
+          <textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp3" placeholder="description"></textarea>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+  <div class="container mt-5 text-center">
+    <button onclick="generateCv()" class="btn btn-dark btn-lg">
+      Generate CV
+    </button>
+    <button class="btn btn-danger btn-lg" id="reset">Reset</button>
+    <button class="btn btn-info btn-lg" onclick="autoFill();">
+      Auto fill sample
+    </button>
+  </div>
+</div>
+
+
+    <!-- cv -->
+    <article class="resume-wrapper text-center position-relative" id="cv-template">
+      <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
+        <header class="resume-header pt-4 pt-md-0">
+          <div class="row">
+            <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+              <img class="picture" src="assets/images/profile.jpg" alt="" id="imgTemplate">
+            </div>
+            <!--//col-->
+            <div class="col">
+              <div class="row p-4 justify-content-center justify-content-md-between">
+                <div class="primary-info col-auto">
+                  <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase" id="Tname1">Steve Doe</h1>
+                  <div class="title mb-3" id="Tjob">Full Stack Developer</div>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <a class="text-link" href="#">
+                        <i class="fas fa-map-marker-alt fa-fw me-2" data-fa-transform="grow-3"></i>
+                        <span id="Taddress"></span></a>
+                    </li>
+                    <li>
+                      <a class="text-link" href="#">
+                        <i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>
+                        <span id="Tcontact">  0123 456 78900</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <!--//primary-info-->
+                <div class="secondary-info col-auto mt-2">
+                  <ul class="resume-social list-unstyled">
+                    <li class="mb-3">
+                      <a class="text-link" id="hrefFb" href="#">
+                        <span class="fa-container text-center me-2">
+                          <i class="fab fa-facebook-f fa-fw"></i>
+                        </span>Facebook</a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-link" id="hrefinsta" href="#">
+                        <span class="fa-container text-center me-2">
+                          <i class="fab fa-instagram fa-fw"></i>
+                        </span>Instagram</a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-link" id="hrefLin" href="#">
+                        <span class="fa-container text-center me-2">
+                          <i class="fab fa-linkedin"></i>
+                        </span>LinkedIn</a>
+                    </li>
+                    <li>
+                      <a class="text-link" href="#">
+                        <span class="fa-container text-center me-2">
+                          <i class="far fa-envelope"></i>
+                        </span><span id="Temail">Email Address</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <!--//secondary-info-->
+              </div>
+              <!--//row-->
+
+            </div>
+            <!--//col-->
+          </div>
+          <!--//row-->
+        </header>
+        <div class="resume-body p-5">
+          <section class="resume-section summary-section mb-5">
+            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
+            <div class="resume-section-content">
+              <p class="mb-0" id="Tobjectives">
+            </div>
+          </section>
+          <!--//summary-section-->
+          <div class="row">
+            <div class="col-lg-9">
+              <section class="resume-section experience-section mb-5">
+                <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
+                <div class="resume-section-content">
+                  <div class="resume-timeline position-relative">
+                    <article class="resume-timeline-item position-relative pb-5">
+
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3 class="resume-position-title font-weight-bold mb-1" id="exp_title1">Lead Developer</h3>
+                          <div class="resume-company-name ms-auto" id="exp_comp1">Startup Hub</div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time" id="exp_year1">2020 - Present</div>
+                      </div>
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc" id="exp_desc1">
+                        
+                      </div>
+                      <!--//resume-timeline-item-desc-->
+
+                    </article>
+                    <article class="resume-timeline-item position-relative pb-5 hide" id="exp-item2">
+
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3 class="resume-position-title font-weight-bold mb-1" id="exp_title2">Lead Developer</h3>
+                          <div class="resume-company-name ms-auto" id="exp_comp2">Startup Hub</div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time" id="exp_year2">2020 - Present</div>
+                      </div>
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc" id="exp_desc2">
+                        
+                      </div>
+                      <!--//resume-timeline-item-desc-->
+
+                    </article>
+                    <article class="resume-timeline-item position-relative pb-5 hide" id="exp-item3">
+
+                      <div class="resume-timeline-item-header mb-2">
+                        <div class="d-flex flex-column flex-md-row">
+                          <h3 class="resume-position-title font-weight-bold mb-1" id="exp_title3">Lead Developer</h3>
+                          <div class="resume-company-name ms-auto" id="exp_comp3">Startup Hub</div>
+                        </div>
+                        <!--//row-->
+                        <div class="resume-position-time" id="exp_year3">2020 - Present</div>
+                      </div>
+                      <!--//resume-timeline-item-header-->
+                      <div class="resume-timeline-item-desc" id="exp_desc3">
+                        
+                      </div>
+                      <!--//resume-timeline-item-desc-->
+
+                    </article>
+                  </div>
+                  <!--//resume-timeline-->
+                </div>
+              </section>
+              <!--//experience-section-->
+            </div>
+            <div class="col-lg-3">
+              <section class="resume-section skills-section mb-5">
+                <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
+                <div class="resume-section-content">
+                  <div class="resume-skill-item">
+                    
+                    <ul class="list-unstyled mb-4">
+                      <li class="mb-2">
+                        <div class="resume-skill-name" id="skillname1">Angular</div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="Progress1"></div>
+                         <span style="display: none;" id="progress1"></span>
+                         <span style="display: none;" id="progress2"></span>
+                         <span style="display: none;" id="progress3"></span>
+                         <span style="display: none;" id="progress4"></span>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name" id="skillname2">JavaScript</div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="Progress2"></div>
+                        </div>
+                      </li>
+
+                      <li class="mb-2">
+                        <div class="resume-skill-name" id="skillname3">Node.js</div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="Progress3"></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name" id="skillname4">HTML/CSS/SASS/LESS</div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="Progress4"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--//resume-skill-item-->
+
+                  <!-- <div class="resume-skill-item">
+                    <h4 class="resume-skills-cat font-weight-bold">Backend</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <div class="resume-skill-name">Python/Django</div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">Ruby/Rails</div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">PHP</div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 86%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                        <div class="resume-skill-name">WordPress/Shopify</div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 82%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div> -->
+                  
+                </div>
+                <!--resume-section-content-->
+              </section>
+              <!--//skills-section-->
+              <section class="resume-section education-section mb-5">
+                <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+                <div class="resume-section-content">
+                  <ul class="list-unstyled">
+                    <li class="mb-2" id="edu-item1">
+                      <div class="resume-degree font-weight-bold" id="coursename1">MSc in Computer Science</div>
+                      <div class="resume-degree-org" id="uniName1">University College London</div>
+                      <div class="resume-degree-time" id="Eyear1">2010 - 2011</div>
+                    </li>
+                    <li id="edu-item2" class="hide">
+                      <div class="resume-degree font-weight-bold" id="coursename2">BSc Maths and Physics</div>
+                      <div class="resume-degree-org" id="uniName2">Imperial College London</div>
+                      <div class="resume-degree-time" id="Eyear2">2007 - 2010</div>
+                    </li>
+                    <li id="edu-item3" class="hide">
+                      <div class="resume-degree font-weight-bold" id="coursename3">BSc Maths and Physics</div>
+                      <div class="resume-degree-org" id="uniName3">Imperial College London</div>
+                      <div class="resume-degree-time" id="Eyear3">2007 - 2010</div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <!--//education-section-->
+              <section class="resume-section reference-section mb-5">
+                <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Certificates</h2>
+                <div class="resume-section-content">
+                  <ul class="list-unstyled resume-awards-list">
+                    <li class="mb-2 ps-4 position-relative">
+                      <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+                      <div class="resume-award-name" id="cert_title1"></div>
+                      <div class="resume-award-desc" id="cert_desc1"></div>
+                    </li>
+                    <li class="mb-0 ps-4 position-relative">
+                      <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+                      <div class="resume-award-name" id="cert_title2"></div>
+                      <div class="resume-award-desc" id="cert_desc2"></div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <!--//interests-section-->
+              <section class="resume-section language-section mb-5">
+                <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
+                <div class="resume-section-content">
+                  <ul class="list-unstyled resume-lang-list" id="langItem">
+                  
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!--//row-->
+        </div>
+        <!--//resume-body-->
+      </div>
+      <button class="btn btn-info btn-lg mt-4 mb-4" id="editCv" onclick="EditForm();">edit</button>
+      <button class="btn btn-dark btn-lg mt-4 mb-4" id="resume-button">Download</button>
+    </article>
+    
+    <!-- script -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css" integrity="undefined" crossorigin="anonymous"/>
+    <title>Resume Builder</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.png" width="50px" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Home
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a class="btn btn-link text-light" href="sign-in.html">Log out</a>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container p-3" id="cv-form">
+      <h1 class="text-center mt-1">Resume Builder - Alpha Release</h1>
+      <div
+        class="row">
+        <!-- first column -->
+        <div class="col-md-3">
+          <h3>Personal Info</h3>
+          <form action="#" autocomplete="off" id="myForm1">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" class="form-control" id="namefield"/>
+            </div>
+            <div class="form-group mt-2">
+              <label for="name">Your Age</label>
+              <input type="text" class="form-control" id="agefield"/>
+            </div>
+            <div class="form-group mt-2">
+              <label for="name">Your Gender</label>
+              <select name="gender" id="genderfield" class="form-control">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <!-- <input type="text" class="form-control" id="genderfield" /> -->
+            </div>
+            <div class="form-group mt-3">
+              <label for="address">Your Address</label>
+              <textarea type="text" rows="5" class="form-control" id="address"></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="contact">Your Phone</label>
+              <input type="text" class="form-control" id="contact"/>
+            </div>
+            <div class="form-group mt-3">
+              <label for="contact">Your Email</label>
+              <input type="text" class="form-control" id="email"/>
+            </div>
+            <div class="form-group mt-3">
+              <label for="">Select Photo</label>
+              <input id="imgField" type="file" class="form-control"/>
+            </div>
+
+            <p class="mt-3 text-primary">Social Links</p>
+            <div class="form-group mt-3">
+              <label for="facebook">Facebook</label>
+              <input type="text" class="form-control" id="facebook"/>
+            </div>
+            <div class="form-group mt-3">
+              <label for="insta">Instagram</label>
+              <input type="text" class="form-control" id="insta"/>
+            </div>
+            <div class="form-group mt-3">
+              <label for="linkedin">LinkedIn</label>
+              <input type="text" class="form-control" id="linkedin"/>
+            </div>
+          </form>
+        </div>
+
+        <!-- second column -->
+        <div class="col-md-3">
+          <h3>Professional Info</h3>
+          <form action="#" autocomplete="off" id="myForm2">
+            <label for="jobfield">Job</label>
+            <input type="text" class="form-control mt-2" id="jobfield"/>
+            <div class="form-group mt-3">
+              <label for="">Summary</label>
+              <textarea type="text" class="form-control" rows="4" id="objective"></textarea>
+            </div>
+            <h4 class="mt-2">Skills</h4>
+            <small class="text-muted">Ex: HTML ,CSS , Photoshop</small>
+
+            <input type="text" class="form-control" id="skillfield1"/>
+            <input type="range" id="range1" name="vol" min="0" max="100" step="10" class="form-range"/>
+            <input type="text" class="form-control" id="skillfield2"/>
+            <input type="range" id="range2" name="vol" min="0" max="100" step="10" class="form-range"/>
+            <input type="text" class="form-control" id="skillfield3"/>
+            <input type="range" id="range3" name="vol" min="0" max="100" step="10" class="form-range"/>
+            <input type="text" class="form-control" id="skillfield4"/>
+            <input type="range" id="range4" name="vol" min="0" max="100" step="10" class="form-range"/>
+            <h3>Certificate Info</h3>
+            <div id="edu-form1">
+              <input type="text" placeholder="Certificate Name" class="form-control" id="cert_name1">
+              <input type="text" placeholder="Certified from" class="form-control mt-2" id="cert_from1">
+              <hr>
+              <input type="text" placeholder="Certificate Name" class="form-control" id="cert_name2">
+              <input type="text" placeholder="Certified from" class="form-control mt-2" id="cert_from2">
+
+            </div>
+          </form>
+        </div>
+        <!-- Third column -->
+        <div class="col-md-3">
+          <form action="#" autocomplete="off" id="myForm1">
+            <div class="form-group mt-3" id="Qual">
+              <h3>Education Info</h3>
+              <div id="edu-form1">
+                <input type="text" placeholder="Course Name" class="form-control course " id="course1">
+                <input type="text" placeholder="University Name" class="form-control university mt-2" id="university1">
+                <input type="text" placeholder="Years" class="form-control years mt-2" id="years1">
+              </div>
+              <hr>
+              <input type="checkbox" name="" id="chck_form2" onclick="form2();">
+              <label for="chck_form2">add</label>
+              <div id="edu-form2" class="hide">
+                <input type="text" placeholder="Course Name" class="form-control course " id="course2">
+                <input type="text" placeholder="University Name" class="form-control university mt-2" id="university2">
+                <input type="text" placeholder="Years" class="form-control years mt-2" id="years2">
+                <hr>
+              </div>
+              <div class="hide" id="chck_form3"><input type="checkbox" onclick="form3();" id="check_form3">
+                <label for="check_form3">add</label>
+              </div>
+
+              <div id="edu-form3" class="hide">
+                <input type="text" placeholder="Course Name" class="form-control course " id="course3">
+                <input type="text" placeholder="University Name" class="form-control university mt-2" id="university3">
+                <input type="text" placeholder="Years" class="form-control years mt-2" id="years3">
+
+              </div>
+              <hr>
+              <h3>Language</h3>
+              <div id="we">
+                <small class="text-muted">Ex: English, Arabic, French</small>
+                <input type="text" placeholder="Language" id="lang" class="form-control language">
+                <button class=" mt-2 btn btn-primary" id="wAddBtn" onclick="addWxp()">
+                  Add</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- forth column -->
+        <div class="col-md-3">
+          <h3>Professional Info</h3>
+          <form action="#" autocomplete="off" id="myForm2">
+            <div id="exp-form1">
+              <input type="text" placeholder="Job Title" class="form-control course " id="job1">
+              <input type="text" placeholder="Company Name" class="form-control university mt-2" id="company1">
+              <input type="text" placeholder="Years" class="form-control years mt-2" id="year1">
+              <textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp1" placeholder="description"></textarea>
+            </div>
+            <hr>
+            <input type="checkbox" name="" id="chck_exp2" onclick="exp2();">
+            <label for="chck_exp2">add</label>
+            <div id="exp-form2" class="hide">
+              <input type="text" placeholder="Job Title" class="form-control course " id="job2">
+              <input type="text" placeholder="Company Name" class="form-control university mt-2" id="company2">
+              <input type="text" placeholder="Years" class="form-control years mt-2" id="year2">
+              <textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp2" placeholder="description"></textarea>
+            </div>
+
+            <div class="hide" id="chck_exp3">
+              <hr>
+              <input type="checkbox" onclick="exp3();" id="check_exp3">
+              <label for="check_exp3">add</label>
+            </div>
+
+            <div id="exp-form3" class="hide">
+              <input type="text" placeholder="Job Title" class="form-control course " id="job3">
+              <input type="text" placeholder="Company Name" class="form-control university mt-2" id="company3">
+              <input type="text" placeholder="Years" class="form-control years mt-2" id="year3">
+              <textarea type="text" class="form-control workExp mt-2" rows="3" id="workExp3" placeholder="description"></textarea>
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+      <div class="container mt-5 text-center">
+        <button onclick="generateCv()" class="btn btn-dark btn-lg">
+          Generate CV
+        </button>
+        <button class="btn btn-danger btn-lg" id="reset">Reset</button>
+        <button class="btn btn-info btn-lg" onclick="autoFill();">
+          Auto fill sample
+        </button>
+      </div>
+    </div>
+
+
+    <main
+      class="l-main bd-container" id="cv-template">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume">
+        <div
+          class="resume_left">
+          <!-- HOME -->
+          <section class="home" id="home">
+            <div class="home_container section bd-grid">
+              <div class="home_data bd-grid">
+                <img src="assets/img/perfil.jpg" alt="" id="imgTemplate" class="home_img"/>
+                <h1 class="home_title" id="Tname1"></h1>
+
+                <h3 class="home_profession" id="Tjob"></h3>
+
+              </div>
+              <div class="home_address bd-grid">
+                <span class="home_information">
+                  <i class="bx bx-map home_icon"></i>
+                  <span id="Taddress"></span>
+                </span>
+                <span class="home_information">
+                  <i class="bx bx-envelope home_icon"></i>
+                  <span id="Temail"></span>
+                </span>
+                <span class="home_information">
+                  <i class="bx bx-phone home_icon"></i>
+                  <span id="Tcontact"></span>
+                </span>
+              </div>
+            </div>
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <!-- <i class="bx bx-download generate-pdf" title="generate pdf" id="resume-button"></i> -->
+          </section>
+
+          <!-- SOCIAL -->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
+            <div class="social_container bd-grid">
+              <a href="#" target="_blank" id="hrefLin" class="social_link">
+                <i class="bx bxl-linkedin-square social_icon"></i>
+                <span id="Tlinked">LinkedIn</span>
+              </a>
+              <a href="#" target="_blank" id="hrefFb" class="social_link">
+                <i class="bx bxl-facebook social_icon"></i>
+                <span id="Tfb">Facebook</span>
+              </a>
+              <a href="#" target="_blank" id="hrefinsta" class="social_link">
+                <i class="bx bxl-instagram social_icon"></i>
+                <span id="Tinsta">Instagram</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- PROFILE -->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+            <p class="profile_description" id="Tobjectives"></p>
+          </section>
+
+          <!-- EDUCATION -->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education_container bd-grid" id="TQual">
+              <div class="education_content" id="edu-item1">
+                <div class="education_time">
+                  <span class="education_rounder"></span>
+                  <span class="education_line"></span>
+                </div>
+                <div class="education_data bd-grid">
+                  <h3 class="education_title" id="coursename1"></h3>
+                  <span class="education_studies" id="uniName1"></span>
+                  <span class="education_year" id="Eyear1"></span>
+                </div>
+              </div>
+              <div class="education_content hide" id="edu-item2">
+                <div class="education_time">
+                  <span class="education_rounder"></span>
+                  <span class="education_line"></span>
+                </div>
+                <div class="education_data bd-grid">
+                  <h3 class="education_title" id="coursename2"></h3>
+                  <span class="education_studies" id="uniName2"></span>
+                  <span class="education_year" id="Eyear2"></span>
+                </div>
+              </div>
+              <div class="education_content hide" id="edu-item3">
+                <div class="education_time">
+                  <span class="education_rounder"></span>
+                  <!-- <span class="education_line"></span> -->
+                </div>
+                <div class="education_data bd-grid">
+                  <h3 class="education_title" id="coursename3"></h3>
+                  <span class="education_studies" id="uniName3"></span>
+                  <span class="education_year" id="Eyear3"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="resume_right">
+          <!-- EXPERIENCE -->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience_container bd-grid">
+              <div class="experience_content">
+                <div class="experience_time">
+                  <span class="experience_rounder"></span>
+                  <!-- <span class="experience_line"></span> -->
+                </div>
+                <div class="experience_data bd-grid">
+                  <h3 class="experience_title" id="exp_title1"></h3>
+                  <div class="experience_company">
+                    <span id="exp_year1"></span>
+                    |
+                    <span>
+                      <b id="exp_comp1"></b>
+                    </span>
+                  </div>
+                  <p class="experience_description" id="exp_desc1"></p>
+                </div>
+              </div>
+              <div class="experience_content hide" id="exp-item2">
+                <div class="experience_time">
+                  <span class="experience_rounder"></span>
+                  <!-- <span class="experience_line"></span> -->
+                </div>
+                <div class="experience_data bd-grid">
+                  <h3 class="experience_title" id="exp_title2"></h3>
+                  <div class="experience_company">
+                    <span id="exp_year2"></span>
+                    |
+                    <span>
+                      <b id="exp_comp2"></b>
+                    </span>
+                  </div>
+                  <p class="experience_description" id="exp_desc2"></p>
+                </div>
+              </div>
+              <div class="experience_content hide" id="exp-item3">
+                <div class="experience_time">
+                  <span class="experience_rounder"></span>
+                  <!-- <span class="experience_line"></span> -->
+                </div>
+                <div class="experience_data bd-grid">
+                  <h3 class="experience_title" id="exp_title3"></h3>
+                  <div class="experience_company">
+                    <span id="exp_year3"></span>
+                    |
+                    <span>
+                      <b id="exp_comp3"></b>
+                    </span>
+                  </div>
+                  <p class="experience_description" id="exp_desc3"></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CERTIFICATES -->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificate_container bd-grid">
+              <div class="certificate_content">
+                <h3 class="certificate_title" id="cert_title1"></h3>
+                <p class="certificate_description" id="cert_desc1"></p>
+              </div>
+              <div class="certificate_content">
+                <h3 class="certificate_title" id="cert_title2"></h3>
+                <p class="certificate_description" id="cert_desc2"></p>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- LANGUAGES -->
+          <section class="languages section">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages_container">
+              <ul class="languages_content bd-grid" id="langItem"></ul>
+            </div>
+          </section>
+
+          <!-- SKILLS  -->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills_content bd-grid">
+              <ul class="skills_data">
+                <li class="skills_name">
+                  <span class="skills_circle"></span>
+                  <span id="skillname1"></span>
+                  <div>
+                    <progress min="0" max="100" id="progress1"/>
+                  </div>
+                </li>
+                <li class="skills_name">
+                  <span class="skills_circle"></span>
+                  <span id="skillname2"></span>
+                  <div>
+                    <progress min="0" max="100" id="progress2"/>
+                  </div>
+                </li>
+
+              </ul>
+              <ul class="skills_data">
+                <li class="skills_name">
+                  <span class="skills_circle"></span>
+                  <span id="skillname3"></span>
+                  <div>
+                    <progress min="0" max="100" id="progress3"/>
+                  </div>
+                </li>
+                <li class="skills_name">
+                  <span class="skills_circle"></span>
+                  <span id="skillname4"></span>
+                  <div>
+                    <progress min="0" max="100" id="progress4"/>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      <button class="btn btn-info btn-lg mt-4 mb-4" id="editCv" onclick="EditForm();">edit</button>
+      <button class="btn btn-dark btn-lg mt-4 mb-4" id="resume-button">Download</button>
+    </main>
+    <span style="display: none;" id="Progress1"></span>
+    <span style="display: none;" id="Progress2"></span>
+    <span style="display: none;" id="Progress3"></span>
+    <span style="display: none;" id="Progress4"></span>
+    <!-- script -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
