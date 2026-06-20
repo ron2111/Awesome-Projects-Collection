@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    background-color: rgba(14, 211, 185, 0.788);
+}
+
+img {
+    height: 150px;
+    margin: 10px 0 30px 0;
+}
+
+hr {
+    border: dotted;
+    width: 400px;
+}
+
+h1 {
+    font-family: "montserrat", sans-serif;
+    color: crimson;
+    text-shadow: 2px 1px 5px black;
+}
+
+h3 {
+    font-family: "montserrat", sans-serif;
+    color: crimson;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    color: #444;
+    font-family: "montserrat", sans-serif;
+}
+
+button {
+    border-radius: 30px;
+    border-color: black;
+    border: 0.5em;
+    margin-bottom: 20px;
+    padding: 8px 8px;
+    background-color: rgb(195, 128, 228);
+    margin: 0 0 0 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.page-description {
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+.tz-link {
+    font-size: 1em;
+    color: #1da7da;
+    text-decoration: none;
+}
+
+.no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #e64427;
+    margin-top: 35px;
+}
+
+.app {
+    margin: 40px auto;
+}
+
+#note-textarea {
+    border-radius: 15px;
+    margin: 20px 0;
+    width: 80%;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#recording-instructions {
+    margin: 15px auto 60px;
+}
+
+#notes {
+    padding-top: 20px;
+}
+
+.note .header {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.note .delete-note,
+.note .listen-note {
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+}
+
+.note .content {
+    margin-bottom: 30px;
+    color: rgb(233, 219, 219);
+}
+
+.align-center img {
+    padding-top: 10px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 25px;
+    }
+    button {
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        width: 80%;
+    }
+}
